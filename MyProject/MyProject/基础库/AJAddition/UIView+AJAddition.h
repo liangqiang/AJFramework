@@ -61,6 +61,6 @@ typedef void(^UIViewClickBlock)(UIView *view);
 - (UIImage*)createImageWithScale:(CGFloat)scale;
 
 //保存额外信息
-@property (nonatomic,strong) id userInfo;
+@property (nonatomic,strong) id extraData;
 
 @end

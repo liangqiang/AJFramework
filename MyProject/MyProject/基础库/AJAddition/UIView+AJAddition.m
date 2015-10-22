@@ -9,7 +9,7 @@
 #import "UIView+AJAddition.h"
 #import <objc/runtime.h>
 
-static char *viewClickKey, UIViewUserInfo;
+static char *keyViewClickBlock, keyExtraData;
 
 @implementation UIView (AJAddition)
 
@@ -103,11 +103,11 @@ static char *viewClickKey, UIViewUserInfo;
     self.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewClick)];
     [self addGestureRecognizer:tap];
-    objc_setAssociatedObject(self, &viewClickKey, handle, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, &keyViewClickBlock, handle, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
 - (void)viewClick {
-    UIViewClickBlock callBack = objc_getAssociatedObject(self, &viewClickKey);
+    UIViewClickBlock callBack = objc_getAssociatedObject(self, &keyViewClickBlock);
     if (callBack!= nil)
     {
         callBack(self);
@@ -132,14 +132,14 @@ static char *viewClickKey, UIViewUserInfo;
     return origPic;
 }
 
--(void)setUserInfo:(id)userInfo{
-    objc_setAssociatedObject(self, &UIViewUserInfo,
-                             userInfo,
+-(void)setExtraData:(id)extraData{
+    objc_setAssociatedObject(self, &keyExtraData,
+                             extraData,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(id)userInfo{
-    return objc_getAssociatedObject(self, &UIViewUserInfo);
+-(id)extraData{
+    return objc_getAssociatedObject(self, &keyExtraData);
 }
 
 @end
