@@ -6,7 +6,7 @@
 //  Copyright (c) 2015年 SunX. All rights reserved.
 //
 
-#import "TDDUIImageAdditions.h"
+#import "UIImage+AJAddition.h"
 
 @implementation UIImage (TDDUIImageAdditions)
 
