@@ -10,10 +10,17 @@
 		0303D6CD1BD8C4E30024399D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6CC1BD8C4E30024399D /* main.m */; };
 		0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6CF1BD8C4E30024399D /* AppDelegate.m */; };
 		0303D6D31BD8C4E30024399D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6D21BD8C4E30024399D /* ViewController.m */; };
-		0303D6D61BD8C4E30024399D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0303D6D41BD8C4E30024399D /* Main.storyboard */; };
 		0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0303D6D71BD8C4E30024399D /* Images.xcassets */; };
-		0303D6DB1BD8C4E30024399D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0303D6D91BD8C4E30024399D /* LaunchScreen.xib */; };
 		0303D6E71BD8C4E40024399D /* MyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6E61BD8C4E40024399D /* MyProjectTests.m */; };
+		0303D6F71BD8CE1F0024399D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6F61BD8CE1F0024399D /* README.md */; };
+		0303D6F91BD8CE3E0024399D /* md文件格式.md in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6F81BD8CE3E0024399D /* md文件格式.md */; };
+		0303D7001BD8D8EF0024399D /* AJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6FD1BD8D8EF0024399D /* AJViewController.m */; };
+		0303D7011BD8D8EF0024399D /* AJViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6FF1BD8D8EF0024399D /* AJViewModel.m */; };
+		0303D7041BD8D9EE0024399D /* 模块文件依赖关系.md in Sources */ = {isa = PBXBuildFile; fileRef = 0303D7031BD8D9EE0024399D /* 模块文件依赖关系.md */; };
+		0303D70A1BD8DF570024399D /* AJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D7081BD8DF570024399D /* AJScrollView.m */; };
+		0303D70E1BD8E0CE0024399D /* UIView+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D70D1BD8E0CE0024399D /* UIView+AJAddition.m */; };
+		0303D7101BD8E1970024399D /* 开发规范.md in Sources */ = {isa = PBXBuildFile; fileRef = 0303D70F1BD8E1970024399D /* 开发规范.md */; };
+		0303D7151BD8E6060024399D /* AJColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D7141BD8E6060024399D /* AJColorManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +41,26 @@
 		0303D6CF1BD8C4E30024399D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0303D6D11BD8C4E30024399D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0303D6D21BD8C4E30024399D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0303D6D51BD8C4E30024399D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0303D6D71BD8C4E30024399D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0303D6DA1BD8C4E30024399D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0303D6E01BD8C4E40024399D /* MyProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0303D6E51BD8C4E40024399D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0303D6E61BD8C4E40024399D /* MyProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyProjectTests.m; sourceTree = "<group>"; };
+		0303D6F61BD8CE1F0024399D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0303D6F81BD8CE3E0024399D /* md文件格式.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "md文件格式.md"; sourceTree = "<group>"; };
+		0303D6FC1BD8D8EF0024399D /* AJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJViewController.h; sourceTree = "<group>"; };
+		0303D6FD1BD8D8EF0024399D /* AJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJViewController.m; sourceTree = "<group>"; };
+		0303D6FE1BD8D8EF0024399D /* AJViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJViewModel.h; sourceTree = "<group>"; };
+		0303D6FF1BD8D8EF0024399D /* AJViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJViewModel.m; sourceTree = "<group>"; };
+		0303D7031BD8D9EE0024399D /* 模块文件依赖关系.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "模块文件依赖关系.md"; sourceTree = "<group>"; };
+		0303D7051BD8DADC0024399D /* AJDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJDefine.h; sourceTree = "<group>"; };
+		0303D7061BD8DBDB0024399D /* MyProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProject.pch; sourceTree = "<group>"; };
+		0303D7081BD8DF570024399D /* AJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJScrollView.m; sourceTree = "<group>"; };
+		0303D7091BD8DF570024399D /* AJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJScrollView.h; sourceTree = "<group>"; };
+		0303D70C1BD8E0CE0024399D /* UIView+AJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AJAddition.h"; sourceTree = "<group>"; };
+		0303D70D1BD8E0CE0024399D /* UIView+AJAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AJAddition.m"; sourceTree = "<group>"; };
+		0303D70F1BD8E1970024399D /* 开发规范.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "开发规范.md"; sourceTree = "<group>"; };
+		0303D7131BD8E6060024399D /* AJColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJColorManager.h; sourceTree = "<group>"; };
+		0303D7141BD8E6060024399D /* AJColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJColorManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +84,7 @@
 		0303D6BE1BD8C4E30024399D = {
 			isa = PBXGroup;
 			children = (
+				0303D6F61BD8CE1F0024399D /* README.md */,
 				0303D6C91BD8C4E30024399D /* MyProject */,
 				0303D6E31BD8C4E40024399D /* MyProjectTests */,
 				0303D6C81BD8C4E30024399D /* Products */,
@@ -85,9 +107,11 @@
 				0303D6CF1BD8C4E30024399D /* AppDelegate.m */,
 				0303D6D11BD8C4E30024399D /* ViewController.h */,
 				0303D6D21BD8C4E30024399D /* ViewController.m */,
-				0303D6D41BD8C4E30024399D /* Main.storyboard */,
 				0303D6D71BD8C4E30024399D /* Images.xcassets */,
-				0303D6D91BD8C4E30024399D /* LaunchScreen.xib */,
+				0303D6F01BD8C8CF0024399D /* 业务 */,
+				0303D6F11BD8C8D60024399D /* 服务 */,
+				0303D6F21BD8C8F20024399D /* 基础库 */,
+				0303D6F51BD8CDBF0024399D /* 文档 */,
 				0303D6CA1BD8C4E30024399D /* Supporting Files */,
 			);
 			path = MyProject;
@@ -98,6 +122,7 @@
 			children = (
 				0303D6CB1BD8C4E30024399D /* Info.plist */,
 				0303D6CC1BD8C4E30024399D /* main.m */,
+				0303D7061BD8DBDB0024399D /* MyProject.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +142,96 @@
 				0303D6E51BD8C4E40024399D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0303D6F01BD8C8CF0024399D /* 业务 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "业务";
+			sourceTree = "<group>";
+		};
+		0303D6F11BD8C8D60024399D /* 服务 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "服务";
+			sourceTree = "<group>";
+		};
+		0303D6F21BD8C8F20024399D /* 基础库 */ = {
+			isa = PBXGroup;
+			children = (
+				0303D7111BD8E5990024399D /* AJCommon */,
+				0303D7021BD8D9AD0024399D /* AJDefine */,
+				0303D70B1BD8DFF60024399D /* AJAddition */,
+				0303D6FA1BD8D7240024399D /* AJBase */,
+				0303D7071BD8DD6A0024399D /* AJBaseExt */,
+			);
+			path = "基础库";
+			sourceTree = "<group>";
+		};
+		0303D6F51BD8CDBF0024399D /* 文档 */ = {
+			isa = PBXGroup;
+			children = (
+				0303D6F81BD8CE3E0024399D /* md文件格式.md */,
+				0303D7031BD8D9EE0024399D /* 模块文件依赖关系.md */,
+				0303D70F1BD8E1970024399D /* 开发规范.md */,
+			);
+			path = "文档";
+			sourceTree = "<group>";
+		};
+		0303D6FA1BD8D7240024399D /* AJBase */ = {
+			isa = PBXGroup;
+			children = (
+				0303D6FC1BD8D8EF0024399D /* AJViewController.h */,
+				0303D6FD1BD8D8EF0024399D /* AJViewController.m */,
+				0303D6FE1BD8D8EF0024399D /* AJViewModel.h */,
+				0303D6FF1BD8D8EF0024399D /* AJViewModel.m */,
+			);
+			path = AJBase;
+			sourceTree = "<group>";
+		};
+		0303D7021BD8D9AD0024399D /* AJDefine */ = {
+			isa = PBXGroup;
+			children = (
+				0303D7051BD8DADC0024399D /* AJDefine.h */,
+			);
+			path = AJDefine;
+			sourceTree = "<group>";
+		};
+		0303D7071BD8DD6A0024399D /* AJBaseExt */ = {
+			isa = PBXGroup;
+			children = (
+				0303D7091BD8DF570024399D /* AJScrollView.h */,
+				0303D7081BD8DF570024399D /* AJScrollView.m */,
+			);
+			path = AJBaseExt;
+			sourceTree = "<group>";
+		};
+		0303D70B1BD8DFF60024399D /* AJAddition */ = {
+			isa = PBXGroup;
+			children = (
+				0303D70C1BD8E0CE0024399D /* UIView+AJAddition.h */,
+				0303D70D1BD8E0CE0024399D /* UIView+AJAddition.m */,
+			);
+			path = AJAddition;
+			sourceTree = "<group>";
+		};
+		0303D7111BD8E5990024399D /* AJCommon */ = {
+			isa = PBXGroup;
+			children = (
+				0303D7121BD8E5C30024399D /* AJColorManager */,
+			);
+			path = AJCommon;
+			sourceTree = "<group>";
+		};
+		0303D7121BD8E5C30024399D /* AJColorManager */ = {
+			isa = PBXGroup;
+			children = (
+				0303D7131BD8E6060024399D /* AJColorManager.h */,
+				0303D7141BD8E6060024399D /* AJColorManager.m */,
+			);
+			path = AJColorManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +314,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0303D6D61BD8C4E30024399D /* Main.storyboard in Resources */,
-				0303D6DB1BD8C4E30024399D /* LaunchScreen.xib in Resources */,
 				0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +332,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0303D7041BD8D9EE0024399D /* 模块文件依赖关系.md in Sources */,
+				0303D70E1BD8E0CE0024399D /* UIView+AJAddition.m in Sources */,
 				0303D6D31BD8C4E30024399D /* ViewController.m in Sources */,
+				0303D7001BD8D8EF0024399D /* AJViewController.m in Sources */,
+				0303D7101BD8E1970024399D /* 开发规范.md in Sources */,
+				0303D70A1BD8DF570024399D /* AJScrollView.m in Sources */,
+				0303D6F91BD8CE3E0024399D /* md文件格式.md in Sources */,
 				0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */,
+				0303D7151BD8E6060024399D /* AJColorManager.m in Sources */,
+				0303D6F71BD8CE1F0024399D /* README.md in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
+				0303D7011BD8D8EF0024399D /* AJViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,25 +364,6 @@
 			targetProxy = 0303D6E11BD8C4E40024399D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0303D6D41BD8C4E30024399D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0303D6D51BD8C4E30024399D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0303D6D91BD8C4E30024399D /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0303D6DA1BD8C4E30024399D /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0303D6E81BD8C4E40024399D /* Debug */ = {
@@ -349,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MyProject/MyProject.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = MyProject/MyProject.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
