@@ -17,7 +17,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self setupWindow];
+    
     return YES;
+}
+
+-(void)setupWindow{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[UINavigationController alloc]init];
+    [self.window makeKeyAndVisible];
+    
+    //首界面
+//    [AJNaviService pushViewController:@"AJChoiceRoleViewController" withParams:nil];
+    //    [AJNaviService pushViewController:@"AJPageDebugViewController" withParams:nil];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

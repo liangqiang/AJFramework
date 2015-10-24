@@ -28,6 +28,7 @@
 		0303D7271BD8FC3E0024399D /* UIImage+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D7221BD8FC3E0024399D /* UIImage+AJAddition.m */; };
 		0303D72C1BD915FA0024399D /* AJScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D7281BD915FA0024399D /* AJScrollViewController.m */; };
 		0303D72D1BD915FA0024399D /* AJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D72B1BD915FA0024399D /* AJTabBarViewController.m */; };
+		030900CA1BDB97B70073DAA7 /* AJNaviService.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* AJNaviService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		0303D7291BD915FA0024399D /* AJScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJScrollViewController.h; sourceTree = "<group>"; };
 		0303D72A1BD915FA0024399D /* AJTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTabBarViewController.h; sourceTree = "<group>"; };
 		0303D72B1BD915FA0024399D /* AJTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTabBarViewController.m; sourceTree = "<group>"; };
+		030900C81BDB97B70073DAA7 /* AJNaviService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNaviService.h; sourceTree = "<group>"; };
+		030900C91BDB97B70073DAA7 /* AJNaviService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNaviService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,7 @@
 		0303D6F11BD8C8D60024399D /* 服务 */ = {
 			isa = PBXGroup;
 			children = (
+				030900C71BDB96FB0073DAA7 /* 导航 */,
 			);
 			path = "服务";
 			sourceTree = "<group>";
@@ -267,6 +271,15 @@
 				0303D7141BD8E6060024399D /* AJColorManager.m */,
 			);
 			path = AJColorManager;
+			sourceTree = "<group>";
+		};
+		030900C71BDB96FB0073DAA7 /* 导航 */ = {
+			isa = PBXGroup;
+			children = (
+				030900C81BDB97B70073DAA7 /* AJNaviService.h */,
+				030900C91BDB97B70073DAA7 /* AJNaviService.m */,
+			);
+			path = "导航";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030900CA1BDB97B70073DAA7 /* AJNaviService.m in Sources */,
 				0303D7041BD8D9EE0024399D /* 模块文件依赖关系.md in Sources */,
 				0303D70E1BD8E0CE0024399D /* UIView+AJAddition.m in Sources */,
 				0303D6D31BD8C4E30024399D /* ViewController.m in Sources */,
@@ -565,6 +579,7 @@
 				0303D6EC1BD8C4E40024399D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0303D6ED1BD8C4E40024399D /* Build configuration list for PBXNativeTarget "MyProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +588,7 @@
 				0303D6EF1BD8C4E40024399D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
