@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AJStatusBarDebugWindow.h"
+#import "AJScrollViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +22,8 @@
     
     [self setupWindow];
     
+    [AJStatusBarDebugWindow show];
+    
     return YES;
 }
 
@@ -30,8 +34,7 @@
     [self.window makeKeyAndVisible];
     
     //首界面
-//    [AJNaviService pushViewController:@"AJChoiceRoleViewController" withParams:nil];
-    //    [AJNaviService pushViewController:@"AJPageDebugViewController" withParams:nil];
+    [AJNaviService pushViewController:@"AJScrollViewController"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

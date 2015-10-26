@@ -29,6 +29,10 @@
 		0303D72C1BD915FA0024399D /* AJScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D7281BD915FA0024399D /* AJScrollViewController.m */; };
 		0303D72D1BD915FA0024399D /* AJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D72B1BD915FA0024399D /* AJTabBarViewController.m */; };
 		030900CA1BDB97B70073DAA7 /* AJNaviService.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* AJNaviService.m */; };
+		03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */; };
+		03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5F1BDE308D008B51E1 /* AJUtil.m */; };
+		03FFBB661BDE31DC008B51E1 /* AJDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB621BDE31DC008B51E1 /* AJDebugViewController.m */; };
+		03FFBB671BDE31DC008B51E1 /* AJDebugViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB631BDE31DC008B51E1 /* AJDebugViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,14 @@
 		0303D72B1BD915FA0024399D /* AJTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTabBarViewController.m; sourceTree = "<group>"; };
 		030900C81BDB97B70073DAA7 /* AJNaviService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNaviService.h; sourceTree = "<group>"; };
 		030900C91BDB97B70073DAA7 /* AJNaviService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNaviService.m; sourceTree = "<group>"; };
+		03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJStatusBarDebugWindow.m; sourceTree = "<group>"; };
+		03FFBB5B1BDE2F65008B51E1 /* AJStatusBarDebugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJStatusBarDebugWindow.h; sourceTree = "<group>"; };
+		03FFBB5E1BDE308D008B51E1 /* AJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJUtil.h; sourceTree = "<group>"; };
+		03FFBB5F1BDE308D008B51E1 /* AJUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJUtil.m; sourceTree = "<group>"; };
+		03FFBB621BDE31DC008B51E1 /* AJDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDebugViewController.m; sourceTree = "<group>"; };
+		03FFBB631BDE31DC008B51E1 /* AJDebugViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDebugViewModel.m; sourceTree = "<group>"; };
+		03FFBB641BDE31DC008B51E1 /* AJDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDebugViewController.h; sourceTree = "<group>"; };
+		03FFBB651BDE31DC008B51E1 /* AJDebugViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDebugViewModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +190,7 @@
 		0303D6F11BD8C8D60024399D /* 服务 */ = {
 			isa = PBXGroup;
 			children = (
+				03FFBB591BDE0E43008B51E1 /* 调试 */,
 				030900C71BDB96FB0073DAA7 /* 导航 */,
 			);
 			path = "服务";
@@ -259,6 +272,7 @@
 		0303D7111BD8E5990024399D /* AJCommon */ = {
 			isa = PBXGroup;
 			children = (
+				03FFBB5D1BDE3074008B51E1 /* AJUtil */,
 				0303D7121BD8E5C30024399D /* AJColorManager */,
 			);
 			path = AJCommon;
@@ -280,6 +294,36 @@
 				030900C91BDB97B70073DAA7 /* AJNaviService.m */,
 			);
 			path = "导航";
+			sourceTree = "<group>";
+		};
+		03FFBB591BDE0E43008B51E1 /* 调试 */ = {
+			isa = PBXGroup;
+			children = (
+				03FFBB5B1BDE2F65008B51E1 /* AJStatusBarDebugWindow.h */,
+				03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */,
+				03FFBB611BDE31B6008B51E1 /* 调试首页 */,
+			);
+			path = "调试";
+			sourceTree = "<group>";
+		};
+		03FFBB5D1BDE3074008B51E1 /* AJUtil */ = {
+			isa = PBXGroup;
+			children = (
+				03FFBB5E1BDE308D008B51E1 /* AJUtil.h */,
+				03FFBB5F1BDE308D008B51E1 /* AJUtil.m */,
+			);
+			path = AJUtil;
+			sourceTree = "<group>";
+		};
+		03FFBB611BDE31B6008B51E1 /* 调试首页 */ = {
+			isa = PBXGroup;
+			children = (
+				03FFBB641BDE31DC008B51E1 /* AJDebugViewController.h */,
+				03FFBB621BDE31DC008B51E1 /* AJDebugViewController.m */,
+				03FFBB651BDE31DC008B51E1 /* AJDebugViewModel.h */,
+				03FFBB631BDE31DC008B51E1 /* AJDebugViewModel.m */,
+			);
+			path = "调试首页";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,12 +427,15 @@
 				030900CA1BDB97B70073DAA7 /* AJNaviService.m in Sources */,
 				0303D7041BD8D9EE0024399D /* 模块文件依赖关系.md in Sources */,
 				0303D70E1BD8E0CE0024399D /* UIView+AJAddition.m in Sources */,
+				03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */,
 				0303D6D31BD8C4E30024399D /* ViewController.m in Sources */,
 				0303D7001BD8D8EF0024399D /* AJViewController.m in Sources */,
 				0303D7101BD8E1970024399D /* 开发规范.md in Sources */,
 				0303D7261BD8FC3E0024399D /* NSString+AJAddition.m in Sources */,
 				0303D70A1BD8DF570024399D /* AJScrollView.m in Sources */,
 				0303D6F91BD8CE3E0024399D /* md文件格式.md in Sources */,
+				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
+				03FFBB671BDE31DC008B51E1 /* AJDebugViewModel.m in Sources */,
 				0303D72C1BD915FA0024399D /* AJScrollViewController.m in Sources */,
 				0303D7181BD8FADA0024399D /* NSObject+AJAddition.m in Sources */,
 				0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */,
@@ -399,6 +446,7 @@
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				0303D7231BD8FC3E0024399D /* UIControl+AJAddition.m in Sources */,
 				0303D7011BD8D8EF0024399D /* AJViewModel.m in Sources */,
+				03FFBB661BDE31DC008B51E1 /* AJDebugViewController.m in Sources */,
 				0303D7241BD8FC3E0024399D /* UILabel+AJAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,11 @@
 +(instancetype)sharedInstance;
 @property (nonatomic,assign) BOOL animated;
 
+//使用要求：
+//1、在AppDelegate中，将window.rootViewController设置为UINavigationController
+//2、如使用withProp参数，则需在该Controller中先定义相应的属性
+//3、如使用tab navi方法，则每个子tab的root要求是UINavigationController
+
 //创建VC
 +(UIViewController*)createViewController:(NSString*)className;
 +(UIViewController*)createViewController:(NSString*)className withProp:(NSDictionary*)prop;

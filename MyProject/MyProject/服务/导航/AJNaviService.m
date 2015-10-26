@@ -40,8 +40,8 @@
 
 #pragma mark - 设置root vc
 +(UINavigationController*)rootNavigationController{
-    UIWindow *mainWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
-    return (UINavigationController*)[mainWindow rootViewController];
+//    UIWindow *mainWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
+    return (UINavigationController*)[mainWindow() rootViewController];
 }
 
 +(UIViewController*)setRootViewController:(NSString*)className{
@@ -51,7 +51,9 @@
 +(UIViewController*)setRootViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self rootNavigationController];
     UIViewController* vc = [self createViewController:className withProp:prop];
-    [navi setViewControllers:@[vc] animated:[AJNaviService sharedInstance].animated];
+    if (vc) {
+        [navi setViewControllers:@[vc] animated:[AJNaviService sharedInstance].animated];
+    }
     return vc;
 }
 
