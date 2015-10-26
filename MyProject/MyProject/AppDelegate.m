@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "AJStatusBarDebugWindow.h"
-#import "AJScrollViewController.h"
 
 @interface AppDelegate ()
 
@@ -34,7 +33,7 @@
     [self.window makeKeyAndVisible];
     
     //首界面
-    [AJNaviService pushViewController:@"AJScrollViewController"];
+    [AJNaviService pushViewController:@"DMHomeViewController"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0303D6CD1BD8C4E30024399D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6CC1BD8C4E30024399D /* main.m */; };
 		0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6CF1BD8C4E30024399D /* AppDelegate.m */; };
-		0303D6D31BD8C4E30024399D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6D21BD8C4E30024399D /* ViewController.m */; };
 		0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0303D6D71BD8C4E30024399D /* Images.xcassets */; };
 		0303D6E71BD8C4E40024399D /* MyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6E61BD8C4E40024399D /* MyProjectTests.m */; };
 		0303D6F71BD8CE1F0024399D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6F61BD8CE1F0024399D /* README.md */; };
@@ -33,6 +32,8 @@
 		03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5F1BDE308D008B51E1 /* AJUtil.m */; };
 		03FFBB661BDE31DC008B51E1 /* AJDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB621BDE31DC008B51E1 /* AJDebugViewController.m */; };
 		03FFBB671BDE31DC008B51E1 /* AJDebugViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB631BDE31DC008B51E1 /* AJDebugViewModel.m */; };
+		03FFBB6C1BDE4B8A008B51E1 /* DMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB6B1BDE4B8A008B51E1 /* DMHomeViewController.m */; };
+		03FFBB6F1BDE4BA6008B51E1 /* DMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB6E1BDE4BA6008B51E1 /* DMHomeViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +52,6 @@
 		0303D6CC1BD8C4E30024399D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0303D6CE1BD8C4E30024399D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0303D6CF1BD8C4E30024399D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0303D6D11BD8C4E30024399D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0303D6D21BD8C4E30024399D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0303D6D71BD8C4E30024399D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0303D6E01BD8C4E40024399D /* MyProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0303D6E51BD8C4E40024399D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +96,10 @@
 		03FFBB631BDE31DC008B51E1 /* AJDebugViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDebugViewModel.m; sourceTree = "<group>"; };
 		03FFBB641BDE31DC008B51E1 /* AJDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDebugViewController.h; sourceTree = "<group>"; };
 		03FFBB651BDE31DC008B51E1 /* AJDebugViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDebugViewModel.h; sourceTree = "<group>"; };
+		03FFBB6A1BDE4B8A008B51E1 /* DMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeViewController.h; sourceTree = "<group>"; };
+		03FFBB6B1BDE4B8A008B51E1 /* DMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeViewController.m; sourceTree = "<group>"; };
+		03FFBB6D1BDE4BA6008B51E1 /* DMHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeViewModel.h; sourceTree = "<group>"; };
+		03FFBB6E1BDE4BA6008B51E1 /* DMHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +144,6 @@
 			children = (
 				0303D6CE1BD8C4E30024399D /* AppDelegate.h */,
 				0303D6CF1BD8C4E30024399D /* AppDelegate.m */,
-				0303D6D11BD8C4E30024399D /* ViewController.h */,
-				0303D6D21BD8C4E30024399D /* ViewController.m */,
 				0303D6D71BD8C4E30024399D /* Images.xcassets */,
 				0303D6F01BD8C8CF0024399D /* 业务 */,
 				0303D6F11BD8C8D60024399D /* 服务 */,
@@ -183,6 +184,7 @@
 		0303D6F01BD8C8CF0024399D /* 业务 */ = {
 			isa = PBXGroup;
 			children = (
+				03FFBB681BDE4B04008B51E1 /* demo */,
 			);
 			path = "业务";
 			sourceTree = "<group>";
@@ -326,6 +328,25 @@
 			path = "调试首页";
 			sourceTree = "<group>";
 		};
+		03FFBB681BDE4B04008B51E1 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				03FFBB691BDE4B35008B51E1 /* 首页 */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		03FFBB691BDE4B35008B51E1 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				03FFBB6A1BDE4B8A008B51E1 /* DMHomeViewController.h */,
+				03FFBB6B1BDE4B8A008B51E1 /* DMHomeViewController.m */,
+				03FFBB6D1BDE4BA6008B51E1 /* DMHomeViewModel.h */,
+				03FFBB6E1BDE4BA6008B51E1 /* DMHomeViewModel.m */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -428,13 +449,14 @@
 				0303D7041BD8D9EE0024399D /* 模块文件依赖关系.md in Sources */,
 				0303D70E1BD8E0CE0024399D /* UIView+AJAddition.m in Sources */,
 				03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */,
-				0303D6D31BD8C4E30024399D /* ViewController.m in Sources */,
 				0303D7001BD8D8EF0024399D /* AJViewController.m in Sources */,
+				03FFBB6F1BDE4BA6008B51E1 /* DMHomeViewModel.m in Sources */,
 				0303D7101BD8E1970024399D /* 开发规范.md in Sources */,
 				0303D7261BD8FC3E0024399D /* NSString+AJAddition.m in Sources */,
 				0303D70A1BD8DF570024399D /* AJScrollView.m in Sources */,
 				0303D6F91BD8CE3E0024399D /* md文件格式.md in Sources */,
 				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
+				03FFBB6C1BDE4B8A008B51E1 /* DMHomeViewController.m in Sources */,
 				03FFBB671BDE31DC008B51E1 /* AJDebugViewModel.m in Sources */,
 				0303D72C1BD915FA0024399D /* AJScrollViewController.m in Sources */,
 				0303D7181BD8FADA0024399D /* NSObject+AJAddition.m in Sources */,

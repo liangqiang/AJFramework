@@ -32,7 +32,8 @@ typedef enum {
 -(void)createViews{
     [super createViews];
     
-    [self createEnvSection];
+    [self.scrollView addBlank:64];
+//    [self createEnvSection];
     if (self.viewModel.isPageDebug) {
         [self createPageReleaseSection];
     }else{
@@ -55,7 +56,7 @@ typedef enum {
     segmentedControl.frame = CGRectMake(16+17*3+16, (40-33)/2, 160, 33);
     segmentedControl.tag = tagEnvrioment;
     
-    [self.scrollView addSection:64 subviews:@[]];
+//    [self.scrollView addSection:64 subviews:@[]];
     [self.scrollView addSection:40 subviews:@[label, segmentedControl]];
 }
 

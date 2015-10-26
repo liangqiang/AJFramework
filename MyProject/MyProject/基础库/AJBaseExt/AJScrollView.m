@@ -41,6 +41,11 @@
     return container;
 }
 
+-(void) addBlank:(NSInteger)height{
+    self.contentHeight += height;
+    [self setContentSize:CGSizeMake(self.width, _contentHeight)];
+}
+
 -(void)removeAllSections{
     [self removeAllSubviews];
     _contentHeight = 0;

@@ -14,6 +14,7 @@
 @property (nonatomic, assign) UIColor       *sectionColor; //背景色
 
 -(UIView*) addSection:(NSInteger)height subviews:(NSArray*)views;
+-(void)addBlank:(NSInteger)height;
 -(void)removeAllSections;
 
 @end

@@ -9,13 +9,23 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
+
 @interface AJUtil : NSObject
 
 +(void)toast:(NSString*)msg;
 
-+ (UIImage *)createImageWithColor:(UIColor *)color size:(CGSize)size;
++(id)actionSheet:(NSString*)title buttons:(NSArray*)buttons block:(AJActionSheetClickBlock)block;
+
++(UIImage *)createImageWithColor:(UIColor *)color size:(CGSize)size;
 
 @end
+
+//------------------------------------------------------------------------------
+@interface UIActionSheet (AJUtil) <UIActionSheetDelegate>
+-(void)setClickBlock:(AJActionSheetClickBlock)block;
+@end
+
 
 UIWindow *mainWindow();
 UIViewController *topMostViewController();

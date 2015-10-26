@@ -108,22 +108,20 @@ static char *keyViewClickBlock, keyExtraData;
 
 - (void)viewClick {
     UIViewClickBlock callBack = objc_getAssociatedObject(self, &keyViewClickBlock);
-    if (callBack!= nil)
-    {
+    if (callBack!= nil){
         callBack(self);
     }
 }
 
 - (UIView*)addLineWithY:(CGFloat)originY {
-    UIView *line =  [[UIView alloc] initWithFrame:CGRectMake(0, originY,
-                                                             self.width, LINE_HEIGHT)];
+    CGFloat y = (originY==0) ? 0 : originY-LINE_HEIGHT;
+    UIView *line =  [[UIView alloc] initWithFrame:CGRectMake(0, y, self.width, LINE_HEIGHT)];
     line.backgroundColor = HEXCOLOR(0xdddddd);
     [self addSubview:line];
     return line;
 }
 
-- (UIImage*)createImageWithScale:(CGFloat)scale
-{
+- (UIImage*)createImageWithScale:(CGFloat)scale{
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, scale);
     [self.layer renderInContext:UIGraphicsGetCurrentContext()];
     

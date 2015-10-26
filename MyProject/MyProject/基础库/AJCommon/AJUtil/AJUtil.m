@@ -39,6 +39,19 @@
     }];
 }
 
++(id)actionSheet:(NSString*)title buttons:(NSArray*)buttons block:(AJActionSheetClickBlock)block{
+    UIActionSheet *as = [UIActionSheet new];
+    //    as.title = [NSString stringWithFormat:@"%@(DEBUG)", title];
+    as.title = title;
+    for (NSString* button in buttons) {
+        [as addButtonWithTitle:button];
+    }
+    as.cancelButtonIndex = buttons.count-1; //最后一个是取消
+    [as setClickBlock:block];
+    [as showInView:mainWindow()];
+    return as;
+}
+
 
 + (UIImage *)createImageWithColor:(UIColor *)color size:(CGSize)size {
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
@@ -50,6 +63,27 @@
     UIGraphicsEndImageContext();
     
     return theImage;
+}
+
+@end
+
+#pragma mark- UIActionSheet
+#import <objc/runtime.h>
+
+static char *UIActionSheetClickBlock;
+
+@implementation  UIActionSheet (AJUtil)
+
+-(void)setClickBlock:(AJActionSheetClickBlock)block{
+    objc_setAssociatedObject(self, &UIActionSheetClickBlock, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    self.delegate = self;
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    AJActionSheetClickBlock block = objc_getAssociatedObject(self, &UIActionSheetClickBlock);
+    if (block!= nil){
+        block(buttonIndex);
+    }
 }
 
 @end
