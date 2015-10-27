@@ -9,6 +9,7 @@
 #import "UIScrollView+DMRefresh.h"
 #import "DMRefreshHeaderView.h"
 #import "DMRefreshFooterView.h"
+#import "AJDeallocObject.h"
 
 @implementation UIScrollView (DMRefresh)
 
@@ -25,7 +26,14 @@
     DMRefreshFooterView* footerView = [[DMRefreshFooterView alloc]initWithFrame:rect];
     footerView.refreshBlock = refreshBlock;
     footerView.isHeader = NO;
-    self.refreshHeaderView = footerView;
+    self.refreshFooterView = footerView;
+}
+
+-(void)setDeallocParent:(NSObject*)parent{
+    WEAKSELF
+    [parent bindDeallocBlock:^{
+        [weakSelf removeObserver];
+    }];
 }
 
 @end

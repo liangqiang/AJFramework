@@ -34,6 +34,7 @@
 		03FD93D81BDF5FEA00DCC673 /* UIScrollView+DMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D21BDF5FEA00DCC673 /* UIScrollView+DMRefresh.m */; };
 		03FD93D91BDF5FEA00DCC673 /* DMRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D41BDF5FEA00DCC673 /* DMRefreshHeaderView.m */; };
 		03FD93DA1BDF5FEA00DCC673 /* DMRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D61BDF5FEA00DCC673 /* DMRefreshFooterView.m */; };
+		03FD93DD1BDF718C00DCC673 /* AJDeallocObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93DC1BDF718C00DCC673 /* AJDeallocObject.m */; };
 		03FFBB5C1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m */; };
 		03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5F1BDE308D008B51E1 /* AJUtil.m */; };
 		03FFBB661BDE31DC008B51E1 /* DMDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB621BDE31DC008B51E1 /* DMDebugViewController.m */; };
@@ -109,6 +110,8 @@
 		03FD93D51BDF5FEA00DCC673 /* DMRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRefreshFooterView.h; sourceTree = "<group>"; };
 		03FD93D61BDF5FEA00DCC673 /* DMRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMRefreshFooterView.m; sourceTree = "<group>"; };
 		03FD93D71BDF5FEA00DCC673 /* DMRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRefreshHeaderView.h; sourceTree = "<group>"; };
+		03FD93DB1BDF718C00DCC673 /* AJDeallocObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDeallocObject.h; sourceTree = "<group>"; };
+		03FD93DC1BDF718C00DCC673 /* AJDeallocObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDeallocObject.m; sourceTree = "<group>"; };
 		03FFBB5A1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMStatusBarDebugWindow.m; sourceTree = "<group>"; };
 		03FFBB5B1BDE2F65008B51E1 /* DMStatusBarDebugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMStatusBarDebugWindow.h; sourceTree = "<group>"; };
 		03FFBB5E1BDE308D008B51E1 /* AJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJUtil.h; sourceTree = "<group>"; };
@@ -345,6 +348,8 @@
 				03FD93CB1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m */,
 				03FD93CE1BDF58D300DCC673 /* AJRefreshViewBase.h */,
 				03FD93CD1BDF58D300DCC673 /* AJRefreshViewBase.m */,
+				03FD93DB1BDF718C00DCC673 /* AJDeallocObject.h */,
+				03FD93DC1BDF718C00DCC673 /* AJDeallocObject.m */,
 			);
 			path = AJRefreshBase;
 			sourceTree = "<group>";
@@ -561,6 +566,7 @@
 				03FFBB761BDE567B008B51E1 /* DMTabHomeViewModel.m in Sources */,
 				0303D7011BD8D8EF0024399D /* AJViewModel.m in Sources */,
 				03FFBB661BDE31DC008B51E1 /* DMDebugViewController.m in Sources */,
+				03FD93DD1BDF718C00DCC673 /* AJDeallocObject.m in Sources */,
 				03FFBB731BDE5660008B51E1 /* DMTabHomeViewController.m in Sources */,
 				0303D7241BD8FC3E0024399D /* UILabel+AJAddition.m in Sources */,
 				03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */,

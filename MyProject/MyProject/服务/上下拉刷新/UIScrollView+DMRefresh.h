@@ -19,5 +19,6 @@
 //self.footerView.hidden = !model.hasMore;
 
 //注意：dealloc前，scrollView必需执行removeObserver，否则KVO无法释放
+-(void)setDeallocParent:(NSObject*)parent;
 
 @end

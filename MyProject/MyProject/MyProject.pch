@@ -26,5 +26,6 @@
 //服务
 #import "DMNaviService.h"
 #import "DMIconFontDef.h"
+#import "UIScrollView+DMRefresh.h"
 
 #endif

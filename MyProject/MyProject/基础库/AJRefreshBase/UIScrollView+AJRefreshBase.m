@@ -7,6 +7,7 @@
 //
 
 #import "UIScrollView+AJRefreshBase.h"
+#import "AJDeallocObject.h"
 
 static char UIScrollViewHeaderView, UIScrollViewFooterView, UIScrollViewHasObserver;
 

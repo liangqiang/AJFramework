@@ -38,7 +38,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-//    self.navigationController.navigationBar.translucent = NO; // 设置不透明，否则可能会引起scrollView的高度异常
+    self.navigationController.navigationBar.translucent = NO; // 设置不透明，否则可能会引起scrollView的高度异常
     self.navigationController.navigationBarHidden = self.navigationBarHidden;
     
     [self refreshByViewModel];

@@ -7,6 +7,7 @@
 //
 
 #import "DMHomeViewModel.h"
+#import "AJScrollViewController.h"
 
 @implementation DMHomeViewModel
 
@@ -16,7 +17,16 @@
 }
 
 -(void)onPushBlankClicked{
-    [DMNaviService pushViewController:@"DMHomeViewController"];
+    AJScrollViewController *vc = (AJScrollViewController*)[DMNaviService pushViewController:@"DMHomeViewController"];
+    [vc.scrollView setDeallocParent:vc];
+    [vc.scrollView setDMHeaderViewRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
+        [AJUtil toast:@"aaaaa"];
+        completion(2);
+    }];
+    [vc.scrollView setDMFooterViewRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
+        [AJUtil toast:@"bbbb"];
+        completion(2);
+    }];
 }
 
 @end
