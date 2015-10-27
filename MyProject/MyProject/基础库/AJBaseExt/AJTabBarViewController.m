@@ -23,7 +23,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-//        self.navigationBarHidden = YES; //默认隐藏
+        self.navigationBarHidden = YES; //默认隐藏
         self.viewsCreated = NO;
     }
     return self;
@@ -39,7 +39,7 @@
     [super viewWillAppear:animated];
     
 //    self.navigationController.navigationBar.translucent = NO; // 设置不透明，否则可能会引起scrollView的高度异常
-//    self.navigationController.navigationBarHidden = self.navigationBarHidden;
+    self.navigationController.navigationBarHidden = self.navigationBarHidden;
     
     [self refreshByViewModel];
 }

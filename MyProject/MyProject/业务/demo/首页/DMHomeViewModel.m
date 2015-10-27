@@ -12,6 +12,11 @@
 
 -(void)onGotoTabClicked{
     [AJUtil toast:@"onGotoTabClicked"];
+    [AJNaviService pushViewController:@"DMTabHomeViewController"];
+}
+
+-(void)onPushBlankClicked{
+    [AJNaviService pushViewController:@"DMHomeViewController"];
 }
 
 @end

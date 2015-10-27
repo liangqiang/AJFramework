@@ -17,10 +17,13 @@
 
 -(void)createViews{
     [super createViews];
-    self.title = @"Home";
+    self.title = [NSString stringWithFormat:@"%u", arc4random()];
     
     [self.scrollView addBlank:15];
     [self createGotoTabSection];
+
+    [self.scrollView addBlank:15];
+    [self createPushBlankSection];
 }
 
 -(void)createGotoTabSection{
@@ -37,4 +40,20 @@
     [section addLineWithY:0];
     [section addLineWithY:section.height];
 }
+
+-(void)createPushBlankSection{
+    CGRect rect = CGRectMake(15, 0, APP_SCREEN_WIDTH-30, 30);
+    UILabel *label = [[UILabel alloc]initWithFrame:rect];
+    label.text = @"Push Blank";
+    
+    WEAKSELF
+    [label handleClick:^(UIView *view) {
+        [weakSelf.viewModel onPushBlankClicked];
+    }];
+    
+    UIView *section = [self.scrollView addSection:30 subviews:@[label]];
+    [section addLineWithY:0];
+    [section addLineWithY:section.height];
+}
+
 @end

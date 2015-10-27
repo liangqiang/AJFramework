@@ -28,12 +28,16 @@
 		0303D72C1BD915FA0024399D /* AJScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D7281BD915FA0024399D /* AJScrollViewController.m */; };
 		0303D72D1BD915FA0024399D /* AJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D72B1BD915FA0024399D /* AJTabBarViewController.m */; };
 		030900CA1BDB97B70073DAA7 /* AJNaviService.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* AJNaviService.m */; };
+		03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03FD93C81BDF1AA100DCC673 /* iconfont.ttf */; };
 		03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */; };
 		03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5F1BDE308D008B51E1 /* AJUtil.m */; };
 		03FFBB661BDE31DC008B51E1 /* AJDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB621BDE31DC008B51E1 /* AJDebugViewController.m */; };
 		03FFBB671BDE31DC008B51E1 /* AJDebugViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB631BDE31DC008B51E1 /* AJDebugViewModel.m */; };
 		03FFBB6C1BDE4B8A008B51E1 /* DMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB6B1BDE4B8A008B51E1 /* DMHomeViewController.m */; };
 		03FFBB6F1BDE4BA6008B51E1 /* DMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB6E1BDE4BA6008B51E1 /* DMHomeViewModel.m */; };
+		03FFBB731BDE5660008B51E1 /* DMTabHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB721BDE5660008B51E1 /* DMTabHomeViewController.m */; };
+		03FFBB761BDE567B008B51E1 /* DMTabHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB751BDE567B008B51E1 /* DMTabHomeViewModel.m */; };
+		03FFBB7D1BDE5B90008B51E1 /* AJIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB7C1BDE5B90008B51E1 /* AJIconFont.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +92,8 @@
 		0303D72B1BD915FA0024399D /* AJTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTabBarViewController.m; sourceTree = "<group>"; };
 		030900C81BDB97B70073DAA7 /* AJNaviService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNaviService.h; sourceTree = "<group>"; };
 		030900C91BDB97B70073DAA7 /* AJNaviService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNaviService.m; sourceTree = "<group>"; };
+		03FD93C71BDF1AA100DCC673 /* AJIconFontDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJIconFontDef.h; sourceTree = "<group>"; };
+		03FD93C81BDF1AA100DCC673 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJStatusBarDebugWindow.m; sourceTree = "<group>"; };
 		03FFBB5B1BDE2F65008B51E1 /* AJStatusBarDebugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJStatusBarDebugWindow.h; sourceTree = "<group>"; };
 		03FFBB5E1BDE308D008B51E1 /* AJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJUtil.h; sourceTree = "<group>"; };
@@ -100,6 +106,12 @@
 		03FFBB6B1BDE4B8A008B51E1 /* DMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeViewController.m; sourceTree = "<group>"; };
 		03FFBB6D1BDE4BA6008B51E1 /* DMHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeViewModel.h; sourceTree = "<group>"; };
 		03FFBB6E1BDE4BA6008B51E1 /* DMHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeViewModel.m; sourceTree = "<group>"; };
+		03FFBB711BDE5660008B51E1 /* DMTabHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTabHomeViewController.h; sourceTree = "<group>"; };
+		03FFBB721BDE5660008B51E1 /* DMTabHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTabHomeViewController.m; sourceTree = "<group>"; };
+		03FFBB741BDE567B008B51E1 /* DMTabHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTabHomeViewModel.h; sourceTree = "<group>"; };
+		03FFBB751BDE567B008B51E1 /* DMTabHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTabHomeViewModel.m; sourceTree = "<group>"; };
+		03FFBB7B1BDE5B90008B51E1 /* AJIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJIconFont.h; sourceTree = "<group>"; };
+		03FFBB7C1BDE5B90008B51E1 /* AJIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJIconFont.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +204,7 @@
 		0303D6F11BD8C8D60024399D /* 服务 */ = {
 			isa = PBXGroup;
 			children = (
+				03FD93C61BDF19D300DCC673 /* IconFont */,
 				03FFBB591BDE0E43008B51E1 /* 调试 */,
 				030900C71BDB96FB0073DAA7 /* 导航 */,
 			);
@@ -206,6 +219,7 @@
 				0303D70B1BD8DFF60024399D /* AJAddition */,
 				0303D6FA1BD8D7240024399D /* AJBase */,
 				0303D7071BD8DD6A0024399D /* AJBaseExt */,
+				03FFBB771BDE5B22008B51E1 /* AJIconFont */,
 			);
 			path = "基础库";
 			sourceTree = "<group>";
@@ -298,6 +312,15 @@
 			path = "导航";
 			sourceTree = "<group>";
 		};
+		03FD93C61BDF19D300DCC673 /* IconFont */ = {
+			isa = PBXGroup;
+			children = (
+				03FD93C71BDF1AA100DCC673 /* AJIconFontDef.h */,
+				03FD93C81BDF1AA100DCC673 /* iconfont.ttf */,
+			);
+			path = IconFont;
+			sourceTree = "<group>";
+		};
 		03FFBB591BDE0E43008B51E1 /* 调试 */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				03FFBB691BDE4B35008B51E1 /* 首页 */,
+				03FFBB701BDE5600008B51E1 /* Tab页 */,
 			);
 			path = demo;
 			sourceTree = "<group>";
@@ -345,6 +369,26 @@
 				03FFBB6E1BDE4BA6008B51E1 /* DMHomeViewModel.m */,
 			);
 			path = "首页";
+			sourceTree = "<group>";
+		};
+		03FFBB701BDE5600008B51E1 /* Tab页 */ = {
+			isa = PBXGroup;
+			children = (
+				03FFBB711BDE5660008B51E1 /* DMTabHomeViewController.h */,
+				03FFBB721BDE5660008B51E1 /* DMTabHomeViewController.m */,
+				03FFBB741BDE567B008B51E1 /* DMTabHomeViewModel.h */,
+				03FFBB751BDE567B008B51E1 /* DMTabHomeViewModel.m */,
+			);
+			path = "Tab页";
+			sourceTree = "<group>";
+		};
+		03FFBB771BDE5B22008B51E1 /* AJIconFont */ = {
+			isa = PBXGroup;
+			children = (
+				03FFBB7B1BDE5B90008B51E1 /* AJIconFont.h */,
+				03FFBB7C1BDE5B90008B51E1 /* AJIconFont.m */,
+			);
+			path = AJIconFont;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */,
 				0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +498,7 @@
 				03FFBB6F1BDE4BA6008B51E1 /* DMHomeViewModel.m in Sources */,
 				0303D7101BD8E1970024399D /* 开发规范.md in Sources */,
 				0303D7261BD8FC3E0024399D /* NSString+AJAddition.m in Sources */,
+				03FFBB7D1BDE5B90008B51E1 /* AJIconFont.m in Sources */,
 				0303D70A1BD8DF570024399D /* AJScrollView.m in Sources */,
 				0303D6F91BD8CE3E0024399D /* md文件格式.md in Sources */,
 				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
@@ -467,8 +513,10 @@
 				0303D72D1BD915FA0024399D /* AJTabBarViewController.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				0303D7231BD8FC3E0024399D /* UIControl+AJAddition.m in Sources */,
+				03FFBB761BDE567B008B51E1 /* DMTabHomeViewModel.m in Sources */,
 				0303D7011BD8D8EF0024399D /* AJViewModel.m in Sources */,
 				03FFBB661BDE31DC008B51E1 /* AJDebugViewController.m in Sources */,
+				03FFBB731BDE5660008B51E1 /* DMTabHomeViewController.m in Sources */,
 				0303D7241BD8FC3E0024399D /* UILabel+AJAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

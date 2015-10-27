@@ -11,5 +11,5 @@
 @interface DMHomeViewModel : AJViewModel
 
 -(void)onGotoTabClicked;
-
+-(void)onPushBlankClicked;
 @end

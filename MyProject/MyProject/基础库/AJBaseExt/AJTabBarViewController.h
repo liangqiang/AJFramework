@@ -10,7 +10,7 @@
 
 @interface AJTabBarViewController : UITabBarController
 
-//@property (nonatomic,assign) BOOL   navigationBarHidden;
+@property (nonatomic,assign) BOOL   navigationBarHidden;
 
 //创建界面，子类需重载，只调用一次
 -(void)createViews;
