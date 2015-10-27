@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 liangqiang. All rights reserved.
 //
 
-#import "AJNaviService.h"
+#import "DMNaviService.h"
 
-@implementation AJNaviService
+@implementation DMNaviService
 
 +(instancetype)sharedInstance {
-    static AJNaviService *object;
+    static DMNaviService *object;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
         object = [self new];
@@ -52,7 +52,7 @@
     UINavigationController* navi = [self rootNavigationController];
     UIViewController* vc = [self createViewController:className withProp:prop];
     if (vc) {
-        [navi setViewControllers:@[vc] animated:[AJNaviService sharedInstance].animated];
+        [navi setViewControllers:@[vc] animated:[DMNaviService sharedInstance].animated];
     }
     return vc;
 }
@@ -66,13 +66,13 @@
 +(UIViewController*)pushViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self rootNavigationController];
     UIViewController* vc = [self createViewController:className withProp:prop];
-    [navi pushViewController:vc animated:[AJNaviService sharedInstance].animated];
+    [navi pushViewController:vc animated:[DMNaviService sharedInstance].animated];
     return vc;
 }
 
 +(UIViewController*)popViewController{
     UINavigationController* navi = [self rootNavigationController];
-    return [navi popViewControllerAnimated:[AJNaviService sharedInstance].animated];
+    return [navi popViewControllerAnimated:[DMNaviService sharedInstance].animated];
 }
 
 #pragma mark - present vc
@@ -83,7 +83,7 @@
 +(UIViewController*)presentViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self rootNavigationController];
     UIViewController* vc = [self createViewController:className withProp:prop];
-    [navi presentViewController:vc animated:[AJNaviService sharedInstance].animated completion:^{
+    [navi presentViewController:vc animated:[DMNaviService sharedInstance].animated completion:^{
         //null
     }];
     return vc;
@@ -91,7 +91,7 @@
 
 +(void)dismissViewController{
     UINavigationController* navi = [self rootNavigationController];
-    [navi dismissViewControllerAnimated:[AJNaviService sharedInstance].animated completion:^{
+    [navi dismissViewControllerAnimated:[DMNaviService sharedInstance].animated completion:^{
         //null
     }];
 }
@@ -115,13 +115,13 @@
 +(UIViewController*)tabPushViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self tabNavigationController];
     UIViewController* vc = [self createViewController:className withProp:prop];
-    [navi pushViewController:vc animated:[AJNaviService sharedInstance].animated];
+    [navi pushViewController:vc animated:[DMNaviService sharedInstance].animated];
     return vc;
 }
 
 +(UIViewController*)tabPopViewController{
     UINavigationController* navi = [self tabNavigationController];
-    return [navi popViewControllerAnimated:[AJNaviService sharedInstance].animated];
+    return [navi popViewControllerAnimated:[DMNaviService sharedInstance].animated];
 }
 
 

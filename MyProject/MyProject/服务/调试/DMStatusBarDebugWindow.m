@@ -6,16 +6,16 @@
 //  Copyright (c) 2015年 SunX. All rights reserved.
 //
 
-#import "AJStatusBarDebugWindow.h"
+#import "DMStatusBarDebugWindow.h"
 
-@interface AJStatusBarDebugWindow ()
+@interface DMStatusBarDebugWindow ()
 
 @end
 
-@implementation AJStatusBarDebugWindow
+@implementation DMStatusBarDebugWindow
 
 + (instancetype)show{
-    AJStatusBarDebugWindow *debug = [[AJStatusBarDebugWindow alloc] initWithFrame:CGRectMake(APP_SCREEN_WIDTH/2 + 30, 0, 90, 20)];
+    DMStatusBarDebugWindow *debug = [[DMStatusBarDebugWindow alloc] initWithFrame:CGRectMake(APP_SCREEN_WIDTH/2 + 30, 0, 90, 20)];
     [[[UIApplication sharedApplication] keyWindow] addSubview:debug];
     return debug;
 }
@@ -36,7 +36,7 @@
         [debugButton handleEvent:UIControlEventTouchUpInside withBlock:^(UIControl *control) {
             NSString *topVCName = NSStringFromClass([topMostViewController() class]);
             if( ![topVCName isEqualToString:@"AJDebugViewController"] ){
-                [AJNaviService presentViewController:@"AJDebugViewController"];
+                [DMNaviService presentViewController:@"AJDebugViewController"];
 //                [AJNaviService presentViewController:@"AJDebugViewController" withParams:@{@"debugButton":debugButton}];
             }else{
                 [AJUtil toast:@"调试页已开启✈️🐶✈️"];

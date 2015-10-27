@@ -6,10 +6,10 @@
 //  Copyright (c) 2015年 SunX. All rights reserved.
 //
 
-#import "AJDebugViewController.h"
+#import "DMDebugViewController.h"
 #import "AJDebugViewModel.h"
 
-@interface AJDebugViewController ()
+@interface DMDebugViewController ()
 @property (nonatomic,strong) AJDebugViewModel   *viewModel;
 @property (nonatomic,strong) UIButton *debugButton;
 @end
@@ -19,7 +19,7 @@ typedef enum {
     tagEnvrioment,
 } Tag;
 
-@implementation AJDebugViewController
+@implementation DMDebugViewController
 @dynamic viewModel;
 
 -(id)init{

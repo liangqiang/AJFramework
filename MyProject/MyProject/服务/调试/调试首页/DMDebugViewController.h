@@ -8,6 +8,6 @@
 
 #import "AJScrollViewController.h"
 
-@interface AJDebugViewController : AJScrollViewController
+@interface DMDebugViewController : AJScrollViewController
 
 @end

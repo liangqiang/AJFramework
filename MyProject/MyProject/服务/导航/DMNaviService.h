@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AJNaviService : NSObject
+@interface DMNaviService : NSObject
 
 +(instancetype)sharedInstance;
 @property (nonatomic,assign) BOOL animated;

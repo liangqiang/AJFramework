@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AJStatusBarDebugWindow.h"
+#import "DMStatusBarDebugWindow.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +21,7 @@
     
     [self setupWindow];
     
-    [AJStatusBarDebugWindow show];
+    [DMStatusBarDebugWindow show];
     
     return YES;
 }
@@ -33,7 +33,7 @@
     [self.window makeKeyAndVisible];
     
     //首界面
-    [AJNaviService pushViewController:@"DMHomeViewController"];
+    [DMNaviService pushViewController:@"DMHomeViewController"];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
