@@ -23,8 +23,8 @@
 - (id)init {
     self = [super init];
     if (self) {
-        self.navigationBarHidden = NO; //默认不隐藏
-        self.isViewsCreated = NO;
+        _navigationBarHidden = NO; //默认不隐藏
+        _isViewsCreated = NO;
     }
     return self;
 }

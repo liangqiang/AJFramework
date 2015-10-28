@@ -17,13 +17,18 @@
 
 -(void)createViews{
     [super createViews];
-    self.title = [NSString stringWithFormat:@"%u", arc4random()];
+    if (self.title == nil) {
+        self.title = [NSString stringWithFormat:@"%u", arc4random()];
+    }
     
     [self.scrollView addBlank:15];
     [self createGotoTabSection];
 
     [self.scrollView addBlank:15];
     [self createPushBlankSection];
+
+    [self.scrollView addBlank:15];
+    [self createPushBlankInTabSection];
 }
 
 -(void)createGotoTabSection{
@@ -49,6 +54,21 @@
     WEAKSELF
     [label handleClick:^(UIView *view) {
         [weakSelf.viewModel onPushBlankClicked];
+    }];
+    
+    UIView *section = [self.scrollView addSection:30 subviews:@[label]];
+    [section addLineWithY:0];
+    [section addLineWithY:section.height];
+}
+
+-(void)createPushBlankInTabSection{
+    CGRect rect = CGRectMake(15, 0, APP_SCREEN_WIDTH-30, 30);
+    UILabel *label = [[UILabel alloc]initWithFrame:rect];
+    label.text = @"Push Blank In Tab";
+    
+    WEAKSELF
+    [label handleClick:^(UIView *view) {
+        [weakSelf.viewModel onPushBlankInTabClicked];
     }];
     
     UIView *section = [self.scrollView addSection:30 subviews:@[label]];

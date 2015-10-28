@@ -13,7 +13,14 @@
 
 @implementation UIScrollView (DMRefresh)
 
--(void)setDMHeaderViewRefreshBlock:(AJRefreshViewBlock)refreshBlock{
+-(void)setDMHeaderViewInHolder:(NSObject*)holder withRefreshBlock:(AJRefreshViewBlock)refreshBlock{
+    WEAKSELF
+    if (holder) {
+        [holder bindDeallocBlock:^{
+            [weakSelf removeObserver];
+        }];
+    }
+
     CGRect rect = CGRectMake(0, 0, self.width, 44);
     DMRefreshHeaderView* headerView = [[DMRefreshHeaderView alloc]initWithFrame:rect];
     headerView.refreshBlock = refreshBlock;
@@ -21,19 +28,19 @@
     self.refreshHeaderView = headerView;
 }
 
--(void)setDMFooterViewRefreshBlock:(AJRefreshViewBlock)refreshBlock{
+-(void)setDMFooterViewInHolder:(NSObject*)holder withRefreshBlock:(AJRefreshViewBlock)refreshBlock{
+    WEAKSELF
+    if (holder) {
+        [holder bindDeallocBlock:^{
+            [weakSelf removeObserver];
+        }];
+    }
+    
     CGRect rect = CGRectMake(0, 0, self.width, 44);
     DMRefreshFooterView* footerView = [[DMRefreshFooterView alloc]initWithFrame:rect];
     footerView.refreshBlock = refreshBlock;
     footerView.isHeader = NO;
     self.refreshFooterView = footerView;
-}
-
--(void)setDeallocParent:(NSObject*)parent{
-    WEAKSELF
-    [parent bindDeallocBlock:^{
-        [weakSelf removeObserver];
-    }];
 }
 
 @end

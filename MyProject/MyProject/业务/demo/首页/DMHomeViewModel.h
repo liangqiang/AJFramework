@@ -12,4 +12,6 @@
 
 -(void)onGotoTabClicked;
 -(void)onPushBlankClicked;
+-(void)onPushBlankInTabClicked;
+
 @end

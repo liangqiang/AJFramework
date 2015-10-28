@@ -12,13 +12,11 @@
 
 @interface UIScrollView (DMRefresh)
 
--(void)setDMHeaderViewRefreshBlock:(AJRefreshViewBlock)refreshBlock;
--(void)setDMFooterViewRefreshBlock:(AJRefreshViewBlock)refreshBlock;
+-(void)setDMHeaderViewInHolder:(NSObject*)holder withRefreshBlock:(AJRefreshViewBlock)refreshBlock;
+-(void)setDMFooterViewInHolder:(NSObject*)holder withRefreshBlock:(AJRefreshViewBlock)refreshBlock;
+
 
 //去掉上拉加载更多，隐藏或设置为nil
 //self.footerView.hidden = !model.hasMore;
-
-//注意：dealloc前，scrollView必需执行removeObserver，否则KVO无法释放
--(void)setDeallocParent:(NSObject*)parent;
 
 @end

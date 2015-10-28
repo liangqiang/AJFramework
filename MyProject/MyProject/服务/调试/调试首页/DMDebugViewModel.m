@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 SunX. All rights reserved.
 //
 
-#import "AJDebugViewModel.h"
+#import "DMDebugViewModel.h"
 
-@implementation AJDebugViewModel
+@implementation DMDebugViewModel
 
 - (id)init {
     self = [super init];

@@ -8,7 +8,7 @@
 
 #import "AJViewModel.h"
 
-@interface AJDebugViewModel : AJViewModel
+@interface DMDebugViewModel : AJViewModel
 
 @property (nonatomic, assign, readonly) BOOL isPageDebug;
 

@@ -11,8 +11,8 @@
 @implementation AJDeallocObject
 
 - (void)dealloc{
-    if (self.deallocBlock != nil) {
-        self.deallocBlock();
+    if (_deallocBlock != nil) {
+        _deallocBlock();
     }
 }
 

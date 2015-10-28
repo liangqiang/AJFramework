@@ -18,12 +18,25 @@
 
 -(void)onPushBlankClicked{
     AJScrollViewController *vc = (AJScrollViewController*)[DMNaviService pushViewController:@"DMHomeViewController"];
-    [vc.scrollView setDeallocParent:vc];
-    [vc.scrollView setDMHeaderViewRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
+
+    [vc.scrollView setDMHeaderViewInHolder:vc withRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
         [AJUtil toast:@"aaaaa"];
         completion(2);
     }];
-    [vc.scrollView setDMFooterViewRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
+    [vc.scrollView setDMFooterViewInHolder:vc withRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
+        [AJUtil toast:@"bbbb"];
+        completion(2);
+    }];
+}
+
+-(void)onPushBlankInTabClicked{
+    AJScrollViewController *vc = (AJScrollViewController*)[DMNaviService tabPushViewController:@"DMHomeViewController"];
+    
+    [vc.scrollView setDMHeaderViewInHolder:vc withRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
+        [AJUtil toast:@"aaaaa"];
+        completion(2);
+    }];
+    [vc.scrollView setDMFooterViewInHolder:vc withRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
         [AJUtil toast:@"bbbb"];
         completion(2);
     }];

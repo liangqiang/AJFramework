@@ -22,7 +22,7 @@
 -(instancetype)init{
     self = [super init];
     if (self) {
-        self.animated = YES;  //默认YES
+        _animated = YES;  //默认YES
     }
     return self;
 }
@@ -66,7 +66,9 @@
 +(UIViewController*)pushViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self rootNavigationController];
     UIViewController* vc = [self createViewController:className withProp:prop];
-    [navi pushViewController:vc animated:[DMNaviService sharedInstance].animated];
+    if (vc) {
+        [navi pushViewController:vc animated:[DMNaviService sharedInstance].animated];
+    }
     return vc;
 }
 
@@ -83,9 +85,11 @@
 +(UIViewController*)presentViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self rootNavigationController];
     UIViewController* vc = [self createViewController:className withProp:prop];
-    [navi presentViewController:vc animated:[DMNaviService sharedInstance].animated completion:^{
-        //null
-    }];
+    if (vc) {
+        [navi presentViewController:vc animated:[DMNaviService sharedInstance].animated completion:^{
+            //null
+        }];
+    }
     return vc;
 }
 
@@ -115,7 +119,9 @@
 +(UIViewController*)tabPushViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self tabNavigationController];
     UIViewController* vc = [self createViewController:className withProp:prop];
-    [navi pushViewController:vc animated:[DMNaviService sharedInstance].animated];
+    if (vc) {
+        [navi pushViewController:vc animated:[DMNaviService sharedInstance].animated];
+    }
     return vc;
 }
 

@@ -38,7 +38,7 @@
 		03FFBB5C1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m */; };
 		03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5F1BDE308D008B51E1 /* AJUtil.m */; };
 		03FFBB661BDE31DC008B51E1 /* DMDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB621BDE31DC008B51E1 /* DMDebugViewController.m */; };
-		03FFBB671BDE31DC008B51E1 /* AJDebugViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB631BDE31DC008B51E1 /* AJDebugViewModel.m */; };
+		03FFBB671BDE31DC008B51E1 /* DMDebugViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB631BDE31DC008B51E1 /* DMDebugViewModel.m */; };
 		03FFBB6C1BDE4B8A008B51E1 /* DMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB6B1BDE4B8A008B51E1 /* DMHomeViewController.m */; };
 		03FFBB6F1BDE4BA6008B51E1 /* DMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB6E1BDE4BA6008B51E1 /* DMHomeViewModel.m */; };
 		03FFBB731BDE5660008B51E1 /* DMTabHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB721BDE5660008B51E1 /* DMTabHomeViewController.m */; };
@@ -117,9 +117,9 @@
 		03FFBB5E1BDE308D008B51E1 /* AJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJUtil.h; sourceTree = "<group>"; };
 		03FFBB5F1BDE308D008B51E1 /* AJUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJUtil.m; sourceTree = "<group>"; };
 		03FFBB621BDE31DC008B51E1 /* DMDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDebugViewController.m; sourceTree = "<group>"; };
-		03FFBB631BDE31DC008B51E1 /* AJDebugViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDebugViewModel.m; sourceTree = "<group>"; };
+		03FFBB631BDE31DC008B51E1 /* DMDebugViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDebugViewModel.m; sourceTree = "<group>"; };
 		03FFBB641BDE31DC008B51E1 /* DMDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDebugViewController.h; sourceTree = "<group>"; };
-		03FFBB651BDE31DC008B51E1 /* AJDebugViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDebugViewModel.h; sourceTree = "<group>"; };
+		03FFBB651BDE31DC008B51E1 /* DMDebugViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDebugViewModel.h; sourceTree = "<group>"; };
 		03FFBB6A1BDE4B8A008B51E1 /* DMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeViewController.h; sourceTree = "<group>"; };
 		03FFBB6B1BDE4B8A008B51E1 /* DMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeViewController.m; sourceTree = "<group>"; };
 		03FFBB6D1BDE4BA6008B51E1 /* DMHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeViewModel.h; sourceTree = "<group>"; };
@@ -222,9 +222,9 @@
 		0303D6F11BD8C8D60024399D /* 服务 */ = {
 			isa = PBXGroup;
 			children = (
+				03FFBB591BDE0E43008B51E1 /* 调试 */,
 				03FD93D11BDF5CE000DCC673 /* 上下拉刷新 */,
 				03FD93C61BDF19D300DCC673 /* IconFont */,
-				03FFBB591BDE0E43008B51E1 /* 调试 */,
 				030900C71BDB96FB0073DAA7 /* 导航 */,
 			);
 			path = "服务";
@@ -391,8 +391,8 @@
 			children = (
 				03FFBB641BDE31DC008B51E1 /* DMDebugViewController.h */,
 				03FFBB621BDE31DC008B51E1 /* DMDebugViewController.m */,
-				03FFBB651BDE31DC008B51E1 /* AJDebugViewModel.h */,
-				03FFBB631BDE31DC008B51E1 /* AJDebugViewModel.m */,
+				03FFBB651BDE31DC008B51E1 /* DMDebugViewModel.h */,
+				03FFBB631BDE31DC008B51E1 /* DMDebugViewModel.m */,
 			);
 			path = "调试首页";
 			sourceTree = "<group>";
@@ -553,7 +553,7 @@
 				0303D6F91BD8CE3E0024399D /* md文件格式.md in Sources */,
 				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
 				03FFBB6C1BDE4B8A008B51E1 /* DMHomeViewController.m in Sources */,
-				03FFBB671BDE31DC008B51E1 /* AJDebugViewModel.m in Sources */,
+				03FFBB671BDE31DC008B51E1 /* DMDebugViewModel.m in Sources */,
 				0303D72C1BD915FA0024399D /* AJScrollViewController.m in Sources */,
 				0303D7181BD8FADA0024399D /* NSObject+AJAddition.m in Sources */,
 				0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */,

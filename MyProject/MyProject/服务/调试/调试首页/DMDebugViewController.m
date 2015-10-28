@@ -7,10 +7,10 @@
 //
 
 #import "DMDebugViewController.h"
-#import "AJDebugViewModel.h"
+#import "DMDebugViewModel.h"
 
 @interface DMDebugViewController ()
-@property (nonatomic,strong) AJDebugViewModel   *viewModel;
+@property (nonatomic,strong) DMDebugViewModel   *viewModel;
 @property (nonatomic,strong) UIButton *debugButton;
 @end
 

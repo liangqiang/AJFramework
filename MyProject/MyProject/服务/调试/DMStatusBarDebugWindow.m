@@ -35,8 +35,8 @@
         [debugButton setTitle:@"调试" forState:UIControlStateNormal];
         [debugButton handleEvent:UIControlEventTouchUpInside withBlock:^(UIControl *control) {
             NSString *topVCName = NSStringFromClass([topMostViewController() class]);
-            if( ![topVCName isEqualToString:@"AJDebugViewController"] ){
-                [DMNaviService presentViewController:@"AJDebugViewController"];
+            if( ![topVCName isEqualToString:@"DMDebugViewController"] ){
+                [DMNaviService presentViewController:@"DMDebugViewController"];
 //                [AJNaviService presentViewController:@"AJDebugViewController" withParams:@{@"debugButton":debugButton}];
             }else{
                 [AJUtil toast:@"调试页已开启✈️🐶✈️"];
