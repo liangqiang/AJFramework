@@ -10,7 +10,7 @@
 
 @interface AJColorManager ()
 
-@property (nonatomic,strong) NSMutableDictionary*                colorsDict;
+@property (nonatomic,retain) NSMutableDictionary*                colorsDict;
 
 @end
 
@@ -27,6 +27,7 @@
     dispatch_once( &once, ^{
         __singleton__ = [[AJColorManager alloc] init];
     });
+    
     return __singleton__;
 }
 

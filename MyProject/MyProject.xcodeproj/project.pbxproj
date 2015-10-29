@@ -29,7 +29,7 @@
 		0303D72D1BD915FA0024399D /* AJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D72B1BD915FA0024399D /* AJTabBarViewController.m */; };
 		030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* DMNaviService.m */; };
 		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
-		0316402B1BE239E000526D8A /* AJSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0316402A1BE239E000526D8A /* AJSettings.m */; };
+		031640321BE2449E00526D8A /* AJSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640301BE2449E00526D8A /* AJSettings.m */; };
 		03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F9A49F1BE0E39000E492F6 /* MBProgressHUD.m */; };
 		03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03FD93C81BDF1AA100DCC673 /* iconfont.ttf */; };
 		03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93CB1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m */; };
@@ -103,9 +103,10 @@
 		030900C91BDB97B70073DAA7 /* DMNaviService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNaviService.m; sourceTree = "<group>"; };
 		031640241BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
-		031640291BE239E000526D8A /* AJSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSettings.h; sourceTree = "<group>"; };
-		0316402A1BE239E000526D8A /* AJSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSettings.m; sourceTree = "<group>"; };
 		0316402D1BE23AA400526D8A /* DMUIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUIDefine.h; sourceTree = "<group>"; };
+		0316402F1BE23E0F00526D8A /* DMSettingsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMSettingsDefine.h; sourceTree = "<group>"; };
+		031640301BE2449E00526D8A /* AJSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSettings.m; sourceTree = "<group>"; };
+		031640311BE2449E00526D8A /* AJSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSettings.h; sourceTree = "<group>"; };
 		03F9A49E1BE0E39000E492F6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		03F9A49F1BE0E39000E492F6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		03FD93C71BDF1AA100DCC673 /* DMIconFontDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMIconFontDef.h; sourceTree = "<group>"; };
@@ -188,6 +189,7 @@
 				0303D6F01BD8C8CF0024399D /* 业务 */,
 				0303D6F11BD8C8D60024399D /* 服务 */,
 				0303D6F21BD8C8F20024399D /* AJFramework */,
+				0316402E1BE23C2900526D8A /* 第三方库 */,
 				0303D6F51BD8CDBF0024399D /* 文档 */,
 				0303D6CA1BD8C4E30024399D /* Supporting Files */,
 			);
@@ -233,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				0316402C1BE23A4600526D8A /* Define */,
-				031640281BE2398400526D8A /* 设置 */,
 				03FFBB591BDE0E43008B51E1 /* 调试 */,
 				03FD93D11BDF5CE000DCC673 /* 上下拉刷新 */,
 				03FD93C61BDF19D300DCC673 /* IconFont */,
@@ -245,14 +246,12 @@
 		0303D6F21BD8C8F20024399D /* AJFramework */ = {
 			isa = PBXGroup;
 			children = (
-				031640231BE2066200526D8A /* FDFullscreenPopGesture */,
-				03F9A49D1BE0E33900E492F6 /* MBProgressHUD */,
-				03FD93CA1BDF585900DCC673 /* AJRefreshBase */,
 				0303D7111BD8E5990024399D /* AJCommon */,
 				0303D7021BD8D9AD0024399D /* AJDefine */,
 				0303D70B1BD8DFF60024399D /* AJAddition */,
 				0303D6FA1BD8D7240024399D /* AJBase */,
 				0303D7071BD8DD6A0024399D /* AJBaseExt */,
+				03FD93CA1BDF585900DCC673 /* AJRefreshBase */,
 				03FFBB771BDE5B22008B51E1 /* AJIconFont */,
 			);
 			path = AJFramework;
@@ -324,6 +323,7 @@
 			children = (
 				03FFBB5D1BDE3074008B51E1 /* AJUtil */,
 				0303D7121BD8E5C30024399D /* AJColorManager */,
+				031640281BE2398400526D8A /* AJSettings */,
 			);
 			path = AJCommon;
 			sourceTree = "<group>";
@@ -355,21 +355,31 @@
 			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
-		031640281BE2398400526D8A /* 设置 */ = {
+		031640281BE2398400526D8A /* AJSettings */ = {
 			isa = PBXGroup;
 			children = (
-				031640291BE239E000526D8A /* AJSettings.h */,
-				0316402A1BE239E000526D8A /* AJSettings.m */,
+				031640311BE2449E00526D8A /* AJSettings.h */,
+				031640301BE2449E00526D8A /* AJSettings.m */,
 			);
-			path = "设置";
+			path = AJSettings;
 			sourceTree = "<group>";
 		};
 		0316402C1BE23A4600526D8A /* Define */ = {
 			isa = PBXGroup;
 			children = (
 				0316402D1BE23AA400526D8A /* DMUIDefine.h */,
+				0316402F1BE23E0F00526D8A /* DMSettingsDefine.h */,
 			);
 			path = Define;
+			sourceTree = "<group>";
+		};
+		0316402E1BE23C2900526D8A /* 第三方库 */ = {
+			isa = PBXGroup;
+			children = (
+				03F9A49D1BE0E33900E492F6 /* MBProgressHUD */,
+				031640231BE2066200526D8A /* FDFullscreenPopGesture */,
+			);
+			path = "第三方库";
 			sourceTree = "<group>";
 		};
 		03F9A49D1BE0E33900E492F6 /* MBProgressHUD */ = {
@@ -585,7 +595,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0316402B1BE239E000526D8A /* AJSettings.m in Sources */,
 				03FD93D91BDF5FEA00DCC673 /* DMRefreshHeaderView.m in Sources */,
 				03FD93D81BDF5FEA00DCC673 /* UIScrollView+DMRefresh.m in Sources */,
 				030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */,
@@ -600,6 +609,7 @@
 				0303D7261BD8FC3E0024399D /* NSString+AJAddition.m in Sources */,
 				03FFBB7D1BDE5B90008B51E1 /* AJIconFont.m in Sources */,
 				0303D70A1BD8DF570024399D /* AJScrollView.m in Sources */,
+				031640321BE2449E00526D8A /* AJSettings.m in Sources */,
 				0303D6F91BD8CE3E0024399D /* md文件格式.md in Sources */,
 				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
 				03FFBB6C1BDE4B8A008B51E1 /* DMHomeViewController.m in Sources */,

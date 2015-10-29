@@ -15,28 +15,6 @@
 @implementation DMHomeViewController
 @dynamic viewModel;
 
-//- (instancetype)init {
-//    if (self = [super init]) {
-//        self.hidesBottomBarWhenPushed = YES;
-//    }
-//    
-//    return self;
-//}
-
-//-(void)viewDidLoad{
-//    [super viewDidLoad];
-//    if (self.title == nil) {
-//        self.hidesBottomBarWhenPushed = YES;
-//    }
-//}
-//
-//-(void)viewWillLayoutSubviews{
-//    [super viewWillLayoutSubviews];
-//    if (self.title == nil) {
-//        self.hidesBottomBarWhenPushed = YES;
-//    }
-//}
-
 -(void)createViews{
     [super createViews];
     if (self.title == nil) {

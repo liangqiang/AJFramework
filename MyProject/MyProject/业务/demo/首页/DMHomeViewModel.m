@@ -40,6 +40,19 @@
     runBlockAfterDelay(3, ^{
         [AJUtil hideLoading];
     });
+    
+    AJSettings *settings = [AJSettings sharedInstance];
+    settings.defaultDict = @{@"key1":@"value1"};
+    
+    [AJSettings setObject:@"value2" forKey:@"key2"];
+    [AJSettings setObject:@"value1111" forKey:@"key1"];
+    [AJUtil toast:[AJSettings objectForKey:@"key1"]];
+    
+    runBlockAfterDelay(3, ^{
+        [AJSettings removeAllKeys];
+        [AJUtil toast:[AJSettings objectForKey:@"key1"]];
+    });
+    
 }
 
 @end
