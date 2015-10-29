@@ -10,8 +10,9 @@
 
 @interface DMHomeViewModel : AJViewModel
 
--(void)onGotoTabClicked;
+-(void)onSetNaviRootClicked;
+-(void)onSetTabRootClicked;
+
 -(void)onPushBlankClicked;
--(void)onPushBlankInTabClicked;
 -(void)onLoadingClicked;
 @end

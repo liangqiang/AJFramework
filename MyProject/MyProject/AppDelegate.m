@@ -29,11 +29,10 @@
 -(void)setupWindow{
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[UINavigationController alloc]init];
-    [self.window makeKeyAndVisible];
     
     //首界面
-    [DMNaviService pushViewController:@"DMHomeViewController"];
+    [DMNaviService setRootViewController:@"DMHomeViewController"];
+    [self.window makeKeyAndVisible];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

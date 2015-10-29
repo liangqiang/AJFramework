@@ -11,27 +11,20 @@
 
 @implementation DMHomeViewModel
 
--(void)onGotoTabClicked{
+-(void)onSetNaviRootClicked{
     [AJUtil toast:@"onGotoTabClicked"];
-    [DMNaviService pushViewController:@"DMTabHomeViewController"];
+    [DMNaviService setRootViewController:@"DMHomeViewController"];
 }
+
+-(void)onSetTabRootClicked{
+    [AJUtil toast:@"onGotoTabClicked"];
+    [DMNaviService setRootViewController:@"DMTabHomeViewController"];
+}
+
 
 -(void)onPushBlankClicked{
     AJScrollViewController *vc = (AJScrollViewController*)[DMNaviService pushViewController:@"DMHomeViewController"];
 
-    [vc.scrollView setDMHeaderViewInHolder:vc withRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
-        [AJUtil toast:@"aaaaa"];
-        completion(2);
-    }];
-    [vc.scrollView setDMFooterViewInHolder:vc withRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
-        [AJUtil toast:@"bbbb"];
-        completion(2);
-    }];
-}
-
--(void)onPushBlankInTabClicked{
-    AJScrollViewController *vc = (AJScrollViewController*)[DMNaviService tabPushViewController:@"DMHomeViewController"];
-    
     [vc.scrollView setDMHeaderViewInHolder:vc withRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
         [AJUtil toast:@"aaaaa"];
         completion(2);

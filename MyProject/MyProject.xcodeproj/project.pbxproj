@@ -28,6 +28,7 @@
 		0303D72C1BD915FA0024399D /* AJScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D7281BD915FA0024399D /* AJScrollViewController.m */; };
 		0303D72D1BD915FA0024399D /* AJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D72B1BD915FA0024399D /* AJTabBarViewController.m */; };
 		030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* DMNaviService.m */; };
+		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
 		03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F9A49F1BE0E39000E492F6 /* MBProgressHUD.m */; };
 		03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03FD93C81BDF1AA100DCC673 /* iconfont.ttf */; };
 		03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93CB1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m */; };
@@ -99,6 +100,8 @@
 		0303D72B1BD915FA0024399D /* AJTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTabBarViewController.m; sourceTree = "<group>"; };
 		030900C81BDB97B70073DAA7 /* DMNaviService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMNaviService.h; sourceTree = "<group>"; };
 		030900C91BDB97B70073DAA7 /* DMNaviService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNaviService.m; sourceTree = "<group>"; };
+		031640241BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		03F9A49E1BE0E39000E492F6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		03F9A49F1BE0E39000E492F6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		03FD93C71BDF1AA100DCC673 /* DMIconFontDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMIconFontDef.h; sourceTree = "<group>"; };
@@ -236,6 +239,7 @@
 		0303D6F21BD8C8F20024399D /* 基础库 */ = {
 			isa = PBXGroup;
 			children = (
+				031640231BE2066200526D8A /* FDFullscreenPopGesture */,
 				03F9A49D1BE0E33900E492F6 /* MBProgressHUD */,
 				03FD93CA1BDF585900DCC673 /* AJRefreshBase */,
 				0303D7111BD8E5990024399D /* AJCommon */,
@@ -334,6 +338,15 @@
 				030900C91BDB97B70073DAA7 /* DMNaviService.m */,
 			);
 			path = "导航";
+			sourceTree = "<group>";
+		};
+		031640231BE2066200526D8A /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				031640241BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.h */,
+				031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
 		03F9A49D1BE0E33900E492F6 /* MBProgressHUD */ = {
@@ -579,6 +592,7 @@
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,
 				03FFBB761BDE567B008B51E1 /* DMTabHomeViewModel.m in Sources */,
 				0303D7011BD8D8EF0024399D /* AJViewModel.m in Sources */,
+				031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				03FFBB661BDE31DC008B51E1 /* DMDebugViewController.m in Sources */,
 				03FD93DD1BDF718C00DCC673 /* AJDeallocObject.m in Sources */,
 				03FFBB731BDE5660008B51E1 /* DMTabHomeViewController.m in Sources */,

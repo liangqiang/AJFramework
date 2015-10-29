@@ -22,6 +22,7 @@
 #import "UIControl+AJAddition.h"
 #import "UILabel+AJAddition.h"
 #import "UIImage+AJAddition.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
 
 //服务
 #import "DMNaviService.h"

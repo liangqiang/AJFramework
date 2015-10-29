@@ -22,26 +22,41 @@
     }
     
     [self.scrollView addBlank:15];
-    [self createGotoTabSection];
+    [self createSetNaviRootSection];
+
+    [self.scrollView addBlank:15];
+    [self createSetTabRootSection];
 
     [self.scrollView addBlank:15];
     [self createPushBlankSection];
-
-    [self.scrollView addBlank:15];
-    [self createPushBlankInTabSection];
     
     [self.scrollView addBlank:15];
     [self createLoadingSection];
 }
 
--(void)createGotoTabSection{
+-(void)createSetNaviRootSection{
     CGRect rect = CGRectMake(15, 0, APP_SCREEN_WIDTH-30, 30);
     UILabel *label = [[UILabel alloc]initWithFrame:rect];
-    label.text = @"Goto Tab";
+    label.text = @"Set Navi Root";
     
     WEAKSELF
     [label handleClick:^(UIView *view) {
-        [weakSelf.viewModel onGotoTabClicked];
+        [weakSelf.viewModel onSetNaviRootClicked];
+    }];
+    
+    UIView *section = [self.scrollView addSection:30 subviews:@[label]];
+    [section addLineWithY:0];
+    [section addLineWithY:section.height];
+}
+
+-(void)createSetTabRootSection{
+    CGRect rect = CGRectMake(15, 0, APP_SCREEN_WIDTH-30, 30);
+    UILabel *label = [[UILabel alloc]initWithFrame:rect];
+    label.text = @"Set Tab Root";
+    
+    WEAKSELF
+    [label handleClick:^(UIView *view) {
+        [weakSelf.viewModel onSetTabRootClicked];
     }];
     
     UIView *section = [self.scrollView addSection:30 subviews:@[label]];
@@ -57,21 +72,6 @@
     WEAKSELF
     [label handleClick:^(UIView *view) {
         [weakSelf.viewModel onPushBlankClicked];
-    }];
-    
-    UIView *section = [self.scrollView addSection:30 subviews:@[label]];
-    [section addLineWithY:0];
-    [section addLineWithY:section.height];
-}
-
--(void)createPushBlankInTabSection{
-    CGRect rect = CGRectMake(15, 0, APP_SCREEN_WIDTH-30, 30);
-    UILabel *label = [[UILabel alloc]initWithFrame:rect];
-    label.text = @"Push Blank In Tab";
-    
-    WEAKSELF
-    [label handleClick:^(UIView *view) {
-        [weakSelf.viewModel onPushBlankInTabClicked];
     }];
     
     UIView *section = [self.scrollView addSection:30 subviews:@[label]];

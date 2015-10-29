@@ -38,7 +38,7 @@
 }
 
 -(BOOL)isPageDebug{
-    UINavigationController* nav = [DMNaviService rootNavigationController];
+    UINavigationController* nav = [DMNaviService navigationController];
     NSArray* vcs = nav.viewControllers;
     NSString *className = [NSString stringWithUTF8String:object_getClassName(vcs[0])];
     return [className isEqualToString:@"AJPageDebugViewController"];

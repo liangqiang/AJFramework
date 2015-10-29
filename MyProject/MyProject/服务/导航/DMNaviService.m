@@ -39,37 +39,43 @@
 }
 
 #pragma mark - 设置root vc
-+(UINavigationController*)rootNavigationController{
-//    UIWindow *mainWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:0];
-    return (UINavigationController*)[mainWindow() rootViewController];
-}
-
 +(UIViewController*)setRootViewController:(NSString*)className{
     return [self setRootViewController:className withProp:nil];
 }
 
 +(UIViewController*)setRootViewController:(NSString*)className withProp:(NSDictionary*)prop{
-    UINavigationController* navi = [self rootNavigationController];
-    if (!navi) {
-        [AJUtil toast:@"root navi not found"];
-        return nil;
-    }
-    
     UIViewController* vc = [self createViewController:className withProp:prop];
-    if (vc) {
-        [navi setViewControllers:@[vc] animated:[DMNaviService sharedInstance].animated];
+    if ([vc isKindOfClass:[UITabBarController class]] || [vc isKindOfClass:[UINavigationController class]]) {
+        mainWindow().rootViewController = vc;
+    }else{
+        mainWindow().rootViewController = [[UINavigationController alloc]initWithRootViewController:vc];
     }
     return vc;
 }
 
 #pragma mark - push vc
++(UINavigationController*)navigationController{
+    UIViewController *root = [mainWindow() rootViewController];
+    if ([root isKindOfClass:[UINavigationController class]]) {
+        return (UINavigationController*)root;
+    }
+    
+    else if ([root isKindOfClass:[UITabBarController class]]) {
+        UIViewController *selected = ((UITabBarController*)root).selectedViewController;
+        if ([selected isKindOfClass:[UINavigationController class]]) {
+            return (UINavigationController*)selected;
+        }
+    }
+    
+    return nil;
+}
 
 +(UIViewController*)pushViewController:(NSString*)className{
     return [self pushViewController:className withProp:nil];
 }
 
 +(UIViewController*)pushViewController:(NSString*)className withProp:(NSDictionary*)prop{
-    UINavigationController* navi = [self rootNavigationController];
+    UINavigationController* navi = [self navigationController];
     if (!navi) {
         [AJUtil toast:@"root navi not found"];
         return nil;
@@ -83,7 +89,7 @@
 }
 
 +(UIViewController*)popViewController{
-    UINavigationController* navi = [self rootNavigationController];
+    UINavigationController* navi = [self navigationController];
     return [navi popViewControllerAnimated:[DMNaviService sharedInstance].animated];
 }
 
@@ -93,7 +99,7 @@
 }
 
 +(UIViewController*)presentViewController:(NSString*)className withProp:(NSDictionary*)prop{
-    UINavigationController* navi = [self rootNavigationController];
+    UINavigationController* navi = [self navigationController];
     if (!navi) {
         [AJUtil toast:@"root navi not found"];
         return nil;
@@ -109,46 +115,10 @@
 }
 
 +(void)dismissViewController{
-    UINavigationController* navi = [self rootNavigationController];
+    UINavigationController* navi = [self navigationController];
     [navi dismissViewControllerAnimated:[DMNaviService sharedInstance].animated completion:^{
         //null
     }];
 }
-
-#pragma mark - 使用tab navi push
-+(UINavigationController*)tabNavigationController{
-    UIViewController *tab = ((UINavigationController*)[self rootNavigationController]).topViewController;
-    if ([tab isKindOfClass:[UITabBarController class]]) {
-        UIViewController *selected = ((UITabBarController*)tab).selectedViewController;
-        if ([selected isKindOfClass:[UINavigationController class]]) {
-            return (UINavigationController*)selected;
-        }
-    }
-    return nil;
-}
-
-+(UIViewController*)tabPushViewController:(NSString*)className{
-    return [self tabPushViewController:className withProp:nil];
-}
-
-+(UIViewController*)tabPushViewController:(NSString*)className withProp:(NSDictionary*)prop{
-    UINavigationController* navi = [self tabNavigationController];
-    if (!navi) {
-        [AJUtil toast:@"tab navi not found"];
-        return nil;
-    }
-    
-    UIViewController* vc = [self createViewController:className withProp:prop];
-    if (vc) {
-        [navi pushViewController:vc animated:[DMNaviService sharedInstance].animated];
-    }
-    return vc;
-}
-
-+(UIViewController*)tabPopViewController{
-    UINavigationController* navi = [self tabNavigationController];
-    return [navi popViewControllerAnimated:[DMNaviService sharedInstance].animated];
-}
-
 
 @end
