@@ -7,6 +7,9 @@
 //
 
 #import "AJUtil.h"
+#import "MBProgressHUD.h"
+
+static MBProgressHUD  *s_progressHUD = nil;
 
 @implementation AJUtil
 
@@ -63,6 +66,39 @@
     UIGraphicsEndImageContext();
     
     return theImage;
+}
+
++(void)showLoading{
+    if (!s_progressHUD) {
+        static dispatch_once_t once;
+        dispatch_once(&once, ^{
+            s_progressHUD = [[MBProgressHUD alloc] initWithView:mainWindow()];
+            [s_progressHUD handleClick:^(UIView *view) { //点击消失
+                ((MBProgressHUD*)view).taskInProgress = NO;
+                [(MBProgressHUD*)view hide:YES];
+            }];
+        });
+    }else{
+        [s_progressHUD hide:NO];
+    }
+    [mainWindow() addSubview:s_progressHUD];
+    
+    s_progressHUD.removeFromSuperViewOnHide = YES;
+    s_progressHUD.animationType = MBProgressHUDAnimationFade;
+    s_progressHUD.detailsLabelText = nil;
+    
+    s_progressHUD.opacity = 0.7;
+    s_progressHUD.graceTime = 0.5; //延迟一会，避免一闪就消失
+    s_progressHUD.taskInProgress = YES;
+    s_progressHUD.minShowTime = 0.5;
+    [s_progressHUD show:YES];
+}
+
++(void)hideLoading{
+    if (s_progressHUD) {
+        s_progressHUD.taskInProgress = NO;
+        [s_progressHUD hide:YES];
+    }
 }
 
 @end
@@ -132,4 +168,11 @@ UIViewController *topMostViewController() {
     return topViewController;
 }
 
+void runBlockAfterDelay(NSTimeInterval delay, void (^block)(void)){
+    //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
+    //                   dispatch_get_current_queue(), block);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
+                   dispatch_get_main_queue(), block);
+    
+}
 

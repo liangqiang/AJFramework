@@ -50,6 +50,11 @@
 
 +(UIViewController*)setRootViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self rootNavigationController];
+    if (!navi) {
+        [AJUtil toast:@"root navi not found"];
+        return nil;
+    }
+    
     UIViewController* vc = [self createViewController:className withProp:prop];
     if (vc) {
         [navi setViewControllers:@[vc] animated:[DMNaviService sharedInstance].animated];
@@ -65,6 +70,11 @@
 
 +(UIViewController*)pushViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self rootNavigationController];
+    if (!navi) {
+        [AJUtil toast:@"root navi not found"];
+        return nil;
+    }
+
     UIViewController* vc = [self createViewController:className withProp:prop];
     if (vc) {
         [navi pushViewController:vc animated:[DMNaviService sharedInstance].animated];
@@ -84,6 +94,11 @@
 
 +(UIViewController*)presentViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self rootNavigationController];
+    if (!navi) {
+        [AJUtil toast:@"root navi not found"];
+        return nil;
+    }
+
     UIViewController* vc = [self createViewController:className withProp:prop];
     if (vc) {
         [navi presentViewController:vc animated:[DMNaviService sharedInstance].animated completion:^{
@@ -118,6 +133,11 @@
 
 +(UIViewController*)tabPushViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self tabNavigationController];
+    if (!navi) {
+        [AJUtil toast:@"tab navi not found"];
+        return nil;
+    }
+    
     UIViewController* vc = [self createViewController:className withProp:prop];
     if (vc) {
         [navi pushViewController:vc animated:[DMNaviService sharedInstance].animated];

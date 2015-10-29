@@ -29,6 +29,9 @@
 
     [self.scrollView addBlank:15];
     [self createPushBlankInTabSection];
+    
+    [self.scrollView addBlank:15];
+    [self createLoadingSection];
 }
 
 -(void)createGotoTabSection{
@@ -69,6 +72,21 @@
     WEAKSELF
     [label handleClick:^(UIView *view) {
         [weakSelf.viewModel onPushBlankInTabClicked];
+    }];
+    
+    UIView *section = [self.scrollView addSection:30 subviews:@[label]];
+    [section addLineWithY:0];
+    [section addLineWithY:section.height];
+}
+
+-(void)createLoadingSection{
+    CGRect rect = CGRectMake(15, 0, APP_SCREEN_WIDTH-30, 30);
+    UILabel *label = [[UILabel alloc]initWithFrame:rect];
+    label.text = @"show Loading";
+    
+    WEAKSELF
+    [label handleClick:^(UIView *view) {
+        [weakSelf.viewModel onLoadingClicked];
     }];
     
     UIView *section = [self.scrollView addSection:30 subviews:@[label]];

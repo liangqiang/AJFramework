@@ -13,5 +13,5 @@
 -(void)onGotoTabClicked;
 -(void)onPushBlankClicked;
 -(void)onPushBlankInTabClicked;
-
+-(void)onLoadingClicked;
 @end

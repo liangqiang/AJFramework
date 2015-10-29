@@ -17,6 +17,8 @@
 
 
 //去掉上拉加载更多，隐藏或设置为nil
-//self.footerView.hidden = !model.hasMore;
+// self.footerView.hidden = YES;
+// or
+// 
 
 @end

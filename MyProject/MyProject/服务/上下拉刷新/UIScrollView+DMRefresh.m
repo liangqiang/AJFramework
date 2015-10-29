@@ -21,11 +21,15 @@
         }];
     }
 
-    CGRect rect = CGRectMake(0, 0, self.width, 44);
-    DMRefreshHeaderView* headerView = [[DMRefreshHeaderView alloc]initWithFrame:rect];
-    headerView.refreshBlock = refreshBlock;
-    headerView.isHeader = YES;
-    self.refreshHeaderView = headerView;
+    if (refreshBlock) {
+        CGRect rect = CGRectMake(0, 0, self.width, 44);
+        DMRefreshHeaderView* headerView = [[DMRefreshHeaderView alloc]initWithFrame:rect];
+        headerView.refreshBlock = refreshBlock;
+        headerView.isHeader = YES;
+        self.refreshHeaderView = headerView;
+    }else{
+        self.refreshHeaderView = nil;
+    }
 }
 
 -(void)setDMFooterViewInHolder:(NSObject*)holder withRefreshBlock:(AJRefreshViewBlock)refreshBlock{
@@ -36,11 +40,15 @@
         }];
     }
     
-    CGRect rect = CGRectMake(0, 0, self.width, 44);
-    DMRefreshFooterView* footerView = [[DMRefreshFooterView alloc]initWithFrame:rect];
-    footerView.refreshBlock = refreshBlock;
-    footerView.isHeader = NO;
-    self.refreshFooterView = footerView;
+    if (refreshBlock) {
+        CGRect rect = CGRectMake(0, 0, self.width, 44);
+        DMRefreshFooterView* footerView = [[DMRefreshFooterView alloc]initWithFrame:rect];
+        footerView.refreshBlock = refreshBlock;
+        footerView.isHeader = NO;
+        self.refreshFooterView = footerView;
+    }else{
+        self.refreshFooterView = nil;
+    }
 }
 
 @end

@@ -80,24 +80,14 @@
 
 -(void)refreshFinishedWithDelay:(NSTimeInterval)delay{
     WEAKSELF
-    runBlockAfterDelay(delay, ^{
-        if (self.status == EStatusRefreshViewRefreshing) {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay), dispatch_get_main_queue(), ^{
+        if (weakSelf.status == EStatusRefreshViewRefreshing) {
             [weakSelf refreshFinished];
         }else{
             [weakSelf resetRefresh];
         }
     });
 }
-
-void runBlockAfterDelay(NSTimeInterval delay, void (^block)(void))
-{
-    //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
-    //                   dispatch_get_current_queue(), block);
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
-                   dispatch_get_main_queue(), block);
-    
-}
-
 
 -(void)refreshFinished{
     [UIView animateWithDuration:0.25f animations:^{

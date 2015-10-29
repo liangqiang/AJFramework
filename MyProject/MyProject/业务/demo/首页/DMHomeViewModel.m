@@ -42,4 +42,11 @@
     }];
 }
 
+-(void)onLoadingClicked{
+    [AJUtil showLoading];
+    runBlockAfterDelay(3, ^{
+        [AJUtil hideLoading];
+    });
+}
+
 @end

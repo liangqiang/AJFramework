@@ -19,6 +19,9 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 
 +(UIImage *)createImageWithColor:(UIColor *)color size:(CGSize)size;
 
++(void)showLoading;
++(void)hideLoading;
+
 @end
 
 //------------------------------------------------------------------------------
@@ -29,3 +32,6 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 
 UIWindow *mainWindow();
 UIViewController *topMostViewController();
+
+//延迟执行block
+void runBlockAfterDelay(NSTimeInterval delay, void (^block)(void));
