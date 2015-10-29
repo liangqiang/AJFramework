@@ -25,15 +25,12 @@
     for (DMTabHomeItem *tab in self.viewModel.tabs) {
         UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:tab.title image:tab.imageNormal selectedImage:tab.imageSelected];
         [tab.controller setTabBarItem:item];
+        
 //        tab.controller.title = tab.title;
         [controllers addObject:tab.controller];
     }
     self.viewControllers = controllers;
     
-    //    //改变颜色
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:HEXCOLOR(0x979797)} forState:UIControlStateNormal];
-    //
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:HEXCOLOR(0xff3b38)} forState:UIControlStateSelected];
 }
 
 @end

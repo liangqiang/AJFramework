@@ -29,6 +29,7 @@
 		0303D72D1BD915FA0024399D /* AJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D72B1BD915FA0024399D /* AJTabBarViewController.m */; };
 		030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* DMNaviService.m */; };
 		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
+		0316402B1BE239E000526D8A /* AJSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 0316402A1BE239E000526D8A /* AJSettings.m */; };
 		03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F9A49F1BE0E39000E492F6 /* MBProgressHUD.m */; };
 		03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03FD93C81BDF1AA100DCC673 /* iconfont.ttf */; };
 		03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93CB1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m */; };
@@ -102,6 +103,9 @@
 		030900C91BDB97B70073DAA7 /* DMNaviService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMNaviService.m; sourceTree = "<group>"; };
 		031640241BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		031640291BE239E000526D8A /* AJSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSettings.h; sourceTree = "<group>"; };
+		0316402A1BE239E000526D8A /* AJSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSettings.m; sourceTree = "<group>"; };
+		0316402D1BE23AA400526D8A /* DMUIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUIDefine.h; sourceTree = "<group>"; };
 		03F9A49E1BE0E39000E492F6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		03F9A49F1BE0E39000E492F6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		03FD93C71BDF1AA100DCC673 /* DMIconFontDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMIconFontDef.h; sourceTree = "<group>"; };
@@ -183,7 +187,7 @@
 				0303D6D71BD8C4E30024399D /* Images.xcassets */,
 				0303D6F01BD8C8CF0024399D /* 业务 */,
 				0303D6F11BD8C8D60024399D /* 服务 */,
-				0303D6F21BD8C8F20024399D /* 基础库 */,
+				0303D6F21BD8C8F20024399D /* AJFramework */,
 				0303D6F51BD8CDBF0024399D /* 文档 */,
 				0303D6CA1BD8C4E30024399D /* Supporting Files */,
 			);
@@ -228,6 +232,8 @@
 		0303D6F11BD8C8D60024399D /* 服务 */ = {
 			isa = PBXGroup;
 			children = (
+				0316402C1BE23A4600526D8A /* Define */,
+				031640281BE2398400526D8A /* 设置 */,
 				03FFBB591BDE0E43008B51E1 /* 调试 */,
 				03FD93D11BDF5CE000DCC673 /* 上下拉刷新 */,
 				03FD93C61BDF19D300DCC673 /* IconFont */,
@@ -236,7 +242,7 @@
 			path = "服务";
 			sourceTree = "<group>";
 		};
-		0303D6F21BD8C8F20024399D /* 基础库 */ = {
+		0303D6F21BD8C8F20024399D /* AJFramework */ = {
 			isa = PBXGroup;
 			children = (
 				031640231BE2066200526D8A /* FDFullscreenPopGesture */,
@@ -249,7 +255,7 @@
 				0303D7071BD8DD6A0024399D /* AJBaseExt */,
 				03FFBB771BDE5B22008B51E1 /* AJIconFont */,
 			);
-			path = "基础库";
+			path = AJFramework;
 			sourceTree = "<group>";
 		};
 		0303D6F51BD8CDBF0024399D /* 文档 */ = {
@@ -347,6 +353,23 @@
 				031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */,
 			);
 			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		031640281BE2398400526D8A /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				031640291BE239E000526D8A /* AJSettings.h */,
+				0316402A1BE239E000526D8A /* AJSettings.m */,
+			);
+			path = "设置";
+			sourceTree = "<group>";
+		};
+		0316402C1BE23A4600526D8A /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				0316402D1BE23AA400526D8A /* DMUIDefine.h */,
+			);
+			path = Define;
 			sourceTree = "<group>";
 		};
 		03F9A49D1BE0E33900E492F6 /* MBProgressHUD */ = {
@@ -562,6 +585,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0316402B1BE239E000526D8A /* AJSettings.m in Sources */,
 				03FD93D91BDF5FEA00DCC673 /* DMRefreshHeaderView.m in Sources */,
 				03FD93D81BDF5FEA00DCC673 /* UIScrollView+DMRefresh.m in Sources */,
 				030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */,

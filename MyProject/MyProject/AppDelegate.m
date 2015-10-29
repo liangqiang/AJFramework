@@ -18,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setTabBarStyle];
+    [self setNaviBarStyle];
     
     [self setupWindow];
     
@@ -33,6 +35,18 @@
     //首界面
     [DMNaviService setRootViewController:@"DMHomeViewController"];
     [self.window makeKeyAndVisible];
+}
+
+-(void)setTabBarStyle{
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:kGrayTextColor} forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:kMainBlueColor} forState:UIControlStateSelected];
+}
+
+-(void)setNaviBarStyle{
+    // 设置导航栏背景色与字体颜色
+    [[UINavigationBar appearance] setBarTintColor:kNavBgColor];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:HEXCOLOR(0xffffff), NSFontAttributeName:[UIFont systemFontOfSize:18]}];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -56,5 +70,6 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end

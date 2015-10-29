@@ -28,5 +28,6 @@
 #import "DMNaviService.h"
 #import "DMIconFontDef.h"
 #import "UIScrollView+DMRefresh.h"
+#import "DMUIDefine.h"
 
 #endif

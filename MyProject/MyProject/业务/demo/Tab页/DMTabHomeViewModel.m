@@ -25,11 +25,12 @@
 -(void)addTab:(NSArray*)params{
     DMTabHomeItem *item = [DMTabHomeItem new];
     item.title = params[0];
-    item.imageNormal = params[1];
-    item.imageSelected = params[2];
+    item.imageNormal = [params[1] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    item.imageSelected = [params[2] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     item.vcClass = params[3];
     UIViewController *vc = [NSClassFromString(params[3]) new];
     vc.title = params[0];
+    vc.hidesBottomBarWhenPushed = NO;
     item.controller = [[UINavigationController alloc]initWithRootViewController:vc];
     [_tabs addObject:item];
 }
