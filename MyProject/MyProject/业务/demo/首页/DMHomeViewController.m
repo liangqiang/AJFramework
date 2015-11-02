@@ -15,6 +15,10 @@
 @implementation DMHomeViewController
 @dynamic viewModel;
 
+-(void)dealloc{
+    NSLog(@"");
+}
+
 -(void)createViews{
     [super createViews];
     if (self.title == nil) {
@@ -30,7 +34,7 @@
 
     [self.scrollView addBlank:15];
     [self createPushBlankSection];
-    
+
     [self.scrollView addBlank:15];
     [self createLoadingSection];
 }

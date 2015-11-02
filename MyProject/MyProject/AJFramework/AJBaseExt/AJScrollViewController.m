@@ -7,7 +7,6 @@
 //
 
 #import "AJScrollViewController.h"
-//#import "UIScrollView+AJRefresh.h"
 
 @interface AJScrollViewController ()
 
@@ -17,8 +16,6 @@
 
 - (void)dealloc
 {
-    //如果用到上拉、下拉刷新
-//    [self.scrollView removeObserver]; //否则KVO无法释放
     //Unregister notifications
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }

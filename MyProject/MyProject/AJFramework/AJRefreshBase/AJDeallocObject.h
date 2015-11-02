@@ -13,10 +13,11 @@ typedef void(^AJDeallocBlock)();
 @interface AJDeallocObject : NSObject
 @property (nonatomic,copy) AJDeallocBlock deallocBlock;
 
--(void)setDeallocBlock:(AJDeallocBlock)refreshBlock;
+-(void)setDeallocBlock:(AJDeallocBlock)deallocBlock;
 
 @end
 
 @interface NSObject (AJDeallocObject)
 -(void)bindDeallocBlock:(AJDeallocBlock)deallocBlock;
+-(BOOL)hasBindedDeallocBlock;
 @end

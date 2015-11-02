@@ -71,10 +71,7 @@
     }];
     
     if (self.refreshBlock) {
-        WEAKSELF
-        self.refreshBlock(^(NSTimeInterval delay){
-            [weakSelf refreshFinishedWithDelay:delay];
-        });
+        self.refreshBlock();
     }
 }
 

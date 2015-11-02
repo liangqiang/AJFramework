@@ -33,5 +33,9 @@ static char keyNSObjectDeallocObject;
     objc_setAssociatedObject(self, &keyNSObjectDeallocObject, obj, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+-(BOOL)hasBindedDeallocBlock{
+    return (objc_getAssociatedObject(self, &keyNSObjectDeallocObject) != nil);
+}
+
 
 @end

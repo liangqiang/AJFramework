@@ -8,17 +8,24 @@
 
 #import <Foundation/Foundation.h>
 #import "UIScrollView+AJRefreshBase.h"
-#import "AJRefreshViewBase.h"
 
 @interface UIScrollView (DMRefresh)
 
--(void)setDMHeaderViewInHolder:(NSObject*)holder withRefreshBlock:(AJRefreshViewBlock)refreshBlock;
--(void)setDMFooterViewInHolder:(NSObject*)holder withRefreshBlock:(AJRefreshViewBlock)refreshBlock;
+//注意：holder不能为nil！并且要先设置holder，再设置headerBlock、footerBlock。
+//统一方法
+-(void)setDMRefreshHeaderBlock:(AJRefreshViewBlock)headerBlock footerBlock:(AJRefreshViewBlock)footerBlock inHolder:(id)holder;
 
+//独立方法，设置刷新
+-(void)setDMRefreshHolder:(id)holder;
+-(void)setDMRefreshHeaderBlock:(AJRefreshViewBlock)headerBlock;
+-(void)setDMRefreshFooterBlock:(AJRefreshViewBlock)footerBlock;
 
-//去掉上拉加载更多，隐藏或设置为nil
-// self.footerView.hidden = YES;
-// or
-// 
+//去掉刷新View
+//1、设置为nil。   self.refreshFooterView = nil;
+//2、或者隐藏。    self.refreshFooterView.hidden = YES;
+//3、调用set方法，block传nil。  [scrollView setHeaderBlock:nil footerBlock:nil inHolder:self];
+
+//关闭刷新
+//[scrollView stopRefresh]
 
 @end

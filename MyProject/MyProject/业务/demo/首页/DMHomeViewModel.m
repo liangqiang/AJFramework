@@ -24,15 +24,17 @@
 
 -(void)onPushBlankClicked{
     AJScrollViewController *vc = (AJScrollViewController*)[DMNaviService pushViewController:@"DMHomeViewController"];
-
-    [vc.scrollView setDMHeaderViewInHolder:vc withRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
+    __weak AJScrollViewController *weakVc = vc;
+    //添加下拉上拉刷新
+    [vc.scrollView setDMRefreshHeaderBlock:^{
         [AJUtil toast:@"aaaaa"];
-        completion(2);
-    }];
-    [vc.scrollView setDMFooterViewInHolder:vc withRefreshBlock:^(AJRefreshViewCompleteBlock completion) {
+        runBlockAfterDelay(2, ^{
+            [weakVc.scrollView stopRefresh];
+        });
+    } footerBlock:^{
         [AJUtil toast:@"bbbb"];
-        completion(2);
-    }];
+        [weakVc.scrollView stopRefresh];
+    } inHolder:vc];
 }
 
 -(void)onLoadingClicked{

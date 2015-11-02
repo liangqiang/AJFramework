@@ -19,7 +19,7 @@
 //必需执行，否则KVO无法释放
 - (void)removeObserver;
 
--(void)autoRefresh;
+-(void)autoRefreshHeaderView;
 -(void)stopRefresh;
 
 @end

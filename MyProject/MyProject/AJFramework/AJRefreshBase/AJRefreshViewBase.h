@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^AJRefreshViewCompleteBlock)(NSTimeInterval delay);
-typedef void(^AJRefreshViewBlock)(AJRefreshViewCompleteBlock completion);
+typedef void(^AJRefreshViewBlock)();
 
 typedef enum {
     EStatusRefreshViewInit,

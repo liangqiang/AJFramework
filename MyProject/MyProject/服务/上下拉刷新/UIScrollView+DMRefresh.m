@@ -13,18 +13,28 @@
 
 @implementation UIScrollView (DMRefresh)
 
--(void)setDMHeaderViewInHolder:(NSObject*)holder withRefreshBlock:(AJRefreshViewBlock)refreshBlock{
+-(void)setDMRefreshHeaderBlock:(AJRefreshViewBlock)headerBlock footerBlock:(AJRefreshViewBlock)footerBlock inHolder:(id)holder{
+    [self setDMRefreshHolder:holder];
+    [self setDMRefreshHeaderBlock:headerBlock];
+    [self setDMRefreshFooterBlock:footerBlock];
+}
+
+-(void)setDMRefreshHolder:(id)holder{
+    NSAssert(holder, @"holder must not be nil.");
     WEAKSELF
     if (holder) {
         [holder bindDeallocBlock:^{
-            [weakSelf removeObserver];
+            [weakSelf removeObserver]; //holder dealloc时，调用removeObserver
         }];
     }
+}
 
-    if (refreshBlock) {
+-(void)setDMRefreshHeaderBlock:(AJRefreshViewBlock)headerBlock{
+    NSAssert(![self hasBindedDeallocBlock], @"holder must not be nil.");
+    if (headerBlock) {
         CGRect rect = CGRectMake(0, 0, self.width, 44);
         DMRefreshHeaderView* headerView = [[DMRefreshHeaderView alloc]initWithFrame:rect];
-        headerView.refreshBlock = refreshBlock;
+        headerView.refreshBlock = headerBlock;
         headerView.isHeader = YES;
         self.refreshHeaderView = headerView;
     }else{
@@ -32,23 +42,18 @@
     }
 }
 
--(void)setDMFooterViewInHolder:(NSObject*)holder withRefreshBlock:(AJRefreshViewBlock)refreshBlock{
-    WEAKSELF
-    if (holder) {
-        [holder bindDeallocBlock:^{
-            [weakSelf removeObserver];
-        }];
-    }
-    
-    if (refreshBlock) {
+-(void)setDMRefreshFooterBlock:(AJRefreshViewBlock)footerBlock{
+    NSAssert(![self hasBindedDeallocBlock], @"holder must not be nil.");
+    if (footerBlock) {
         CGRect rect = CGRectMake(0, 0, self.width, 44);
         DMRefreshFooterView* footerView = [[DMRefreshFooterView alloc]initWithFrame:rect];
-        footerView.refreshBlock = refreshBlock;
+        footerView.refreshBlock = footerBlock;
         footerView.isHeader = NO;
         self.refreshFooterView = footerView;
     }else{
         self.refreshFooterView = nil;
     }
 }
+
 
 @end

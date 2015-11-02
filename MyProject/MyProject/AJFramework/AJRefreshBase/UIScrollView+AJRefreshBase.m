@@ -98,9 +98,7 @@ static char UIScrollViewHeaderView, UIScrollViewFooterView, UIScrollViewHasObser
     }
 }
 
--(void)autoRefresh{
-//    [self.headerView autoRefresh];
-//    self.contentOffset.y = self.headerView.height + 15;
+-(void)autoRefreshHeaderView{
     self.contentOffset = CGPointMake(0, -(self.refreshHeaderView.height + 15));
 }
 
