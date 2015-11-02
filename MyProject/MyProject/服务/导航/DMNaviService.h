@@ -14,15 +14,16 @@
 @property (nonatomic,assign) BOOL animated;
 
 //使用要求：
-//1、在AppDelegate中，window.rootViewController要么为UINavigationController，要么为UITabBarController，并且每个子tab为UINavigationController
-//2、如使用withProp参数，则需在该Controller中先定义相应的属性
+//1、在AppDelegate中，window.rootViewController为UINavigationController
+//2、Navi的首页，如果为UITabBarController，那么要求每个子tab为UINavigationController，使用子tab的navi进行push；否则使用根navi进行push
+//3、如使用withProp参数，则需在该Controller中先定义相应的属性
 
 //创建VC
 +(UIViewController*)createViewController:(NSString*)className;
 +(UIViewController*)createViewController:(NSString*)className withProp:(NSDictionary*)prop;
 
 //设置root vc
-+(UIViewController*)setRootViewController:(NSString*)className;
++(UIViewController*)setFirstViewController:(NSString*)className;
 +(UIViewController*)setRootViewController:(NSString*)className withProp:(NSDictionary*)prop;
 
 //使用root/tab navi push vc

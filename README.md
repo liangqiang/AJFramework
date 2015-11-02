@@ -9,3 +9,8 @@ https://github.com/liangqiang/AJFramework
 
 ## 框架使用指南
 
+## todo
+
+* 添加HTTP API访问支持（json格式）
+* 添加tag方案
+* navi bar的左右按钮定制

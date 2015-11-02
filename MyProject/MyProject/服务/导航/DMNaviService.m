@@ -40,35 +40,34 @@
 }
 
 #pragma mark - 设置root vc
-+(UIViewController*)setRootViewController:(NSString*)className{
++(UIViewController*)setFirstViewController:(NSString*)className{
     return [self setRootViewController:className withProp:nil];
 }
 
 +(UIViewController*)setRootViewController:(NSString*)className withProp:(NSDictionary*)prop{
+    UINavigationController *navi = (UINavigationController*)[mainWindow() rootViewController];
     UIViewController* vc = [self createViewController:className withProp:prop];
-    if ([vc isKindOfClass:[UITabBarController class]] || [vc isKindOfClass:[UINavigationController class]]) {
-        mainWindow().rootViewController = vc;
-    }else{
-        mainWindow().rootViewController = [[UINavigationController alloc]initWithRootViewController:vc];
-    }
+    [navi setViewControllers:@[vc] animated:[DMNaviService sharedInstance].animated];
+//    if ([vc isKindOfClass:[UITabBarController class]] || [vc isKindOfClass:[UINavigationController class]]) {
+//        mainWindow().rootViewController = vc;
+//    }else{
+//        mainWindow().rootViewController = [[UINavigationController alloc]initWithRootViewController:vc];
+//    }
     return vc;
 }
 
 #pragma mark - push vc
 +(UINavigationController*)navigationController{
-    UIViewController *root = [mainWindow() rootViewController];
-    if ([root isKindOfClass:[UINavigationController class]]) {
-        return (UINavigationController*)root;
-    }
-    
-    else if ([root isKindOfClass:[UITabBarController class]]) {
-        UIViewController *selected = ((UITabBarController*)root).selectedViewController;
+    UINavigationController *navi = (UINavigationController*)[mainWindow() rootViewController];
+    UIViewController *first = [navi.viewControllers firstObject];
+    if ([first isKindOfClass:[UITabBarController class]]) {
+        UIViewController *selected = ((UITabBarController*)first).selectedViewController;
         if ([selected isKindOfClass:[UINavigationController class]]) {
             return (UINavigationController*)selected;
         }
     }
     
-    return nil;
+    return navi;
 }
 
 +(UIViewController*)pushViewController:(NSString*)className{
@@ -78,7 +77,7 @@
 +(UIViewController*)pushViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self navigationController];
     if (!navi) {
-        [AJUtil toast:@"root navi not found"];
+        [AJUtil toast:@"navi not found"];
         return nil;
     }
 
@@ -102,7 +101,7 @@
 +(UIViewController*)presentViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController* navi = [self navigationController];
     if (!navi) {
-        [AJUtil toast:@"root navi not found"];
+        [AJUtil toast:@"navi not found"];
         return nil;
     }
 

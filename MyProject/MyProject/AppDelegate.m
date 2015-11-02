@@ -31,8 +31,9 @@
 -(void)setupWindow{
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [UINavigationController new];
     //首界面
-    [DMNaviService setRootViewController:@"DMHomeViewController"];
+    [DMNaviService setFirstViewController:@"DMHomeViewController"];
     [self.window makeKeyAndVisible];
 }
 

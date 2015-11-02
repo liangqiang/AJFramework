@@ -13,12 +13,12 @@
 
 -(void)onSetNaviRootClicked{
     [AJUtil toast:@"onGotoTabClicked"];
-    [DMNaviService setRootViewController:@"DMHomeViewController"];
+    [DMNaviService setFirstViewController:@"DMHomeViewController"];
 }
 
 -(void)onSetTabRootClicked{
     [AJUtil toast:@"onGotoTabClicked"];
-    [DMNaviService setRootViewController:@"DMTabHomeViewController"];
+    [DMNaviService setFirstViewController:@"DMTabHomeViewController"];
 }
 
 
