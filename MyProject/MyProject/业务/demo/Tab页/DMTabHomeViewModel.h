@@ -17,9 +17,9 @@
 
 @interface DMTabHomeItem : NSObject
 
-@property (nonatomic, retain) NSString                    *title;
-@property (nonatomic, retain) UIImage                     *imageNormal;
-@property (nonatomic, retain) UIImage                     *imageSelected;
-@property (nonatomic, retain) NSString                    *vcClass;
-@property (nonatomic, retain) UIViewController            *controller;
+@property (nonatomic, strong) NSString                    *title;
+@property (nonatomic, strong) UIImage                     *imageNormal;
+@property (nonatomic, strong) UIImage                     *imageSelected;
+@property (nonatomic, strong) NSString                    *vcClass;
+@property (nonatomic, strong) UIViewController            *controller;
 @end

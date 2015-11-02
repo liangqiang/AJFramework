@@ -11,7 +11,7 @@
 #define KSettingsFileName @"AJSettings.plist"
 
 @interface AJSettings()
-@property (nonatomic,retain) NSMutableDictionary*     settingsDict;
+@property (nonatomic,strong) NSMutableDictionary*     settingsDict;
 @end
 
 @implementation AJSettings

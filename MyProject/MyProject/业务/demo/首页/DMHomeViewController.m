@@ -9,7 +9,7 @@
 #import "DMHomeViewController.h"
 #import "DMHomeViewModel.h"
 @interface DMHomeViewController ()
-@property (nonatomic,retain) DMHomeViewModel *viewModel;
+@property (nonatomic,strong) DMHomeViewModel *viewModel;
 @end
 
 @implementation DMHomeViewController

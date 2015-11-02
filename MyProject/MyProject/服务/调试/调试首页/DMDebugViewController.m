@@ -14,11 +14,6 @@
 @property (nonatomic,strong) UIButton *debugButton;
 @end
 
-typedef enum {
-    tagStart = 90000,
-    tagEnvrioment,
-} Tag;
-
 @implementation DMDebugViewController
 @dynamic viewModel;
 
@@ -33,7 +28,7 @@ typedef enum {
     [super createViews];
     
     [self.scrollView addBlank:64];
-//    [self createEnvSection];
+    [self createEnvSection];
     if (self.viewModel.isPageDebug) {
         [self createPageReleaseSection];
     }else{
@@ -54,7 +49,7 @@ typedef enum {
     NSArray *segmentedArray = @[@"日常",@"预发",@"线上"];
     UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
     segmentedControl.frame = CGRectMake(16+17*3+16, (40-33)/2, 160, 33);
-    segmentedControl.tag = tagEnvrioment;
+    segmentedControl.tag = tag(DebugSegment);
     
 //    [self.scrollView addSection:64 subviews:@[]];
     [self.scrollView addSection:40 subviews:@[label, segmentedControl]];

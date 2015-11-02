@@ -22,7 +22,17 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 +(void)showLoading;
 +(void)hideLoading;
 
++(NSInteger)tag:(NSString*)key;
+
 @end
+
+//用来生成唯一tag（数字）
+//用法：通过约定，保证输入的name不重复即可，通常按 页面标识＋控件标识 来命名，如 tag(MineAvatar), tag(MineName)
+//优点：简单可直接用；不同的入参，对应不同的tag；xcode输入时有联想提示
+#define TAG_START_NUMBER 900000
+#define tag(name) [AJUtil tag:@#name]
+#define tag2(name,index) [AJUtil tag:[NSString stringWithFormat:@"%@_%zd", @#name, index]]
+
 
 //------------------------------------------------------------------------------
 @interface UIActionSheet (AJUtil) <UIActionSheetDelegate>

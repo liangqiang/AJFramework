@@ -10,7 +10,7 @@
 
 @interface AJColorManager ()
 
-@property (nonatomic,retain) NSMutableDictionary*                colorsDict;
+@property (nonatomic,strong) NSMutableDictionary*                colorsDict;
 
 @end
 

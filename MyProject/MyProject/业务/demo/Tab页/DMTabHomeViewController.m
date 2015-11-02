@@ -10,7 +10,7 @@
 #import "DMTabHomeViewModel.h"
 
 @interface DMTabHomeViewController ()
-@property (nonatomic,retain) DMTabHomeViewModel *viewModel;
+@property (nonatomic,strong) DMTabHomeViewModel *viewModel;
 @end
 
 @implementation DMTabHomeViewController

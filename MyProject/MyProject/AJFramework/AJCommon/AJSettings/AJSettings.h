@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface AJSettings : NSObject
-@property (nonatomic,retain) NSDictionary      *defaultDict;
+@property (nonatomic,strong) NSDictionary      *defaultDict;
 
 + (AJSettings*)sharedInstance;
 

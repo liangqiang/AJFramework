@@ -10,6 +10,7 @@
 #import "MBProgressHUD.h"
 
 static MBProgressHUD  *s_progressHUD = nil;
+static NSMutableDictionary *s_tags = nil;
 
 @implementation AJUtil
 
@@ -70,14 +71,11 @@ static MBProgressHUD  *s_progressHUD = nil;
 
 +(void)showLoading{
     if (!s_progressHUD) {
-        static dispatch_once_t once;
-        dispatch_once(&once, ^{
-            s_progressHUD = [[MBProgressHUD alloc] initWithView:mainWindow()];
-            [s_progressHUD handleClick:^(UIView *view) { //点击消失
-                ((MBProgressHUD*)view).taskInProgress = NO;
-                [(MBProgressHUD*)view hide:YES];
-            }];
-        });
+        s_progressHUD = [[MBProgressHUD alloc] initWithView:mainWindow()];
+        [s_progressHUD handleClick:^(UIView *view) { //点击消失
+            ((MBProgressHUD*)view).taskInProgress = NO;
+            [(MBProgressHUD*)view hide:YES];
+        }];
     }else{
         [s_progressHUD hide:NO];
     }
@@ -101,6 +99,19 @@ static MBProgressHUD  *s_progressHUD = nil;
     }
 }
 
++(NSInteger)tag:(NSString*)key{
+    if (!s_tags) {
+        s_tags = [NSMutableDictionary dictionary];
+    }
+    
+    NSInteger number = [[s_tags objectForKey:key]integerValue];
+    if (number == 0) {
+        number = TAG_START_NUMBER + s_tags.count;
+        [s_tags setObject:@(number) forKey:key];
+    }
+    
+    return number;
+}
 @end
 
 #pragma mark- UIActionSheet
