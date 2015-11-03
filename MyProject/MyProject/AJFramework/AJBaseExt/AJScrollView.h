@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AJScrollView : UIScrollView
+@interface AJScrollView : AJScrollViewBase
 
 @property (nonatomic, assign) NSInteger     contentHeight;
 @property (nonatomic, assign) UIColor       *sectionColor; //背景色

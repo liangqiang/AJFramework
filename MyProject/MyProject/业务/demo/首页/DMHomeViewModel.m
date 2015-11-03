@@ -57,4 +57,8 @@
     
 }
 
+-(void)onCoreTextDemoClicked{
+    [DMNaviService pushViewController:@"TBCityCoreTextDemoViewController" ];
+}
+
 @end

@@ -15,4 +15,5 @@
 
 -(void)onPushBlankClicked;
 -(void)onLoadingClicked;
+-(void)onCoreTextDemoClicked;
 @end

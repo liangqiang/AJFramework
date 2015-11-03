@@ -9,8 +9,6 @@
 #import "UIScrollView+AJRefreshBase.h"
 #import "AJDeallocObject.h"
 
-static char UIScrollViewHeaderView, UIScrollViewFooterView, UIScrollViewHasObserver;
-
 @implementation UIScrollView (AJRefreshBase)
 
 #pragma mark- get/set方法
@@ -18,7 +16,7 @@ static char UIScrollViewHeaderView, UIScrollViewFooterView, UIScrollViewHasObser
     if( self.refreshHeaderView ){
         [self.refreshHeaderView removeFromSuperview];
     }
-    objc_setAssociatedObject(self, &UIScrollViewHeaderView,
+    objc_setAssociatedObject(self, @selector(refreshHeaderView),
                              headerView,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     if (headerView) {
@@ -29,14 +27,14 @@ static char UIScrollViewHeaderView, UIScrollViewFooterView, UIScrollViewHasObser
 }
 
 - (AJRefreshViewBase*)refreshHeaderView {
-    return objc_getAssociatedObject(self, &UIScrollViewHeaderView);
+    return objc_getAssociatedObject(self, _cmd);
 }
 
 - (void)setRefreshFooterView:(AJRefreshViewBase *)footerView {
     if( self.refreshFooterView ){
         [self.refreshFooterView removeFromSuperview];
     }
-    objc_setAssociatedObject(self, &UIScrollViewFooterView,
+    objc_setAssociatedObject(self, @selector(refreshFooterView),
                              footerView,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     if (footerView) {
@@ -47,7 +45,7 @@ static char UIScrollViewHeaderView, UIScrollViewFooterView, UIScrollViewHasObser
 }
 
 - (AJRefreshViewBase*)refreshFooterView {
-    AJRefreshViewBase *footer = objc_getAssociatedObject(self, &UIScrollViewFooterView);
+    AJRefreshViewBase *footer = objc_getAssociatedObject(self, _cmd);
     //ScrollView更新内容后，需要重新设置footerView的位置
     footer.origin = CGPointMake(0, MAX(self.height, self.contentSize.height));
     return footer;
@@ -71,13 +69,13 @@ static char UIScrollViewHeaderView, UIScrollViewFooterView, UIScrollViewHasObser
 }
 
 - (void)setHasObserver:(BOOL)hasObserver {
-    objc_setAssociatedObject(self, &UIScrollViewHasObserver,
+    objc_setAssociatedObject(self, @selector(hasObserver),
                              @(hasObserver),
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (BOOL)hasObserver {
-    return [objc_getAssociatedObject(self, &UIScrollViewHasObserver) boolValue];
+    return [objc_getAssociatedObject(self, _cmd) boolValue];
 }
 
 #pragma mark - Observing

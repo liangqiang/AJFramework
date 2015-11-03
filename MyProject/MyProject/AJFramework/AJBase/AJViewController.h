@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AJViewController : UIViewController
+@interface AJViewController : AJViewControllerBase
 
 @property (nonatomic,assign) BOOL   navigationBarHidden;
 

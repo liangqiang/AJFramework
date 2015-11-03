@@ -117,17 +117,15 @@ static NSMutableDictionary *s_tags = nil;
 #pragma mark- UIActionSheet
 #import <objc/runtime.h>
 
-static char *UIActionSheetClickBlock;
-
 @implementation  UIActionSheet (AJUtil)
 
 -(void)setClickBlock:(AJActionSheetClickBlock)block{
-    objc_setAssociatedObject(self, &UIActionSheetClickBlock, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, _cmd, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
     self.delegate = self;
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex{
-    AJActionSheetClickBlock block = objc_getAssociatedObject(self, &UIActionSheetClickBlock);
+    AJActionSheetClickBlock block = objc_getAssociatedObject(self, @selector(setClickBlock:));
     if (block!= nil){
         block(buttonIndex);
     }

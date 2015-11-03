@@ -18,7 +18,6 @@
 
 @end
 
-static char keyNSObjectDeallocObject;
 @implementation NSObject (AJDeallocObject)
 
 -(void)bindDeallocBlock:(AJDeallocBlock)deallocBlock{
@@ -30,11 +29,11 @@ static char keyNSObjectDeallocObject;
     [obj setDeallocBlock:^{
         deallocBlock();
     }];
-    objc_setAssociatedObject(self, &keyNSObjectDeallocObject, obj, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, _cmd, obj, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 -(BOOL)hasBindedDeallocBlock{
-    return (objc_getAssociatedObject(self, &keyNSObjectDeallocObject) != nil);
+    return (objc_getAssociatedObject(self, @selector(bindDeallocBlock:)) != nil);
 }
 
 

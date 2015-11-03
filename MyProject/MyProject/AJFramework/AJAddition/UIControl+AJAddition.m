@@ -9,18 +9,16 @@
 #import "UIControl+AJAddition.h"
 #import <objc/runtime.h>
 
-static char *keyEventBlock;
-
 @implementation UIControl (AJAddition)
 
 - (void)handleEvent:(UIControlEvents)aEvent withBlock:(UIControlEventBlock)eventBlock;
 {
-    objc_setAssociatedObject(self, &keyEventBlock, eventBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(handleEvent), eventBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
     [self addTarget:self action:@selector(handleEvent) forControlEvents:aEvent];
 }
 
 - (void)handleEvent {
-    UIControlEventBlock callBack = objc_getAssociatedObject(self, &keyEventBlock);
+    UIControlEventBlock callBack = objc_getAssociatedObject(self, _cmd);
     if (callBack!= nil){
         callBack(self);
     }

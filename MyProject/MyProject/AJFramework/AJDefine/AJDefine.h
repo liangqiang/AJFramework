@@ -35,4 +35,12 @@
 
 #define IS_IPHONE_6PLUS ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
 
+
+//基类
+//项目应用时，可修改，从而更改基类
+#define AJViewControllerBase        UIViewController
+#define AJViewModelBase             NSObject
+#define AJScrollViewBase            UIScrollView
+#define AJTabBarViewControllerBase  UITabBarController
+
 #endif

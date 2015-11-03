@@ -30,6 +30,12 @@
 		030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* DMNaviService.m */; };
 		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
 		031640321BE2449E00526D8A /* AJSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640301BE2449E00526D8A /* AJSettings.m */; };
+		03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */; };
+		03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54D1BE869FE00E3C47D /* TBCityCoreTextLabel.m */; };
+		03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54F1BE869FE00E3C47D /* TBCityCoreTextManager.m */; };
+		03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B5511BE869FE00E3C47D /* TBCityCoreTextParser.m */; };
+		03F6B5581BE86A3700E3C47D /* TBCityColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B5571BE86A3700E3C47D /* TBCityColorManager.m */; };
+		03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B5591BE8970700E3C47D /* TBCityCoreTextDemoViewController.m */; };
 		03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F9A49F1BE0E39000E492F6 /* MBProgressHUD.m */; };
 		03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03FD93C81BDF1AA100DCC673 /* iconfont.ttf */; };
 		03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93CB1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m */; };
@@ -107,6 +113,18 @@
 		0316402F1BE23E0F00526D8A /* DMSettingsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMSettingsDefine.h; sourceTree = "<group>"; };
 		031640301BE2449E00526D8A /* AJSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSettings.m; sourceTree = "<group>"; };
 		031640311BE2449E00526D8A /* AJSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSettings.h; sourceTree = "<group>"; };
+		03F6B54A1BE869FE00E3C47D /* TBCityCoreTextAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextAttribute.h; sourceTree = "<group>"; };
+		03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityCoreTextAttribute.m; sourceTree = "<group>"; };
+		03F6B54C1BE869FE00E3C47D /* TBCityCoreTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextLabel.h; sourceTree = "<group>"; };
+		03F6B54D1BE869FE00E3C47D /* TBCityCoreTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityCoreTextLabel.m; sourceTree = "<group>"; };
+		03F6B54E1BE869FE00E3C47D /* TBCityCoreTextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextManager.h; sourceTree = "<group>"; };
+		03F6B54F1BE869FE00E3C47D /* TBCityCoreTextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityCoreTextManager.m; sourceTree = "<group>"; };
+		03F6B5501BE869FE00E3C47D /* TBCityCoreTextParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextParser.h; sourceTree = "<group>"; };
+		03F6B5511BE869FE00E3C47D /* TBCityCoreTextParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityCoreTextParser.m; sourceTree = "<group>"; };
+		03F6B5561BE86A3700E3C47D /* TBCityColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityColorManager.h; sourceTree = "<group>"; };
+		03F6B5571BE86A3700E3C47D /* TBCityColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityColorManager.m; sourceTree = "<group>"; };
+		03F6B5591BE8970700E3C47D /* TBCityCoreTextDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityCoreTextDemoViewController.m; sourceTree = "<group>"; };
+		03F6B55A1BE8970700E3C47D /* TBCityCoreTextDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextDemoViewController.h; sourceTree = "<group>"; };
 		03F9A49E1BE0E39000E492F6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		03F9A49F1BE0E39000E492F6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		03FD93C71BDF1AA100DCC673 /* DMIconFontDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMIconFontDef.h; sourceTree = "<group>"; };
@@ -376,10 +394,30 @@
 		0316402E1BE23C2900526D8A /* 第三方库 */ = {
 			isa = PBXGroup;
 			children = (
+				03F6B5491BE869C600E3C47D /* TBCityCoreText */,
 				03F9A49D1BE0E33900E492F6 /* MBProgressHUD */,
 				031640231BE2066200526D8A /* FDFullscreenPopGesture */,
 			);
 			path = "第三方库";
+			sourceTree = "<group>";
+		};
+		03F6B5491BE869C600E3C47D /* TBCityCoreText */ = {
+			isa = PBXGroup;
+			children = (
+				03F6B5591BE8970700E3C47D /* TBCityCoreTextDemoViewController.m */,
+				03F6B55A1BE8970700E3C47D /* TBCityCoreTextDemoViewController.h */,
+				03F6B5561BE86A3700E3C47D /* TBCityColorManager.h */,
+				03F6B5571BE86A3700E3C47D /* TBCityColorManager.m */,
+				03F6B54A1BE869FE00E3C47D /* TBCityCoreTextAttribute.h */,
+				03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */,
+				03F6B54C1BE869FE00E3C47D /* TBCityCoreTextLabel.h */,
+				03F6B54D1BE869FE00E3C47D /* TBCityCoreTextLabel.m */,
+				03F6B54E1BE869FE00E3C47D /* TBCityCoreTextManager.h */,
+				03F6B54F1BE869FE00E3C47D /* TBCityCoreTextManager.m */,
+				03F6B5501BE869FE00E3C47D /* TBCityCoreTextParser.h */,
+				03F6B5511BE869FE00E3C47D /* TBCityCoreTextParser.m */,
+			);
+			path = TBCityCoreText;
 			sourceTree = "<group>";
 		};
 		03F9A49D1BE0E33900E492F6 /* MBProgressHUD */ = {
@@ -597,13 +635,16 @@
 			files = (
 				03FD93D91BDF5FEA00DCC673 /* DMRefreshHeaderView.m in Sources */,
 				03FD93D81BDF5FEA00DCC673 /* UIScrollView+DMRefresh.m in Sources */,
+				03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */,
 				030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */,
 				03FD93DA1BDF5FEA00DCC673 /* DMRefreshFooterView.m in Sources */,
 				0303D7041BD8D9EE0024399D /* 模块文件依赖关系.md in Sources */,
 				0303D70E1BD8E0CE0024399D /* UIView+AJAddition.m in Sources */,
+				03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */,
 				03FFBB5C1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m in Sources */,
 				0303D7001BD8D8EF0024399D /* AJViewController.m in Sources */,
 				03FFBB6F1BDE4BA6008B51E1 /* DMHomeViewModel.m in Sources */,
+				03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */,
 				03FD93D01BDF58D300DCC673 /* AJRefreshViewBase.m in Sources */,
 				0303D7101BD8E1970024399D /* 开发规范.md in Sources */,
 				0303D7261BD8FC3E0024399D /* NSString+AJAddition.m in Sources */,
@@ -618,10 +659,12 @@
 				0303D7181BD8FADA0024399D /* NSObject+AJAddition.m in Sources */,
 				0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */,
 				0303D7271BD8FC3E0024399D /* UIImage+AJAddition.m in Sources */,
+				03F6B5581BE86A3700E3C47D /* TBCityColorManager.m in Sources */,
 				0303D7151BD8E6060024399D /* AJColorManager.m in Sources */,
 				0303D6F71BD8CE1F0024399D /* README.md in Sources */,
 				0303D72D1BD915FA0024399D /* AJTabBarViewController.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
+				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
 				0303D7231BD8FC3E0024399D /* UIControl+AJAddition.m in Sources */,
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,
 				03FFBB761BDE567B008B51E1 /* DMTabHomeViewModel.m in Sources */,
@@ -632,6 +675,7 @@
 				03FFBB731BDE5660008B51E1 /* DMTabHomeViewController.m in Sources */,
 				0303D7241BD8FC3E0024399D /* UILabel+AJAddition.m in Sources */,
 				03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */,
+				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

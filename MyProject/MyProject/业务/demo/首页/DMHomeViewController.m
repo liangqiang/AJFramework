@@ -37,6 +37,9 @@
 
     [self.scrollView addBlank:15];
     [self createLoadingSection];
+    
+    [self.scrollView addBlank:15];
+    [self createCoreTextDemoSection];
 }
 
 -(void)createSetNaviRootSection{
@@ -92,6 +95,21 @@
     WEAKSELF
     [label handleClick:^(UIView *view) {
         [weakSelf.viewModel onLoadingClicked];
+    }];
+    
+    UIView *section = [self.scrollView addSection:30 subviews:@[label]];
+    [section addLineWithY:0];
+    [section addLineWithY:section.height];
+}
+
+-(void)createCoreTextDemoSection{
+    CGRect rect = CGRectMake(15, 0, APP_SCREEN_WIDTH-30, 30);
+    UILabel *label = [[UILabel alloc]initWithFrame:rect];
+    label.text = @"core text demo";
+    
+    WEAKSELF
+    [label handleClick:^(UIView *view) {
+        [weakSelf.viewModel onCoreTextDemoClicked];
     }];
     
     UIView *section = [self.scrollView addSection:30 subviews:@[label]];
