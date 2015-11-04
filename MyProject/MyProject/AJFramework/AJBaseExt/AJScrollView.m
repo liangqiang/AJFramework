@@ -21,30 +21,38 @@
 //    self.contentOffset = CGPointMake(0, 0);
 //    self.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
     _contentHeight = 0;
-    _sectionColor = [UIColor clearColor];
+//    _sectionColor = [UIColor clearColor];
     
     return self;
 }
 
--(UIView*) addSection:(NSInteger)height subviews:(NSArray*)views{
-    CGRect rect = CGRectMake(0, self.contentHeight, APP_SCREEN_WIDTH, height);
-    UIView *container = [[UIView alloc]initWithFrame:rect];
-    container.backgroundColor = _sectionColor;
-    [self addSubview:container];
+//-(UIView*) addSection:(NSInteger)height subviews:(NSArray*)views{
+//    CGRect rect = CGRectMake(0, self.contentHeight, APP_SCREEN_WIDTH, height);
+//    UIView *container = [[UIView alloc]initWithFrame:rect];
+//    container.backgroundColor = _sectionColor;
+//    [self addSubview:container];
+//    self.contentHeight += height;
+//    [self setContentSize:CGSizeMake(self.width, _contentHeight)];
+//    
+//    for (UIView* view in views) {
+//        [container addSubview:view];
+//    }
+//    
+//    return container;
+//}
+
+-(void) addBlankSection:(NSInteger)height{
     self.contentHeight += height;
     [self setContentSize:CGSizeMake(self.width, _contentHeight)];
-    
-    for (UIView* view in views) {
-        [container addSubview:view];
-    }
-    
-    return container;
 }
 
--(void) addBlank:(NSInteger)height{
-    self.contentHeight += height;
+-(void)addSection:(UIView*)section{
+    section.top = self.contentHeight;
+    [self addSubview:section];
+    self.contentHeight += section.height;
     [self setContentSize:CGSizeMake(self.width, _contentHeight)];
 }
+
 
 -(void)removeAllSections{
     [self removeAllSubviews];

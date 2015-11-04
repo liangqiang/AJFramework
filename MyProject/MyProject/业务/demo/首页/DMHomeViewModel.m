@@ -10,6 +10,31 @@
 #import "AJScrollViewController.h"
 
 @implementation DMHomeViewModel
+-(instancetype)init{
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
+
+-(NSMutableArray*)buttons{
+    if (_buttons == nil) {
+        _buttons = [NSMutableArray array];
+        [self addButton:@"Set Navi Root" clickSel:@selector(onSetNaviRootClicked)];
+        [self addButton:@"Set Tab Root" clickSel:@selector(onSetTabRootClicked)];
+        [self addButton:@"push页面（带上下拉刷新）" clickSel:@selector(onPushBlankClicked)];
+        [self addButton:@"测试正在加载" clickSel:@selector(onLoadingClicked)];
+        [self addButton:@"测试coreText" clickSel:@selector(onCoreTextDemoClicked)];
+    }
+    return _buttons;
+}
+
+-(void)addButton:(NSString*)title clickSel:(SEL)aSelector{
+    DMHomeButtonItem *item = [DMHomeButtonItem new];
+    item.title = title;
+    item.clickSel = NSStringFromSelector(aSelector);
+    [_buttons addObject:item];
+}
 
 -(void)onSetNaviRootClicked{
     [AJUtil toast:@"onGotoTabClicked"];
@@ -20,7 +45,6 @@
     [AJUtil toast:@"onGotoTabClicked"];
     [DMNaviService setFirstViewController:@"DMTabHomeViewController"];
 }
-
 
 -(void)onPushBlankClicked{
     AJScrollViewController *vc = (AJScrollViewController*)[DMNaviService pushViewController:@"DMHomeViewController"];
@@ -60,5 +84,9 @@
 -(void)onCoreTextDemoClicked{
     [DMNaviService pushViewController:@"TBCityCoreTextDemoViewController" ];
 }
+
+@end
+
+@implementation DMHomeButtonItem
 
 @end

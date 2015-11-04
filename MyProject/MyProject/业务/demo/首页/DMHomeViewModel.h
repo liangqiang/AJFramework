@@ -16,4 +16,12 @@
 -(void)onPushBlankClicked;
 -(void)onLoadingClicked;
 -(void)onCoreTextDemoClicked;
+
+@property (nonatomic,strong) NSMutableArray* buttons;
+
+@end
+
+@interface DMHomeButtonItem : NSObject
+@property (nonatomic,strong) NSString *title;
+@property (nonatomic,strong) NSString *clickSel;
 @end

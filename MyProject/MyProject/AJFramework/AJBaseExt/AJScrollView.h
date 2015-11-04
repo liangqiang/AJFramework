@@ -11,10 +11,11 @@
 @interface AJScrollView : AJScrollViewBase
 
 @property (nonatomic, assign) NSInteger     contentHeight;
-@property (nonatomic, assign) UIColor       *sectionColor; //背景色
+//@property (nonatomic, assign) UIColor       *sectionColor; //背景色
 
--(UIView*) addSection:(NSInteger)height subviews:(NSArray*)views;
--(void)addBlank:(NSInteger)height;
+//-(UIView*) addSection:(NSInteger)height subviews:(NSArray*)views;
+-(void)addBlankSection:(NSInteger)height;
+-(void)addSection:(UIView*)section;
 -(void)removeAllSections;
 
 @end

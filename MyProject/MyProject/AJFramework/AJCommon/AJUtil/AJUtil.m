@@ -185,3 +185,13 @@ void runBlockAfterDelay(NSTimeInterval delay, void (^block)(void)){
     
 }
 
+void runSelector(id target, SEL selector){
+    if ([target respondsToSelector:selector]){
+        //    [target performSelector:callback withObject:nil];
+        IMP imp = [target methodForSelector:selector];
+        void (*func)(id, SEL) = (void *)imp;
+        func(target, selector);
+    }
+}
+
+

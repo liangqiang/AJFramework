@@ -44,3 +44,5 @@ UIViewController *topMostViewController();
 
 //延迟执行block
 void runBlockAfterDelay(NSTimeInterval delay, void (^block)(void));
+
+void runSelector(id target, SEL selector);

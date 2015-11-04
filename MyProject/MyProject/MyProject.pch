@@ -33,5 +33,6 @@
 #import "DMIconFontDef.h"
 #import "UIScrollView+DMRefresh.h"
 #import "DMUIDefine.h"
+#import "DMUICommon.h"
 
 #endif

@@ -27,7 +27,8 @@
 -(void)createViews{
     [super createViews];
     
-    [self.scrollView addBlank:64];
+    self.scrollView.backgroundColor = [UIColor whiteColor];
+    [self.scrollView addBlankSection:64];
     [self createEnvSection];
     if (self.viewModel.isPageDebug) {
         [self createPageReleaseSection];
@@ -52,7 +53,9 @@
     segmentedControl.tag = tag(DebugSegment);
     
 //    [self.scrollView addSection:64 subviews:@[]];
-    [self.scrollView addSection:40 subviews:@[label, segmentedControl]];
+    UIView *container = createContainer(40, @[label, segmentedControl], ELineNone);
+    [self.scrollView addSection:container];
+//    [self.scrollView addSection:40 subviews:@[label, segmentedControl]];
 }
 
 -(void)createTabPageBackSection{
@@ -66,7 +69,9 @@
         [weakSelf.viewModel onTabPageBackButtonClicked];
     }];
 
-    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
+    UIView *container = createContainer(8+btn.height+8, @[btn], ELineNone);
+    [self.scrollView addSection:container];
+//    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }
 
 -(void)createPageDebugSection{
@@ -80,7 +85,9 @@
         [weakSelf.viewModel onPageDebugButtonClicked];
     }];
 
-    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
+    UIView *container = createContainer(8+btn.height+8, @[btn], ELineNone);
+    [self.scrollView addSection:container];
+//    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }
 
 -(void)createPageReleaseSection{
@@ -94,7 +101,9 @@
         [weakSelf.viewModel onPageReleaseButtonClicked];
     }];
 
-    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
+    UIView *container = createContainer(8+btn.height+8, @[btn], ELineNone);
+    [self.scrollView addSection:container];
+//    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }
 
 
@@ -109,7 +118,9 @@
         [weakSelf.viewModel onCloseButtonClicked];
     }];
 
-    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
+    UIView *container = createContainer(8+btn.height+8, @[btn], ELineNone);
+    [self.scrollView addSection:container];
+//    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }
 
 -(UILabel*)createSectionLabel:(NSString*)text{
