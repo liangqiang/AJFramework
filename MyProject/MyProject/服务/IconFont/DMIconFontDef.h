@@ -15,6 +15,10 @@
 
  */
 
+#define DMIconFontWhiteBack                     AJIconFontMake(@"\U0000e600", 20, HEXCOLOR(0xffffff))
+#define DMIconFontWhiteBackSelected             AJIconFontMake(@"\U0000e600", 20, HEXCOLOR(0xa1dfec))
+
+
 #define DMIconFontService                       AJIconFontMake(@"\U0000e60d", 26, HEXCOLOR(0x999999))
 #define DMIconFontServiceSelect                 AJIconFontMake(@"\U0000e60e", 26, HEXCOLOR(0x44c0da))
 #define DMIconFontPatient                       AJIconFontMake(@"\U0000e61d", 26, HEXCOLOR(0x999999))

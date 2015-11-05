@@ -21,9 +21,13 @@
 
 -(void)createViews{
     [super createViews];
-    if (self.title == nil) {
+//    [DMNaviService navigationController].viewControllers[0] == self
+//    if (self.title == nil) {
+    if ([DMNaviService navigationController].viewControllers[0] != self) {
         self.title = [NSString stringWithFormat:@"%u", arc4random()];
         self.hidesBottomBarWhenPushed = YES;
+        [self setDefaultDMNaviButton];
+        [self setRightDMNaviButton];
     }
     
     for (DMHomeButtonItem *item in self.viewModel.buttons) {
@@ -31,6 +35,7 @@
         [self createSection:item.title clickSel:item.clickSel];
     }
 }
+
 
 -(UIView*)createSection:(NSString*)title clickSel:(NSString*)clickSel{
     CGRect rect = CGRectMake(15, 0, APP_SCREEN_WIDTH-30, 30);

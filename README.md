@@ -10,9 +10,7 @@ https://github.com/liangqiang/AJFramework
 ## todo
 
 * 添加HTTP API访问支持（json格式）
-* navi bar的左右按钮定制
 * 创建控件的常用方法封装
-* AJScrollView中创建container应提取出来
 
 ## doing
 
@@ -25,3 +23,5 @@ https://github.com/liangqiang/AJFramework
 * 调试页面
 * CoreText的富文本方案(TBCity的方案)
 * 添加SDWebImage库
+* AJScrollView中创建container应提取出来
+* navi bar的左右按钮定制

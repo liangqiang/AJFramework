@@ -33,7 +33,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [UINavigationController new];
     //首界面
-    [DMNaviService setFirstViewController:@"DMHomeViewController"];
+    UIViewController *firstVC = [DMNaviService setFirstViewController:@"DMHomeViewController"];
+    firstVC.title = @"首页";
     [self.window makeKeyAndVisible];
 }
 

@@ -38,6 +38,18 @@
 		03F6B5581BE86A3700E3C47D /* TBCityColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B5571BE86A3700E3C47D /* TBCityColorManager.m */; };
 		03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B5591BE8970700E3C47D /* TBCityCoreTextDemoViewController.m */; };
 		03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F9A49F1BE0E39000E492F6 /* MBProgressHUD.m */; };
+		03FA194C1BEB113A00DD1DAC /* UIViewController+DMNavi.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA194B1BEB113A00DD1DAC /* UIViewController+DMNavi.m */; };
+		03FA19591BEB2D2A00DD1DAC /* MKCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA19501BEB2D2A00DD1DAC /* MKCache.m */; };
+		03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA19521BEB2D2A00DD1DAC /* MKNetworkHost.m */; };
+		03FA195B1BEB2D2A00DD1DAC /* MKNetworkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA19551BEB2D2A00DD1DAC /* MKNetworkRequest.m */; };
+		03FA195C1BEB2D2A00DD1DAC /* MKObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA19571BEB2D2A00DD1DAC /* MKObject.m */; };
+		03FA196F1BEB2E6300DD1DAC /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA19611BEB2E6300DD1DAC /* NSDate+RFC1123.m */; };
+		03FA19701BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA19631BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m */; };
+		03FA19711BEB2E6300DD1DAC /* NSHTTPURLResponse+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA19651BEB2E6300DD1DAC /* NSHTTPURLResponse+MKNKAdditions.m */; };
+		03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA19671BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m */; };
+		03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA19691BEB2E6300DD1DAC /* NSString+MKNKAdditions.m */; };
+		03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA196B1BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m */; };
+		03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA196D1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m */; };
 		03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03FD93C81BDF1AA100DCC673 /* iconfont.ttf */; };
 		03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93CB1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m */; };
 		03FD93D01BDF58D300DCC673 /* AJRefreshViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93CD1BDF58D300DCC673 /* AJRefreshViewBase.m */; };
@@ -130,6 +142,31 @@
 		03F6B55A1BE8970700E3C47D /* TBCityCoreTextDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextDemoViewController.h; sourceTree = "<group>"; };
 		03F9A49E1BE0E39000E492F6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		03F9A49F1BE0E39000E492F6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		03FA194A1BEB113A00DD1DAC /* UIViewController+DMNavi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DMNavi.h"; sourceTree = "<group>"; };
+		03FA194B1BEB113A00DD1DAC /* UIViewController+DMNavi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DMNavi.m"; sourceTree = "<group>"; };
+		03FA194F1BEB2D2A00DD1DAC /* MKCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCache.h; sourceTree = "<group>"; };
+		03FA19501BEB2D2A00DD1DAC /* MKCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCache.m; sourceTree = "<group>"; };
+		03FA19511BEB2D2A00DD1DAC /* MKNetworkHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkHost.h; sourceTree = "<group>"; };
+		03FA19521BEB2D2A00DD1DAC /* MKNetworkHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkHost.m; sourceTree = "<group>"; };
+		03FA19531BEB2D2A00DD1DAC /* MKNetworkKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkKit.h; sourceTree = "<group>"; };
+		03FA19541BEB2D2A00DD1DAC /* MKNetworkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkRequest.h; sourceTree = "<group>"; };
+		03FA19551BEB2D2A00DD1DAC /* MKNetworkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkRequest.m; sourceTree = "<group>"; };
+		03FA19561BEB2D2A00DD1DAC /* MKObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKObject.h; sourceTree = "<group>"; };
+		03FA19571BEB2D2A00DD1DAC /* MKObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKObject.m; sourceTree = "<group>"; };
+		03FA19601BEB2E6300DD1DAC /* NSDate+RFC1123.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		03FA19611BEB2E6300DD1DAC /* NSDate+RFC1123.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		03FA19621BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MKNKAdditions.h"; sourceTree = "<group>"; };
+		03FA19631BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MKNKAdditions.m"; sourceTree = "<group>"; };
+		03FA19641BEB2E6300DD1DAC /* NSHTTPURLResponse+MKNKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPURLResponse+MKNKAdditions.h"; sourceTree = "<group>"; };
+		03FA19651BEB2E6300DD1DAC /* NSHTTPURLResponse+MKNKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPURLResponse+MKNKAdditions.m"; sourceTree = "<group>"; };
+		03FA19661BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MKNKAdditions.h"; sourceTree = "<group>"; };
+		03FA19671BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MKNKAdditions.m"; sourceTree = "<group>"; };
+		03FA19681BEB2E6300DD1DAC /* NSString+MKNKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MKNKAdditions.h"; sourceTree = "<group>"; };
+		03FA19691BEB2E6300DD1DAC /* NSString+MKNKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MKNKAdditions.m"; sourceTree = "<group>"; };
+		03FA196A1BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKNKAdditions.h"; sourceTree = "<group>"; };
+		03FA196B1BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNKAdditions.m"; sourceTree = "<group>"; };
+		03FA196C1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MKNKAdditions.h"; sourceTree = "<group>"; };
+		03FA196D1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MKNKAdditions.m"; sourceTree = "<group>"; };
 		03FD93C71BDF1AA100DCC673 /* DMIconFontDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMIconFontDef.h; sourceTree = "<group>"; };
 		03FD93C81BDF1AA100DCC673 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		03FD93CB1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AJRefreshBase.m"; sourceTree = "<group>"; };
@@ -363,6 +400,8 @@
 			children = (
 				030900C81BDB97B70073DAA7 /* DMNaviService.h */,
 				030900C91BDB97B70073DAA7 /* DMNaviService.m */,
+				03FA194A1BEB113A00DD1DAC /* UIViewController+DMNavi.h */,
+				03FA194B1BEB113A00DD1DAC /* UIViewController+DMNavi.m */,
 			);
 			path = "导航";
 			sourceTree = "<group>";
@@ -399,6 +438,7 @@
 		0316402E1BE23C2900526D8A /* 第三方库 */ = {
 			isa = PBXGroup;
 			children = (
+				03FA194D1BEB2CE500DD1DAC /* MKNetworkKit */,
 				03F6B5491BE869C600E3C47D /* TBCityCoreText */,
 				03F9A49D1BE0E33900E492F6 /* MBProgressHUD */,
 				031640231BE2066200526D8A /* FDFullscreenPopGesture */,
@@ -432,6 +472,44 @@
 				03F9A49F1BE0E39000E492F6 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		03FA194D1BEB2CE500DD1DAC /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				03FA195D1BEB2E4000DD1DAC /* Extensions */,
+				03FA194F1BEB2D2A00DD1DAC /* MKCache.h */,
+				03FA19501BEB2D2A00DD1DAC /* MKCache.m */,
+				03FA19511BEB2D2A00DD1DAC /* MKNetworkHost.h */,
+				03FA19521BEB2D2A00DD1DAC /* MKNetworkHost.m */,
+				03FA19531BEB2D2A00DD1DAC /* MKNetworkKit.h */,
+				03FA19541BEB2D2A00DD1DAC /* MKNetworkRequest.h */,
+				03FA19551BEB2D2A00DD1DAC /* MKNetworkRequest.m */,
+				03FA19561BEB2D2A00DD1DAC /* MKObject.h */,
+				03FA19571BEB2D2A00DD1DAC /* MKObject.m */,
+			);
+			path = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		03FA195D1BEB2E4000DD1DAC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03FA19601BEB2E6300DD1DAC /* NSDate+RFC1123.h */,
+				03FA19611BEB2E6300DD1DAC /* NSDate+RFC1123.m */,
+				03FA19621BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.h */,
+				03FA19631BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m */,
+				03FA19641BEB2E6300DD1DAC /* NSHTTPURLResponse+MKNKAdditions.h */,
+				03FA19651BEB2E6300DD1DAC /* NSHTTPURLResponse+MKNKAdditions.m */,
+				03FA19661BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.h */,
+				03FA19671BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m */,
+				03FA19681BEB2E6300DD1DAC /* NSString+MKNKAdditions.h */,
+				03FA19691BEB2E6300DD1DAC /* NSString+MKNKAdditions.m */,
+				03FA196A1BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.h */,
+				03FA196B1BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m */,
+				03FA196C1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.h */,
+				03FA196D1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		03FD93C61BDF19D300DCC673 /* IconFont */ = {
@@ -638,14 +716,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FA195C1BEB2D2A00DD1DAC /* MKObject.m in Sources */,
 				03FD93D91BDF5FEA00DCC673 /* DMRefreshHeaderView.m in Sources */,
 				03FD93D81BDF5FEA00DCC673 /* UIScrollView+DMRefresh.m in Sources */,
 				03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */,
+				03FA194C1BEB113A00DD1DAC /* UIViewController+DMNavi.m in Sources */,
 				030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */,
 				03FD93DA1BDF5FEA00DCC673 /* DMRefreshFooterView.m in Sources */,
+				03FA196F1BEB2E6300DD1DAC /* NSDate+RFC1123.m in Sources */,
 				0303D7041BD8D9EE0024399D /* 模块文件依赖关系.md in Sources */,
 				0303D70E1BD8E0CE0024399D /* UIView+AJAddition.m in Sources */,
+				03FA19591BEB2D2A00DD1DAC /* MKCache.m in Sources */,
 				03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */,
+				03FA19701BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m in Sources */,
 				03FFBB5C1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m in Sources */,
 				0303D7001BD8D8EF0024399D /* AJViewController.m in Sources */,
 				03FFBB6F1BDE4BA6008B51E1 /* DMHomeViewModel.m in Sources */,
@@ -660,6 +743,7 @@
 				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
 				03FFBB6C1BDE4B8A008B51E1 /* DMHomeViewController.m in Sources */,
 				03FFBB671BDE31DC008B51E1 /* DMDebugViewModel.m in Sources */,
+				03FA195B1BEB2D2A00DD1DAC /* MKNetworkRequest.m in Sources */,
 				0303D72C1BD915FA0024399D /* AJScrollViewController.m in Sources */,
 				03915E791BE9DC2600D77F5F /* DMUICommon.m in Sources */,
 				0303D7181BD8FADA0024399D /* NSObject+AJAddition.m in Sources */,
@@ -667,21 +751,27 @@
 				0303D7271BD8FC3E0024399D /* UIImage+AJAddition.m in Sources */,
 				03F6B5581BE86A3700E3C47D /* TBCityColorManager.m in Sources */,
 				0303D7151BD8E6060024399D /* AJColorManager.m in Sources */,
+				03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */,
 				0303D6F71BD8CE1F0024399D /* README.md in Sources */,
 				0303D72D1BD915FA0024399D /* AJTabBarViewController.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
 				0303D7231BD8FC3E0024399D /* UIControl+AJAddition.m in Sources */,
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,
+				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
+				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
 				03FFBB761BDE567B008B51E1 /* DMTabHomeViewModel.m in Sources */,
 				0303D7011BD8D8EF0024399D /* AJViewModel.m in Sources */,
 				031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				03FFBB661BDE31DC008B51E1 /* DMDebugViewController.m in Sources */,
 				03FD93DD1BDF718C00DCC673 /* AJDeallocObject.m in Sources */,
+				03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */,
 				03FFBB731BDE5660008B51E1 /* DMTabHomeViewController.m in Sources */,
 				0303D7241BD8FC3E0024399D /* UILabel+AJAddition.m in Sources */,
+				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */,
 				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,
+				03FA19711BEB2E6300DD1DAC /* NSHTTPURLResponse+MKNKAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
