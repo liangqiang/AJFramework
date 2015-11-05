@@ -82,7 +82,17 @@
 }
 
 -(void)onCoreTextDemoClicked{
-    [DMNaviService pushViewController:@"TBCityCoreTextDemoViewController" ];
+//    [DMNaviService pushViewController:@"TBCityCoreTextDemoViewController" ];
+    //http://didayun.duapp.com/antman/getEntity?entityId=ETT20150721000455520
+    //{"resultCode": 0, "entity": {"entityId": "ETT20150721000455520", "featureName": "", "entityName": "\u6bdb\u6cfd\u4e1c", "uniqueName": "\u6bdb\u6cfd\u4e1c"}}
+    MKNetworkHost *host = [[MKNetworkHost alloc]initWithHostName:@"didayun.duapp.com"];
+    MKNetworkRequest *request = [host requestWithPath:@"/antman/getEntity" params:@{@"entityId":@"ETT20150721000455520"}];
+    [request addCompletionHandler:^(MKNetworkRequest *completedRequest) {
+        [AJUtil toast:@"request finished"];
+        NSDictionary *entity = completedRequest.responseAsJSON[@"entity"];
+        NSLog(@"entityName:%@", entity[@"entityName"]);
+    }];
+    [host startRequest:request];
 }
 
 @end

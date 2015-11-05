@@ -12,7 +12,7 @@
 
 -(void)setDefaultDMNaviButton{
     UIButton *leftBarButton =  [UIButton buttonWithType:UIButtonTypeCustom];
-    leftBarButton.frame = CGRectMake(0, 20, 60, 44);
+    leftBarButton.frame = CGRectMake(0, 0, 60, 44);
     [leftBarButton setImage:DMIconFontWhiteBack forState:UIControlStateNormal];
     [leftBarButton setImage:DMIconFontWhiteBackSelected forState:UIControlStateHighlighted];
     [leftBarButton setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 40)];
@@ -25,9 +25,10 @@
 -(UIButton*)setLeftDMNaviButton{
     return nil;
 }
+
 -(UIButton*)setRightDMNaviButton{
     UIButton *rightBarButton =  [UIButton buttonWithType:UIButtonTypeCustom];
-    rightBarButton.frame=CGRectMake(0, 20, 44, 44.0);
+    rightBarButton.frame=CGRectMake(0, 0, 44, 44.0);
     [rightBarButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [rightBarButton setTitleColor:HEXCOLOR(0xa1dfec) forState:UIControlStateHighlighted];
     [rightBarButton setTitleColor:HEXCOLOR(0x7ee6fc) forState:UIControlStateDisabled];
