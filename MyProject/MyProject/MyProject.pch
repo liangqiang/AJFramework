@@ -35,6 +35,7 @@
 #import "DMIconFontDef.h"
 #import "UIScrollView+DMRefresh.h"
 #import "DMUIDefine.h"
+#import "DMSettingsDefine.h"
 #import "DMUICommon.h"
 
 #import "MKNetworkKit.h"

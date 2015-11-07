@@ -10,7 +10,7 @@ https://github.com/liangqiang/AJFramework
 ## todo
 
 * 添加HTTP API访问支持（json格式）
-* 创建控件的常用方法封装
+* 创建控件的常用方法封装(button)
 
 ## doing
 

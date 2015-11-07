@@ -10,8 +10,9 @@
 
 @interface UIViewController (DMNavi)
 
--(void)setDefaultDMNaviButton;
--(UIButton*)setLeftDMNaviButton;
--(UIButton*)setRightDMNaviButton;
+-(UIButton*)dmDefaultLeftNaviButton;
+
+-(UIButton*)dmRightNaviButton;
+-(UIButton*)dmLeftNaviButton;
 
 @end

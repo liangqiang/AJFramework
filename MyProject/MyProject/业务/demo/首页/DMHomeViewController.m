@@ -21,13 +21,17 @@
 
 -(void)createViews{
     [super createViews];
-//    [DMNaviService navigationController].viewControllers[0] == self
-//    if (self.title == nil) {
+
     if ([DMNaviService navigationController].viewControllers[0] != self) {
         self.title = [NSString stringWithFormat:@"%u", arc4random()];
         self.hidesBottomBarWhenPushed = YES;
-        [self setDefaultDMNaviButton];
-        [self setRightDMNaviButton];
+        [self dmDefaultLeftNaviButton];
+//        [self.dmLeftNaviButton setTitle:@"取消" forState:UIControlStateNormal];
+
+        [self.dmRightNaviButton setTitle:@"保存" forState:UIControlStateNormal];
+        [self.dmRightNaviButton handleClick:^(UIView *view) {
+            [AJUtil toast:@"保存"];
+        }];
     }
     
     for (DMHomeButtonItem *item in self.viewModel.buttons) {
@@ -36,12 +40,17 @@
     }
 }
 
-
 -(UIView*)createSection:(NSString*)title clickSel:(NSString*)clickSel{
-    CGRect rect = CGRectMake(15, 0, APP_SCREEN_WIDTH-30, 30);
-    UILabel *label = createLabel(rect, title, kFont14, kBlackTextColor);
-    UIView *container = createContainer(30, @[label], ELineTop|ELineBottom);
-
+//    CGRect rect = CGRectMake(15, 0, APP_SCREEN_WIDTH-30, 30);
+    UILabel *label = createLabel(title, kFont14, kBlackTextColor);
+    UILabel *label2 = createLabel(@"V", kFont12, [UIColor redColor]);
+    UIView *container = createSection(30, @[label, label2], ELineTop|ELineBottom);
+    
+//    label.origin = CGPointMake(15, 10);
+//    label.center = container.center;
+    dmPosInParent(label, 50, POS_AUTO, POS_AUTO, 1);
+    dmPosByBrother(label2, label, POS_AUTO, 10, -10, POS_AUTO);
+    
     WEAKSELF
     [container handleClick:^(UIView *view) {
         runSelector(weakSelf.viewModel, NSSelectorFromString(clickSel));

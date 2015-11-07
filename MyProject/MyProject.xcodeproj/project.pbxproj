@@ -50,6 +50,8 @@
 		03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA19691BEB2E6300DD1DAC /* NSString+MKNKAdditions.m */; };
 		03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA196B1BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m */; };
 		03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA196D1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m */; };
+		03FA7D771BEC7144006E8396 /* DMAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA7D761BEC7144006E8396 /* DMAutoLayoutViewController.m */; };
+		03FA7D791BEC73C1006E8396 /* AutoLayout.md in Sources */ = {isa = PBXBuildFile; fileRef = 03FA7D781BEC73C1006E8396 /* AutoLayout.md */; };
 		03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03FD93C81BDF1AA100DCC673 /* iconfont.ttf */; };
 		03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93CB1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m */; };
 		03FD93D01BDF58D300DCC673 /* AJRefreshViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93CD1BDF58D300DCC673 /* AJRefreshViewBase.m */; };
@@ -167,6 +169,9 @@
 		03FA196B1BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNKAdditions.m"; sourceTree = "<group>"; };
 		03FA196C1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MKNKAdditions.h"; sourceTree = "<group>"; };
 		03FA196D1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MKNKAdditions.m"; sourceTree = "<group>"; };
+		03FA7D751BEC7144006E8396 /* DMAutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAutoLayoutViewController.h; sourceTree = "<group>"; };
+		03FA7D761BEC7144006E8396 /* DMAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAutoLayoutViewController.m; sourceTree = "<group>"; };
+		03FA7D781BEC73C1006E8396 /* AutoLayout.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = AutoLayout.md; sourceTree = "<group>"; };
 		03FD93C71BDF1AA100DCC673 /* DMIconFontDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMIconFontDef.h; sourceTree = "<group>"; };
 		03FD93C81BDF1AA100DCC673 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		03FD93CB1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AJRefreshBase.m"; sourceTree = "<group>"; };
@@ -321,6 +326,7 @@
 				0303D6F81BD8CE3E0024399D /* md文件格式.md */,
 				0303D7031BD8D9EE0024399D /* 模块文件依赖关系.md */,
 				0303D70F1BD8E1970024399D /* 开发规范.md */,
+				03FA7D781BEC73C1006E8396 /* AutoLayout.md */,
 			);
 			path = "文档";
 			sourceTree = "<group>";
@@ -512,6 +518,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		03FA7D741BEC70EB006E8396 /* 自动布局 */ = {
+			isa = PBXGroup;
+			children = (
+				03FA7D751BEC7144006E8396 /* DMAutoLayoutViewController.h */,
+				03FA7D761BEC7144006E8396 /* DMAutoLayoutViewController.m */,
+			);
+			path = "自动布局";
+			sourceTree = "<group>";
+		};
 		03FD93C61BDF19D300DCC673 /* IconFont */ = {
 			isa = PBXGroup;
 			children = (
@@ -580,6 +595,7 @@
 		03FFBB681BDE4B04008B51E1 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				03FA7D741BEC70EB006E8396 /* 自动布局 */,
 				03FFBB691BDE4B35008B51E1 /* 首页 */,
 				03FFBB701BDE5600008B51E1 /* Tab页 */,
 			);
@@ -753,7 +769,9 @@
 				0303D7151BD8E6060024399D /* AJColorManager.m in Sources */,
 				03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */,
 				0303D6F71BD8CE1F0024399D /* README.md in Sources */,
+				03FA7D791BEC73C1006E8396 /* AutoLayout.md in Sources */,
 				0303D72D1BD915FA0024399D /* AJTabBarViewController.m in Sources */,
+				03FA7D771BEC7144006E8396 /* DMAutoLayoutViewController.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
 				0303D7231BD8FC3E0024399D /* UIControl+AJAddition.m in Sources */,

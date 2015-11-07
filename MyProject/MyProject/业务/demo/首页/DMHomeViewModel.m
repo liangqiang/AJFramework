@@ -25,6 +25,7 @@
         [self addButton:@"push页面（带上下拉刷新）" clickSel:@selector(onPushBlankClicked)];
         [self addButton:@"测试正在加载" clickSel:@selector(onLoadingClicked)];
         [self addButton:@"测试coreText" clickSel:@selector(onCoreTextDemoClicked)];
+        [self addButton:@"测试auto layout" clickSel:@selector(onAutoLayoutClicked)];
     }
     return _buttons;
 }
@@ -82,7 +83,8 @@
 }
 
 -(void)onCoreTextDemoClicked{
-//    [DMNaviService pushViewController:@"TBCityCoreTextDemoViewController" ];
+    [DMNaviService pushViewController:@"TBCityCoreTextDemoViewController" ];
+    
     //http://didayun.duapp.com/antman/getEntity?entityId=ETT20150721000455520
     //{"resultCode": 0, "entity": {"entityId": "ETT20150721000455520", "featureName": "", "entityName": "\u6bdb\u6cfd\u4e1c", "uniqueName": "\u6bdb\u6cfd\u4e1c"}}
     MKNetworkHost *host = [[MKNetworkHost alloc]initWithHostName:@"didayun.duapp.com"];
@@ -93,6 +95,10 @@
         NSLog(@"entityName:%@", entity[@"entityName"]);
     }];
     [host startRequest:request];
+}
+
+-(void)onAutoLayoutClicked{
+    [DMNaviService pushViewController:@"DMAutoLayoutViewController" ];
 }
 
 @end

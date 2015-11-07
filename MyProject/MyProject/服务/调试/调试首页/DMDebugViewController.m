@@ -53,7 +53,7 @@
     segmentedControl.tag = tag(DebugSegment);
     
 //    [self.scrollView addSection:64 subviews:@[]];
-    UIView *container = createContainer(40, @[label, segmentedControl], ELineNone);
+    UIView *container = createSection(40, @[label, segmentedControl], ELineNone);
     [self.scrollView addSection:container];
 //    [self.scrollView addSection:40 subviews:@[label, segmentedControl]];
 }
@@ -69,7 +69,7 @@
         [weakSelf.viewModel onTabPageBackButtonClicked];
     }];
 
-    UIView *container = createContainer(8+btn.height+8, @[btn], ELineNone);
+    UIView *container = createSection(8+btn.height+8, @[btn], ELineNone);
     [self.scrollView addSection:container];
 //    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }
@@ -85,7 +85,7 @@
         [weakSelf.viewModel onPageDebugButtonClicked];
     }];
 
-    UIView *container = createContainer(8+btn.height+8, @[btn], ELineNone);
+    UIView *container = createSection(8+btn.height+8, @[btn], ELineNone);
     [self.scrollView addSection:container];
 //    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }
@@ -101,7 +101,7 @@
         [weakSelf.viewModel onPageReleaseButtonClicked];
     }];
 
-    UIView *container = createContainer(8+btn.height+8, @[btn], ELineNone);
+    UIView *container = createSection(8+btn.height+8, @[btn], ELineNone);
     [self.scrollView addSection:container];
 //    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }
@@ -118,7 +118,7 @@
         [weakSelf.viewModel onCloseButtonClicked];
     }];
 
-    UIView *container = createContainer(8+btn.height+8, @[btn], ELineNone);
+    UIView *container = createSection(8+btn.height+8, @[btn], ELineNone);
     [self.scrollView addSection:container];
 //    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }

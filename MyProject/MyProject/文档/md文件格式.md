@@ -16,19 +16,46 @@
 * 分割线，使用3个以上*或-号
 * 将需要设置为粗体的文字两端使用2个“*”或者“_”夹起来
 * 将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来
+* 空格+空格+回车换行 = 换行
 
 
 # 例子：
 ## 2级标题
 > 引用引用引用引用引用引用引用
 > 引用引用引用引用
-+ 加号也可以OK
-- ➖号也可以
+
+* 加号也可以OK
+* 加号也可以OK
+* ➖号也可以
+* ➖号也可以
+
 1. 第一行
 2. 第二行
-.
+
     tab例子
     tab
+
 -----------
 *aaaaaa斜体*
 **akdjladfkadslfasdjklf粗体**
+
+
+1. Sublime 安装Markdown Preview
+
+	按Ctrl + Shift + P  
+	输入pci 后回车(Package Control: Install Package)  
+	稍等... ^_^  
+	输入Markdown Preview回车  
+
+2. 编辑
+
+	按Ctrl + N 新建一个文档
+	按Ctrl + Shift + P
+	使用Markdown语法编辑文档
+	语法高亮，输入ssm 后回车(Set Syntax: Markdown)
+
+3. 在浏览器预览Markdown文档
+
+	按Ctrl + Shift + P
+	输入mp 后回车(Markdown Preview: current file in browser)
+	此时就可以在浏览器里看到刚才编辑的文档了

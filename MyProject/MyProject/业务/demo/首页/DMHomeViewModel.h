@@ -17,6 +17,8 @@
 -(void)onLoadingClicked;
 -(void)onCoreTextDemoClicked;
 
+-(void)onAutoLayoutClicked;
+
 @property (nonatomic,strong) NSMutableArray* buttons;
 
 @end

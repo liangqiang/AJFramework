@@ -18,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self initSettings];
     [self setTabBarStyle];
     [self setNaviBarStyle];
     
@@ -26,6 +27,9 @@
     [DMStatusBarDebugWindow show];
     
     return YES;
+}
+
+-(void)initSettings{
 }
 
 -(void)setupWindow{

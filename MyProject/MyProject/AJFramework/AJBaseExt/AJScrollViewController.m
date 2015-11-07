@@ -33,6 +33,7 @@
         scrollView.showsVerticalScrollIndicator = YES;
         scrollView.backgroundColor = HEXCOLOR(0xF5F5F5); // 背景为灰色
         scrollView.alwaysBounceVertical = YES;
+        scrollView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         
         [self.view addSubview:scrollView];
         _scrollView = scrollView;
@@ -41,11 +42,11 @@
     return _scrollView;
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    
-    self.scrollView.frame = self.view.bounds;
-}
+//-(void)viewDidAppear:(BOOL)animated{
+//    [super viewDidAppear:animated];
+//    
+//    self.scrollView.frame = self.view.bounds;
+//}
 
 -(void)addKeyBoardObserver{
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillAppear:) name:UIKeyboardWillShowNotification object:nil];
