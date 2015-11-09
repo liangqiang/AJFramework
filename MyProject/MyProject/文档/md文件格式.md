@@ -41,6 +41,7 @@
 
 ![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
 
+![image](https://github.com/liangqiang/AJFramework/blob/master/MyProject/MyProject/文档/home.png)
 
 1. Sublime 安装Markdown Preview
 
