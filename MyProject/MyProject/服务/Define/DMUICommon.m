@@ -76,6 +76,7 @@ UIButton *createImageButton(UIImage *normal, UIImage *highLighted){
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setImage:normal forState:UIControlStateNormal];
     [button setImage:highLighted forState:UIControlStateHighlighted];
+    button.size = normal.size;
     return button;
 }
 

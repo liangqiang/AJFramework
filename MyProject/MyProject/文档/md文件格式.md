@@ -17,7 +17,7 @@
 * 将需要设置为粗体的文字两端使用2个“*”或者“_”夹起来
 * 将需要设置为斜体的文字两端使用1个“*”或者“_”夹起来
 * 空格+空格+回车换行 = 换行
-
+* 图片： ！[image]（https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg）
 
 # 例子：
 ## 2级标题
@@ -38,6 +38,8 @@
 -----------
 *aaaaaa斜体*
 **akdjladfkadslfasdjklf粗体**
+
+![image](https://github.com/ButBueatiful/dotvim/raw/master/screenshots/vim-screenshot.jpg)
 
 
 1. Sublime 安装Markdown Preview

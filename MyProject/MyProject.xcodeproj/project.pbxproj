@@ -52,6 +52,7 @@
 		03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA196D1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m */; };
 		03FA7D771BEC7144006E8396 /* DMAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA7D761BEC7144006E8396 /* DMAutoLayoutViewController.m */; };
 		03FA7D791BEC73C1006E8396 /* AutoLayout.md in Sources */ = {isa = PBXBuildFile; fileRef = 03FA7D781BEC73C1006E8396 /* AutoLayout.md */; };
+		03FAACF01BF0386200558230 /* Tag方案.md in Sources */ = {isa = PBXBuildFile; fileRef = 03FAACEF1BF0386200558230 /* Tag方案.md */; };
 		03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03FD93C81BDF1AA100DCC673 /* iconfont.ttf */; };
 		03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93CB1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m */; };
 		03FD93D01BDF58D300DCC673 /* AJRefreshViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93CD1BDF58D300DCC673 /* AJRefreshViewBase.m */; };
@@ -172,6 +173,7 @@
 		03FA7D751BEC7144006E8396 /* DMAutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAutoLayoutViewController.h; sourceTree = "<group>"; };
 		03FA7D761BEC7144006E8396 /* DMAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAutoLayoutViewController.m; sourceTree = "<group>"; };
 		03FA7D781BEC73C1006E8396 /* AutoLayout.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = AutoLayout.md; sourceTree = "<group>"; };
+		03FAACEF1BF0386200558230 /* Tag方案.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Tag方案.md"; sourceTree = "<group>"; };
 		03FD93C71BDF1AA100DCC673 /* DMIconFontDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMIconFontDef.h; sourceTree = "<group>"; };
 		03FD93C81BDF1AA100DCC673 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		03FD93CB1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AJRefreshBase.m"; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 				0303D7031BD8D9EE0024399D /* 模块文件依赖关系.md */,
 				0303D70F1BD8E1970024399D /* 开发规范.md */,
 				03FA7D781BEC73C1006E8396 /* AutoLayout.md */,
+				03FAACEF1BF0386200558230 /* Tag方案.md */,
 			);
 			path = "文档";
 			sourceTree = "<group>";
@@ -736,6 +739,7 @@
 				03FD93D91BDF5FEA00DCC673 /* DMRefreshHeaderView.m in Sources */,
 				03FD93D81BDF5FEA00DCC673 /* UIScrollView+DMRefresh.m in Sources */,
 				03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */,
+				03FAACF01BF0386200558230 /* Tag方案.md in Sources */,
 				03FA194C1BEB113A00DD1DAC /* UIViewController+DMNavi.m in Sources */,
 				030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */,
 				03FD93DA1BDF5FEA00DCC673 /* DMRefreshFooterView.m in Sources */,

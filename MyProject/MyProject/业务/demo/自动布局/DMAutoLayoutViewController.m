@@ -29,7 +29,7 @@
     [parent addSubview:view2];
     
     UIButton *button = createImageButton(DMIconFontService, DMIconFontServiceSelect);
-    button.size = CGSizeMake(50, 50);
+//    button.size = CGSizeMake(50, 50);
     button.backgroundColor = [UIColor greenColor];
     [parent addSubview:button];
     dmPosInParent(button, POS_AUTO, POS_AUTO, POS_AUTO, POS_AUTO);
