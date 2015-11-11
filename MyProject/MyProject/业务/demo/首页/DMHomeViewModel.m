@@ -58,7 +58,9 @@
         });
     } footerBlock:^{
         [AJUtil toast:@"bbbb"];
-        [weakVc.scrollView stopRefresh];
+        runBlockAfterDelay(2, ^{
+            [weakVc.scrollView stopRefresh];
+        });
     } inHolder:vc];
 }
 

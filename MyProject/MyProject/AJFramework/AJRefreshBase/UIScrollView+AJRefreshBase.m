@@ -101,8 +101,12 @@
 }
 
 -(void)stopRefresh{
-    [self.refreshHeaderView refreshFinishedWithDelay:0.5];
-    [self.refreshFooterView refreshFinishedWithDelay:0.5];
+    if (self.refreshHeaderView.status == EStatusRefreshViewRefreshing) {
+        [self.refreshHeaderView refreshFinishedWithDelay:0.5];
+    }
+    if (self.refreshFooterView.status == EStatusRefreshViewRefreshing) {
+        [self.refreshFooterView refreshFinishedWithDelay:0.5];
+    }
 }
 
 @end
