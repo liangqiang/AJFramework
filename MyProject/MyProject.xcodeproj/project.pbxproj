@@ -30,6 +30,7 @@
 		030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* DMNaviService.m */; };
 		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
 		031640321BE2449E00526D8A /* AJSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640301BE2449E00526D8A /* AJSettings.m */; };
+		037635661C02224E00F9E1BF /* 布局方法探讨.md in Sources */ = {isa = PBXBuildFile; fileRef = 037635651C02224E00F9E1BF /* 布局方法探讨.md */; };
 		03915E791BE9DC2600D77F5F /* DMUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 03915E781BE9DC2600D77F5F /* DMUICommon.m */; };
 		03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */; };
 		03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54D1BE869FE00E3C47D /* TBCityCoreTextLabel.m */; };
@@ -129,6 +130,7 @@
 		0316402F1BE23E0F00526D8A /* DMSettingsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMSettingsDefine.h; sourceTree = "<group>"; };
 		031640301BE2449E00526D8A /* AJSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSettings.m; sourceTree = "<group>"; };
 		031640311BE2449E00526D8A /* AJSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSettings.h; sourceTree = "<group>"; };
+		037635651C02224E00F9E1BF /* 布局方法探讨.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "布局方法探讨.md"; sourceTree = "<group>"; };
 		03915E771BE9DC2600D77F5F /* DMUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUICommon.h; sourceTree = "<group>"; };
 		03915E781BE9DC2600D77F5F /* DMUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMUICommon.m; sourceTree = "<group>"; };
 		03F6B54A1BE869FE00E3C47D /* TBCityCoreTextAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextAttribute.h; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 		0303D6F51BD8CDBF0024399D /* 文档 */ = {
 			isa = PBXGroup;
 			children = (
+				037635651C02224E00F9E1BF /* 布局方法探讨.md */,
 				0303D6F81BD8CE3E0024399D /* md文件格式.md */,
 				0303D7031BD8D9EE0024399D /* 模块文件依赖关系.md */,
 				0303D70F1BD8E1970024399D /* 开发规范.md */,
@@ -790,6 +793,7 @@
 				03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */,
 				03FFBB731BDE5660008B51E1 /* DMTabHomeViewController.m in Sources */,
 				0303D7241BD8FC3E0024399D /* UILabel+AJAddition.m in Sources */,
+				037635661C02224E00F9E1BF /* 布局方法探讨.md in Sources */,
 				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */,
 				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,
