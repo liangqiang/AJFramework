@@ -61,6 +61,9 @@
 		03FD93D91BDF5FEA00DCC673 /* DMRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D41BDF5FEA00DCC673 /* DMRefreshHeaderView.m */; };
 		03FD93DA1BDF5FEA00DCC673 /* DMRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D61BDF5FEA00DCC673 /* DMRefreshFooterView.m */; };
 		03FD93DD1BDF718C00DCC673 /* AJDeallocObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93DC1BDF718C00DCC673 /* AJDeallocObject.m */; };
+		03FDF8191C152F42008568DA /* AJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FDF8161C152F42008568DA /* AJTableViewController.m */; };
+		03FDF81A1C152F42008568DA /* AJTableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FDF8171C152F42008568DA /* AJTableDataSource.m */; };
+		03FDF81D1C153016008568DA /* AJTableSectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FDF81C1C153016008568DA /* AJTableSectionItem.m */; };
 		03FFBB5C1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m */; };
 		03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5F1BDE308D008B51E1 /* AJUtil.m */; };
 		03FFBB661BDE31DC008B51E1 /* DMDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB621BDE31DC008B51E1 /* DMDebugViewController.m */; };
@@ -190,6 +193,12 @@
 		03FD93D71BDF5FEA00DCC673 /* DMRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRefreshHeaderView.h; sourceTree = "<group>"; };
 		03FD93DB1BDF718C00DCC673 /* AJDeallocObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDeallocObject.h; sourceTree = "<group>"; };
 		03FD93DC1BDF718C00DCC673 /* AJDeallocObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDeallocObject.m; sourceTree = "<group>"; };
+		03FDF8151C152F42008568DA /* AJTableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTableDataSource.h; sourceTree = "<group>"; };
+		03FDF8161C152F42008568DA /* AJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTableViewController.m; sourceTree = "<group>"; };
+		03FDF8171C152F42008568DA /* AJTableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTableDataSource.m; sourceTree = "<group>"; };
+		03FDF8181C152F42008568DA /* AJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTableViewController.h; sourceTree = "<group>"; };
+		03FDF81B1C153016008568DA /* AJTableSectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTableSectionItem.h; sourceTree = "<group>"; };
+		03FDF81C1C153016008568DA /* AJTableSectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTableSectionItem.m; sourceTree = "<group>"; };
 		03FFBB5A1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMStatusBarDebugWindow.m; sourceTree = "<group>"; };
 		03FFBB5B1BDE2F65008B51E1 /* DMStatusBarDebugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMStatusBarDebugWindow.h; sourceTree = "<group>"; };
 		03FFBB5E1BDE308D008B51E1 /* AJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJUtil.h; sourceTree = "<group>"; };
@@ -318,6 +327,7 @@
 				0303D70B1BD8DFF60024399D /* AJAddition */,
 				0303D6FA1BD8D7240024399D /* AJBase */,
 				0303D7071BD8DD6A0024399D /* AJBaseExt */,
+				03FDF8141C152DAB008568DA /* AJBaseTable */,
 				03FD93CA1BDF585900DCC673 /* AJRefreshBase */,
 				03FFBB771BDE5B22008B51E1 /* AJIconFont */,
 			);
@@ -568,6 +578,19 @@
 			path = "上下拉刷新";
 			sourceTree = "<group>";
 		};
+		03FDF8141C152DAB008568DA /* AJBaseTable */ = {
+			isa = PBXGroup;
+			children = (
+				03FDF8181C152F42008568DA /* AJTableViewController.h */,
+				03FDF8161C152F42008568DA /* AJTableViewController.m */,
+				03FDF8151C152F42008568DA /* AJTableDataSource.h */,
+				03FDF8171C152F42008568DA /* AJTableDataSource.m */,
+				03FDF81B1C153016008568DA /* AJTableSectionItem.h */,
+				03FDF81C1C153016008568DA /* AJTableSectionItem.m */,
+			);
+			path = AJBaseTable;
+			sourceTree = "<group>";
+		};
 		03FFBB591BDE0E43008B51E1 /* 调试 */ = {
 			isa = PBXGroup;
 			children = (
@@ -761,6 +784,7 @@
 				0303D7261BD8FC3E0024399D /* NSString+AJAddition.m in Sources */,
 				03FFBB7D1BDE5B90008B51E1 /* AJIconFont.m in Sources */,
 				0303D70A1BD8DF570024399D /* AJScrollView.m in Sources */,
+				03FDF81A1C152F42008568DA /* AJTableDataSource.m in Sources */,
 				031640321BE2449E00526D8A /* AJSettings.m in Sources */,
 				0303D6F91BD8CE3E0024399D /* md文件格式.md in Sources */,
 				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
@@ -786,6 +810,7 @@
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
 				03FFBB761BDE567B008B51E1 /* DMTabHomeViewModel.m in Sources */,
+				03FDF8191C152F42008568DA /* AJTableViewController.m in Sources */,
 				0303D7011BD8D8EF0024399D /* AJViewModel.m in Sources */,
 				031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				03FFBB661BDE31DC008B51E1 /* DMDebugViewController.m in Sources */,
@@ -797,6 +822,7 @@
 				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */,
 				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,
+				03FDF81D1C153016008568DA /* AJTableSectionItem.m in Sources */,
 				03FA19711BEB2E6300DD1DAC /* NSHTTPURLResponse+MKNKAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

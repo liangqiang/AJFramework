@@ -13,11 +13,11 @@
 
 @implementation UIScrollView (DMRefresh)
 
--(void)setDMRefreshHeaderBlock:(AJRefreshViewBlock)headerBlock footerBlock:(AJRefreshViewBlock)footerBlock inHolder:(id)holder{
-    [self setDMRefreshHolder:holder];
-    [self setDMRefreshHeaderBlock:headerBlock];
-    [self setDMRefreshFooterBlock:footerBlock];
-}
+//-(void)setDMRefreshHeaderBlock:(AJRefreshViewBlock)headerBlock footerBlock:(AJRefreshViewBlock)footerBlock inHolder:(id)holder{
+//    [self setDMRefreshHolder:holder];
+//    [self setDMRefreshHeaderBlock:headerBlock];
+//    [self setDMRefreshFooterBlock:footerBlock];
+//}
 
 -(void)setDMRefreshHolder:(id)holder{
     NSAssert(holder, @"holder must not be nil.");

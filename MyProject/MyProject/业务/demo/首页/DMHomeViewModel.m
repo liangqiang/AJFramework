@@ -51,17 +51,31 @@
     AJScrollViewController *vc = (AJScrollViewController*)[DMNaviService pushViewController:@"DMHomeViewController"];
     __weak AJScrollViewController *weakVc = vc;
     //添加下拉上拉刷新
+    [vc.scrollView setDMRefreshHolder:vc];
     [vc.scrollView setDMRefreshHeaderBlock:^{
         [AJUtil toast:@"aaaaa"];
         runBlockAfterDelay(2, ^{
             [weakVc.scrollView stopRefresh];
         });
-    } footerBlock:^{
+    }];
+    [vc.scrollView setDMRefreshFooterBlock:^{
         [AJUtil toast:@"bbbb"];
         runBlockAfterDelay(2, ^{
             [weakVc.scrollView stopRefresh];
         });
-    } inHolder:vc];
+    }];
+    
+//    [vc.scrollView setDMRefreshHeaderBlock:^{
+//        [AJUtil toast:@"aaaaa"];
+//        runBlockAfterDelay(2, ^{
+//            [weakVc.scrollView stopRefresh];
+//        });
+//    } footerBlock:^{
+//        [AJUtil toast:@"bbbb"];
+//        runBlockAfterDelay(2, ^{
+//            [weakVc.scrollView stopRefresh];
+//        });
+//    } inHolder:vc];
 }
 
 -(void)onLoadingClicked{

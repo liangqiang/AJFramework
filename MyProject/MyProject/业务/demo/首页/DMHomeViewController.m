@@ -41,15 +41,12 @@
 }
 
 -(UIView*)createSection:(NSString*)title clickSel:(NSString*)clickSel{
-//    CGRect rect = CGRectMake(15, 0, APP_SCREEN_WIDTH-30, 30);
     UILabel *label = createLabel(title, kFont14, kBlackTextColor);
     UILabel *label2 = createLabel(@"V", kFont12, [UIColor redColor]);
     UIView *container = createSection(30, @[label, label2], ELineTop|ELineBottom);
     
-//    label.origin = CGPointMake(15, 10);
-//    label.center = container.center;
-    dmPosInParent(label, 50, POS_AUTO, POS_AUTO, 1);
-    dmPosByBrother(label2, label, POS_AUTO, 10, -10, POS_AUTO);
+    layoutInParent(label, 50, EAuto, EAuto, EAuto);
+    layoutInParent(label2, label.right+10, EAuto, label.top+10-label2.height, EAuto);
     
     WEAKSELF
     [container handleClick:^(UIView *view) {

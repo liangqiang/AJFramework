@@ -1,0 +1,50 @@
+### 家庭医生代码整理对比
+
+#### 1、患者详情页
+1. 表格改成scrollView
+2. 使用MVVM模式
+3. 增加了标签、星级患者功能
+
+| 患者详情页面        | h           | m  | 合计 |
+| ------------- |:-------------:|-----:|---|
+| 重构前： |  |  |  |
+| AKPatientDetailsController | 24 | 266 | 290 |
+| AKPatientTableHeaderView | 18 | 96 | 114 |
+| AKPatientTableFooterView | 24 | 150 | 174 |
+| AKPatientInfoCell | 22 | 148 | 170 |
+| AKPatientHealthInfoCell | 22 | 64 | 86 |
+| AKApproveSignInfoModel | 24 | 43 | 67 |
+| AKUserBasicInfo | 87 | 14 | 101 |
+| AKPatientDetailsModel | 22 | 43 | 65 |
+| 8个类 |  |  | 1067 |
+|  |  |  |  |
+| 重构后： |  |  |  |
+| AKMScrollViewController | 14 | 282 | 296 |
+| AKPatientInfoViewModel | 30 | 155 | 185 |
+| AKPatientInfoModel | 21 | 43 | 64 |
+| AKPatientVipModel | 22 | 36 | 58 |
+| AKPatientInfoItem | 50 | 49 | 99 |
+| 5个类 |  |  | 702＝65.8%|
+
+#### 2、患者首页
+1. 功能完全一样，只改造为MVVM模式
+
+| 患者首页        | h           | m  | 合计 |
+| ------------- |:-------------:|-----:|---|
+| 重构前： |  |  |  |
+| AKPatientViewController | 14 | 392 | 406 |
+| AKPatientUserCell | 14 | 81 | 95 |
+| AKSearchUserItem | 24 | 12 | 36 |
+| AKSearchUserListModel | 24 | 62 | 86 |
+| AKNewSignedCountModel | 24 | 38 | 62 |
+| AKSearchView | 14 | 68 | 82 |
+| 共6个类 |  |  | 767 |
+|  |  |  |  |
+| 重构后 |  |  |  |
+| AKPatientHomeViewController | 14 | 215 | 229 |
+| AKPatientHomeDataSource | 14 | 111 | 125 |
+| AKPatientHomeViewModel | 48 | 133 | 181 |
+| AKPatientListModel | 22 | 39 | 61 |
+| AKNewSignedCountModel | 24 | 38 | 62 |
+| AKSearchView | 14 | 68 | 82 |
+| 共6个类 |  |  | 740 |

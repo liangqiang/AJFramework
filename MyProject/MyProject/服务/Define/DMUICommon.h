@@ -36,7 +36,9 @@ UIButton *createTextButton(NSString *text, UIFont *font, UIColor *normal, UIColo
 //         2.left, right, top, bottom
 //         3.akPosInParent, akPosByBrother方法
 
-#define POS_AUTO 999999999
+typedef NS_ENUM(NSInteger, AKLayout) {
+    EAuto = 999999999,
+};
 
 //对父view进行相对布局
 //如果left＝auto，right＝auto，则居中
@@ -44,10 +46,7 @@ UIButton *createTextButton(NSString *text, UIFont *font, UIColor *normal, UIColo
 //如果left＝auto，right＝YYY，则相对靠右
 //如果left＝XXX，right＝YYY，则靠左XXX、靠右YYY，宽度改变
 //top和bottom是同理
-void dmPosInParent(UIView *view, NSInteger left, NSInteger right, NSInteger top, NSInteger bottom);
-
-//对兄弟view进行相对布局(有相同的parent)
-void dmPosByBrother(UIView *view, UIView *brother, NSInteger left, NSInteger right, NSInteger top, NSInteger bottom);
+void layoutInParent(UIView *view, CGFloat left, CGFloat right, CGFloat top, CGFloat bottom);
 
 
 

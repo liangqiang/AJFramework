@@ -32,18 +32,18 @@
 //    button.size = CGSizeMake(50, 50);
     button.backgroundColor = [UIColor greenColor];
     [parent addSubview:button];
-    dmPosInParent(button, POS_AUTO, POS_AUTO, POS_AUTO, POS_AUTO);
+    layoutInParent(button, EAuto, EAuto, EAuto, EAuto);
     
     UIButton *button2 = createTextButton(@"保存", kFont16, kGrayTextColor, kBlackTextColor);
     button2.size = CGSizeMake(40, 40);
-    button2.backgroundColor = [UIColor greenColor];
+    button2.backgroundColor = [UIColor grayColor];
     [parent addSubview:button2];
-    dmPosByBrother(button2, button, 10, 10, POS_AUTO, 30);
+//    dmPosByBrother(button2, button, 10, 10, POS_AUTO, 20);
+    layoutInParent(button2, button.left-10, EAuto, button.bottom+20, EAuto);
     
 
     [self.scrollView addSubview:parent];
     
-//    parent.translatesAutoresizingMaskIntoConstraints = NO;
     view1.translatesAutoresizingMaskIntoConstraints = NO;
     view2.translatesAutoresizingMaskIntoConstraints = NO;
 
