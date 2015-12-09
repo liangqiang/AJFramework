@@ -35,6 +35,9 @@
 - (NSString*)jsonEncode;
 - (id)jsonDecode;
 
+//保存额外信息
+@property (nonatomic,strong) id extraData;
+
 @end
 
 //------------------------------------------------------------------------------

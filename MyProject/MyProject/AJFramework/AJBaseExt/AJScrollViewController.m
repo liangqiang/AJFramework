@@ -27,9 +27,9 @@
     return self;
 }
 
--(AJScrollView*)scrollView{
+-(UIScrollView*)scrollView{
     if (!_scrollView) {
-        AJScrollView *scrollView = [[AJScrollView alloc] initWithFrame:self.view.bounds];
+        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
         scrollView.showsVerticalScrollIndicator = YES;
         scrollView.backgroundColor = HEXCOLOR(0xF5F5F5); // 背景为灰色
         scrollView.alwaysBounceVertical = YES;

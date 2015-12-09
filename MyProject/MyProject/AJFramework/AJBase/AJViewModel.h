@@ -10,7 +10,7 @@
 
 typedef void(^AJViewModelRefreshBlock)();
 
-@interface AJViewModel : AJViewModelBase
+@interface AJViewModel : NSObject
 
 @property (nonatomic, copy) AJViewModelRefreshBlock             refreshBlock;
 

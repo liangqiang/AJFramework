@@ -22,6 +22,7 @@
 #import "UIControl+AJAddition.h"
 #import "UILabel+AJAddition.h"
 #import "UIImage+AJAddition.h"
+#import "UIScrollView+AJAddition.h"
 
 #import "AJSettings.h"
 

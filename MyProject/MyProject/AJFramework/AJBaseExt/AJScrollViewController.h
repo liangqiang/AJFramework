@@ -7,11 +7,11 @@
 //
 
 #import "AJViewController.h"
-#import "AJScrollView.h"
+//#import "UIScrollView+AJAddition.h"
 
 @interface AJScrollViewController : AJViewController
 
-@property (nonatomic, weak) AJScrollView    *scrollView;
+@property (nonatomic, weak) UIScrollView    *scrollView;
 
 -(void)addKeyBoardObserver; // 监听键盘，解决键盘遮挡问题
 

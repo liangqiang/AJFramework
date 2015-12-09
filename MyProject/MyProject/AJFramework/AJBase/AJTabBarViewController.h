@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AJTabBarViewController : AJTabBarViewControllerBase
+@interface AJTabBarViewController : UITabBarController
 
 @property (nonatomic,assign) BOOL   navigationBarHidden;
 

@@ -163,6 +163,16 @@
                                            options:NSJSONReadingMutableContainers error:&error];
 }
 
+-(void)setExtraData:(id)extraData{
+    objc_setAssociatedObject(self, @selector(extraData),
+                             extraData,
+                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(id)extraData{
+    return objc_getAssociatedObject(self, _cmd);
+}
+
 @end
 
 //------------------------------------------------------------------------------

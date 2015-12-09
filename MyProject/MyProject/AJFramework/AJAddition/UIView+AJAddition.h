@@ -60,7 +60,4 @@ typedef void(^UIViewClickBlock)(UIView *view);
 //当前view截图
 - (UIImage*)createImageWithScale:(CGFloat)scale;
 
-//保存额外信息
-@property (nonatomic,strong) id extraData;
-
 @end
