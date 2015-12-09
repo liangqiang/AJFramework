@@ -26,6 +26,7 @@
         [self addButton:@"测试正在加载" clickSel:@selector(onLoadingClicked)];
         [self addButton:@"测试coreText" clickSel:@selector(onCoreTextDemoClicked)];
         [self addButton:@"测试auto layout" clickSel:@selector(onAutoLayoutClicked)];
+        [self addButton:@"测试animation" clickSel:@selector(onAnimationClicked)];
     }
     return _buttons;
 }
@@ -115,6 +116,10 @@
 
 -(void)onAutoLayoutClicked{
     [DMNaviService pushViewController:@"DMAutoLayoutViewController" ];
+}
+
+-(void)onAnimationClicked{
+    [DMNaviService pushViewController:@"DMAnimation1ViewController" ];
 }
 
 @end

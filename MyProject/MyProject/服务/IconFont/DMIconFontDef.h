@@ -28,3 +28,5 @@
 #define DMIconFontMine                          AJIconFontMake(@"\U0000e612", 26, HEXCOLOR(0x999999))
 #define DMIconFontMineSelect                    AJIconFontMake(@"\U0000e613", 26, HEXCOLOR(0x44c0da))
 
+#define DMIconFontExpert2                        AJIconFontMake(@"\U0000e61c", 130, HEXCOLOR(0x999999))
+#define DMIconFontExpertSelect2                  AJIconFontMake(@"\U0000e61f", 130, HEXCOLOR(0x44c0da))

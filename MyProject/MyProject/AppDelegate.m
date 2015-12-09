@@ -24,7 +24,10 @@
     
     [self setupWindow];
     
-    [DMStatusBarDebugWindow show];
+    //延迟运行
+    runBlockAfterDelay(3, ^{
+        [DMStatusBarDebugWindow show];
+    });
     
     return YES;
 }

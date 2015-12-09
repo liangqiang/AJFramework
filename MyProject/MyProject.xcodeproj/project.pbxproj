@@ -30,6 +30,10 @@
 		030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* DMNaviService.m */; };
 		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
 		031640321BE2449E00526D8A /* AJSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640301BE2449E00526D8A /* AJSettings.m */; };
+		03517AB71C1534CE00B64AC5 /* DMAnimation1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03517AB61C1534CE00B64AC5 /* DMAnimation1ViewController.m */; };
+		03517AB91C1538BC00B64AC5 /* ios动画.md in Sources */ = {isa = PBXBuildFile; fileRef = 03517AB81C1538BC00B64AC5 /* ios动画.md */; };
+		03517ABC1C16C48500B64AC5 /* DMImageViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03517ABB1C16C48500B64AC5 /* DMImageViewAnimation.m */; };
+		03517ABF1C16D45100B64AC5 /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 03517ABE1C16D45100B64AC5 /* APRoundedButton.m */; };
 		037635661C02224E00F9E1BF /* 布局方法探讨.md in Sources */ = {isa = PBXBuildFile; fileRef = 037635651C02224E00F9E1BF /* 布局方法探讨.md */; };
 		03915E791BE9DC2600D77F5F /* DMUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 03915E781BE9DC2600D77F5F /* DMUICommon.m */; };
 		03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */; };
@@ -133,6 +137,13 @@
 		0316402F1BE23E0F00526D8A /* DMSettingsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMSettingsDefine.h; sourceTree = "<group>"; };
 		031640301BE2449E00526D8A /* AJSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSettings.m; sourceTree = "<group>"; };
 		031640311BE2449E00526D8A /* AJSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSettings.h; sourceTree = "<group>"; };
+		03517AB51C1534CE00B64AC5 /* DMAnimation1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAnimation1ViewController.h; sourceTree = "<group>"; };
+		03517AB61C1534CE00B64AC5 /* DMAnimation1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAnimation1ViewController.m; sourceTree = "<group>"; };
+		03517AB81C1538BC00B64AC5 /* ios动画.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ios动画.md"; sourceTree = "<group>"; };
+		03517ABA1C16C48500B64AC5 /* DMImageViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMImageViewAnimation.h; sourceTree = "<group>"; };
+		03517ABB1C16C48500B64AC5 /* DMImageViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMImageViewAnimation.m; sourceTree = "<group>"; };
+		03517ABD1C16D45100B64AC5 /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
+		03517ABE1C16D45100B64AC5 /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
 		037635651C02224E00F9E1BF /* 布局方法探讨.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "布局方法探讨.md"; sourceTree = "<group>"; };
 		03915E771BE9DC2600D77F5F /* DMUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUICommon.h; sourceTree = "<group>"; };
 		03915E781BE9DC2600D77F5F /* DMUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMUICommon.m; sourceTree = "<group>"; };
@@ -343,6 +354,7 @@
 				0303D70F1BD8E1970024399D /* 开发规范.md */,
 				03FA7D781BEC73C1006E8396 /* 相对布局方案.md */,
 				03FAACEF1BF0386200558230 /* Tag方案.md */,
+				03517AB81C1538BC00B64AC5 /* ios动画.md */,
 			);
 			path = "文档";
 			sourceTree = "<group>";
@@ -466,6 +478,19 @@
 				031640231BE2066200526D8A /* FDFullscreenPopGesture */,
 			);
 			path = "第三方库";
+			sourceTree = "<group>";
+		};
+		03517AB41C15341700B64AC5 /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				03517AB51C1534CE00B64AC5 /* DMAnimation1ViewController.h */,
+				03517AB61C1534CE00B64AC5 /* DMAnimation1ViewController.m */,
+				03517ABA1C16C48500B64AC5 /* DMImageViewAnimation.h */,
+				03517ABB1C16C48500B64AC5 /* DMImageViewAnimation.m */,
+				03517ABD1C16D45100B64AC5 /* APRoundedButton.h */,
+				03517ABE1C16D45100B64AC5 /* APRoundedButton.m */,
+			);
+			path = "动画";
 			sourceTree = "<group>";
 		};
 		03F6B5491BE869C600E3C47D /* TBCityCoreText */ = {
@@ -624,6 +649,7 @@
 		03FFBB681BDE4B04008B51E1 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				03517AB41C15341700B64AC5 /* 动画 */,
 				03FA7D741BEC70EB006E8396 /* 自动布局 */,
 				03FFBB691BDE4B35008B51E1 /* 首页 */,
 				03FFBB701BDE5600008B51E1 /* Tab页 */,
@@ -785,6 +811,7 @@
 				03FFBB7D1BDE5B90008B51E1 /* AJIconFont.m in Sources */,
 				0303D70A1BD8DF570024399D /* AJScrollView.m in Sources */,
 				03FDF81A1C152F42008568DA /* AJTableDataSource.m in Sources */,
+				03517AB71C1534CE00B64AC5 /* DMAnimation1ViewController.m in Sources */,
 				031640321BE2449E00526D8A /* AJSettings.m in Sources */,
 				0303D6F91BD8CE3E0024399D /* md文件格式.md in Sources */,
 				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
@@ -802,6 +829,7 @@
 				0303D6F71BD8CE1F0024399D /* README.md in Sources */,
 				03FA7D791BEC73C1006E8396 /* 相对布局方案.md in Sources */,
 				0303D72D1BD915FA0024399D /* AJTabBarViewController.m in Sources */,
+				03517AB91C1538BC00B64AC5 /* ios动画.md in Sources */,
 				03FA7D771BEC7144006E8396 /* DMAutoLayoutViewController.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
@@ -817,8 +845,10 @@
 				03FD93DD1BDF718C00DCC673 /* AJDeallocObject.m in Sources */,
 				03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */,
 				03FFBB731BDE5660008B51E1 /* DMTabHomeViewController.m in Sources */,
+				03517ABC1C16C48500B64AC5 /* DMImageViewAnimation.m in Sources */,
 				0303D7241BD8FC3E0024399D /* UILabel+AJAddition.m in Sources */,
 				037635661C02224E00F9E1BF /* 布局方法探讨.md in Sources */,
+				03517ABF1C16D45100B64AC5 /* APRoundedButton.m in Sources */,
 				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */,
 				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,
