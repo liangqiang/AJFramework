@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AJTableSectionItem : NSObject
+@interface AJSectionItem : NSObject
 @property (nonatomic,strong) id sectionInfo; //section的信息，如标题
-@property (nonatomic,strong) NSMutableArray *dataArray;
+@property (nonatomic,strong) NSMutableArray *cellDataArray;
 @end

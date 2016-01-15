@@ -37,5 +37,6 @@
 
 //常用block
 typedef void(^AJVoidBlock)();
+typedef void(^AJTableClickBlock)(NSIndexPath *indexPath);
 
 #endif

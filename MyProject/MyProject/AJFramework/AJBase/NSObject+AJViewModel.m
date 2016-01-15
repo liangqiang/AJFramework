@@ -26,5 +26,14 @@
     }
 }
 
+-(void)setHolder:(id)holder{
+    objc_setAssociatedObject(self, @selector(holder),
+                             holder,
+                             OBJC_ASSOCIATION_ASSIGN);
+}
+
+-(id)holder{
+    return objc_getAssociatedObject(self, _cmd);
+}
 
 @end

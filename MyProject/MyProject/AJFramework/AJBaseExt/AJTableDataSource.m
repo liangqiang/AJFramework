@@ -7,7 +7,7 @@
 //
 
 #import "AJTableDataSource.h"
-#import "AJTableSectionItem.h"
+#import "AJSectionItem.h"
 
 @interface AJTableDataSource()
 @end
@@ -21,8 +21,8 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    AJTableSectionItem *sectionItem = [self.sectionArray safeObjectAtIndex:section];
-    return sectionItem.dataArray.count;
+    AJSectionItem *sectionItem = [self.sectionArray safeObjectAtIndex:section];
+    return sectionItem.cellDataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

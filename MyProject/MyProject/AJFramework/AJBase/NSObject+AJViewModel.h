@@ -12,7 +12,10 @@
 @interface NSObject (AJViewModel)
 
 @property (nonatomic,copy) AJVoidBlock ajRefreshBlock;
+-(void)setAjRefreshBlock:(AJVoidBlock)ajRefreshBlock;
 
 -(void)ajRefresh;
+
+@property (nonatomic,strong) id holder;
 
 @end

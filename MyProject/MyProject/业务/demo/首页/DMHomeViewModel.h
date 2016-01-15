@@ -7,23 +7,13 @@
 //
 
 #import "AJViewModel.h"
+#import "DMHomeCellItem.h"
 
-@interface DMHomeViewModel : AJViewModel
+@interface DMHomeViewModel : NSObject
 
--(void)onSetNaviRootClicked;
--(void)onSetTabRootClicked;
+@property (nonatomic,strong) NSMutableArray *sectionArray; //DMHomeButtonItem
 
--(void)onPushBlankClicked;
--(void)onLoadingClicked;
--(void)onCoreTextDemoClicked;
+-(void)loadTableData;
+-(void)onCellClicked:(NSIndexPath*)indexPath;
 
--(void)onAutoLayoutClicked;
-
-@property (nonatomic,strong) NSMutableArray* buttons;
-
-@end
-
-@interface DMHomeButtonItem : NSObject
-@property (nonatomic,strong) NSString *title;
-@property (nonatomic,strong) NSString *clickSel;
 @end

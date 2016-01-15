@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^AJTableClickBlock)(NSIndexPath *indexPath);
-
 @interface AJTableDataSource : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic,strong) NSArray *sectionArray;
