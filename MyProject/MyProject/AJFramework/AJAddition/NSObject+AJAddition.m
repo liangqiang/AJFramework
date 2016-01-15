@@ -83,6 +83,8 @@
     }
     else if ([attriString hasPrefix:@"T@\"NSMutableDictionary\""]) {
         [self setValue:safeMutableDictionary(value) forKey:propertyName];
+    }else{
+        [self setValue:value forKey:propertyName]; //以上类型以外，默认设置上，需确保类型匹配，如类型不匹配，则可能会崩溃！！
     }
 }
 

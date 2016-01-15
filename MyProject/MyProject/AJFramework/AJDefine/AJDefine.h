@@ -35,4 +35,7 @@
 
 #define IS_IPHONE_6PLUS ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
 
+//常用block
+typedef void(^AJVoidBlock)();
+
 #endif

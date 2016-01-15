@@ -23,6 +23,7 @@
 - (id)init {
     self = [super init];
     if (self) {
+        [self scrollView]; //创建scrollView
     }
     return self;
 }

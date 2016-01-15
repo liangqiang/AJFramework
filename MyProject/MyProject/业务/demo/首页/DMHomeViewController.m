@@ -8,8 +8,11 @@
 
 #import "DMHomeViewController.h"
 #import "DMHomeViewModel.h"
+#import "DMHomeButton.h"
+
 @interface DMHomeViewController ()
 @property (nonatomic,strong) DMHomeViewModel *viewModel;
+@property (nonatomic,strong) DMHomeButton *demoButton;
 @end
 
 @implementation DMHomeViewController
@@ -21,6 +24,10 @@
 
 -(void)createViews{
     [super createViews];
+    self.demoButton = [DMHomeButton newAutoLayoutView];
+    [self.demoButton autoSetDimensionsToSize:CGSizeMake(200, 50)];
+    [self.view addSubview:self.demoButton];
+    self.demoButton.titleLabel.text = @"回到20年前";
 
     if ([DMNaviService navigationController].viewControllers[0] != self) {
         self.title = [NSString stringWithFormat:@"%u", arc4random()];

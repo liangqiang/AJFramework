@@ -31,24 +31,6 @@
     return button;
 }
 
-//-(UIButton*)setLeftDMNaviButton{
-//    return nil;
-//}
-
-//-(UIButton*)setRightDMNaviButton{
-//    UIButton *rightBarButton =  [UIButton buttonWithType:UIButtonTypeCustom];
-//    rightBarButton.frame=CGRectMake(0, 0, 44, 44.0);
-//    [rightBarButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-//    [rightBarButton setTitleColor:HEXCOLOR(0xa1dfec) forState:UIControlStateHighlighted];
-//    [rightBarButton setTitleColor:HEXCOLOR(0x7ee6fc) forState:UIControlStateDisabled];
-//    [rightBarButton setTitle:@"保存" forState:UIControlStateNormal];
-//    rightBarButton.titleLabel.font = [UIFont systemFontOfSize:16.f];
-//
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBarButton];
-//
-//    return rightBarButton;
-//}
-
 -(UIButton*)dmLeftNaviButton{
     UIButton *button = objc_getAssociatedObject(self, _cmd);
     if (button == nil) {

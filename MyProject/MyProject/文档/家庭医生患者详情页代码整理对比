@@ -13,18 +13,12 @@
 | AKPatientTableFooterView | 24 | 150 | 174 |
 | AKPatientInfoCell | 22 | 148 | 170 |
 | AKPatientHealthInfoCell | 22 | 64 | 86 |
-| AKApproveSignInfoModel | 24 | 43 | 67 |
-| AKUserBasicInfo | 87 | 14 | 101 |
-| AKPatientDetailsModel | 22 | 43 | 65 |
-| 8个类 |  |  | 1067 |
+| 5个类 |  |  | 834 |
 |  |  |  |  |
 | 重构后： |  |  |  |
-| AKMScrollViewController | 14 | 282 | 296 |
+| AKPatientInfoViewController | 14 | 282 | 296 |
 | AKPatientInfoViewModel | 30 | 155 | 185 |
-| AKPatientInfoModel | 21 | 43 | 64 |
-| AKPatientVipModel | 22 | 36 | 58 |
-| AKPatientInfoItem | 50 | 49 | 99 |
-| 5个类 |  |  | 702＝65.8%|
+| 2个类 |  |  | 481＝57.7%|
 
 #### 2、患者首页
 1. 功能完全一样，只改造为MVVM模式
