@@ -39,7 +39,7 @@
         [weakSelf.viewModel onCellClicked:indexPath];
     }];
 
-//    if ([DMNaviService navigationController].viewControllers[0] != self) {
+    if ([DMNaviService navigationController].viewControllers[0] != self) {
 //        self.title = [NSString stringWithFormat:@"%u", arc4random()];
 //        self.hidesBottomBarWhenPushed = YES;
 //        [self dmDefaultLeftNaviButton];
@@ -49,7 +49,22 @@
 //        [self.dmRightNaviButton handleClick:^(UIView *view) {
 //            [AJUtil toast:@"保存"];
 //        }];
-//    }
+        
+//        [self.tableView setDMRefreshHolder:self];
+        [self.tableView setDMRefreshHeaderBlock:^{
+            [AJUtil toast:@"aaaaa"];
+            runBlockAfterDelay(2, ^{
+                [weakSelf.tableView stopRefresh];
+            });
+        }];
+        [self.tableView setDMRefreshFooterBlock:^{
+            [AJUtil toast:@"bbbb"];
+            runBlockAfterDelay(2, ^{
+                [weakSelf.tableView stopRefresh];
+            });
+        }];
+
+    }
 }
 
 -(void)updateViews{

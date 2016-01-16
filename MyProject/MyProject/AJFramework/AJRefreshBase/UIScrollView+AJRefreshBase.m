@@ -7,9 +7,20 @@
 //
 
 #import "UIScrollView+AJRefreshBase.h"
-#import "AJDeallocObject.h"
 
 @implementation UIScrollView (AJRefreshBase)
+
++ (void)load
+{
+    Method dealloc = class_getInstanceMethod([self class], NSSelectorFromString(@"dealloc"));
+    Method ajRefreshDealloc = class_getInstanceMethod([self class], @selector(ajRefreshDealloc));
+    method_exchangeImplementations(dealloc, ajRefreshDealloc);
+}
+
+-(void)ajRefreshDealloc{
+    [self removeObserver]; //劫持dealloc，确保执行removeObserver
+    [self ajRefreshDealloc];
+}
 
 #pragma mark- get/set方法
 - (void)setRefreshHeaderView:(AJRefreshViewBase *)headerView {

@@ -26,9 +26,10 @@
     }
     
     AJDeallocObject *obj = [AJDeallocObject new];
-    [obj setDeallocBlock:^{
-        deallocBlock();
-    }];
+    obj.deallocBlock = deallocBlock;
+//    [obj setDeallocBlock:^{
+//        deallocBlock();
+//    }];
     objc_setAssociatedObject(self, _cmd, obj, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
