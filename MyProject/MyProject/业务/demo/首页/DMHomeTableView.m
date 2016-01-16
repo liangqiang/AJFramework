@@ -7,7 +7,7 @@
 //
 
 #import "DMHomeTableView.h"
-#import "DMHomeTableViewCell.h"
+#import "DMHomeCell.h"
 #import "DMHomeCellItem.h"
 
 @implementation DMHomeTableView
@@ -17,14 +17,14 @@
 }
 
 -(void)registerCellClasses{
-    [self registerClass:[DMHomeTableViewCell class] forCellReuseIdentifier:@"Cell"];
+    [self registerClass:[DMHomeCell class] forCellReuseIdentifier:@"Cell"];
 }
 
 -(void)updateCell:(UITableViewCell*)tableCell atIndexPath:(NSIndexPath*)indexPath{
-    DMHomeTableViewCell *cell = (DMHomeTableViewCell*)tableCell;
+    DMHomeCell *cell = (DMHomeCell*)tableCell;
     DMHomeCellItem *item = [self cellData:indexPath];
     
-    cell.mainButton.titleLabel.text = item.title;
+    cell.titleLabel.text = item.title;
 }
 
 #pragma mark - UITableViewDelegate

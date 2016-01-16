@@ -66,16 +66,17 @@
 
 -(void)onSetNaviRootClicked{
     [AJUtil toast:@"onSetNaviRootClicked"];
-    [DMNaviService setFirstViewController:@"DMHomeViewController"];
+    [DMNaviService setRootViewController:@"DMHomeViewController" withProp:@{@"title":@"首页"}];
 }
 
 -(void)onSetTabRootClicked{
     [AJUtil toast:@"onGotoTabClicked"];
-    [DMNaviService setFirstViewController:@"DMTabHomeViewController"];
+    [DMNaviService setRootViewController:@"DMTabHomeViewController"];
 }
 
 -(void)onPushBlankClicked{
-    [DMNaviService pushViewController:@"DMHomeViewController"];
+    NSString *title = [NSString stringWithFormat:@"%u", arc4random()];
+    [DMNaviService pushViewController:@"DMHomeViewController" withProp:@{@"title":title}];
 
 //    AJScrollViewController *vc = (AJScrollViewController*)[DMNaviService pushViewController:@"DMHomeViewController"];
 //    __weak AJScrollViewController *weakVc = vc;

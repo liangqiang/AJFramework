@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DMHomeButton.h"
-@interface DMHomeTableViewCell : UITableViewCell
-@property (nonatomic,strong) DMHomeButton *mainButton;
+@interface DMHomeCell : UITableViewCell
+@property (nonatomic,strong) UIImageView *leftImageView;
+@property (nonatomic,strong) UILabel *titleLabel;
 @end

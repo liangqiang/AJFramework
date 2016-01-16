@@ -23,12 +23,12 @@
 
 -(void)onPageDebugButtonClicked{
     [DMNaviService dismissViewController];
-    [DMNaviService setFirstViewController:@"AJPageDebugViewController"];
+    [DMNaviService setRootViewController:@"AJPageDebugViewController"];
 }
 
 -(void)onPageReleaseButtonClicked{
     [DMNaviService dismissViewController];
-    [DMNaviService setFirstViewController:@"AJChoiceRoleViewController"];
+    [DMNaviService setRootViewController:@"AJChoiceRoleViewController"];
 }
 
 

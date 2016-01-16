@@ -32,10 +32,9 @@
 		032D4EBF1C47AE5700F9F01C /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EB71C47AE5700F9F01C /* ALView+PureLayout.m */; };
 		032D4EC01C47AE5700F9F01C /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EB91C47AE5700F9F01C /* NSArray+PureLayout.m */; };
 		032D4EC11C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EBB1C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.m */; };
-		032D4EC41C47AF0D00F9F01C /* DMHomeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EC31C47AF0D00F9F01C /* DMHomeButton.m */; };
 		032D4EC71C48A31F00F9F01C /* DMHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EC61C48A31F00F9F01C /* DMHomeTableView.m */; };
 		032D4ECA1C48A3A800F9F01C /* AJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EC91C48A3A800F9F01C /* AJTableView.m */; };
-		032D4ECD1C48D57600F9F01C /* DMHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4ECC1C48D57600F9F01C /* DMHomeTableViewCell.m */; };
+		032D4ECD1C48D57600F9F01C /* DMHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4ECC1C48D57600F9F01C /* DMHomeCell.m */; };
 		032D4ED01C48D61700F9F01C /* DMHomeCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4ECF1C48D61700F9F01C /* DMHomeCellItem.m */; };
 		03517AB71C1534CE00B64AC5 /* DMAnimation1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03517AB61C1534CE00B64AC5 /* DMAnimation1ViewController.m */; };
 		03517AB91C1538BC00B64AC5 /* ios动画.md in Sources */ = {isa = PBXBuildFile; fileRef = 03517AB81C1538BC00B64AC5 /* ios动画.md */; };
@@ -153,14 +152,12 @@
 		032D4EBC1C47AE5700F9F01C /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		032D4EBD1C47AE5700F9F01C /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
 		032D4EBE1C47AE5700F9F01C /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
-		032D4EC21C47AF0D00F9F01C /* DMHomeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeButton.h; sourceTree = "<group>"; };
-		032D4EC31C47AF0D00F9F01C /* DMHomeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeButton.m; sourceTree = "<group>"; };
 		032D4EC51C48A31F00F9F01C /* DMHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeTableView.h; sourceTree = "<group>"; };
 		032D4EC61C48A31F00F9F01C /* DMHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeTableView.m; sourceTree = "<group>"; };
 		032D4EC81C48A3A800F9F01C /* AJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTableView.h; sourceTree = "<group>"; };
 		032D4EC91C48A3A800F9F01C /* AJTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTableView.m; sourceTree = "<group>"; };
-		032D4ECB1C48D57600F9F01C /* DMHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeTableViewCell.h; sourceTree = "<group>"; };
-		032D4ECC1C48D57600F9F01C /* DMHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeTableViewCell.m; sourceTree = "<group>"; };
+		032D4ECB1C48D57600F9F01C /* DMHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeCell.h; sourceTree = "<group>"; };
+		032D4ECC1C48D57600F9F01C /* DMHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeCell.m; sourceTree = "<group>"; };
 		032D4ECE1C48D61700F9F01C /* DMHomeCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeCellItem.h; sourceTree = "<group>"; };
 		032D4ECF1C48D61700F9F01C /* DMHomeCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeCellItem.m; sourceTree = "<group>"; };
 		03517AB51C1534CE00B64AC5 /* DMAnimation1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAnimation1ViewController.h; sourceTree = "<group>"; };
@@ -713,10 +710,8 @@
 				032D4ECF1C48D61700F9F01C /* DMHomeCellItem.m */,
 				032D4EC51C48A31F00F9F01C /* DMHomeTableView.h */,
 				032D4EC61C48A31F00F9F01C /* DMHomeTableView.m */,
-				032D4ECB1C48D57600F9F01C /* DMHomeTableViewCell.h */,
-				032D4ECC1C48D57600F9F01C /* DMHomeTableViewCell.m */,
-				032D4EC21C47AF0D00F9F01C /* DMHomeButton.h */,
-				032D4EC31C47AF0D00F9F01C /* DMHomeButton.m */,
+				032D4ECB1C48D57600F9F01C /* DMHomeCell.h */,
+				032D4ECC1C48D57600F9F01C /* DMHomeCell.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -881,8 +876,7 @@
 				032D4EBF1C47AE5700F9F01C /* ALView+PureLayout.m in Sources */,
 				0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */,
 				032D4EB41C47A94500F9F01C /* NSObject+AJViewModel.m in Sources */,
-				032D4ECD1C48D57600F9F01C /* DMHomeTableViewCell.m in Sources */,
-				032D4EC41C47AF0D00F9F01C /* DMHomeButton.m in Sources */,
+				032D4ECD1C48D57600F9F01C /* DMHomeCell.m in Sources */,
 				03517AD11C17D4C500B64AC5 /* AJSectionItem.m in Sources */,
 				0303D7271BD8FC3E0024399D /* UIImage+AJAddition.m in Sources */,
 				03F6B5581BE86A3700E3C47D /* TBCityColorManager.m in Sources */,

@@ -23,7 +23,7 @@
 +(UIViewController*)createViewController:(NSString*)className withProp:(NSDictionary*)prop;
 
 //设置root vc
-+(UIViewController*)setFirstViewController:(NSString*)className;
++(UIViewController*)setRootViewController:(NSString*)className;
 +(UIViewController*)setRootViewController:(NSString*)className withProp:(NSDictionary*)prop;
 
 //使用root/tab navi push vc

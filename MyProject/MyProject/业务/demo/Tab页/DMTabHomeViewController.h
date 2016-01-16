@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 liangqiang. All rights reserved.
 //
 
-#import "AJTabBarViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface DMTabHomeViewController : AJTabBarViewController
+@interface DMTabHomeViewController : UITabBarController
 
 @end

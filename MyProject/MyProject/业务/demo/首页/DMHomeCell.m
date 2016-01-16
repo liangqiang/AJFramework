@@ -1,25 +1,14 @@
 //
-//  DMHomeButton.m
+//  DMHomeTableViewCell.m
 //  MyProject
 //
-//  Created by liangqiang on 16/1/14.
+//  Created by liangqiang on 16/1/15.
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "DMHomeButton.h"
+#import "DMHomeCell.h"
 
-@interface DMHomeButton()
-@end
-
-@implementation DMHomeButton
-
--(instancetype)init{
-    if (self=[super init]) {
-        [self getAllProperties];
-        self.backgroundColor = [UIColor redColor];
-    }
-    return self;
-}
+@implementation DMHomeCell
 
 -(UIImageView*)leftImageView{
     if (_leftImageView==nil) {

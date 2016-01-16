@@ -10,16 +10,12 @@
 
 @implementation DMTabHomeViewModel
 
--(NSArray*)tabs{
-    if (!_tabs) {
-        _tabs = [NSMutableArray array];
-        
-        [self addTab:@[@"医生", DMIconFontService, DMIconFontServiceSelect, @"DMHomeViewController"]];
-        [self addTab:@[@"用药", DMIconFontPatient, DMIconFontPatientSelect, @"DMHomeViewController"]];
-        [self addTab:@[@"我的", DMIconFontMine, DMIconFontMineSelect, @"DMHomeViewController"]];
-    }
+-(void)loadAllTabs{
+    self.tabs = [NSMutableArray array];
     
-    return _tabs;
+    [self addTab:@[@"医生", DMIconFontService, DMIconFontServiceSelect, @"DMHomeViewController"]];
+    [self addTab:@[@"用药", DMIconFontPatient, DMIconFontPatientSelect, @"DMHomeViewController"]];
+    [self addTab:@[@"我的", DMIconFontMine, DMIconFontMineSelect, @"DMHomeViewController"]];
 }
 
 -(void)addTab:(NSArray*)params{

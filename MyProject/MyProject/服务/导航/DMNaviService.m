@@ -40,7 +40,7 @@
 }
 
 #pragma mark - 设置root vc
-+(UIViewController*)setFirstViewController:(NSString*)className{
++(UIViewController*)setRootViewController:(NSString*)className{
     return [self setRootViewController:className withProp:nil];
 }
 
@@ -48,6 +48,7 @@
     UINavigationController *navi = (UINavigationController*)[mainWindow() rootViewController];
     UIViewController* vc = [self createViewController:className withProp:prop];
     [navi setViewControllers:@[vc] animated:[DMNaviService sharedInstance].animated];
+    navi.navigationBarHidden = [vc isKindOfClass:[UITabBarController class]]; //navi
 //    if ([vc isKindOfClass:[UITabBarController class]] || [vc isKindOfClass:[UINavigationController class]]) {
 //        mainWindow().rootViewController = vc;
 //    }else{

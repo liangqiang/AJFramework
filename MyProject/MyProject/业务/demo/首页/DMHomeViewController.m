@@ -8,14 +8,12 @@
 
 #import "DMHomeViewController.h"
 #import "DMHomeViewModel.h"
-#import "DMHomeButton.h"
 #import "DMHomeTableView.h"
 
 @interface DMHomeViewController ()
 @property (nonatomic,strong) DMHomeViewModel *viewModel;
 
 @property (nonatomic,strong) DMHomeTableView *tableView;
-@property (nonatomic,strong) DMHomeButton *demoButton;
 @end
 
 @implementation DMHomeViewController
@@ -40,21 +38,18 @@
     [self.tableView setClickBlock:^(NSIndexPath *indexPath) {
         [weakSelf.viewModel onCellClicked:indexPath];
     }];
-    
-    self.navigationController.navigationBar.translucent = NO; // 设置不透明，否则可能会引起scrollView的高度异常
-    self.navigationController.navigationBarHidden = NO;
 
-    if ([DMNaviService navigationController].viewControllers[0] != self) {
-        self.title = [NSString stringWithFormat:@"%u", arc4random()];
-        self.hidesBottomBarWhenPushed = YES;
-        [self dmDefaultLeftNaviButton];
-        //        [self.dmLeftNaviButton setTitle:@"取消" forState:UIControlStateNormal];
-        
-        [self.dmRightNaviButton setTitle:@"保存" forState:UIControlStateNormal];
-        [self.dmRightNaviButton handleClick:^(UIView *view) {
-            [AJUtil toast:@"保存"];
-        }];
-    }
+//    if ([DMNaviService navigationController].viewControllers[0] != self) {
+//        self.title = [NSString stringWithFormat:@"%u", arc4random()];
+//        self.hidesBottomBarWhenPushed = YES;
+//        [self dmDefaultLeftNaviButton];
+//        //        [self.dmLeftNaviButton setTitle:@"取消" forState:UIControlStateNormal];
+//        
+//        [self.dmRightNaviButton setTitle:@"保存" forState:UIControlStateNormal];
+//        [self.dmRightNaviButton handleClick:^(UIView *view) {
+//            [AJUtil toast:@"保存"];
+//        }];
+//    }
 }
 
 -(void)updateViews{
@@ -90,15 +85,6 @@
     return _tableView;
 }
 
--(DMHomeButton*)demoButton{
-    if (!_demoButton) {
-        _demoButton = [DMHomeButton newAutoLayoutView];
-        
-        [self.tableView addSubview:_demoButton];
-        [_demoButton autoSetDimensionsToSize:CGSizeMake(200, 50)];
-    }
-    return _demoButton;
-}
 
 //-(void)createViews{
 //    [super createViews];

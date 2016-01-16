@@ -8,11 +8,12 @@
 
 #import "AJViewModel.h"
 
-@interface DMTabHomeViewModel : AJViewModel
+@interface DMTabHomeViewModel : NSObject
 
 //AJTabHomeItem
 @property (nonatomic, strong) NSMutableArray                     *tabs;
 
+-(void)loadAllTabs;
 @end
 
 @interface DMTabHomeItem : NSObject
