@@ -668,12 +668,12 @@
 				03FFBB6B1BDE4B8A008B51E1 /* DMHomeViewController.m */,
 				03FFBB6D1BDE4BA6008B51E1 /* DMHomeViewModel.h */,
 				03FFBB6E1BDE4BA6008B51E1 /* DMHomeViewModel.m */,
-				032D4ECE1C48D61700F9F01C /* DMHomeCellItem.h */,
-				032D4ECF1C48D61700F9F01C /* DMHomeCellItem.m */,
 				032D4EC51C48A31F00F9F01C /* DMHomeTableView.h */,
 				032D4EC61C48A31F00F9F01C /* DMHomeTableView.m */,
 				032D4ECB1C48D57600F9F01C /* DMHomeCell.h */,
 				032D4ECC1C48D57600F9F01C /* DMHomeCell.m */,
+				032D4ECE1C48D61700F9F01C /* DMHomeCellItem.h */,
+				032D4ECF1C48D61700F9F01C /* DMHomeCellItem.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";

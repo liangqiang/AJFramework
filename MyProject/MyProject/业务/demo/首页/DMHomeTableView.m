@@ -7,24 +7,16 @@
 //
 
 #import "DMHomeTableView.h"
-#import "DMHomeCell.h"
-#import "DMHomeCellItem.h"
 
 @implementation DMHomeTableView
 
+#pragma mark - 设置cell类
 -(NSString*)cellIdentifier:(NSIndexPath*)indexPath{
     return @"Cell";
 }
 
 -(void)registerCellClasses{
-    [self registerClass:[DMHomeCell class] forCellReuseIdentifier:@"Cell"];
-}
-
--(void)updateCell:(UITableViewCell*)tableCell atIndexPath:(NSIndexPath*)indexPath{
-    DMHomeCell *cell = (DMHomeCell*)tableCell;
-    DMHomeCellItem *item = [self cellData:indexPath];
-    
-    cell.titleLabel.text = item.title;
+    [self registerClass:NSClassFromString(@"DMHomeCell") forCellReuseIdentifier:@"Cell"];
 }
 
 #pragma mark - UITableViewDelegate

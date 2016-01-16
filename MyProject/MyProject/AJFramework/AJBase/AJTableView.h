@@ -13,6 +13,10 @@
 @property (nonatomic,copy) AJTableClickBlock clickBlock;
 -(void)setClickBlock:(AJTableClickBlock)clickBlock;
 
--(id)cellData:(NSIndexPath*)indexPath;
+-(id)cellItem:(NSIndexPath*)indexPath;
 
+@end
+
+@interface UITableViewCell (AJTableView)
+-(void)updateWithItem:(id)cellItem;
 @end

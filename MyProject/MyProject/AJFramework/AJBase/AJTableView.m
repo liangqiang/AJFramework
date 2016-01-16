@@ -25,9 +25,13 @@
     return self;
 }
 
--(id)cellData:(NSIndexPath*)indexPath{
+-(id)cellItem:(NSIndexPath*)indexPath{
     AJSectionItem *sectionItem = [self.sectionArray safeObjectAtIndex:indexPath.section];
     return [sectionItem.cellDataArray safeObjectAtIndex:indexPath.row];
+}
+
+-(void)updateCell:(UITableViewCell*)cell atIndexPath:(NSIndexPath*)indexPath{
+    [cell updateWithItem:[self cellItem:indexPath]];
 }
 
 #pragma mark - 子类重载
@@ -40,9 +44,6 @@
     [self registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
 }
 
--(void)updateCell:(UITableViewCell*)cell atIndexPath:(NSIndexPath*)indexPath{
-    
-}
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -68,5 +69,14 @@
         self.clickBlock(indexPath);
     }
 }
+
+@end
+
+@implementation UITableViewCell (AJTableView)
+
+-(void)updateWithItem:(id)cellItem{
+    
+}
+
 
 @end

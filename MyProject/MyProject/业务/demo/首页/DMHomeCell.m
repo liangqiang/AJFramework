@@ -7,8 +7,19 @@
 //
 
 #import "DMHomeCell.h"
+#import "DMHomeCellItem.h"
+
+@interface DMHomeCell ()
+@property (nonatomic,strong) UIImageView *leftImageView;
+@property (nonatomic,strong) UILabel *titleLabel;
+@end
 
 @implementation DMHomeCell
+
+-(void)updateWithItem:(id)cellItem{
+    DMHomeCellItem *item = (DMHomeCellItem*)cellItem;
+    self.titleLabel.text = item.title;
+}
 
 -(UIImageView*)leftImageView{
     if (_leftImageView==nil) {

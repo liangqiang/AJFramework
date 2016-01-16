@@ -8,6 +8,4 @@
 
 #import <UIKit/UIKit.h>
 @interface DMHomeCell : UITableViewCell
-@property (nonatomic,strong) UIImageView *leftImageView;
-@property (nonatomic,strong) UILabel *titleLabel;
 @end
