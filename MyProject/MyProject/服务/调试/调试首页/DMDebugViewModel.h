@@ -6,9 +6,8 @@
 //  Copyright (c) 2015年 SunX. All rights reserved.
 //
 
-#import "AJViewModel.h"
 
-@interface DMDebugViewModel : AJViewModel
+@interface DMDebugViewModel : NSObject
 
 @property (nonatomic, assign, readonly) BOOL isPageDebug;
 

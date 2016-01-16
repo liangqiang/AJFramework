@@ -8,11 +8,27 @@
 
 #import "DMAutoLayoutViewController.h"
 
+@interface DMAutoLayoutViewController ()
+@property (nonatomic,strong) UIScrollView *scrollView;
+@end
+
 @implementation DMAutoLayoutViewController
 
--(void)createViews{
-    [super createViews];
+-(UIScrollView*)scrollView{
+    if (!_scrollView) {
+        _scrollView = [UIScrollView newAutoLayoutView];
+        _scrollView.showsVerticalScrollIndicator = YES;
+        _scrollView.backgroundColor = HEXCOLOR(0xF5F5F5); // 背景为灰色
+        _scrollView.alwaysBounceVertical = YES;
+        
+        [self.view addSubview:_scrollView];
+        [_scrollView autoPinEdgesToSuperviewEdges];
+    }
     
+    return _scrollView;
+}
+
+-(void)viewDidLoad{
     [self testAutoLayout];
 }
 

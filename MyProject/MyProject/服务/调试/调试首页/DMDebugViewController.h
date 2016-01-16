@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 SunX. All rights reserved.
 //
 
-#import "AJScrollViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface DMDebugViewController : AJScrollViewController
+@interface DMDebugViewController : UIViewController
 
 @end

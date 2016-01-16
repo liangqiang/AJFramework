@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 liangqiang. All rights reserved.
 //
 
-#import "AJScrollViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface DMAnimation1ViewController : AJScrollViewController
+@interface DMAnimation1ViewController : UIViewController
 
 @end

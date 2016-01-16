@@ -24,8 +24,8 @@
 
 -(instancetype)init{
     if (self=[super init]) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-        [self updateViews];
+//        self.edgesForExtendedLayout = UIRectEdgeNone;
+//        [self updateViews];
     }
     return self;
 }

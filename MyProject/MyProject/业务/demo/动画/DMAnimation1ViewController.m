@@ -11,13 +11,26 @@
 #import "APRoundedButton.h"
 
 @interface DMAnimation1ViewController ()
-
+@property (nonatomic,strong) UIScrollView *scrollView;
 @end
 
 @implementation DMAnimation1ViewController
 
--(void)createViews{
-    [super createViews];
+-(UIScrollView*)scrollView{
+    if (!_scrollView) {
+        _scrollView = [UIScrollView newAutoLayoutView];
+        _scrollView.showsVerticalScrollIndicator = YES;
+        _scrollView.backgroundColor = HEXCOLOR(0xF5F5F5); // 背景为灰色
+        _scrollView.alwaysBounceVertical = YES;
+        
+        [self.view addSubview:_scrollView];
+        [_scrollView autoPinEdgesToSuperviewEdges];
+    }
+    
+    return _scrollView;
+}
+
+-(void)viewDidLoad{
     
     self.title = @"动画测试";
     [self createAnimationViews];
@@ -26,7 +39,6 @@
 }
 
 -(void)updateViews{
-    [super updateViews];
 }
 
 -(void)createAnimationViews{

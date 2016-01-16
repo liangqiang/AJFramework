@@ -10,23 +10,42 @@
 #import "DMDebugViewModel.h"
 
 @interface DMDebugViewController ()
+@property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,strong) DMDebugViewModel   *viewModel;
 @property (nonatomic,strong) UIButton *debugButton;
 @end
 
 @implementation DMDebugViewController
-@dynamic viewModel;
 
--(id)init{
-    self = [super init];
-    if (self) {
+-(UIScrollView*)scrollView{
+    if (!_scrollView) {
+        _scrollView = [UIScrollView newAutoLayoutView];
+        _scrollView.showsVerticalScrollIndicator = YES;
+        _scrollView.backgroundColor = HEXCOLOR(0xF5F5F5); // 背景为灰色
+        _scrollView.alwaysBounceVertical = YES;
+        
+        [self.view addSubview:_scrollView];
+        [_scrollView autoPinEdgesToSuperviewEdges];
     }
-    return self;
+    
+    return _scrollView;
 }
 
--(void)createViews{
-    [super createViews];
-    
+-(id)viewModel{
+    if (!_viewModel) {
+        _viewModel = [DMDebugViewModel new];
+        _viewModel.holder = self;
+        
+        WEAKSELF
+        [_viewModel setAjRefreshBlock:^{
+            [weakSelf updateViews];
+        }];
+    }
+    return _viewModel;
+}
+
+
+-(void)viewDidLoad{
     self.scrollView.backgroundColor = [UIColor whiteColor];
     [self.scrollView addBlankSection:64];
     [self createEnvSection];
@@ -40,7 +59,6 @@
 }
 
 -(void)updateViews{
-    [super updateViews];
 }
 
 //设置环境

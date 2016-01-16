@@ -6,8 +6,6 @@
 //  Copyright (c) 2015年 liangqiang. All rights reserved.
 //
 
-#import "AJViewModel.h"
-
 @interface DMTabHomeViewModel : NSObject
 
 //AJTabHomeItem

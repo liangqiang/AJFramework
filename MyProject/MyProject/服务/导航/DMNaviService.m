@@ -36,6 +36,7 @@
     UIViewController *vc = [NSClassFromString(className) new];
     [vc safeSetProperty:prop];
     vc.hidesBottomBarWhenPushed = YES; //隐藏tabbar，子tab中的vc要设置为NO
+    vc.edgesForExtendedLayout = UIRectEdgeNone;
     return vc;
 }
 
