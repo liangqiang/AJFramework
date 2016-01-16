@@ -25,6 +25,8 @@
 		030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* DMNaviService.m */; };
 		03125BF21C4A7B0D00FFCA26 /* AJSectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03125BEF1C4A7B0D00FFCA26 /* AJSectionItem.m */; };
 		03125BF31C4A7B0D00FFCA26 /* AJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03125BF11C4A7B0D00FFCA26 /* AJTableView.m */; };
+		03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 03125BF61C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m */; };
+		03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 03125BF81C4A8C2000FFCA26 /* UIView+LayoutMethods.m */; };
 		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
 		031640321BE2449E00526D8A /* AJSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640301BE2449E00526D8A /* AJSettings.m */; };
 		032D4EB41C47A94500F9F01C /* NSObject+AJViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EB31C47A94500F9F01C /* NSObject+AJViewModel.m */; };
@@ -127,6 +129,10 @@
 		03125BEF1C4A7B0D00FFCA26 /* AJSectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSectionItem.m; sourceTree = "<group>"; };
 		03125BF01C4A7B0D00FFCA26 /* AJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTableView.h; sourceTree = "<group>"; };
 		03125BF11C4A7B0D00FFCA26 /* AJTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTableView.m; sourceTree = "<group>"; };
+		03125BF51C4A8C2000FFCA26 /* UIView+HandyAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HandyAutoLayout.h"; sourceTree = "<group>"; };
+		03125BF61C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HandyAutoLayout.m"; sourceTree = "<group>"; };
+		03125BF71C4A8C2000FFCA26 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
+		03125BF81C4A8C2000FFCA26 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 		031640241BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		0316402D1BE23AA400526D8A /* DMUIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUIDefine.h; sourceTree = "<group>"; };
@@ -440,6 +446,17 @@
 			path = "导航";
 			sourceTree = "<group>";
 		};
+		03125BF41C4A8BED00FFCA26 /* HandyLayout */ = {
+			isa = PBXGroup;
+			children = (
+				03125BF51C4A8C2000FFCA26 /* UIView+HandyAutoLayout.h */,
+				03125BF61C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m */,
+				03125BF71C4A8C2000FFCA26 /* UIView+LayoutMethods.h */,
+				03125BF81C4A8C2000FFCA26 /* UIView+LayoutMethods.m */,
+			);
+			path = HandyLayout;
+			sourceTree = "<group>";
+		};
 		031640231BE2066200526D8A /* FDFullscreenPopGesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -472,6 +489,7 @@
 		0316402E1BE23C2900526D8A /* 第三方库 */ = {
 			isa = PBXGroup;
 			children = (
+				03125BF41C4A8BED00FFCA26 /* HandyLayout */,
 				032D4EB51C47AE3000F9F01C /* PureLayout */,
 				03FA194D1BEB2CE500DD1DAC /* MKNetworkKit */,
 				03F6B5491BE869C600E3C47D /* TBCityCoreText */,
@@ -804,6 +822,7 @@
 				03FAACF01BF0386200558230 /* Tag方案.md in Sources */,
 				03FA194C1BEB113A00DD1DAC /* UIViewController+DMNavi.m in Sources */,
 				030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */,
+				03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */,
 				03FD93DA1BDF5FEA00DCC673 /* DMRefreshFooterView.m in Sources */,
 				03FA196F1BEB2E6300DD1DAC /* NSDate+RFC1123.m in Sources */,
 				0303D7041BD8D9EE0024399D /* 模块文件依赖关系.md in Sources */,
@@ -851,6 +870,7 @@
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
+				03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */,
 				03FFBB761BDE567B008B51E1 /* DMTabHomeViewModel.m in Sources */,
 				031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				03FFBB661BDE31DC008B51E1 /* DMDebugViewController.m in Sources */,
