@@ -8,14 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^AJRefreshBlock)();
 
 @interface NSObject (AJViewModel)
 
-@property (nonatomic,copy) AJVoidBlock ajRefreshBlock;
--(void)setAjRefreshBlock:(AJVoidBlock)ajRefreshBlock;
+@property (nonatomic,copy) AJRefreshBlock ajRefreshBlock;
+-(void)setAjRefreshBlock:(AJRefreshBlock)ajRefreshBlock;
 
 -(void)ajRefresh;
 
-@property (nonatomic,strong) id holder;
+@property (nonatomic,weak) id holder;
 
 @end

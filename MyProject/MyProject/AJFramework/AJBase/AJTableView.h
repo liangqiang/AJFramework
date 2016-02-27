@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^AJTableClickBlock)(NSIndexPath *indexPath);
+
 @interface AJTableView : UITableView <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic,strong) NSArray *sectionArray; // AJSectionItem
 @property (nonatomic,copy) AJTableClickBlock clickBlock;

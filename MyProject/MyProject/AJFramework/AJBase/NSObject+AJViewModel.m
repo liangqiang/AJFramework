@@ -10,13 +10,13 @@
 
 @implementation NSObject (AJViewModel)
 
--(void)setAjRefreshBlock:(AJVoidBlock)ajRefreshBlock{
+-(void)setAjRefreshBlock:(AJRefreshBlock)ajRefreshBlock{
     objc_setAssociatedObject(self, @selector(ajRefreshBlock),
                              ajRefreshBlock,
                              OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
--(AJVoidBlock)ajRefreshBlock{
+-(AJRefreshBlock)ajRefreshBlock{
     return objc_getAssociatedObject(self, _cmd);
 }
 
