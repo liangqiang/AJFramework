@@ -24,26 +24,20 @@ static NSMutableDictionary *s_tags = nil;
 }
 
 +(void)toast:(NSString*)msg{
-    //创建label，宽度固定长度扩展
-    int padding=30;
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(padding/2, padding/2, 230, 30)];
+    UIView *view = [UIView newWith:[UIColor colorWithWhite:0 alpha:.7], nil];
+    [view setCornerRadiusWith:@(7), nil];
+    [mainWindow() addSubview:view];
+
+    UILabel *label = [UILabel newWith:kFont16B, kWhiteColor, msg, @(NSTextAlignmentCenter), nil];
     label.numberOfLines = 0;
-    label.textAlignment = NSTextAlignmentCenter;
-    label.text = msg;
-    label.font = [UIFont boldSystemFontOfSize:16];
-    label.textColor = [UIColor whiteColor];
-    label.backgroundColor = [UIColor clearColor];
-    [label sizeToFit];
+    [view addSubview:label];
     
     CGRect vFrame = mainWindow().frame;
-    CGRect rect = CGRectMake((vFrame.size.width-label.frame.size.width-padding)/2, (vFrame.size.height-label.frame.size.height-padding)/2,label.frame.size.width+padding, label.frame.size.height+padding);
-    
-    UIView *view = [[UIView alloc]initWithFrame:rect];
-    view.layer.cornerRadius = 7;
-    view.clipsToBounds = YES;
-    view.backgroundColor = [UIColor colorWithWhite:0 alpha:.7];
-    [view addSubview:label];
-    [mainWindow() addSubview:view];
+    label.size = CGSizeMake(vFrame.size.width-30, 99999);
+    [label sizeToFit];
+    view.size = CGSizeMake(label.size.width + 30, label.size.height + 30);
+    [view layoutWithInsets:UIEdgeInsetsCenter];
+    [label layoutWithInsets:UIEdgeInsetsCenter];
     
     [UIView animateWithDuration:.5 delay:2.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         view.alpha = 0;
@@ -135,6 +129,20 @@ static NSMutableDictionary *s_tags = nil;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
                    dispatch_get_main_queue(), block);
 }
+
++(NSDate*) dateFromString:(NSString*)date format:(NSString*)format
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init] ;
+    [formatter setDateFormat:format];
+    return [formatter dateFromString:date];
+}
+
++(NSString*)stringFromDate:(NSDate*)date format:(NSString*)format{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:format];
+    return [formatter stringFromDate:date];
+}
+
 
 @end
 

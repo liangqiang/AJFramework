@@ -50,6 +50,11 @@
         NSString *lineString = [text substringWithRange:range];
         [linesArray addObject:lineString];
     }
+    CFRelease(frame);
+    CFRelease(path);
+    CFRelease(frameSetter);
+    CFRelease(myFont);
+
     return (NSArray *)linesArray;
 }
 

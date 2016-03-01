@@ -30,6 +30,9 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 
 +(void)runAfterDelay:(NSTimeInterval)delay block:(void(^)())block;
 
++(NSDate*) dateFromString:(NSString*)date format:(NSString*)format;
++(NSString*)stringFromDate:(NSDate*)date format:(NSString*)format;
+
 @end
 
 //------------------------------------------------------------------------------

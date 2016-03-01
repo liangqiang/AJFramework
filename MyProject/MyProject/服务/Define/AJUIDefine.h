@@ -39,5 +39,15 @@
 #define kFont14                 [UIFont systemFontOfSize:14]
 #define kFont16                 [UIFont systemFontOfSize:16]
 #define kFont18                 [UIFont systemFontOfSize:18]
+#define kFont10B                 [UIFont boldSystemFontOfSize:10]
+#define kFont12B                 [UIFont boldSystemFontOfSize:12]
+#define kFont14B                 [UIFont boldSystemFontOfSize:14]
+#define kFont16B                 [UIFont boldSystemFontOfSize:16]
+#define kFont18B                 [UIFont boldSystemFontOfSize:18]
+
+
+// 日期格式
+#define kDateFormatShort           @"yyyy-MM-dd"
+#define kDateFormatLong            @"yyyy-MM-dd HH:mm:ss"
 
 #endif

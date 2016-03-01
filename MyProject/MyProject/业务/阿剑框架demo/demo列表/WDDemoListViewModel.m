@@ -25,22 +25,30 @@
     AJSectionItem *sectionItem = [self.sectionArray firstObject];
     [sectionItem.cellDataArray removeAllObjects];
     
-    for (NSInteger i=0; i<10; i ++) {
-        NSString *title = [NSString stringWithFormat:@"标题 %zd", i+1];
-        WDButtonItem *item = [WDButtonItem newWithTitle:title selector:@selector(onItemClicked)];
-        [sectionItem.cellDataArray addObject:item];
-    }
+    [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"toast当前时间" selector:@selector(onToastItemClicked)]];
+    [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"弹出ActionSheet" selector:@selector(onActionSheetItemClicked)]];
+
     [self refresh];
 }
 
 -(void)onCellClicked:(NSIndexPath*)indexPath{
     AJSectionItem *sectionItem = [self.sectionArray safeObjectAtIndex:indexPath.section];
     WDButtonItem *item = [sectionItem.cellDataArray safeObjectAtIndex:indexPath.row];
-    [AJUtil toast:item.title];
+    [AJUtil performSelector:item.selector onTarget:self];
 }
 
--(void)onItemClicked{
+-(void)onToastItemClicked{
+    NSString *now = [AJUtil stringFromDate:[NSDate date] format:kDateFormatLong];
+    [AJUtil toast:now];
+}
+
+-(void)onActionSheetItemClicked{
+    NSArray *buttons = @[@"男", @"女", @"取消"];
     
+    [AJUtil actionSheet:@"请选择您的性别" buttons:buttons block:^(NSInteger buttonIndex) {
+        NSString *info = [NSString stringWithFormat:@"您选择了：%@", [buttons safeObjectAtIndex:buttonIndex]];
+        [AJUtil toast:info];
+    }];
 }
 
 @end

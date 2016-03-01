@@ -74,4 +74,6 @@ typedef void(^UIViewClickBlock)(UIView *view);
 typedef NS_ENUM(NSInteger, AKLayout) {
     EAuto = 999999999,
 };
+//居中
+#define UIEdgeInsetsCenter UIEdgeInsetsMake(EAuto,EAuto,EAuto,EAuto)
 
