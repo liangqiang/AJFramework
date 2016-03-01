@@ -6,47 +6,46 @@
 //  Copyright (c) 2015年 SunX. All rights reserved.
 //
 
-#import "DMDebugViewController.h"
-#import "DMDebugViewModel.h"
+#import "WDDebugViewController.h"
+#import "WDDebugViewModel.h"
 
-@interface DMDebugViewController ()
+@interface WDDebugViewController ()
 @property (nonatomic,strong) UIScrollView *scrollView;
-@property (nonatomic,strong) DMDebugViewModel   *viewModel;
+@property (nonatomic,strong) WDDebugViewModel   *viewModel;
 @property (nonatomic,strong) UIButton *debugButton;
 @end
 
-@implementation DMDebugViewController
+@implementation WDDebugViewController
 
--(UIScrollView*)scrollView{
-    if (!_scrollView) {
-        _scrollView = [UIScrollView newAutoLayoutView];
-        _scrollView.showsVerticalScrollIndicator = YES;
-        _scrollView.backgroundColor = HEXCOLOR(0xF5F5F5); // 背景为灰色
-        _scrollView.alwaysBounceVertical = YES;
-        
-        [self.view addSubview:_scrollView];
-        [_scrollView autoPinEdgesToSuperviewEdges];
+-(instancetype)init{
+    if (self=[super init]) {
+        self.title = @"调试";
     }
+    return self;
+}
+
+-(void)loadView{
+    [super loadView];
     
-    return _scrollView;
+    [self.view addSubview:self.scrollView];
 }
-
--(id)viewModel{
-    if (!_viewModel) {
-        _viewModel = [DMDebugViewModel new];
-        _viewModel.holder = self;
-        
-        WEAKSELF
-        [_viewModel setRefreshBlock:^{
-            [weakSelf updateViews];
-        }];
-    }
-    return _viewModel;
-}
-
 
 -(void)viewDidLoad{
-    self.scrollView.backgroundColor = [UIColor whiteColor];
+    [super viewDidLoad];
+    
+    WEAKSELF
+    self.viewModel = [self createViewModel];
+    [self.viewModel setRefreshBlock:^{
+        [weakSelf updateViews];
+    }];
+    [AJUtil runAfterDelay:0.01 block:^{
+        [weakSelf.viewModel loadData];
+    }];
+}
+
+-(void)updateViews{
+    [self.scrollView removeAllSections];
+    
     [self.scrollView addBlankSection:64];
     [self createEnvSection];
     if (self.viewModel.isPageDebug) {
@@ -56,9 +55,6 @@
     }
     [self createTabPageBackSection];
     [self createCloseSection];
-}
-
--(void)updateViews{
 }
 
 //设置环境
@@ -71,7 +67,10 @@
     segmentedControl.tag = tag(DebugSegment);
     
 //    [self.scrollView addSection:64 subviews:@[]];
-    UIView *container = createSection(40, @[label, segmentedControl], ELineNone);
+    UIView *container = [UIView new];
+    container.size = CGSizeMake(self.scrollView.width, 40);
+    [container addSubviews:label, segmentedControl, nil];
+//    createSection(40, @[label, segmentedControl], ELineNone);
     [self.scrollView addSection:container];
 //    [self.scrollView addSection:40 subviews:@[label, segmentedControl]];
 }
@@ -87,7 +86,10 @@
         [weakSelf.viewModel onTabPageBackButtonClicked];
     }];
 
-    UIView *container = createSection(8+btn.height+8, @[btn], ELineNone);
+    UIView *container = [UIView new];
+    container.size = CGSizeMake(self.scrollView.width, 8+btn.height+8);
+    [container addSubviews:btn, nil];
+//    createSection(8+btn.height+8, @[btn], ELineNone);
     [self.scrollView addSection:container];
 //    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }
@@ -102,8 +104,11 @@
     [btn handleEvent:UIControlEventTouchUpInside withBlock:^(UIControl *control) {
         [weakSelf.viewModel onPageDebugButtonClicked];
     }];
-
-    UIView *container = createSection(8+btn.height+8, @[btn], ELineNone);
+    
+    UIView *container = [UIView new];
+    container.size = CGSizeMake(self.scrollView.width, 8+btn.height+8);
+    [container addSubviews:btn, nil];
+//    UIView *container = createSection(8+btn.height+8, @[btn], ELineNone);
     [self.scrollView addSection:container];
 //    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }
@@ -119,7 +124,10 @@
         [weakSelf.viewModel onPageReleaseButtonClicked];
     }];
 
-    UIView *container = createSection(8+btn.height+8, @[btn], ELineNone);
+    UIView *container = [UIView new];
+    container.size = CGSizeMake(self.scrollView.width, 8+btn.height+8);
+    [container addSubviews:btn, nil];
+//    UIView *container = createSection(8+btn.height+8, @[btn], ELineNone);
     [self.scrollView addSection:container];
 //    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }
@@ -136,7 +144,10 @@
         [weakSelf.viewModel onCloseButtonClicked];
     }];
 
-    UIView *container = createSection(8+btn.height+8, @[btn], ELineNone);
+    UIView *container = [UIView new];
+    container.size = CGSizeMake(self.scrollView.width, 8+btn.height+8);
+    [container addSubviews:btn, nil];
+//    UIView *container = createSection(8+btn.height+8, @[btn], ELineNone);
     [self.scrollView addSection:container];
 //    [self.scrollView addSection:8+btn.height+8 subviews:@[btn]];
 }
@@ -152,6 +163,32 @@
     label.text = text;
     return label;
 }
+
+-(UIScrollView*)scrollView{
+    if (!_scrollView) {
+        _scrollView = [UIScrollView new];
+        _scrollView.backgroundColor = kLightGrayColor;
+        _scrollView.frame = self.view.bounds;
+        _scrollView.alwaysBounceVertical = YES;
+        _scrollView.autoresizingMask =  UIViewAutoresizingFlexibleHeight;
+    }
+    
+    return _scrollView;
+}
+
+//-(id)viewModel{
+//    if (!_viewModel) {
+//        _viewModel = [DMDebugViewModel new];
+//        _viewModel.holder = self;
+//        
+//        WEAKSELF
+//        [_viewModel setRefreshBlock:^{
+//            [weakSelf updateViews];
+//        }];
+//    }
+//    return _viewModel;
+//}
+
 
 
 @end

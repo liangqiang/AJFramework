@@ -28,6 +28,24 @@
     return view;
 }
 
+// cornerRadius, borderWidth, borderColor
+-(void)setCornerRadiusWith:(id)first, ... NS_REQUIRES_NIL_TERMINATION{
+    ARGS_TO_PARAMS_ARRAY(first)
+    NSNumber *cornerRadius = [params safeObjectAtIndex:0];
+    NSNumber *borderWidth = [params safeObjectAtIndex:1];
+    UIColor *borderColor = [params safeObjectAtIndex:2];
+    
+    if([cornerRadius isKindOfClass:[NSNumber class]]){
+        self.layer.cornerRadius = [cornerRadius floatValue];
+    }
+    if([borderWidth isKindOfClass:[NSNumber class]]){
+        self.layer.borderWidth = [borderWidth floatValue];
+    }
+    if([borderColor isKindOfClass:[UIColor class]]){
+        self.layer.borderColor = borderColor.CGColor;
+    }
+}
+
 @end
 
 @implementation UILabel (AKViewCreator)
@@ -90,25 +108,15 @@
 
 @implementation UIButton (AKViewCreator)
 
-// UIButton: normalBgColor, hightligtedBgColor titleLabelFont, normalColor, normalTitle, cornerRadius
+// UIButton:  titleLabelFont, normalColor, normalTitle, cornerRadius
 +(instancetype)newWith:(id)first, ... NS_REQUIRES_NIL_TERMINATION{
     ARGS_TO_PARAMS_ARRAY(first)
-    UIColor *normalBgColor = [params safeObjectAtIndex:0];
-    UIColor *hightligtedBgColor = [params safeObjectAtIndex:1];
-    UIFont *titleLabelFont = [params safeObjectAtIndex:2];
-    UIColor *normalColor = [params safeObjectAtIndex:3];
-    NSString *normalTitle = [params safeObjectAtIndex:4];
-    NSNumber *cornerRadius = [params safeObjectAtIndex:5];
+    UIFont *titleLabelFont = [params safeObjectAtIndex:0];
+    UIColor *normalColor = [params safeObjectAtIndex:1];
+    NSString *normalTitle = [params safeObjectAtIndex:2];
+    NSNumber *cornerRadius = [params safeObjectAtIndex:3];
 
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    if ([normalBgColor isKindOfClass:[UIColor class]]) {
-        UIImage *image = [AJUtil createImageWithColor:normalBgColor];
-        [button setBackgroundImage:image forState:UIControlStateNormal];
-    }
-    if ([hightligtedBgColor isKindOfClass:[UIColor class]]) {
-        UIImage *image = [AJUtil createImageWithColor:hightligtedBgColor];
-        [button setBackgroundImage:image forState:UIControlStateHighlighted];
-    }
     if ([titleLabelFont isKindOfClass:[UIFont class]]) {
         button.titleLabel.font  = titleLabelFont;
     }
@@ -124,6 +132,30 @@
     button.clipsToBounds = YES;
 
     return button;
+}
+
+// normalBgColor, highligtedBgColor, normalImage, highlightedImage
+-(void)setBgColorWith:(id)first, ... NS_REQUIRES_NIL_TERMINATION{
+    ARGS_TO_PARAMS_ARRAY(first)
+    UIColor *normalBgColor = [params safeObjectAtIndex:0];
+    UIColor *highligtedBgColor = [params safeObjectAtIndex:1];
+    UIImage *normalImage = [params safeObjectAtIndex:2];
+    UIImage *highlightedImage = [params safeObjectAtIndex:3];
+
+    if ([normalBgColor isKindOfClass:[UIColor class]]) {
+        UIImage *image = [AJUtil createImageWithColor:normalBgColor];
+        [self setBackgroundImage:image forState:UIControlStateNormal];
+    }
+    if ([highligtedBgColor isKindOfClass:[UIColor class]]) {
+        UIImage *image = [AJUtil createImageWithColor:highligtedBgColor];
+        [self setBackgroundImage:image forState:UIControlStateHighlighted];
+    }
+    if ([normalImage isKindOfClass:[UIImage class]]){
+        [self setImage:normalImage forState:UIControlStateNormal];
+    }
+    if ([highlightedImage isKindOfClass:[UIImage class]]){
+        [self setImage:highlightedImage forState:UIControlStateHighlighted];
+    }
 }
 
 @end

@@ -64,8 +64,8 @@ typedef void(^UIViewClickBlock)(UIView *view);
 //当前view截图
 - (UIImage*)createImageWithScale:(CGFloat)scale;
 
--(void)setCornerRadius:(CGFloat)radius;
--(void)setBorderWidth:(CGFloat)width color:(UIColor*)color;
+//-(void)setCornerRadius:(CGFloat)radius;
+//-(void)setBorderWidth:(CGFloat)width color:(UIColor*)color;
 
 -(void)layoutWithInsets:(UIEdgeInsets)insets;
 

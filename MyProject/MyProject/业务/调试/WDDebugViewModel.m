@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 SunX. All rights reserved.
 //
 
-#import "DMDebugViewModel.h"
+#import "WDDebugViewModel.h"
 
-@implementation DMDebugViewModel
+@implementation WDDebugViewModel
 
 - (id)init {
     self = [super init];
@@ -16,6 +16,11 @@
     }
     return self;
 }
+
+-(void)loadData{
+    [self refresh];
+}
+
 
 -(void)onCloseButtonClicked{
     [DMNaviService dismissViewController];

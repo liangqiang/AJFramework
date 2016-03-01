@@ -27,6 +27,9 @@
 @interface UIView (AKViewCreator)
 // UIView: backgroundColor
 +(instancetype)newWith:(id)first, ... NS_REQUIRES_NIL_TERMINATION;
+
+// cornerRadius, borderWidth, borderColor
+-(void)setCornerRadiusWith:(id)first, ... NS_REQUIRES_NIL_TERMINATION;
 @end
 
 @interface UILabel (AKViewCreator)
@@ -40,8 +43,11 @@
 @end
 
 @interface UIButton (AKViewCreator)
-// UIButton: backgroundColor, titleLabelFont, normalColor, normalTitle
+// UIButton:  titleLabelFont, normalColor, normalTitle, cornerRadius
 +(instancetype)newWith:(id)first, ... NS_REQUIRES_NIL_TERMINATION;
+
+// normalBgColor, highligtedBgColor, normalImage, highlightedImage
+-(void)setBgColorWith:(id)first, ... NS_REQUIRES_NIL_TERMINATION;
 @end
 
 @interface UITextView (AKViewCreator)

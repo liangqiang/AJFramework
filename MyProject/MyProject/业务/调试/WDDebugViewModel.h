@@ -7,11 +7,11 @@
 //
 
 
-@interface DMDebugViewModel : NSObject
+@interface WDDebugViewModel : NSObject
 
 @property (nonatomic, assign, readonly) BOOL isPageDebug;
 
-
+-(void)loadData;
 -(void)onPageDebugButtonClicked;
 -(void)onPageReleaseButtonClicked;
 

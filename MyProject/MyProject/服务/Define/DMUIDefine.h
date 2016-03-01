@@ -18,6 +18,7 @@
 #define kGrayColor              HEXCOLOR(0x999999)
 #define kLightBlackColor        HEXCOLOR(0x333333)
 #define kBlackColor             HEXCOLOR(0x000000)
+#define kRedColor               HEXCOLOR(0xff0000)
 
 #define kMainBlueColor           HEXCOLOR(0x44c0da)
 

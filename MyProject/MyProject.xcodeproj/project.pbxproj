@@ -33,20 +33,15 @@
 		032D4EBF1C47AE5700F9F01C /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EB71C47AE5700F9F01C /* ALView+PureLayout.m */; };
 		032D4EC01C47AE5700F9F01C /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EB91C47AE5700F9F01C /* NSArray+PureLayout.m */; };
 		032D4EC11C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EBB1C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.m */; };
-		032D4EC71C48A31F00F9F01C /* DMHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EC61C48A31F00F9F01C /* DMHomeTableView.m */; };
-		032D4ECD1C48D57600F9F01C /* DMHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4ECC1C48D57600F9F01C /* DMHomeCell.m */; };
-		032D4ED01C48D61700F9F01C /* DMHomeCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4ECF1C48D61700F9F01C /* DMHomeCellItem.m */; };
 		03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1A1C844CFF008D943E /* WDHomeViewController.m */; };
 		03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1D1C845CAE008D943E /* WDHomeViewModel.m */; };
 		03479C221C845D33008D943E /* WDButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C211C845D33008D943E /* WDButtonItem.m */; };
 		03479C2F1C848754008D943E /* AJViewCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C2E1C848754008D943E /* AJViewCreator.m */; };
-		03517AB71C1534CE00B64AC5 /* DMAnimation1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03517AB61C1534CE00B64AC5 /* DMAnimation1ViewController.m */; };
 		03517AB91C1538BC00B64AC5 /* ios动画.md in Sources */ = {isa = PBXBuildFile; fileRef = 03517AB81C1538BC00B64AC5 /* ios动画.md */; };
-		03517ABC1C16C48500B64AC5 /* DMImageViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03517ABB1C16C48500B64AC5 /* DMImageViewAnimation.m */; };
-		03517ABF1C16D45100B64AC5 /* APRoundedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 03517ABE1C16D45100B64AC5 /* APRoundedButton.m */; };
 		03517AC51C17CEE200B64AC5 /* UIScrollView+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 03517AC41C17CEE200B64AC5 /* UIScrollView+AJAddition.m */; };
+		035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05E91C85444800D050D1 /* WDDebugViewController.m */; };
+		035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05EB1C85444800D050D1 /* WDDebugViewModel.m */; };
 		037635661C02224E00F9E1BF /* 布局方法探讨.md in Sources */ = {isa = PBXBuildFile; fileRef = 037635651C02224E00F9E1BF /* 布局方法探讨.md */; };
-		03915E791BE9DC2600D77F5F /* DMUICommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 03915E781BE9DC2600D77F5F /* DMUICommon.m */; };
 		03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */; };
 		03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54D1BE869FE00E3C47D /* TBCityCoreTextLabel.m */; };
 		03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54F1BE869FE00E3C47D /* TBCityCoreTextManager.m */; };
@@ -66,7 +61,6 @@
 		03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA19691BEB2E6300DD1DAC /* NSString+MKNKAdditions.m */; };
 		03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA196B1BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m */; };
 		03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA196D1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m */; };
-		03FA7D771BEC7144006E8396 /* DMAutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FA7D761BEC7144006E8396 /* DMAutoLayoutViewController.m */; };
 		03FA7D791BEC73C1006E8396 /* 相对布局方案.md in Sources */ = {isa = PBXBuildFile; fileRef = 03FA7D781BEC73C1006E8396 /* 相对布局方案.md */; };
 		03FAACF01BF0386200558230 /* Tag方案.md in Sources */ = {isa = PBXBuildFile; fileRef = 03FAACEF1BF0386200558230 /* Tag方案.md */; };
 		03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03FD93C81BDF1AA100DCC673 /* iconfont.ttf */; };
@@ -75,14 +69,8 @@
 		03FD93D81BDF5FEA00DCC673 /* UIScrollView+DMRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D21BDF5FEA00DCC673 /* UIScrollView+DMRefresh.m */; };
 		03FD93D91BDF5FEA00DCC673 /* DMRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D41BDF5FEA00DCC673 /* DMRefreshHeaderView.m */; };
 		03FD93DA1BDF5FEA00DCC673 /* DMRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D61BDF5FEA00DCC673 /* DMRefreshFooterView.m */; };
-		03FFBB5C1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m */; };
+		03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */; };
 		03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5F1BDE308D008B51E1 /* AJUtil.m */; };
-		03FFBB661BDE31DC008B51E1 /* DMDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB621BDE31DC008B51E1 /* DMDebugViewController.m */; };
-		03FFBB671BDE31DC008B51E1 /* DMDebugViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB631BDE31DC008B51E1 /* DMDebugViewModel.m */; };
-		03FFBB6C1BDE4B8A008B51E1 /* DMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB6B1BDE4B8A008B51E1 /* DMHomeViewController.m */; };
-		03FFBB6F1BDE4BA6008B51E1 /* DMHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB6E1BDE4BA6008B51E1 /* DMHomeViewModel.m */; };
-		03FFBB731BDE5660008B51E1 /* DMTabHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB721BDE5660008B51E1 /* DMTabHomeViewController.m */; };
-		03FFBB761BDE567B008B51E1 /* DMTabHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB751BDE567B008B51E1 /* DMTabHomeViewModel.m */; };
 		03FFBB7D1BDE5B90008B51E1 /* AJIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB7C1BDE5B90008B51E1 /* AJIconFont.m */; };
 /* End PBXBuildFile section */
 
@@ -153,12 +141,6 @@
 		032D4EBC1C47AE5700F9F01C /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		032D4EBD1C47AE5700F9F01C /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
 		032D4EBE1C47AE5700F9F01C /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
-		032D4EC51C48A31F00F9F01C /* DMHomeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeTableView.h; sourceTree = "<group>"; };
-		032D4EC61C48A31F00F9F01C /* DMHomeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeTableView.m; sourceTree = "<group>"; };
-		032D4ECB1C48D57600F9F01C /* DMHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeCell.h; sourceTree = "<group>"; };
-		032D4ECC1C48D57600F9F01C /* DMHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeCell.m; sourceTree = "<group>"; };
-		032D4ECE1C48D61700F9F01C /* DMHomeCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeCellItem.h; sourceTree = "<group>"; };
-		032D4ECF1C48D61700F9F01C /* DMHomeCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeCellItem.m; sourceTree = "<group>"; };
 		03479C191C844CFF008D943E /* WDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewController.h; sourceTree = "<group>"; };
 		03479C1A1C844CFF008D943E /* WDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHomeViewController.m; sourceTree = "<group>"; };
 		03479C1C1C845CAE008D943E /* WDHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewModel.h; sourceTree = "<group>"; };
@@ -167,18 +149,14 @@
 		03479C211C845D33008D943E /* WDButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDButtonItem.m; sourceTree = "<group>"; };
 		03479C2D1C848754008D943E /* AJViewCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJViewCreator.h; sourceTree = "<group>"; };
 		03479C2E1C848754008D943E /* AJViewCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJViewCreator.m; sourceTree = "<group>"; };
-		03517AB51C1534CE00B64AC5 /* DMAnimation1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAnimation1ViewController.h; sourceTree = "<group>"; };
-		03517AB61C1534CE00B64AC5 /* DMAnimation1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAnimation1ViewController.m; sourceTree = "<group>"; };
 		03517AB81C1538BC00B64AC5 /* ios动画.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ios动画.md"; sourceTree = "<group>"; };
-		03517ABA1C16C48500B64AC5 /* DMImageViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMImageViewAnimation.h; sourceTree = "<group>"; };
-		03517ABB1C16C48500B64AC5 /* DMImageViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMImageViewAnimation.m; sourceTree = "<group>"; };
-		03517ABD1C16D45100B64AC5 /* APRoundedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APRoundedButton.h; sourceTree = "<group>"; };
-		03517ABE1C16D45100B64AC5 /* APRoundedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APRoundedButton.m; sourceTree = "<group>"; };
 		03517AC31C17CEE200B64AC5 /* UIScrollView+AJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+AJAddition.h"; sourceTree = "<group>"; };
 		03517AC41C17CEE200B64AC5 /* UIScrollView+AJAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AJAddition.m"; sourceTree = "<group>"; };
+		035C05E81C85444800D050D1 /* WDDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDebugViewController.h; sourceTree = "<group>"; };
+		035C05E91C85444800D050D1 /* WDDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDebugViewController.m; sourceTree = "<group>"; };
+		035C05EA1C85444800D050D1 /* WDDebugViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDebugViewModel.h; sourceTree = "<group>"; };
+		035C05EB1C85444800D050D1 /* WDDebugViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDebugViewModel.m; sourceTree = "<group>"; };
 		037635651C02224E00F9E1BF /* 布局方法探讨.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "布局方法探讨.md"; sourceTree = "<group>"; };
-		03915E771BE9DC2600D77F5F /* DMUICommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMUICommon.h; sourceTree = "<group>"; };
-		03915E781BE9DC2600D77F5F /* DMUICommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMUICommon.m; sourceTree = "<group>"; };
 		03F6B54A1BE869FE00E3C47D /* TBCityCoreTextAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextAttribute.h; sourceTree = "<group>"; };
 		03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityCoreTextAttribute.m; sourceTree = "<group>"; };
 		03F6B54C1BE869FE00E3C47D /* TBCityCoreTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextLabel.h; sourceTree = "<group>"; };
@@ -218,8 +196,6 @@
 		03FA196B1BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKNKAdditions.m"; sourceTree = "<group>"; };
 		03FA196C1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MKNKAdditions.h"; sourceTree = "<group>"; };
 		03FA196D1BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MKNKAdditions.m"; sourceTree = "<group>"; };
-		03FA7D751BEC7144006E8396 /* DMAutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAutoLayoutViewController.h; sourceTree = "<group>"; };
-		03FA7D761BEC7144006E8396 /* DMAutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAutoLayoutViewController.m; sourceTree = "<group>"; };
 		03FA7D781BEC73C1006E8396 /* 相对布局方案.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "相对布局方案.md"; sourceTree = "<group>"; };
 		03FAACEF1BF0386200558230 /* Tag方案.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Tag方案.md"; sourceTree = "<group>"; };
 		03FD93C71BDF1AA100DCC673 /* DMIconFontDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMIconFontDef.h; sourceTree = "<group>"; };
@@ -234,22 +210,10 @@
 		03FD93D51BDF5FEA00DCC673 /* DMRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRefreshFooterView.h; sourceTree = "<group>"; };
 		03FD93D61BDF5FEA00DCC673 /* DMRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMRefreshFooterView.m; sourceTree = "<group>"; };
 		03FD93D71BDF5FEA00DCC673 /* DMRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMRefreshHeaderView.h; sourceTree = "<group>"; };
-		03FFBB5A1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMStatusBarDebugWindow.m; sourceTree = "<group>"; };
-		03FFBB5B1BDE2F65008B51E1 /* DMStatusBarDebugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMStatusBarDebugWindow.h; sourceTree = "<group>"; };
+		03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJStatusBarDebugWindow.m; sourceTree = "<group>"; };
+		03FFBB5B1BDE2F65008B51E1 /* AJStatusBarDebugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJStatusBarDebugWindow.h; sourceTree = "<group>"; };
 		03FFBB5E1BDE308D008B51E1 /* AJUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJUtil.h; sourceTree = "<group>"; };
 		03FFBB5F1BDE308D008B51E1 /* AJUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJUtil.m; sourceTree = "<group>"; };
-		03FFBB621BDE31DC008B51E1 /* DMDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDebugViewController.m; sourceTree = "<group>"; };
-		03FFBB631BDE31DC008B51E1 /* DMDebugViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDebugViewModel.m; sourceTree = "<group>"; };
-		03FFBB641BDE31DC008B51E1 /* DMDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDebugViewController.h; sourceTree = "<group>"; };
-		03FFBB651BDE31DC008B51E1 /* DMDebugViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDebugViewModel.h; sourceTree = "<group>"; };
-		03FFBB6A1BDE4B8A008B51E1 /* DMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeViewController.h; sourceTree = "<group>"; };
-		03FFBB6B1BDE4B8A008B51E1 /* DMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeViewController.m; sourceTree = "<group>"; };
-		03FFBB6D1BDE4BA6008B51E1 /* DMHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeViewModel.h; sourceTree = "<group>"; };
-		03FFBB6E1BDE4BA6008B51E1 /* DMHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeViewModel.m; sourceTree = "<group>"; };
-		03FFBB711BDE5660008B51E1 /* DMTabHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTabHomeViewController.h; sourceTree = "<group>"; };
-		03FFBB721BDE5660008B51E1 /* DMTabHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTabHomeViewController.m; sourceTree = "<group>"; };
-		03FFBB741BDE567B008B51E1 /* DMTabHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTabHomeViewModel.h; sourceTree = "<group>"; };
-		03FFBB751BDE567B008B51E1 /* DMTabHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTabHomeViewModel.m; sourceTree = "<group>"; };
 		03FFBB7B1BDE5B90008B51E1 /* AJIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJIconFont.h; sourceTree = "<group>"; };
 		03FFBB7C1BDE5B90008B51E1 /* AJIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJIconFont.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -338,9 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				03479C181C844BE4008D943E /* 首页 */,
-				03FFBB681BDE4B04008B51E1 /* demo */,
-				03517AB41C15341700B64AC5 /* 动画 */,
-				03FA7D741BEC70EB006E8396 /* 自动布局 */,
+				035C05E71C8543B600D050D1 /* 调试 */,
 			);
 			path = "业务";
 			sourceTree = "<group>";
@@ -492,8 +454,6 @@
 			children = (
 				0316402D1BE23AA400526D8A /* DMUIDefine.h */,
 				0316402F1BE23E0F00526D8A /* DMSettingsDefine.h */,
-				03915E771BE9DC2600D77F5F /* DMUICommon.h */,
-				03915E781BE9DC2600D77F5F /* DMUICommon.m */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -548,18 +508,15 @@
 			name = model;
 			sourceTree = "<group>";
 		};
-		03517AB41C15341700B64AC5 /* 动画 */ = {
+		035C05E71C8543B600D050D1 /* 调试 */ = {
 			isa = PBXGroup;
 			children = (
-				03517AB51C1534CE00B64AC5 /* DMAnimation1ViewController.h */,
-				03517AB61C1534CE00B64AC5 /* DMAnimation1ViewController.m */,
-				03517ABA1C16C48500B64AC5 /* DMImageViewAnimation.h */,
-				03517ABB1C16C48500B64AC5 /* DMImageViewAnimation.m */,
-				03517ABD1C16D45100B64AC5 /* APRoundedButton.h */,
-				03517ABE1C16D45100B64AC5 /* APRoundedButton.m */,
+				035C05E81C85444800D050D1 /* WDDebugViewController.h */,
+				035C05E91C85444800D050D1 /* WDDebugViewController.m */,
+				035C05EA1C85444800D050D1 /* WDDebugViewModel.h */,
+				035C05EB1C85444800D050D1 /* WDDebugViewModel.m */,
 			);
-			name = "动画";
-			path = "demo/动画";
+			path = "调试";
 			sourceTree = "<group>";
 		};
 		03F6B5491BE869C600E3C47D /* TBCityCoreText */ = {
@@ -628,16 +585,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		03FA7D741BEC70EB006E8396 /* 自动布局 */ = {
-			isa = PBXGroup;
-			children = (
-				03FA7D751BEC7144006E8396 /* DMAutoLayoutViewController.h */,
-				03FA7D761BEC7144006E8396 /* DMAutoLayoutViewController.m */,
-			);
-			name = "自动布局";
-			path = "demo/自动布局";
-			sourceTree = "<group>";
-		};
 		03FD93C61BDF19D300DCC673 /* IconFont */ = {
 			isa = PBXGroup;
 			children = (
@@ -674,9 +621,8 @@
 		03FFBB591BDE0E43008B51E1 /* 调试 */ = {
 			isa = PBXGroup;
 			children = (
-				03FFBB5B1BDE2F65008B51E1 /* DMStatusBarDebugWindow.h */,
-				03FFBB5A1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m */,
-				03FFBB611BDE31B6008B51E1 /* 调试首页 */,
+				03FFBB5B1BDE2F65008B51E1 /* AJStatusBarDebugWindow.h */,
+				03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */,
 			);
 			path = "调试";
 			sourceTree = "<group>";
@@ -688,54 +634,6 @@
 				03FFBB5F1BDE308D008B51E1 /* AJUtil.m */,
 			);
 			path = AJUtil;
-			sourceTree = "<group>";
-		};
-		03FFBB611BDE31B6008B51E1 /* 调试首页 */ = {
-			isa = PBXGroup;
-			children = (
-				03FFBB641BDE31DC008B51E1 /* DMDebugViewController.h */,
-				03FFBB621BDE31DC008B51E1 /* DMDebugViewController.m */,
-				03FFBB651BDE31DC008B51E1 /* DMDebugViewModel.h */,
-				03FFBB631BDE31DC008B51E1 /* DMDebugViewModel.m */,
-			);
-			path = "调试首页";
-			sourceTree = "<group>";
-		};
-		03FFBB681BDE4B04008B51E1 /* demo */ = {
-			isa = PBXGroup;
-			children = (
-				03FFBB691BDE4B35008B51E1 /* 首页 */,
-				03FFBB701BDE5600008B51E1 /* Tab页 */,
-			);
-			path = demo;
-			sourceTree = "<group>";
-		};
-		03FFBB691BDE4B35008B51E1 /* 首页 */ = {
-			isa = PBXGroup;
-			children = (
-				03FFBB6A1BDE4B8A008B51E1 /* DMHomeViewController.h */,
-				03FFBB6B1BDE4B8A008B51E1 /* DMHomeViewController.m */,
-				03FFBB6D1BDE4BA6008B51E1 /* DMHomeViewModel.h */,
-				03FFBB6E1BDE4BA6008B51E1 /* DMHomeViewModel.m */,
-				032D4EC51C48A31F00F9F01C /* DMHomeTableView.h */,
-				032D4EC61C48A31F00F9F01C /* DMHomeTableView.m */,
-				032D4ECB1C48D57600F9F01C /* DMHomeCell.h */,
-				032D4ECC1C48D57600F9F01C /* DMHomeCell.m */,
-				032D4ECE1C48D61700F9F01C /* DMHomeCellItem.h */,
-				032D4ECF1C48D61700F9F01C /* DMHomeCellItem.m */,
-			);
-			path = "首页";
-			sourceTree = "<group>";
-		};
-		03FFBB701BDE5600008B51E1 /* Tab页 */ = {
-			isa = PBXGroup;
-			children = (
-				03FFBB711BDE5660008B51E1 /* DMTabHomeViewController.h */,
-				03FFBB721BDE5660008B51E1 /* DMTabHomeViewController.m */,
-				03FFBB741BDE567B008B51E1 /* DMTabHomeViewModel.h */,
-				03FFBB751BDE567B008B51E1 /* DMTabHomeViewModel.m */,
-			);
-			path = "Tab页";
 			sourceTree = "<group>";
 		};
 		03FFBB771BDE5B22008B51E1 /* AJIconFont */ = {
@@ -862,42 +760,36 @@
 				03FA19591BEB2D2A00DD1DAC /* MKCache.m in Sources */,
 				03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */,
 				03FA19701BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m in Sources */,
-				03FFBB5C1BDE2F65008B51E1 /* DMStatusBarDebugWindow.m in Sources */,
-				03FFBB6F1BDE4BA6008B51E1 /* DMHomeViewModel.m in Sources */,
+				03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */,
 				03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */,
 				03FD93D01BDF58D300DCC673 /* AJRefreshViewBase.m in Sources */,
 				0303D7101BD8E1970024399D /* 开发规范.md in Sources */,
 				0303D7261BD8FC3E0024399D /* NSString+AJAddition.m in Sources */,
 				03125BF31C4A7B0D00FFCA26 /* AJTableView.m in Sources */,
-				032D4EC71C48A31F00F9F01C /* DMHomeTableView.m in Sources */,
 				032D4EC11C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.m in Sources */,
 				03FFBB7D1BDE5B90008B51E1 /* AJIconFont.m in Sources */,
-				03517AB71C1534CE00B64AC5 /* DMAnimation1ViewController.m in Sources */,
 				032D4EC01C47AE5700F9F01C /* NSArray+PureLayout.m in Sources */,
 				031640321BE2449E00526D8A /* AJSettings.m in Sources */,
 				03517AC51C17CEE200B64AC5 /* UIScrollView+AJAddition.m in Sources */,
 				03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */,
 				0303D6F91BD8CE3E0024399D /* md文件格式.md in Sources */,
 				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
-				03FFBB6C1BDE4B8A008B51E1 /* DMHomeViewController.m in Sources */,
-				03FFBB671BDE31DC008B51E1 /* DMDebugViewModel.m in Sources */,
 				03FA195B1BEB2D2A00DD1DAC /* MKNetworkRequest.m in Sources */,
 				03125BF21C4A7B0D00FFCA26 /* AJSectionItem.m in Sources */,
 				03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */,
-				03915E791BE9DC2600D77F5F /* DMUICommon.m in Sources */,
 				0303D7181BD8FADA0024399D /* NSObject+AJAddition.m in Sources */,
 				032D4EBF1C47AE5700F9F01C /* ALView+PureLayout.m in Sources */,
 				0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */,
 				032D4EB41C47A94500F9F01C /* NSObject+AJViewModel.m in Sources */,
-				032D4ECD1C48D57600F9F01C /* DMHomeCell.m in Sources */,
 				0303D7271BD8FC3E0024399D /* UIImage+AJAddition.m in Sources */,
 				03F6B5581BE86A3700E3C47D /* TBCityColorManager.m in Sources */,
 				0303D7151BD8E6060024399D /* AJColorManager.m in Sources */,
 				03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */,
+				035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */,
 				0303D6F71BD8CE1F0024399D /* README.md in Sources */,
+				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,
 				03FA7D791BEC73C1006E8396 /* 相对布局方案.md in Sources */,
 				03517AB91C1538BC00B64AC5 /* ios动画.md in Sources */,
-				03FA7D771BEC7144006E8396 /* DMAutoLayoutViewController.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
 				0303D7231BD8FC3E0024399D /* UIControl+AJAddition.m in Sources */,
@@ -905,17 +797,11 @@
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
 				03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */,
-				03FFBB761BDE567B008B51E1 /* DMTabHomeViewModel.m in Sources */,
 				031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
-				03FFBB661BDE31DC008B51E1 /* DMDebugViewController.m in Sources */,
 				03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */,
-				03FFBB731BDE5660008B51E1 /* DMTabHomeViewController.m in Sources */,
-				03517ABC1C16C48500B64AC5 /* DMImageViewAnimation.m in Sources */,
-				032D4ED01C48D61700F9F01C /* DMHomeCellItem.m in Sources */,
 				0303D7241BD8FC3E0024399D /* UILabel+AJAddition.m in Sources */,
 				03479C2F1C848754008D943E /* AJViewCreator.m in Sources */,
 				037635661C02224E00F9E1BF /* 布局方法探讨.md in Sources */,
-				03517ABF1C16D45100B64AC5 /* APRoundedButton.m in Sources */,
 				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */,
 				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,

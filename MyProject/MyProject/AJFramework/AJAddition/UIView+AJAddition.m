@@ -146,17 +146,17 @@
     return origPic;
 }
 
-//cornerRadius
--(void)setCornerRadius:(CGFloat)radius {
-    self.layer.cornerRadius = radius;
-    self.clipsToBounds = YES;
-}
-
-//borderWidth, borderColor
--(void)setBorderWidth:(CGFloat)width color:(UIColor*)color{
-    self.layer.borderWidth = width;
-    self.layer.borderColor = color.CGColor;
-}
+////cornerRadius
+//-(void)setCornerRadius:(CGFloat)radius {
+//    self.layer.cornerRadius = radius;
+//    self.clipsToBounds = YES;
+//}
+//
+////borderWidth, borderColor
+//-(void)setBorderWidth:(CGFloat)width color:(UIColor*)color{
+//    self.layer.borderWidth = width;
+//    self.layer.borderColor = color.CGColor;
+//}
 
 -(void)layoutWithInsets:(UIEdgeInsets)insets{ //
     NSAssert(self.superview, @"superview must exist");

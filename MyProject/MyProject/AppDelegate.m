@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "DMStatusBarDebugWindow.h"
+#import "AJStatusBarDebugWindow.h"
 
 @interface AppDelegate ()
 
@@ -25,9 +25,9 @@
     [self setupWindow];
     
     //延迟运行
-    runBlockAfterDelay(3, ^{
-        [DMStatusBarDebugWindow show];
-    });
+    [AJUtil runAfterDelay:3 block:^{
+        [AJStatusBarDebugWindow show];
+    }];
     
     return YES;
 }

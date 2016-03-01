@@ -37,7 +37,9 @@
     [self.viewModel setRefreshBlock:^{
         [weakSelf updateViews];
     }];
-    [self.viewModel loadData];
+    [AJUtil runAfterDelay:0.01 block:^{
+        [weakSelf.viewModel loadData];
+    }];
 }
 
 -(void)updateViews{
@@ -52,7 +54,9 @@
     UIView *section = [UIView newWith:kWhiteColor, nil];
     section.size = CGSizeMake(self.scrollView.width, 64);
     
-    UIButton *button = [UIButton newWith:kPrimaryNormalColor, kPrimaryDarkColor, kFont16, kLightGrayColor, item.title, @(4), nil];
+    UIButton *button = [UIButton newWith:kFont16, kLightGrayColor, item.title, nil];
+    [button setCornerRadiusWith:@(4), nil];
+    [button setBgColorWith:kPrimaryNormalColor, kPrimaryDarkColor, nil];
     WEAKSELF
     [button handleClick:^(UIView *view) {
         [AJUtil performSelector:item.selector onTarget:weakSelf.viewModel];

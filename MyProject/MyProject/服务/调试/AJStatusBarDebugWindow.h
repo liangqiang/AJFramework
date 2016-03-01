@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DMStatusBarDebugWindow : UIWindow
+@interface AJStatusBarDebugWindow : UIWindow
 
 + (instancetype)show;
 

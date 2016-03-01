@@ -133,6 +133,12 @@ static NSMutableDictionary *s_tags = nil;
     UIGraphicsEndImageContext();
     return theImage;
 }
+
++(void)runAfterDelay:(NSTimeInterval)delay block:(void(^)())block{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
+                   dispatch_get_main_queue(), block);
+}
+
 @end
 
 #pragma mark- UIActionSheet
@@ -198,13 +204,13 @@ UIViewController *topMostViewController() {
     return topViewController;
 }
 
-void runBlockAfterDelay(NSTimeInterval delay, void (^block)(void)){
-    //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
-    //                   dispatch_get_current_queue(), block);
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
-                   dispatch_get_main_queue(), block);
-    
-}
+//void runBlockAfterDelay(NSTimeInterval delay, void (^block)(void)){
+//    //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
+//    //                   dispatch_get_current_queue(), block);
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
+//                   dispatch_get_main_queue(), block);
+//    
+//}
 
 //void runSelector(id target, SEL selector){
 //    if ([target respondsToSelector:selector]){

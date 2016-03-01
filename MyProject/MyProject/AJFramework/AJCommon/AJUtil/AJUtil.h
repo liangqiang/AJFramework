@@ -28,6 +28,8 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 
 +(UIImage*)createImageWithColor:(UIColor*)color;
 
++(void)runAfterDelay:(NSTimeInterval)delay block:(void(^)())block;
+
 @end
 
 //------------------------------------------------------------------------------
@@ -47,6 +49,6 @@ UIWindow *mainWindow();
 UIViewController *topMostViewController();
 
 //延迟执行block
-void runBlockAfterDelay(NSTimeInterval delay, void (^block)(void));
+//void runBlockAfterDelay(NSTimeInterval delay, void (^block)(void));
 
 //void runSelector(id target, SEL selector);
