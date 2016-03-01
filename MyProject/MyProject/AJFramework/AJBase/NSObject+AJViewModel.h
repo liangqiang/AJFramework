@@ -19,6 +19,5 @@ typedef void(^AJRefreshBlock)();
 
 @property (nonatomic,weak) id holder;
 
--(id)createViewModel;
 
 @end

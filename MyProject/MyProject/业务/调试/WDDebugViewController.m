@@ -38,7 +38,7 @@
     [self.viewModel setRefreshBlock:^{
         [weakSelf updateViews];
     }];
-    [AJUtil runAfterDelay:0.01 block:^{
+    [AJUtil runAfterDelay:0 block:^{
         [weakSelf.viewModel loadData];
     }];
 }

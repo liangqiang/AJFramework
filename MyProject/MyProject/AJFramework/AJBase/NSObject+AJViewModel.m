@@ -36,37 +36,4 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
--(id)createViewModel{
-    NSObject *viewModel;
-    unsigned int outCount, i;
-    objc_property_t *properties = class_copyPropertyList([self class], &outCount);
-    for (i = 0; i<outCount; i++)
-    {
-        objc_property_t property = properties[i];
-        const char* char_f = property_getName(property);
-        //property名称
-        NSString *propertyName = [NSString stringWithUTF8String:char_f];
-        if ([propertyName isEqualToString:@"viewModel"]) {
-            //获取该property的数据类型
-            const char* attries = property_getAttributes(property);
-            NSString *attrString = [NSString stringWithUTF8String:attries];
-            if ([attrString hasPrefix:@"T@"]) {
-                NSString *className = [self parseClassNameFromAttrString:attrString];
-                viewModel = [NSClassFromString(className) new];
-                viewModel.holder = self;
-            }
-        }
-    }
-    NSAssert(viewModel, @"viewModel not created.");
-    return viewModel;
-}
-
--(NSString*)parseClassNameFromAttrString:(NSString*)attrString{
-    NSRange startRange = [attrString rangeOfString:@"T@\""];
-    NSRange endRange = [attrString rangeOfString:@"\","];
-    NSRange nameRange = NSMakeRange(startRange.length, endRange.location-startRange.length);
-    NSString *className = [attrString substringWithRange:nameRange];
-    return className;
-}
-
 @end

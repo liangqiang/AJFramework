@@ -124,7 +124,7 @@ static NSMutableDictionary *s_tags = nil;
 
 +(void)performSelector:(SEL)selector onTarget:(id)target{
     if ([target respondsToSelector:selector]){
-        //    [target performSelector:callback withObject:nil];
+//            [target performSelector:callback withObject:nil];
         IMP imp = [target methodForSelector:selector];
         void (*func)(id, SEL) = (void *)imp;
         func(target, selector);

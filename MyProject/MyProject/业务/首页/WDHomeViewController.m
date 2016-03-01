@@ -26,6 +26,9 @@
 -(void)loadView{
     [super loadView];
     
+    self.viewModel = [self createViewModel];
+    self.scrollView = [self createScrollView];
+    
     [self.view addSubview:self.scrollView];
 }
 
@@ -40,11 +43,10 @@
         [weakSelf.viewModel loadData];
     }];
     
-    self.viewModel = [self createViewModel];
     [self.viewModel setRefreshBlock:^{
         [weakSelf updateViews];
     }];
-    [AJUtil runAfterDelay:0.01 block:^{
+    [AJUtil runAfterDelay:0 block:^{
         [weakSelf.viewModel loadData];
     }];
 }
@@ -77,15 +79,15 @@
 
 
 #pragma mark - Getter
--(UIScrollView*)scrollView{
-    if (!_scrollView) {
-        _scrollView = [UIScrollView new];
-        _scrollView.backgroundColor = kNormalBgColor;
-        _scrollView.frame = self.view.bounds;
-        _scrollView.alwaysBounceVertical = YES;
-        _scrollView.autoresizingMask =  UIViewAutoresizingFlexibleHeight;
-    }
-    return _scrollView;
-}
+//-(UIScrollView*)scrollView{
+//    if (!_scrollView) {
+//        _scrollView = [UIScrollView new];
+//        _scrollView.backgroundColor = kNormalBgColor;
+//        _scrollView.frame = self.view.bounds;
+//        _scrollView.alwaysBounceVertical = YES;
+//        _scrollView.autoresizingMask =  UIViewAutoresizingFlexibleHeight;
+//    }
+//    return _scrollView;
+//}
 
 @end

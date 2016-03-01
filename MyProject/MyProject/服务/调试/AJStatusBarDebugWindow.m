@@ -47,8 +47,8 @@
 
 -(void)onDebugClicked{
     NSString *topVCName = NSStringFromClass([topMostViewController() class]);
-    if( ![topVCName isEqualToString:@"DMDebugViewController"] ){
-        [AJNavi presentViewController:@"DMDebugViewController"];
+    if( ![topVCName isEqualToString:@"WDDebugViewController"] ){
+        [AJNavi presentViewController:@"WDDebugViewController"];
     }else{
         [AJUtil toast:@"调试页已开启✈️🐶✈️"];
         [AJNavi dismissViewController];

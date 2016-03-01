@@ -22,6 +22,7 @@
 
 -(void)onFrameworkDemoClicked{
     [AJUtil toast:@"onFrameworkDemoClicked"];
+    [AJNavi pushViewController:@"WDDemoListViewController"];
 }
 
 -(void)onIphoneDemoClicked{

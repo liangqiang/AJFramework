@@ -85,6 +85,7 @@
 
     UIViewController* vc = [self createViewController:className withProp:prop];
     if (vc) {
+        [vc defaultLeftNaviButton]; //默认左按钮
         [navi pushViewController:vc animated:[AJNavi sharedInstance].animated];
     }
     return vc;
