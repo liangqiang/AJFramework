@@ -6,12 +6,12 @@
 //  Copyright (c) 2015年 liangqiang. All rights reserved.
 //
 
-#import "DMNaviService.h"
+#import "AJNavi.h"
 
-@implementation DMNaviService
+@implementation AJNavi
 
 +(instancetype)sharedInstance {
-    static DMNaviService *object;
+    static AJNavi *object;
     static dispatch_once_t once;
     dispatch_once(&once, ^{
         object = [self new];
@@ -48,7 +48,7 @@
 +(UIViewController*)setRootViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController *navi = (UINavigationController*)[mainWindow() rootViewController];
     UIViewController* vc = [self createViewController:className withProp:prop];
-    [navi setViewControllers:@[vc] animated:[DMNaviService sharedInstance].animated];
+    [navi setViewControllers:@[vc] animated:[AJNavi sharedInstance].animated];
     navi.navigationBarHidden = [vc isKindOfClass:[UITabBarController class]]; //navi
 //    if ([vc isKindOfClass:[UITabBarController class]] || [vc isKindOfClass:[UINavigationController class]]) {
 //        mainWindow().rootViewController = vc;
@@ -85,14 +85,14 @@
 
     UIViewController* vc = [self createViewController:className withProp:prop];
     if (vc) {
-        [navi pushViewController:vc animated:[DMNaviService sharedInstance].animated];
+        [navi pushViewController:vc animated:[AJNavi sharedInstance].animated];
     }
     return vc;
 }
 
 +(UIViewController*)popViewController{
     UINavigationController* navi = [self navigationController];
-    return [navi popViewControllerAnimated:[DMNaviService sharedInstance].animated];
+    return [navi popViewControllerAnimated:[AJNavi sharedInstance].animated];
 }
 
 #pragma mark - present vc
@@ -109,7 +109,7 @@
 
     UIViewController* vc = [self createViewController:className withProp:prop];
     if (vc) {
-        [navi presentViewController:vc animated:[DMNaviService sharedInstance].animated completion:^{
+        [navi presentViewController:vc animated:[AJNavi sharedInstance].animated completion:^{
             //null
         }];
     }
@@ -118,7 +118,7 @@
 
 +(void)dismissViewController{
     UINavigationController* navi = [self navigationController];
-    [navi dismissViewControllerAnimated:[DMNaviService sharedInstance].animated completion:^{
+    [navi dismissViewControllerAnimated:[AJNavi sharedInstance].animated completion:^{
         //null
     }];
 }

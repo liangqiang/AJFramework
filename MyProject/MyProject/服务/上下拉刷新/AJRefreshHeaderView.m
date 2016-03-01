@@ -6,15 +6,15 @@
 //  Copyright (c) 2015年 SunX. All rights reserved.
 //
 
-#import "DMRefreshHeaderView.h"
+#import "AJRefreshHeaderView.h"
 
-@interface DMRefreshHeaderView ()
+@interface AJRefreshHeaderView ()
 
 @property (nonatomic, strong) UIActivityIndicatorView*           loadingView;
 @property (nonatomic, strong) UILabel*  hintLabel;
 @end
 
-@implementation DMRefreshHeaderView
+@implementation AJRefreshHeaderView
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

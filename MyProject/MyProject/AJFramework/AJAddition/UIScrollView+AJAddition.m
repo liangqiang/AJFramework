@@ -33,7 +33,15 @@
 }
 
 -(void)removeAllSections{
+    UIView *headerView = [self viewWithTag:tag(AJRefreshHeaderView)];
+    UIView *footerView = [self viewWithTag:tag(AJRefreshFooterView)];
     [self removeAllSubviews];
+    if (headerView) {
+        [self addSubview:headerView];
+    }
+    if (footerView) {
+        [self addSubview:footerView];
+    }
     self.contentHeight = 0;
     [self setContentSize:CGSizeMake(self.width, 0)];
 }

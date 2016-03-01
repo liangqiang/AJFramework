@@ -34,6 +34,7 @@
         [self addObserver];
         headerView.origin = CGPointMake(0, -headerView.height);
         [self addSubview:headerView];
+        headerView.tag = tag(AJRefreshHeaderView);
     }
 }
 
@@ -52,6 +53,7 @@
         [self addObserver];
         footerView.origin = CGPointMake(0, MAX(self.height, self.contentSize.height));
         [self addSubview:footerView];
+        footerView.tag = tag(AJRefreshFooterView);
     }
 }
 

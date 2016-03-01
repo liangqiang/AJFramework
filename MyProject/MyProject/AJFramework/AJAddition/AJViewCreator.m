@@ -143,11 +143,11 @@
     UIImage *highlightedImage = [params safeObjectAtIndex:3];
 
     if ([normalBgColor isKindOfClass:[UIColor class]]) {
-        UIImage *image = [AJUtil createImageWithColor:normalBgColor];
+        UIImage *image = [UIImage newWithColor:normalBgColor];
         [self setBackgroundImage:image forState:UIControlStateNormal];
     }
     if ([highligtedBgColor isKindOfClass:[UIColor class]]) {
-        UIImage *image = [AJUtil createImageWithColor:highligtedBgColor];
+        UIImage *image = [UIImage newWithColor:highligtedBgColor];
         [self setBackgroundImage:image forState:UIControlStateHighlighted];
     }
     if ([normalImage isKindOfClass:[UIImage class]]){

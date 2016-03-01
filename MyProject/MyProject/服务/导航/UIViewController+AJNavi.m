@@ -6,23 +6,23 @@
 //  Copyright (c) 2015年 liangqiang. All rights reserved.
 //
 
-#import "UIViewController+DMNavi.h"
+#import "UIViewController+AJNavi.h"
 
-@implementation UIViewController (DMNavi)
+@implementation UIViewController (AJNavi)
 
 +(void)load{
 }
 
--(UIButton*)dmDefaultLeftNaviButton{
+-(UIButton*)defaultLeftNaviButton{
     UIButton *button = objc_getAssociatedObject(self, _cmd);
     if (button == nil) {
         button =  [UIButton buttonWithType:UIButtonTypeCustom];
         button.frame=CGRectMake(0, 0, 60, 44.0);
-        [button setImage:DMIconFontWhiteBack forState:UIControlStateNormal];
-        [button setImage:DMIconFontWhiteBackSelected forState:UIControlStateHighlighted];
+        [button setImage:AJIconFontWhiteBack forState:UIControlStateNormal];
+        [button setImage:AJIconFontWhiteBackSelected forState:UIControlStateHighlighted];
         [button setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 40)];
         [button handleClick:^(UIView *view) {
-            [DMNaviService popViewController];
+            [AJNavi popViewController];
         }];
 
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
@@ -31,7 +31,7 @@
     return button;
 }
 
--(UIButton*)dmLeftNaviButton{
+-(UIButton*)leftNaviButton{
     UIButton *button = objc_getAssociatedObject(self, _cmd);
     if (button == nil) {
         button =  [UIButton buttonWithType:UIButtonTypeCustom];
@@ -48,7 +48,7 @@
 }
 
 
--(UIButton*)dmRightNaviButton{
+-(UIButton*)rightNaviButton{
     UIButton *button = objc_getAssociatedObject(self, _cmd);
     if (button == nil) {
         button =  [UIButton buttonWithType:UIButtonTypeCustom];

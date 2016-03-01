@@ -6,16 +6,16 @@
 //  Copyright (c) 2015年 SunX. All rights reserved.
 //
 
-#import "UIScrollView+DMRefresh.h"
-#import "DMRefreshHeaderView.h"
-#import "DMRefreshFooterView.h"
+#import "UIScrollView+AJRefresh.h"
+#import "AJRefreshHeaderView.h"
+#import "AJRefreshFooterView.h"
 
-@implementation UIScrollView (DMRefresh)
+@implementation UIScrollView (AJRefresh)
 
--(void)setDMRefreshHeaderBlock:(AJRefreshViewBlock)headerBlock{
+-(void)setRefreshHeaderBlock:(AJRefreshViewBlock)headerBlock{
     if (headerBlock) {
         CGRect rect = CGRectMake(0, 0, self.width, 44);
-        DMRefreshHeaderView* headerView = [[DMRefreshHeaderView alloc]initWithFrame:rect];
+        AJRefreshHeaderView* headerView = [[AJRefreshHeaderView alloc]initWithFrame:rect];
         headerView.refreshBlock = headerBlock;
         headerView.isHeader = YES;
         self.refreshHeaderView = headerView;
@@ -24,10 +24,10 @@
     }
 }
 
--(void)setDMRefreshFooterBlock:(AJRefreshViewBlock)footerBlock{
+-(void)setRefreshFooterBlock:(AJRefreshViewBlock)footerBlock{
     if (footerBlock) {
         CGRect rect = CGRectMake(0, 0, self.width, 44);
-        DMRefreshFooterView* footerView = [[DMRefreshFooterView alloc]initWithFrame:rect];
+        AJRefreshFooterView* footerView = [[AJRefreshFooterView alloc]initWithFrame:rect];
         footerView.refreshBlock = footerBlock;
         footerView.isHeader = NO;
         self.refreshFooterView = footerView;

@@ -6,15 +6,15 @@
 //  Copyright (c) 2015年 SunX. All rights reserved.
 //
 
-#import "DMRefreshFooterView.h"
+#import "AJRefreshFooterView.h"
 
-@interface DMRefreshFooterView ()
+@interface AJRefreshFooterView ()
 
 @property (nonatomic, strong) UIActivityIndicatorView*           loadingView;
 @property (nonatomic, strong) UILabel*  hintLabel;
 @end
 
-@implementation DMRefreshFooterView
+@implementation AJRefreshFooterView
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "AJRefreshViewBase.h"
 
-@interface DMRefreshHeaderView : AJRefreshViewBase
+@interface AJRefreshHeaderView : AJRefreshViewBase
 @end

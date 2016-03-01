@@ -40,7 +40,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [UINavigationController new];
     //首界面
-    [DMNaviService setRootViewController:@"WDHomeViewController" withProp:@{@"title":@"首页"}];
+    [AJNavi setRootViewController:@"WDHomeViewController" withProp:@{@"title":@"首页"}];
     [self.window makeKeyAndVisible];
 }
 

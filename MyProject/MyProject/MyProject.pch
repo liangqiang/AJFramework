@@ -33,13 +33,13 @@
 
 
 //服务
-#import "DMNaviService.h"
-#import "UIViewController+DMNavi.h"
+#import "AJNavi.h"
+#import "UIViewController+AJNavi.h"
 
-#import "DMIconFontDef.h"
-#import "UIScrollView+DMRefresh.h"
-#import "DMUIDefine.h"
-#import "DMSettingsDefine.h"
+#import "AJIconFontDef.h"
+#import "UIScrollView+AJRefresh.h"
+#import "AJUIDefine.h"
+#import "AJSettingsDefine.h"
 //#import "DMUICommon.h"
 
 #import "MKNetworkKit.h"

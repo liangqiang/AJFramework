@@ -23,27 +23,27 @@
 
 
 -(void)onCloseButtonClicked{
-    [DMNaviService dismissViewController];
+    [AJNavi dismissViewController];
 }
 
 -(void)onPageDebugButtonClicked{
-    [DMNaviService dismissViewController];
-    [DMNaviService setRootViewController:@"AJPageDebugViewController"];
+    [AJNavi dismissViewController];
+    [AJNavi setRootViewController:@"AJPageDebugViewController"];
 }
 
 -(void)onPageReleaseButtonClicked{
-    [DMNaviService dismissViewController];
-    [DMNaviService setRootViewController:@"AJChoiceRoleViewController"];
+    [AJNavi dismissViewController];
+    [AJNavi setRootViewController:@"AJChoiceRoleViewController"];
 }
 
 
 -(void)onTabPageBackButtonClicked{
-    [DMNaviService dismissViewController];
-    [DMNaviService popViewController];
+    [AJNavi dismissViewController];
+    [AJNavi popViewController];
 }
 
 -(BOOL)isPageDebug{
-    UINavigationController* nav = [DMNaviService navigationController];
+    UINavigationController* nav = [AJNavi navigationController];
     NSArray* vcs = nav.viewControllers;
     NSString *className = [NSString stringWithUTF8String:object_getClassName(vcs[0])];
     return [className isEqualToString:@"AJPageDebugViewController"];

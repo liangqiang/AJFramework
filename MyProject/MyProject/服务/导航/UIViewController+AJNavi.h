@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UIViewController (DMNavi)
+@interface UIViewController (AJNavi)
 
--(UIButton*)dmDefaultLeftNaviButton;
-
--(UIButton*)dmRightNaviButton;
--(UIButton*)dmLeftNaviButton;
+-(UIButton*)defaultLeftNaviButton;
+-(UIButton*)rightNaviButton;
+-(UIButton*)leftNaviButton;
 
 @end

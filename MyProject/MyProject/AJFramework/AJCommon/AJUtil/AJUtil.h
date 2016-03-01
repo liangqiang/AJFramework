@@ -13,6 +13,8 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 
 @interface AJUtil : NSObject
 
++(instancetype)sharedInstance;
+
 +(void)toast:(NSString*)msg;
 
 +(id)actionSheet:(NSString*)title buttons:(NSArray*)buttons block:(AJActionSheetClickBlock)block;
@@ -25,8 +27,6 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 +(NSInteger)tag:(NSString*)key;
 
 +(void)performSelector:(SEL)selector onTarget:(id)target;
-
-+(UIImage*)createImageWithColor:(UIColor*)color;
 
 +(void)runAfterDelay:(NSTimeInterval)delay block:(void(^)())block;
 

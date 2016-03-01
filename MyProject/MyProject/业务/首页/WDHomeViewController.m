@@ -32,8 +32,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.viewModel = [self createViewModel];
     WEAKSELF
+    [self.scrollView setRefreshHeaderBlock:^{
+        [weakSelf.viewModel loadData];
+    }];
+    [self.scrollView setRefreshFooterBlock:^{
+        [weakSelf.viewModel loadData];
+    }];
+    
+    self.viewModel = [self createViewModel];
     [self.viewModel setRefreshBlock:^{
         [weakSelf updateViews];
     }];
@@ -43,6 +50,7 @@
 }
 
 -(void)updateViews{
+    [self.scrollView stopRefresh];
     [self.scrollView removeAllSections];
     for (WDButtonItem *item in self.viewModel.buttonArray) {
         UIView *section = [self createSectionWithItem:item];

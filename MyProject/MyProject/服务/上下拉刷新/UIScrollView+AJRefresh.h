@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "UIScrollView+AJRefreshBase.h"
 
-@interface UIScrollView (DMRefresh)
+@interface UIScrollView (AJRefresh)
 
 //独立方法，设置刷新
--(void)setDMRefreshHeaderBlock:(AJRefreshViewBlock)headerBlock;
--(void)setDMRefreshFooterBlock:(AJRefreshViewBlock)footerBlock;
+-(void)setRefreshHeaderBlock:(AJRefreshViewBlock)headerBlock;
+-(void)setRefreshFooterBlock:(AJRefreshViewBlock)footerBlock;
 
 //去掉刷新View
 //1、设置为nil。   self.refreshFooterView = nil;

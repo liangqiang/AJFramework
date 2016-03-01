@@ -29,5 +29,6 @@
 - (UIImage*)toJPGImageWithCompressionQuality:(CGFloat)compressionQuality;
 
 
++(UIImage*)newWithColor:(UIColor*)color;
 
 @end

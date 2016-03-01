@@ -14,6 +14,15 @@ static NSMutableDictionary *s_tags = nil;
 
 @implementation AJUtil
 
++(instancetype)sharedInstance {
+    static AJUtil *object;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        object = [self new];
+    });
+    return object;
+}
+
 +(void)toast:(NSString*)msg{
     //创建label，宽度固定长度扩展
     int padding=30;
@@ -120,18 +129,6 @@ static NSMutableDictionary *s_tags = nil;
         void (*func)(id, SEL) = (void *)imp;
         func(target, selector);
     }
-}
-
-+(UIImage*)createImageWithColor:(UIColor*)color
-{
-    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return theImage;
 }
 
 +(void)runAfterDelay:(NSTimeInterval)delay block:(void(^)())block{
