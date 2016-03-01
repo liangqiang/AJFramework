@@ -111,10 +111,10 @@
 
 
 -(UIButton*)createButton:(NSString*)title selector:(NSString*)sel{
-    UIButton *button = createTextButton(title, kFont12, kGrayTextColor, kBlackTextColor);
+    UIButton *button = createTextButton(title, kFont12, kGrayColor, kBlackColor);
     button.size = CGSizeMake(60, 30);
     button.layer.cornerRadius = button.height/2.0;
-    button.layer.borderColor = [kGrayTextColor CGColor];
+    button.layer.borderColor = [kGrayColor CGColor];
     button.layer.borderWidth = kOnePixel;
     button.extraData = sel;
     

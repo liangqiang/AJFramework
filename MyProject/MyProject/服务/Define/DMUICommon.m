@@ -14,7 +14,7 @@ UIView *createLine(NSInteger y, NSInteger startX, NSInteger width){
     CGFloat posY = (y==0) ? 0 : y-LINE_HEIGHT;
     CGRect rect = CGRectMake(startX, posY, width, LINE_HEIGHT);
     UIView *line =  [[UIView alloc] initWithFrame:rect];
-    line.backgroundColor = kSegmentLineColor;
+    line.backgroundColor = kGrayColor;
     return line;
 }
 

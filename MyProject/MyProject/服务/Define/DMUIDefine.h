@@ -13,20 +13,24 @@
 #define kOnePixel (1 / [[UIScreen mainScreen] scale])
 
 // UI相关颜色值
-#define kMainBlueColor              HEXCOLOR(0x44c0da)
+#define kWhiteColor             HEXCOLOR(0xffffff)
+#define kLightGrayColor         HEXCOLOR(0xdddddd)
+#define kGrayColor              HEXCOLOR(0x999999)
+#define kLightBlackColor        HEXCOLOR(0x333333)
+#define kBlackColor             HEXCOLOR(0x000000)
+
+#define kMainBlueColor           HEXCOLOR(0x44c0da)
+
 
 #define kNavBgColor             HEXCOLOR(0x46c2dc)
 #define kNormalBgColor          HEXCOLOR(0xf0f0f6)
-#define kLightGrayColor         HEXCOLOR(0xdddddd)
-// 字体颜色
-#define kGrayTextColor          HEXCOLOR(0x999999)
-#define kBlackTextColor         HEXCOLOR(0x333333)
-// 分割线颜色
-#define kSegmentLineColor       HEXCOLOR(0xe4e4e4)
 // 提醒红色
 #define kAlertRedColor          HEXCOLOR(0xf43530)
 
-#define kCellSelectedBGColor    HEXCOLOR(0xf7f7f7)
+// bootstrap样式
+#define kPrimaryLightColor              HEXCOLOR(0x0088cc)
+#define kPrimaryNormalColor              HEXCOLOR(0x0066cc)
+#define kPrimaryDarkColor              HEXCOLOR(0x0044cc)
 
 // UI相关字体
 #define kFont10                 [UIFont systemFontOfSize:10]

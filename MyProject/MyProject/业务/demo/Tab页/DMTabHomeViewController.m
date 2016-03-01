@@ -68,7 +68,7 @@
         _viewModel.holder = self;
         
         WEAKSELF
-        [_viewModel setAjRefreshBlock:^{
+        [_viewModel setRefreshBlock:^{
             [weakSelf updateViews];
         }];
     }

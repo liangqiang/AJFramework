@@ -40,12 +40,12 @@
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [UINavigationController new];
     //首界面
-    [DMNaviService setRootViewController:@"DMHomeViewController" withProp:@{@"title":@"首页"}];
+    [DMNaviService setRootViewController:@"WDHomeViewController" withProp:@{@"title":@"首页"}];
     [self.window makeKeyAndVisible];
 }
 
 -(void)setTabBarStyle{
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:kGrayTextColor} forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:kGrayColor} forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:kMainBlueColor} forState:UIControlStateSelected];
 }
 
@@ -53,7 +53,7 @@
     // 设置导航栏背景色与字体颜色
     [[UINavigationBar appearance] setBarTintColor:kNavBgColor];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:HEXCOLOR(0xffffff), NSFontAttributeName:[UIFont systemFontOfSize:18]}];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:kWhiteColor, NSFontAttributeName:kFont18}];
 }
 
 @end

@@ -12,11 +12,13 @@ typedef void(^AJRefreshBlock)();
 
 @interface NSObject (AJViewModel)
 
-@property (nonatomic,copy) AJRefreshBlock ajRefreshBlock;
--(void)setAjRefreshBlock:(AJRefreshBlock)ajRefreshBlock;
+@property (nonatomic,copy) AJRefreshBlock refreshBlock;
+-(void)setRefreshBlock:(AJRefreshBlock)refreshBlock;
 
--(void)ajRefresh;
+-(void)refresh;
 
 @property (nonatomic,weak) id holder;
+
+-(id)createViewModel;
 
 @end

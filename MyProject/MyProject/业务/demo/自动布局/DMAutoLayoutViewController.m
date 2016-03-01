@@ -50,7 +50,7 @@
     [parent addSubview:button];
     layoutInParent(button, EAuto, EAuto, EAuto, EAuto);
     
-    UIButton *button2 = createTextButton(@"保存", kFont16, kGrayTextColor, kBlackTextColor);
+    UIButton *button2 = createTextButton(@"保存", kFont16, kGrayColor, kBlackColor);
     button2.size = CGSizeMake(40, 40);
     button2.backgroundColor = [UIColor grayColor];
     [parent addSubview:button2];

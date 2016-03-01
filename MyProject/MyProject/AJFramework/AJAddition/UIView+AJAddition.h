@@ -45,6 +45,9 @@ typedef void(^UIViewClickBlock)(UIView *view);
  *  view.frame.size
  */
 @property (nonatomic, assign) CGSize  size;
+
+
+-(void)addSubviews:(UIView*)firstView, ... NS_REQUIRES_NIL_TERMINATION;
 /**
  *  清空所有子view
  */
@@ -55,9 +58,20 @@ typedef void(^UIViewClickBlock)(UIView *view);
 -(void)handleClick:(UIViewClickBlock)handle;
 
 //增加一根线
-- (UIView*)addLineWithY:(CGFloat)originY;
+- (UIView*)addLineWithY:(CGFloat)originY color:(UIColor*)color;
+- (UIView*)addLineWithX:(CGFloat)originX color:(UIColor*)color;
 
 //当前view截图
 - (UIImage*)createImageWithScale:(CGFloat)scale;
 
+-(void)setCornerRadius:(CGFloat)radius;
+-(void)setBorderWidth:(CGFloat)width color:(UIColor*)color;
+
+-(void)layoutWithInsets:(UIEdgeInsets)insets;
+
 @end
+
+typedef NS_ENUM(NSInteger, AKLayout) {
+    EAuto = 999999999,
+};
+

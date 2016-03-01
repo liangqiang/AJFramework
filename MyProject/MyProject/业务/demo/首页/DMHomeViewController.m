@@ -82,7 +82,7 @@
         _viewModel = [DMHomeViewModel new];
         _viewModel.holder = self;
         WEAKSELF
-        [_viewModel setAjRefreshBlock:^{
+        [_viewModel setRefreshBlock:^{
             [weakSelf updateViews];
         }];
         

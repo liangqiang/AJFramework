@@ -39,7 +39,7 @@
     AJSectionItem *sectionItem = [self.sectionArray firstObject];
     DMHomeCellItem *item = [sectionItem.cellDataArray safeObjectAtIndex:indexPath.row];
 
-    runSelector(self, NSSelectorFromString(item.clickSel));
+//    runSelector(self, NSSelectorFromString(item.clickSel));
 }
 
 //-(NSMutableArray*)buttons{

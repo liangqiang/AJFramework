@@ -36,6 +36,10 @@
 		032D4EC71C48A31F00F9F01C /* DMHomeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EC61C48A31F00F9F01C /* DMHomeTableView.m */; };
 		032D4ECD1C48D57600F9F01C /* DMHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4ECC1C48D57600F9F01C /* DMHomeCell.m */; };
 		032D4ED01C48D61700F9F01C /* DMHomeCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4ECF1C48D61700F9F01C /* DMHomeCellItem.m */; };
+		03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1A1C844CFF008D943E /* WDHomeViewController.m */; };
+		03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1D1C845CAE008D943E /* WDHomeViewModel.m */; };
+		03479C221C845D33008D943E /* WDButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C211C845D33008D943E /* WDButtonItem.m */; };
+		03479C2F1C848754008D943E /* AJViewCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C2E1C848754008D943E /* AJViewCreator.m */; };
 		03517AB71C1534CE00B64AC5 /* DMAnimation1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03517AB61C1534CE00B64AC5 /* DMAnimation1ViewController.m */; };
 		03517AB91C1538BC00B64AC5 /* ios动画.md in Sources */ = {isa = PBXBuildFile; fileRef = 03517AB81C1538BC00B64AC5 /* ios动画.md */; };
 		03517ABC1C16C48500B64AC5 /* DMImageViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03517ABB1C16C48500B64AC5 /* DMImageViewAnimation.m */; };
@@ -155,6 +159,14 @@
 		032D4ECC1C48D57600F9F01C /* DMHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeCell.m; sourceTree = "<group>"; };
 		032D4ECE1C48D61700F9F01C /* DMHomeCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMHomeCellItem.h; sourceTree = "<group>"; };
 		032D4ECF1C48D61700F9F01C /* DMHomeCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMHomeCellItem.m; sourceTree = "<group>"; };
+		03479C191C844CFF008D943E /* WDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewController.h; sourceTree = "<group>"; };
+		03479C1A1C844CFF008D943E /* WDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHomeViewController.m; sourceTree = "<group>"; };
+		03479C1C1C845CAE008D943E /* WDHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewModel.h; sourceTree = "<group>"; };
+		03479C1D1C845CAE008D943E /* WDHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHomeViewModel.m; sourceTree = "<group>"; };
+		03479C201C845D33008D943E /* WDButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDButtonItem.h; sourceTree = "<group>"; };
+		03479C211C845D33008D943E /* WDButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDButtonItem.m; sourceTree = "<group>"; };
+		03479C2D1C848754008D943E /* AJViewCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJViewCreator.h; sourceTree = "<group>"; };
+		03479C2E1C848754008D943E /* AJViewCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJViewCreator.m; sourceTree = "<group>"; };
 		03517AB51C1534CE00B64AC5 /* DMAnimation1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMAnimation1ViewController.h; sourceTree = "<group>"; };
 		03517AB61C1534CE00B64AC5 /* DMAnimation1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMAnimation1ViewController.m; sourceTree = "<group>"; };
 		03517AB81C1538BC00B64AC5 /* ios动画.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ios动画.md"; sourceTree = "<group>"; };
@@ -325,6 +337,7 @@
 		0303D6F01BD8C8CF0024399D /* 业务 */ = {
 			isa = PBXGroup;
 			children = (
+				03479C181C844BE4008D943E /* 首页 */,
 				03FFBB681BDE4B04008B51E1 /* demo */,
 				03517AB41C15341700B64AC5 /* 动画 */,
 				03FA7D741BEC70EB006E8396 /* 自动布局 */,
@@ -395,6 +408,8 @@
 		0303D70B1BD8DFF60024399D /* AJAddition */ = {
 			isa = PBXGroup;
 			children = (
+				03479C2D1C848754008D943E /* AJViewCreator.h */,
+				03479C2E1C848754008D943E /* AJViewCreator.m */,
 				0303D7161BD8FADA0024399D /* NSObject+AJAddition.h */,
 				0303D7171BD8FADA0024399D /* NSObject+AJAddition.m */,
 				0303D71F1BD8FC3E0024399D /* NSString+AJAddition.h */,
@@ -510,6 +525,27 @@
 				032D4EBE1C47AE5700F9F01C /* PureLayoutDefines.h */,
 			);
 			name = PureLayout;
+			sourceTree = "<group>";
+		};
+		03479C181C844BE4008D943E /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				03479C191C844CFF008D943E /* WDHomeViewController.h */,
+				03479C1A1C844CFF008D943E /* WDHomeViewController.m */,
+				03479C1F1C845D07008D943E /* model */,
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		03479C1F1C845D07008D943E /* model */ = {
+			isa = PBXGroup;
+			children = (
+				03479C1C1C845CAE008D943E /* WDHomeViewModel.h */,
+				03479C1D1C845CAE008D943E /* WDHomeViewModel.m */,
+				03479C201C845D33008D943E /* WDButtonItem.h */,
+				03479C211C845D33008D943E /* WDButtonItem.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		03517AB41C15341700B64AC5 /* 动画 */ = {
@@ -818,6 +854,7 @@
 				03FA194C1BEB113A00DD1DAC /* UIViewController+DMNavi.m in Sources */,
 				030900CA1BDB97B70073DAA7 /* DMNaviService.m in Sources */,
 				03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */,
+				03479C221C845D33008D943E /* WDButtonItem.m in Sources */,
 				03FD93DA1BDF5FEA00DCC673 /* DMRefreshFooterView.m in Sources */,
 				03FA196F1BEB2E6300DD1DAC /* NSDate+RFC1123.m in Sources */,
 				0303D7041BD8D9EE0024399D /* 模块文件依赖关系.md in Sources */,
@@ -839,12 +876,14 @@
 				032D4EC01C47AE5700F9F01C /* NSArray+PureLayout.m in Sources */,
 				031640321BE2449E00526D8A /* AJSettings.m in Sources */,
 				03517AC51C17CEE200B64AC5 /* UIScrollView+AJAddition.m in Sources */,
+				03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */,
 				0303D6F91BD8CE3E0024399D /* md文件格式.md in Sources */,
 				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
 				03FFBB6C1BDE4B8A008B51E1 /* DMHomeViewController.m in Sources */,
 				03FFBB671BDE31DC008B51E1 /* DMDebugViewModel.m in Sources */,
 				03FA195B1BEB2D2A00DD1DAC /* MKNetworkRequest.m in Sources */,
 				03125BF21C4A7B0D00FFCA26 /* AJSectionItem.m in Sources */,
+				03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */,
 				03915E791BE9DC2600D77F5F /* DMUICommon.m in Sources */,
 				0303D7181BD8FADA0024399D /* NSObject+AJAddition.m in Sources */,
 				032D4EBF1C47AE5700F9F01C /* ALView+PureLayout.m in Sources */,
@@ -874,6 +913,7 @@
 				03517ABC1C16C48500B64AC5 /* DMImageViewAnimation.m in Sources */,
 				032D4ED01C48D61700F9F01C /* DMHomeCellItem.m in Sources */,
 				0303D7241BD8FC3E0024399D /* UILabel+AJAddition.m in Sources */,
+				03479C2F1C848754008D943E /* AJViewCreator.m in Sources */,
 				037635661C02224E00F9E1BF /* 布局方法探讨.md in Sources */,
 				03517ABF1C16D45100B64AC5 /* APRoundedButton.m in Sources */,
 				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
@@ -990,6 +1030,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = MyProject/MyProject.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1001,6 +1042,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = MyProject/MyProject.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

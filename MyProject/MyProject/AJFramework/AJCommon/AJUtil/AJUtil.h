@@ -24,6 +24,10 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 
 +(NSInteger)tag:(NSString*)key;
 
++(void)performSelector:(SEL)selector onTarget:(id)target;
+
++(UIImage*)createImageWithColor:(UIColor*)color;
+
 @end
 
 //------------------------------------------------------------------------------
@@ -45,4 +49,4 @@ UIViewController *topMostViewController();
 //延迟执行block
 void runBlockAfterDelay(NSTimeInterval delay, void (^block)(void));
 
-void runSelector(id target, SEL selector);
+//void runSelector(id target, SEL selector);

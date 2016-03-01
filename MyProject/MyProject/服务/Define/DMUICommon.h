@@ -36,9 +36,9 @@ UIButton *createTextButton(NSString *text, UIFont *font, UIColor *normal, UIColo
 //         2.left, right, top, bottom
 //         3.akPosInParent, akPosByBrother方法
 
-typedef NS_ENUM(NSInteger, AKLayout) {
-    EAuto = 999999999,
-};
+//typedef NS_ENUM(NSInteger, AKLayout) {
+//    EAuto = 999999999,
+//};
 
 //对父view进行相对布局
 //如果left＝auto，right＝auto，则居中

@@ -112,6 +112,27 @@ static NSMutableDictionary *s_tags = nil;
     
     return number;
 }
+
++(void)performSelector:(SEL)selector onTarget:(id)target{
+    if ([target respondsToSelector:selector]){
+        //    [target performSelector:callback withObject:nil];
+        IMP imp = [target methodForSelector:selector];
+        void (*func)(id, SEL) = (void *)imp;
+        func(target, selector);
+    }
+}
+
++(UIImage*)createImageWithColor:(UIColor*)color
+{
+    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return theImage;
+}
 @end
 
 #pragma mark- UIActionSheet
@@ -185,13 +206,15 @@ void runBlockAfterDelay(NSTimeInterval delay, void (^block)(void)){
     
 }
 
-void runSelector(id target, SEL selector){
-    if ([target respondsToSelector:selector]){
-        //    [target performSelector:callback withObject:nil];
-        IMP imp = [target methodForSelector:selector];
-        void (*func)(id, SEL) = (void *)imp;
-        func(target, selector);
-    }
-}
+//void runSelector(id target, SEL selector){
+//    if ([target respondsToSelector:selector]){
+//        //    [target performSelector:callback withObject:nil];
+//        IMP imp = [target methodForSelector:selector];
+//        void (*func)(id, SEL) = (void *)imp;
+//        func(target, selector);
+//    }
+//}
+
+
 
 

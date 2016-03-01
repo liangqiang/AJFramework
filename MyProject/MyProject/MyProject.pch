@@ -18,6 +18,7 @@
 #import "NSObject+AJViewModel.h"
 
 //AJAddition
+#import "AJViewCreator.h"
 #import "NSObject+AJAddition.h"
 #import "NSString+AJAddition.h"
 #import "UIView+AJAddition.h"

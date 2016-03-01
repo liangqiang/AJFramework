@@ -91,6 +91,16 @@
     return self.top+self.height;
 }
 
+-(void)addSubviews:(UIView*)firstView, ... NS_REQUIRES_NIL_TERMINATION{
+    va_list args;
+    va_start(args, firstView); // scan for arguments after firstObject.
+    // get rest of the objects until nil is found
+    for (UIView *subview=firstView; subview!=nil; subview = va_arg(args,UIView*)) {
+        [self addSubview:subview];
+    }
+    va_end(args);
+}
+
 - (void)removeAllSubviews {
     for (UIView *view in self.subviews) {
         [view removeFromSuperview];
@@ -111,10 +121,18 @@
     }
 }
 
-- (UIView*)addLineWithY:(CGFloat)originY {
+- (UIView*)addLineWithY:(CGFloat)originY color:(UIColor*)color{
     CGFloat y = (originY==0) ? 0 : originY-LINE_HEIGHT;
     UIView *line =  [[UIView alloc] initWithFrame:CGRectMake(0, y, self.width, LINE_HEIGHT)];
-    line.backgroundColor = HEXCOLOR(0xdddddd);
+    line.backgroundColor = color;
+    [self addSubview:line];
+    return line;
+}
+
+- (UIView*)addLineWithX:(CGFloat)originX color:(UIColor*)color{
+    CGFloat x = (originX==0) ? 0 : originX-LINE_HEIGHT;
+    UIView *line =  [[UIView alloc] initWithFrame:CGRectMake(x, 0, LINE_HEIGHT, self.height)];
+    line.backgroundColor = color;
     [self addSubview:line];
     return line;
 }
@@ -126,6 +144,49 @@
     UIImage *origPic = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return origPic;
+}
+
+//cornerRadius
+-(void)setCornerRadius:(CGFloat)radius {
+    self.layer.cornerRadius = radius;
+    self.clipsToBounds = YES;
+}
+
+//borderWidth, borderColor
+-(void)setBorderWidth:(CGFloat)width color:(UIColor*)color{
+    self.layer.borderWidth = width;
+    self.layer.borderColor = color.CGColor;
+}
+
+-(void)layoutWithInsets:(UIEdgeInsets)insets{ //
+    NSAssert(self.superview, @"superview must exist");
+    if (insets.left == EAuto && insets.right == EAuto) { //居中
+        self.left = (self.superview.width - self.width)/2.0;
+    }
+    else if(insets.right == EAuto){ //左对齐
+        self.left = insets.left;
+    }
+    else if(insets.left == EAuto){ //右对齐
+        self.right = self.superview.width - insets.right;
+    }
+    else{ //左右对齐
+        self.width = self.superview.width - insets.left - insets.right;
+        self.left = insets.left;
+    }
+    
+    if (insets.top == EAuto && insets.bottom == EAuto) { //居中
+        self.top = (self.superview.height - self.height)/2.0;
+    }
+    else if(insets.bottom == EAuto){ //上对齐
+        self.top = insets.top;
+    }
+    else if(insets.top == EAuto){ //下对齐
+        self.bottom = self.superview.height - insets.bottom;
+    }
+    else{ //上下对齐
+        self.height = self.superview.height - insets.top - insets.bottom;
+        self.top = insets.top;
+    }
 }
 
 @end
