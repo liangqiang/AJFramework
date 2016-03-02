@@ -11,6 +11,9 @@
 
 @implementation NSObject (AJAddition)
 
++(void)load{
+}
+
 - (void)safeSetProperty:(NSDictionary *)item{
     if (!item || ![item isKindOfClass:[NSDictionary class]]) {
         return;
@@ -84,7 +87,10 @@
     else if ([attriString hasPrefix:@"T@\"NSMutableDictionary\""]) {
         [self setValue:safeMutableDictionary(value) forKey:propertyName];
     }else{
-        [self setValue:value forKey:propertyName]; //以上类型以外，默认设置上，需确保类型匹配，如类型不匹配，则可能会崩溃！！
+        NSString *className = [self parseClassNameFromAttrString:attriString];
+        if ([value isKindOfClass:NSClassFromString(className)]) {
+            [self setValue:value forKey:propertyName]; //以上类型以外，默认设置上，需确保类型匹配，如类型不匹配，则可能会崩溃！！
+        }
     }
 }
 
@@ -126,6 +132,35 @@
     return props;
 }
 
+-(NSString*)findClassNameOfProperty:(NSString*)propertyName{
+    unsigned int outCount, i;
+    objc_property_t *properties = class_copyPropertyList([self class], &outCount);
+    for (i = 0; i<outCount; i++){
+        objc_property_t property = properties[i];
+        const char* char_f = property_getName(property);
+        //property名称
+        NSString *name = [NSString stringWithUTF8String:char_f];
+        if ([name isEqualToString:propertyName]) {
+            //获取该property的数据类型
+            const char* attries = property_getAttributes(property);
+            NSString *attrString = [NSString stringWithUTF8String:attries];
+            if ([attrString hasPrefix:@"T@"]) {
+                return [self parseClassNameFromAttrString:attrString];
+            }
+        }
+    }
+    return nil;
+}
+
+-(NSString*)parseClassNameFromAttrString:(NSString*)attrString{
+    NSRange startRange = [attrString rangeOfString:@"T@\""];
+    NSRange endRange = [attrString rangeOfString:@"\","];
+    NSRange nameRange = NSMakeRange(startRange.length, endRange.location-startRange.length);
+    NSString *className = [attrString substringWithRange:nameRange];
+    return className;
+}
+
+#pragma mark - safeObjectFortKey & safeObjectAtIndex
 - (id)safeObjectFortKey:(NSString *)key {
     if ([self isKindOfClass:[NSDictionary class]] || [self isKindOfClass:[NSMutableDictionary class]]) {
         return [(NSDictionary*)self objectForKey:key];
@@ -143,6 +178,7 @@
     return nil;
 }
 
+#pragma mark - jsonEncode & jsonDecode
 - (NSString*)jsonEncode {
     if ([self isKindOfClass:[NSArray class]] ||
         [self isKindOfClass:[NSMutableArray class]] ||
@@ -165,6 +201,7 @@
                                            options:NSJSONReadingMutableContainers error:&error];
 }
 
+#pragma mark - extra data
 -(void)setExtraData:(id)extraData{
     objc_setAssociatedObject(self, @selector(extraData),
                              extraData,

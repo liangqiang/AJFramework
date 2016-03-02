@@ -19,6 +19,7 @@
 -(instancetype)init{
     if (self=[super init]) {
         self.title = @"首页";
+        [self safeSetProperty:@{@"viewModel":@"test"}];
     }
     return self;
 }

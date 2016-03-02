@@ -9,7 +9,6 @@ https://github.com/liangqiang/AJFramework
 
 ## todo
 
-* UITableView的扩展和拆分策略
 
 ## doing
 * 添加SDWebImage库
@@ -26,3 +25,5 @@ https://github.com/liangqiang/AJFramework
 * navi bar的左右按钮定制
 * 添加HTTP API访问支持（json格式）
 * 创建控件的常用方法封装(button)
+* UITableView的扩展和拆分策略
+

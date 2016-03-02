@@ -11,7 +11,6 @@
 		0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6CF1BD8C4E30024399D /* AppDelegate.m */; };
 		0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0303D6D71BD8C4E30024399D /* Images.xcassets */; };
 		0303D6E71BD8C4E40024399D /* MyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6E61BD8C4E40024399D /* MyProjectTests.m */; };
-		0303D6F71BD8CE1F0024399D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6F61BD8CE1F0024399D /* README.md */; };
 		0303D70E1BD8E0CE0024399D /* UIView+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D70D1BD8E0CE0024399D /* UIView+AJAddition.m */; };
 		0303D7151BD8E6060024399D /* AJColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D7141BD8E6060024399D /* AJColorManager.m */; };
 		0303D7181BD8FADA0024399D /* NSObject+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D7171BD8FADA0024399D /* NSObject+AJAddition.m */; };
@@ -39,15 +38,7 @@
 		035C05F81C8574F900D050D1 /* WDDemoListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05F71C8574F900D050D1 /* WDDemoListTableView.m */; };
 		035C05FB1C857A2200D050D1 /* WDDemoListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05FA1C857A2200D050D1 /* WDDemoListTableViewCell.m */; };
 		035C05FF1C85859000D050D1 /* NSObject+AJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05FE1C85859000D050D1 /* NSObject+AJProperty.m */; };
-		035C060C1C859C6000D050D1 /* 布局方法探讨.md in Sources */ = {isa = PBXBuildFile; fileRef = 035C06031C859C5F00D050D1 /* 布局方法探讨.md */; };
-		035C060D1C859C6000D050D1 /* 家庭医生患者详情页代码整理对比.md in Resources */ = {isa = PBXBuildFile; fileRef = 035C06041C859C6000D050D1 /* 家庭医生患者详情页代码整理对比.md */; };
-		035C060E1C859C6000D050D1 /* 开发规范.md in Sources */ = {isa = PBXBuildFile; fileRef = 035C06051C859C6000D050D1 /* 开发规范.md */; };
-		035C060F1C859C6000D050D1 /* 模块文件依赖关系.md in Sources */ = {isa = PBXBuildFile; fileRef = 035C06061C859C6000D050D1 /* 模块文件依赖关系.md */; };
-		035C06101C859C6000D050D1 /* 相对布局方案.md in Sources */ = {isa = PBXBuildFile; fileRef = 035C06071C859C6000D050D1 /* 相对布局方案.md */; };
 		035C06111C859C6000D050D1 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 035C06081C859C6000D050D1 /* home.png */; };
-		035C06121C859C6000D050D1 /* ios动画.md in Sources */ = {isa = PBXBuildFile; fileRef = 035C06091C859C6000D050D1 /* ios动画.md */; };
-		035C06131C859C6000D050D1 /* md文件格式.md in Sources */ = {isa = PBXBuildFile; fileRef = 035C060A1C859C6000D050D1 /* md文件格式.md */; };
-		035C06141C859C6000D050D1 /* Tag方案.md in Sources */ = {isa = PBXBuildFile; fileRef = 035C060B1C859C6000D050D1 /* Tag方案.md */; };
 		035C061F1C859FC100D050D1 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06171C859FC100D050D1 /* ALView+PureLayout.m */; };
 		035C06201C859FC100D050D1 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06191C859FC100D050D1 /* NSArray+PureLayout.m */; };
 		035C06211C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C061B1C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m */; };
@@ -839,7 +830,6 @@
 				035C06311C86969A00D050D1 /* iconfont.eot in Resources */,
 				03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */,
 				0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */,
-				035C060D1C859C6000D050D1 /* 家庭医生患者详情页代码整理对比.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -870,7 +860,6 @@
 				03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */,
 				03FA196F1BEB2E6300DD1DAC /* NSDate+RFC1123.m in Sources */,
 				0303D70E1BD8E0CE0024399D /* UIView+AJAddition.m in Sources */,
-				035C060E1C859C6000D050D1 /* 开发规范.md in Sources */,
 				03FA19591BEB2D2A00DD1DAC /* MKCache.m in Sources */,
 				03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */,
 				03FA19701BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m in Sources */,
@@ -884,11 +873,9 @@
 				03125BF31C4A7B0D00FFCA26 /* AJTableView.m in Sources */,
 				03FFBB7D1BDE5B90008B51E1 /* AJIconFont.m in Sources */,
 				031640321BE2449E00526D8A /* AJSettings.m in Sources */,
-				035C06141C859C6000D050D1 /* Tag方案.md in Sources */,
 				03517AC51C17CEE200B64AC5 /* UIScrollView+AJAddition.m in Sources */,
 				035C06201C859FC100D050D1 /* NSArray+PureLayout.m in Sources */,
 				03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */,
-				035C060C1C859C6000D050D1 /* 布局方法探讨.md in Sources */,
 				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
 				03FA195B1BEB2D2A00DD1DAC /* MKNetworkRequest.m in Sources */,
 				03125BF21C4A7B0D00FFCA26 /* AJSectionItem.m in Sources */,
@@ -901,18 +888,14 @@
 				0303D7151BD8E6060024399D /* AJColorManager.m in Sources */,
 				03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */,
 				035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */,
-				0303D6F71BD8CE1F0024399D /* README.md in Sources */,
 				035C05FF1C85859000D050D1 /* NSObject+AJProperty.m in Sources */,
 				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,
-				035C06131C859C6000D050D1 /* md文件格式.md in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
-				035C06101C859C6000D050D1 /* 相对布局方案.md in Sources */,
 				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
 				0303D7231BD8FC3E0024399D /* UIControl+AJAddition.m in Sources */,
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
-				035C060F1C859C6000D050D1 /* 模块文件依赖关系.md in Sources */,
 				03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */,
 				031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				035C05FB1C857A2200D050D1 /* WDDemoListTableViewCell.m in Sources */,
@@ -921,7 +904,6 @@
 				03479C2F1C848754008D943E /* AJViewCreator.m in Sources */,
 				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */,
-				035C06121C859C6000D050D1 /* ios动画.md in Sources */,
 				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,
 				03FA19711BEB2E6300DD1DAC /* NSHTTPURLResponse+MKNKAdditions.m in Sources */,
 			);
@@ -1032,6 +1014,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = MyProject/MyProject.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1044,6 +1027,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = MyProject/MyProject.pch;
 				INFOPLIST_FILE = MyProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

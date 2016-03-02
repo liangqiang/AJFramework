@@ -27,6 +27,8 @@
  *  获取当前class的property和value
  */
 -(NSDictionary*)getAllProperties;
+-(NSString*)findClassNameOfProperty:(NSString*)propertyName;
+
 
 - (id)safeObjectFortKey:(NSString*)key;
 
