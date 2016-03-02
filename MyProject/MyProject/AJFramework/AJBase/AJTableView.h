@@ -11,6 +11,7 @@
 typedef void(^AJTableClickBlock)(NSIndexPath *indexPath);
 
 @interface AJTableView : UITableView <UITableViewDataSource, UITableViewDelegate>
+
 @property (nonatomic,strong) NSArray *sectionArray; // AJSectionItem
 @property (nonatomic,copy) AJTableClickBlock clickBlock;
 -(void)setClickBlock:(AJTableClickBlock)clickBlock;

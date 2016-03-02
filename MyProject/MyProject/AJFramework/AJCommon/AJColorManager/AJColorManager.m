@@ -1,5 +1,5 @@
 //
-//  TBCityCoreTextColorManager.m
+//  AJColorManager.m
 //  iCoupon
 //
 //  Created by SunX on 14/12/30.

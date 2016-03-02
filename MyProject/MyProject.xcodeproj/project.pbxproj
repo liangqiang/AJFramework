@@ -27,9 +27,6 @@
 		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
 		031640321BE2449E00526D8A /* AJSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640301BE2449E00526D8A /* AJSettings.m */; };
 		032D4EB41C47A94500F9F01C /* NSObject+AJViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EB31C47A94500F9F01C /* NSObject+AJViewModel.m */; };
-		032D4EBF1C47AE5700F9F01C /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EB71C47AE5700F9F01C /* ALView+PureLayout.m */; };
-		032D4EC01C47AE5700F9F01C /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EB91C47AE5700F9F01C /* NSArray+PureLayout.m */; };
-		032D4EC11C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 032D4EBB1C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.m */; };
 		03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1A1C844CFF008D943E /* WDHomeViewController.m */; };
 		03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1D1C845CAE008D943E /* WDHomeViewModel.m */; };
 		03479C221C845D33008D943E /* WDButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C211C845D33008D943E /* WDButtonItem.m */; };
@@ -51,6 +48,15 @@
 		035C06121C859C6000D050D1 /* ios动画.md in Sources */ = {isa = PBXBuildFile; fileRef = 035C06091C859C6000D050D1 /* ios动画.md */; };
 		035C06131C859C6000D050D1 /* md文件格式.md in Sources */ = {isa = PBXBuildFile; fileRef = 035C060A1C859C6000D050D1 /* md文件格式.md */; };
 		035C06141C859C6000D050D1 /* Tag方案.md in Sources */ = {isa = PBXBuildFile; fileRef = 035C060B1C859C6000D050D1 /* Tag方案.md */; };
+		035C061F1C859FC100D050D1 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06171C859FC100D050D1 /* ALView+PureLayout.m */; };
+		035C06201C859FC100D050D1 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06191C859FC100D050D1 /* NSArray+PureLayout.m */; };
+		035C06211C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C061B1C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m */; };
+		035C06291C8695A700D050D1 /* demo.css in Resources */ = {isa = PBXBuildFile; fileRef = 035C06261C8695A700D050D1 /* demo.css */; };
+		035C062A1C8695A700D050D1 /* demo.html in Resources */ = {isa = PBXBuildFile; fileRef = 035C06271C8695A700D050D1 /* demo.html */; };
+		035C06301C86969A00D050D1 /* iconfont.css in Resources */ = {isa = PBXBuildFile; fileRef = 035C062C1C86969A00D050D1 /* iconfont.css */; };
+		035C06311C86969A00D050D1 /* iconfont.eot in Resources */ = {isa = PBXBuildFile; fileRef = 035C062D1C86969A00D050D1 /* iconfont.eot */; };
+		035C06321C86969A00D050D1 /* iconfont.svg in Resources */ = {isa = PBXBuildFile; fileRef = 035C062E1C86969A00D050D1 /* iconfont.svg */; };
+		035C06331C86969A00D050D1 /* iconfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = 035C062F1C86969A00D050D1 /* iconfont.woff */; };
 		03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */; };
 		03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54D1BE869FE00E3C47D /* TBCityCoreTextLabel.m */; };
 		03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54F1BE869FE00E3C47D /* TBCityCoreTextManager.m */; };
@@ -136,15 +142,6 @@
 		031640311BE2449E00526D8A /* AJSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSettings.h; sourceTree = "<group>"; };
 		032D4EB21C47A94500F9F01C /* NSObject+AJViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AJViewModel.h"; sourceTree = "<group>"; };
 		032D4EB31C47A94500F9F01C /* NSObject+AJViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AJViewModel.m"; sourceTree = "<group>"; };
-		032D4EB61C47AE5700F9F01C /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
-		032D4EB71C47AE5700F9F01C /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
-		032D4EB81C47AE5700F9F01C /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
-		032D4EB91C47AE5700F9F01C /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
-		032D4EBA1C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
-		032D4EBB1C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
-		032D4EBC1C47AE5700F9F01C /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout.h; sourceTree = "<group>"; };
-		032D4EBD1C47AE5700F9F01C /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
-		032D4EBE1C47AE5700F9F01C /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
 		03479C191C844CFF008D943E /* WDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewController.h; sourceTree = "<group>"; };
 		03479C1A1C844CFF008D943E /* WDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHomeViewController.m; sourceTree = "<group>"; };
 		03479C1C1C845CAE008D943E /* WDHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewModel.h; sourceTree = "<group>"; };
@@ -178,6 +175,21 @@
 		035C06091C859C6000D050D1 /* ios动画.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "ios动画.md"; sourceTree = "<group>"; };
 		035C060A1C859C6000D050D1 /* md文件格式.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "md文件格式.md"; sourceTree = "<group>"; };
 		035C060B1C859C6000D050D1 /* Tag方案.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Tag方案.md"; sourceTree = "<group>"; };
+		035C06161C859FC100D050D1 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		035C06171C859FC100D050D1 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		035C06181C859FC100D050D1 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		035C06191C859FC100D050D1 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		035C061A1C859FC100D050D1 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		035C061B1C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		035C061C1C859FC100D050D1 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		035C061D1C859FC100D050D1 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		035C061E1C859FC100D050D1 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		035C06261C8695A700D050D1 /* demo.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = demo.css; sourceTree = "<group>"; };
+		035C06271C8695A700D050D1 /* demo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo.html; sourceTree = "<group>"; };
+		035C062C1C86969A00D050D1 /* iconfont.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iconfont.css; sourceTree = "<group>"; };
+		035C062D1C86969A00D050D1 /* iconfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.eot; sourceTree = "<group>"; };
+		035C062E1C86969A00D050D1 /* iconfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = iconfont.svg; sourceTree = "<group>"; };
+		035C062F1C86969A00D050D1 /* iconfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.woff; sourceTree = "<group>"; };
 		03F6B54A1BE869FE00E3C47D /* TBCityCoreTextAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextAttribute.h; sourceTree = "<group>"; };
 		03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityCoreTextAttribute.m; sourceTree = "<group>"; };
 		03F6B54C1BE869FE00E3C47D /* TBCityCoreTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextLabel.h; sourceTree = "<group>"; };
@@ -476,12 +488,10 @@
 		0316402E1BE23C2900526D8A /* 第三方库 */ = {
 			isa = PBXGroup;
 			children = (
-				03125BF41C4A8BED00FFCA26 /* HandyLayout */,
-				032D4EB51C47AE3000F9F01C /* PureLayout */,
 				03FA194D1BEB2CE500DD1DAC /* MKNetworkKit */,
-				03F6B5491BE869C600E3C47D /* TBCityCoreText */,
 				03F9A49D1BE0E33900E492F6 /* MBProgressHUD */,
 				031640231BE2066200526D8A /* FDFullscreenPopGesture */,
+				035C06151C859D0900D050D1 /* 未使用 */,
 			);
 			path = "第三方库";
 			sourceTree = "<group>";
@@ -489,17 +499,17 @@
 		032D4EB51C47AE3000F9F01C /* PureLayout */ = {
 			isa = PBXGroup;
 			children = (
-				032D4EB61C47AE5700F9F01C /* ALView+PureLayout.h */,
-				032D4EB71C47AE5700F9F01C /* ALView+PureLayout.m */,
-				032D4EB81C47AE5700F9F01C /* NSArray+PureLayout.h */,
-				032D4EB91C47AE5700F9F01C /* NSArray+PureLayout.m */,
-				032D4EBA1C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.h */,
-				032D4EBB1C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.m */,
-				032D4EBC1C47AE5700F9F01C /* PureLayout.h */,
-				032D4EBD1C47AE5700F9F01C /* PureLayout+Internal.h */,
-				032D4EBE1C47AE5700F9F01C /* PureLayoutDefines.h */,
+				035C06161C859FC100D050D1 /* ALView+PureLayout.h */,
+				035C06171C859FC100D050D1 /* ALView+PureLayout.m */,
+				035C06181C859FC100D050D1 /* NSArray+PureLayout.h */,
+				035C06191C859FC100D050D1 /* NSArray+PureLayout.m */,
+				035C061A1C859FC100D050D1 /* NSLayoutConstraint+PureLayout.h */,
+				035C061B1C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m */,
+				035C061C1C859FC100D050D1 /* PureLayout.h */,
+				035C061D1C859FC100D050D1 /* PureLayout+Internal.h */,
+				035C061E1C859FC100D050D1 /* PureLayoutDefines.h */,
 			);
-			name = PureLayout;
+			path = PureLayout;
 			sourceTree = "<group>";
 		};
 		03479C181C844BE4008D943E /* 首页 */ = {
@@ -598,6 +608,16 @@
 			path = "其他";
 			sourceTree = "<group>";
 		};
+		035C06151C859D0900D050D1 /* 未使用 */ = {
+			isa = PBXGroup;
+			children = (
+				03F6B5491BE869C600E3C47D /* TBCityCoreText */,
+				032D4EB51C47AE3000F9F01C /* PureLayout */,
+				03125BF41C4A8BED00FFCA26 /* HandyLayout */,
+			);
+			path = "未使用";
+			sourceTree = "<group>";
+		};
 		03F6B5491BE869C600E3C47D /* TBCityCoreText */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,6 +688,12 @@
 			isa = PBXGroup;
 			children = (
 				03FD93C71BDF1AA100DCC673 /* AJIconFontDef.h */,
+				035C062C1C86969A00D050D1 /* iconfont.css */,
+				035C062D1C86969A00D050D1 /* iconfont.eot */,
+				035C062E1C86969A00D050D1 /* iconfont.svg */,
+				035C062F1C86969A00D050D1 /* iconfont.woff */,
+				035C06261C8695A700D050D1 /* demo.css */,
+				035C06271C8695A700D050D1 /* demo.html */,
 				03FD93C81BDF1AA100DCC673 /* iconfont.ttf */,
 			);
 			path = IconFont;
@@ -804,7 +830,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035C06321C86969A00D050D1 /* iconfont.svg in Resources */,
 				035C06111C859C6000D050D1 /* home.png in Resources */,
+				035C062A1C8695A700D050D1 /* demo.html in Resources */,
+				035C06331C86969A00D050D1 /* iconfont.woff in Resources */,
+				035C06291C8695A700D050D1 /* demo.css in Resources */,
+				035C06301C86969A00D050D1 /* iconfont.css in Resources */,
+				035C06311C86969A00D050D1 /* iconfont.eot in Resources */,
 				03FD93C91BDF1AA100DCC673 /* iconfont.ttf in Resources */,
 				0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */,
 				035C060D1C859C6000D050D1 /* 家庭医生患者详情页代码整理对比.md in Resources */,
@@ -843,17 +875,18 @@
 				03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */,
 				03FA19701BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m in Sources */,
 				03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */,
+				035C061F1C859FC100D050D1 /* ALView+PureLayout.m in Sources */,
 				03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */,
 				035C05F21C8573FD00D050D1 /* WDDemoListViewController.m in Sources */,
 				03FD93D01BDF58D300DCC673 /* AJRefreshViewBase.m in Sources */,
 				0303D7261BD8FC3E0024399D /* NSString+AJAddition.m in Sources */,
+				035C06211C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m in Sources */,
 				03125BF31C4A7B0D00FFCA26 /* AJTableView.m in Sources */,
-				032D4EC11C47AE5700F9F01C /* NSLayoutConstraint+PureLayout.m in Sources */,
 				03FFBB7D1BDE5B90008B51E1 /* AJIconFont.m in Sources */,
-				032D4EC01C47AE5700F9F01C /* NSArray+PureLayout.m in Sources */,
 				031640321BE2449E00526D8A /* AJSettings.m in Sources */,
 				035C06141C859C6000D050D1 /* Tag方案.md in Sources */,
 				03517AC51C17CEE200B64AC5 /* UIScrollView+AJAddition.m in Sources */,
+				035C06201C859FC100D050D1 /* NSArray+PureLayout.m in Sources */,
 				03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */,
 				035C060C1C859C6000D050D1 /* 布局方法探讨.md in Sources */,
 				03FFBB601BDE308D008B51E1 /* AJUtil.m in Sources */,
@@ -861,7 +894,6 @@
 				03125BF21C4A7B0D00FFCA26 /* AJSectionItem.m in Sources */,
 				03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */,
 				0303D7181BD8FADA0024399D /* NSObject+AJAddition.m in Sources */,
-				032D4EBF1C47AE5700F9F01C /* ALView+PureLayout.m in Sources */,
 				0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */,
 				032D4EB41C47A94500F9F01C /* NSObject+AJViewModel.m in Sources */,
 				0303D7271BD8FC3E0024399D /* UIImage+AJAddition.m in Sources */,

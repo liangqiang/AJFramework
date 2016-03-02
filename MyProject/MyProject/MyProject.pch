@@ -31,8 +31,6 @@
 
 #import "AJSettings.h"
 
-#import "UINavigationController+FDFullscreenPopGesture.h"
-
 
 //服务
 #import "NSObject+AJProperty.h"
@@ -45,7 +43,9 @@
 #import "AJSettingsDefine.h"
 //#import "DMUICommon.h"
 
+//第三方库
+#import "UINavigationController+FDFullscreenPopGesture.h"
 #import "MKNetworkKit.h"
-#import "PureLayout.h"
+//#import "PureLayout.h"
 
 #endif
