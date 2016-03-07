@@ -19,7 +19,6 @@
 -(instancetype)init{
     if (self=[super init]) {
         self.title = @"首页";
-        [self safeSetProperty:@{@"viewModel":@"test"}];
     }
     return self;
 }
@@ -27,7 +26,6 @@
 -(void)loadView{
     [super loadView];
     
-    self.viewModel = [self createViewModel];
     self.scrollView = [self createScrollView];
     
     [self.view addSubview:self.scrollView];
@@ -37,6 +35,11 @@
     [super viewDidLoad];
 
     WEAKSELF
+    self.viewModel = [self createViewModel];
+    [self.viewModel setRefreshBlock:^{
+        [weakSelf updateViews];
+    }];
+
     [self.scrollView setRefreshHeaderBlock:^{
         [weakSelf.viewModel loadData];
     }];
@@ -44,9 +47,6 @@
         [weakSelf.viewModel loadData];
     }];
     
-    [self.viewModel setRefreshBlock:^{
-        [weakSelf updateViews];
-    }];
     [AJUtil runAfterDelay:0 block:^{
         [weakSelf.viewModel loadData];
     }];

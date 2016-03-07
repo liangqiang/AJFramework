@@ -27,6 +27,7 @@
     
     [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"toast当前时间" selector:@selector(onToastItemClicked)]];
     [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"弹出ActionSheet" selector:@selector(onActionSheetItemClicked)]];
+    [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"复杂列表示例" selector:@selector(onComplexTableDemoClicked)]];
 
     [self refresh];
 }
@@ -49,6 +50,10 @@
         NSString *info = [NSString stringWithFormat:@"您选择了：%@", [buttons safeObjectAtIndex:buttonIndex]];
         [AJUtil toast:info];
     }];
+}
+
+-(void)onComplexTableDemoClicked{
+    [AJNavi pushViewController:@"WDComplexViewController"];
 }
 
 @end

@@ -48,6 +48,11 @@
 		035C06311C86969A00D050D1 /* iconfont.eot in Resources */ = {isa = PBXBuildFile; fileRef = 035C062D1C86969A00D050D1 /* iconfont.eot */; };
 		035C06321C86969A00D050D1 /* iconfont.svg in Resources */ = {isa = PBXBuildFile; fileRef = 035C062E1C86969A00D050D1 /* iconfont.svg */; };
 		035C06331C86969A00D050D1 /* iconfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = 035C062F1C86969A00D050D1 /* iconfont.woff */; };
+		035C06391C86D10300D050D1 /* WDComplexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06381C86D10300D050D1 /* WDComplexViewController.m */; };
+		035C063C1C86D1BB00D050D1 /* WDComplexViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C063B1C86D1BB00D050D1 /* WDComplexViewModel.m */; };
+		035C063F1C86D21300D050D1 /* WDComplexTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C063E1C86D21300D050D1 /* WDComplexTableView.m */; };
+		035C06421C86D25700D050D1 /* WDComplexATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06411C86D25700D050D1 /* WDComplexATableViewCell.m */; };
+		035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06441C86DD7100D050D1 /* WDComplexCellItem.m */; };
 		03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */; };
 		03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54D1BE869FE00E3C47D /* TBCityCoreTextLabel.m */; };
 		03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54F1BE869FE00E3C47D /* TBCityCoreTextManager.m */; };
@@ -181,6 +186,16 @@
 		035C062D1C86969A00D050D1 /* iconfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.eot; sourceTree = "<group>"; };
 		035C062E1C86969A00D050D1 /* iconfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = iconfont.svg; sourceTree = "<group>"; };
 		035C062F1C86969A00D050D1 /* iconfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.woff; sourceTree = "<group>"; };
+		035C06371C86D10300D050D1 /* WDComplexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDComplexViewController.h; sourceTree = "<group>"; };
+		035C06381C86D10300D050D1 /* WDComplexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDComplexViewController.m; sourceTree = "<group>"; };
+		035C063A1C86D1BB00D050D1 /* WDComplexViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDComplexViewModel.h; sourceTree = "<group>"; };
+		035C063B1C86D1BB00D050D1 /* WDComplexViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDComplexViewModel.m; sourceTree = "<group>"; };
+		035C063D1C86D21300D050D1 /* WDComplexTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDComplexTableView.h; sourceTree = "<group>"; };
+		035C063E1C86D21300D050D1 /* WDComplexTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDComplexTableView.m; sourceTree = "<group>"; };
+		035C06401C86D25700D050D1 /* WDComplexATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDComplexATableViewCell.h; sourceTree = "<group>"; };
+		035C06411C86D25700D050D1 /* WDComplexATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDComplexATableViewCell.m; sourceTree = "<group>"; };
+		035C06431C86DD7100D050D1 /* WDComplexCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDComplexCellItem.h; sourceTree = "<group>"; };
+		035C06441C86DD7100D050D1 /* WDComplexCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDComplexCellItem.m; sourceTree = "<group>"; };
 		03F6B54A1BE869FE00E3C47D /* TBCityCoreTextAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextAttribute.h; sourceTree = "<group>"; };
 		03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityCoreTextAttribute.m; sourceTree = "<group>"; };
 		03F6B54C1BE869FE00E3C47D /* TBCityCoreTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextLabel.h; sourceTree = "<group>"; };
@@ -539,6 +554,7 @@
 			isa = PBXGroup;
 			children = (
 				035C05EF1C856CC000D050D1 /* demo列表 */,
+				035C06361C86D07800D050D1 /* 复杂列表示例 */,
 			);
 			path = "阿剑框架demo";
 			sourceTree = "<group>";
@@ -548,8 +564,8 @@
 			children = (
 				035C05F01C8573FD00D050D1 /* WDDemoListViewController.h */,
 				035C05F11C8573FD00D050D1 /* WDDemoListViewController.m */,
-				035C06011C8591D300D050D1 /* view */,
 				035C06001C8591CD00D050D1 /* model */,
+				035C06011C8591D300D050D1 /* view */,
 			);
 			path = "demo列表";
 			sourceTree = "<group>";
@@ -607,6 +623,23 @@
 				03125BF41C4A8BED00FFCA26 /* HandyLayout */,
 			);
 			path = "未使用";
+			sourceTree = "<group>";
+		};
+		035C06361C86D07800D050D1 /* 复杂列表示例 */ = {
+			isa = PBXGroup;
+			children = (
+				035C06371C86D10300D050D1 /* WDComplexViewController.h */,
+				035C06381C86D10300D050D1 /* WDComplexViewController.m */,
+				035C063A1C86D1BB00D050D1 /* WDComplexViewModel.h */,
+				035C063B1C86D1BB00D050D1 /* WDComplexViewModel.m */,
+				035C063D1C86D21300D050D1 /* WDComplexTableView.h */,
+				035C063E1C86D21300D050D1 /* WDComplexTableView.m */,
+				035C06401C86D25700D050D1 /* WDComplexATableViewCell.h */,
+				035C06411C86D25700D050D1 /* WDComplexATableViewCell.m */,
+				035C06431C86DD7100D050D1 /* WDComplexCellItem.h */,
+				035C06441C86DD7100D050D1 /* WDComplexCellItem.m */,
+			);
+			path = "复杂列表示例";
 			sourceTree = "<group>";
 		};
 		03F6B5491BE869C600E3C47D /* TBCityCoreText */ = {
@@ -868,6 +901,7 @@
 				03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */,
 				035C05F21C8573FD00D050D1 /* WDDemoListViewController.m in Sources */,
 				03FD93D01BDF58D300DCC673 /* AJRefreshViewBase.m in Sources */,
+				035C063C1C86D1BB00D050D1 /* WDComplexViewModel.m in Sources */,
 				0303D7261BD8FC3E0024399D /* NSString+AJAddition.m in Sources */,
 				035C06211C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m in Sources */,
 				03125BF31C4A7B0D00FFCA26 /* AJTableView.m in Sources */,
@@ -894,6 +928,8 @@
 				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
 				0303D7231BD8FC3E0024399D /* UIControl+AJAddition.m in Sources */,
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,
+				035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */,
+				035C06391C86D10300D050D1 /* WDComplexViewController.m in Sources */,
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
 				03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */,
@@ -902,6 +938,8 @@
 				03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */,
 				0303D7241BD8FC3E0024399D /* UILabel+AJAddition.m in Sources */,
 				03479C2F1C848754008D943E /* AJViewCreator.m in Sources */,
+				035C06421C86D25700D050D1 /* WDComplexATableViewCell.m in Sources */,
+				035C063F1C86D21300D050D1 /* WDComplexTableView.m in Sources */,
 				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				03FD93CF1BDF58D300DCC673 /* UIScrollView+AJRefreshBase.m in Sources */,
 				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,

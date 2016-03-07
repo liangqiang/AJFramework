@@ -1,24 +1,25 @@
 //
-//  WDAJDemoListViewController.m
+//  WDComplexListViewViewController.m
 //  MyProject
 //
-//  Created by liangqiang on 16/3/1.
+//  Created by liangqiang on 16/3/2.
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "WDDemoListViewController.h"
-#import "WDDemoListViewModel.h"
-#import "WDDemoListTableView.h"
-@interface WDDemoListViewController ()
-@property (nonatomic,strong) WDDemoListViewModel *viewModel;
-@property (nonatomic,strong) WDDemoListTableView *tableView;
+#import "WDComplexViewController.h"
+#import "WDComplexViewModel.h"
+#import "WDComplexTableView.h"
+
+@interface WDComplexViewController ()
+@property (nonatomic,strong) WDComplexViewModel *viewModel;
+@property (nonatomic,strong) WDComplexTableView *tableView;
 @end
 
-@implementation WDDemoListViewController
+@implementation WDComplexViewController
 
 -(instancetype)init{
     if (self=[super init]) {
-        self.title = @"阿剑框架Demo";
+        self.title = @"复杂列表示例";
     }
     return self;
 }
@@ -38,20 +39,19 @@
     [self.viewModel setRefreshBlock:^{
         [weakSelf updateViews];
     }];
-
+    
     self.tableView.sectionArray = self.viewModel.sectionArray;
     [self.tableView setRefreshHeaderBlock:^{
-        [weakSelf.viewModel loadData];
+        [weakSelf.viewModel loadFirstPage];
     }];
     [self.tableView setRefreshFooterBlock:^{
-        [weakSelf.viewModel loadData];
+        [weakSelf.viewModel loadNextPage];
     }];
     [self.tableView setClickBlock:^(NSIndexPath *indexPath) {
-        [weakSelf.viewModel onCellClicked:indexPath];
     }];
     
     [AJUtil runAfterDelay:0 block:^{
-        [weakSelf.viewModel loadData];
+        [weakSelf.viewModel loadFirstPage];
     }];
 }
 
