@@ -12,7 +12,7 @@
 +(void)load{
 }
 
--(UIScrollView*)createScrollView{
+-(id)createScrollView{
     NSString *className = [self findClassNameOfProperty:@"scrollView"];
     UIScrollView *scrollView = [NSClassFromString(className) new];
     NSAssert([scrollView isKindOfClass:[UIScrollView class]], @"scrollView not created.");

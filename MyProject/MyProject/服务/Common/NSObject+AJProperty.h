@@ -11,7 +11,7 @@
 @interface NSObject (AJProperty)
 
 -(id)createViewModel;
--(UIScrollView*)createScrollView;
+-(id)createScrollView;
 -(id)createTableView;
 
 @end

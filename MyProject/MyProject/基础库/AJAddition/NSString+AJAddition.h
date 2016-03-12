@@ -24,6 +24,7 @@
 -(NSAttributedString*)stringWithLineSpacing:(CGFloat)lineSpacing;
 
 // 计算字符串显示区域大小
+- (CGSize)sizeWithFont:(UIFont *)font;
 - (CGSize)sizeWithFont:(UIFont *)font fitWidth:(NSInteger)width;
 -(CGSize)sizeWithFont:(UIFont *)font fitWidth:(NSInteger)width lineSpacing:(CGFloat)spacing;
 

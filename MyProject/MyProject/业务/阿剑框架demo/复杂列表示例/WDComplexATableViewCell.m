@@ -10,6 +10,7 @@
 #import "WDComplexCellItem.h"
 
 @interface WDComplexATableViewCell ()
+@property (nonatomic,assign) NSInteger cellType;
 @property (nonatomic,strong) UILabel *titleLabel;
 @property (nonatomic,strong) UILabel *contentLabel;
 @end
@@ -28,17 +29,24 @@
     self.contentLabel = [UILabel newWith:kFont14, kGrayColor, nil];
     
     [self.contentView addSubviews:self.titleLabel, self.contentLabel, nil];
+    [self.titleLabel layoutWithInsets:UIEdgeInsetsZero];
 }
 
 -(void)layoutSubviews{
     [super layoutSubviews];
+    if (self.cellType == 0) {
+        self.backgroundColor = kWhiteColor;
+    }else{
+        self.backgroundColor = kLightGrayColor;
+    }
     
-    [self.titleLabel layoutWithInsets:UIEdgeInsetsZero];
 }
 
 -(void)updateWithItem:(WDComplexCellItem*)cellItem{
     self.titleLabel.text = cellItem.title;
     self.contentLabel.text = cellItem.content;
+    self.cellType = cellItem.cellType;
+    [self setNeedsLayout];
 }
 
 @end

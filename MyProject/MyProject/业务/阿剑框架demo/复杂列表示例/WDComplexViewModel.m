@@ -42,7 +42,8 @@
     [self.sectionArray addObject:sectionItem];
     for (NSInteger i=0; i<10; i ++) {
         WDComplexCellItem *item = [WDComplexCellItem new];
-        item.cellType = arc4random_uniform(2); //0-1
+//        item.cellType = arc4random_uniform(2); //0-1
+        item.cellType = i % 2; //0-1
         NSInteger titleLen = arc4random_uniform(50);
         NSInteger contentLen = arc4random_uniform(500);
         item.title = [NSString stringWithFormat:@"标题 %@", [self randomStringWithLen:titleLen]];

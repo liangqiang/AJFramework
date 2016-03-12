@@ -95,6 +95,10 @@
     return attributedString;
 }
 
+- (CGSize)sizeWithFont:(UIFont *)font{
+    return [self sizeWithFont:font fitWidth:NSIntegerMax];
+}
+
 - (CGSize)sizeWithFont:(UIFont *)font fitWidth:(NSInteger)width
 {
     CGSize textSize;
