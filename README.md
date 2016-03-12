@@ -34,19 +34,18 @@
 * **AJViewCreator** 	创建View便捷方法
 
 	主要方法是newWith，使用方式如：
-```	
-    UILabel *label = [UILabel newWith:kFont16B, kWhiteColor, msg, @(NSTextAlignmentCenter), nil];
-```
+`    UILabel *label = [UILabel newWith:kFont16B, kWhiteColor, msg, @(NSTextAlignmentCenter), nil];
+`
 	通常的View就可以一行代码就完成了创建，大大简便了。
 
-	* UIView newWith: ```backgroundColor```
-	* UIView setCornerRadiusWith: ```cornerRadius, borderWidth, borderColor（设置圆角和边线）```
-	* UILabel newWith: ```font, textColor, text, textAlignment```
-	* UIImageView newWith: ```contentMode, image, highlightedImage```
-	* UIButton newWith: ```titleLabelFont, normalColor, normalTitle, cornerRadius```
-	* UIButton setBgColorWith: ```normalBgColor, highligtedBgColor, normalImage, highlightedImage (设置背景色或图片)```
-	* UITextView newWith: ```font, textColor```
-	* UITextField newWith: ```font, textColor```
+	* UIView newWith: `backgroundColor`
+	* UIView setCornerRadiusWith: `cornerRadius, borderWidth, borderColor（设置圆角和边线）`
+	* UILabel newWith: `font, textColor, text, textAlignment`
+	* UIImageView newWith: `contentMode, image, highlightedImage`
+	* UIButton newWith: `titleLabelFont, normalColor, normalTitle, cornerRadius`
+	* UIButton setBgColorWith: `normalBgColor, highligtedBgColor, normalImage, highlightedImage (设置背景色或图片)`
+	* UITextView newWith: `font, textColor`
+	* UITextField newWith: `font, textColor`
 
 * NSObject+AJAddition
 
@@ -94,24 +93,25 @@
 	表示距父View四边的距离，EAuto表示不限制；如top＝EAuto、Bottom＝EAuto则表示上下居中；left、right同理。可以使用UIEdgeInsetsZero、UIEdgeInsetsCenter（自定义）.
 	
 	例子：
-	```
+	`
 	    [button layoutWithInsets:UIEdgeInsetsMake(10, 20, 10, 20)];
-	```
+	`
 
 * UIControl+AJAddition
 
 	* handleEvent:withBlock: 事件处理block
 	
 	替代
-	```- (void)addTarget:(nullable id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
-```
+	`- (void)addTarget:(nullable id)target action:(SEL)action forControlEvents:(UIControlEvents)controlEvents;
+`
 
 	```
 	WEAKSELF
     [debugButton handleEvent:UIControlEventTouchUpInside withBlock:^(UIControl *control) {
         [weakSelf onDebugClicked];
     }];
-    ```
+```
+
 * UIScroll+AJAddition
 	* addBlankSection:
 	* **addSection:**
