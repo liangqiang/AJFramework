@@ -58,12 +58,12 @@
 -(void)updateViews{
     [self.tableView stopRefresh];
     [self.tableView reloadData];
-    [self.view setNeedsLayout];
+//    [self.view setNeedsLayout];
 }
 
-- (void)viewWillLayoutSubviews{
-    [super viewWillLayoutSubviews];
-    
-}
+//- (void)viewWillLayoutSubviews{
+//    [super viewWillLayoutSubviews];
+//    
+//}
 
 @end
