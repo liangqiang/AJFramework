@@ -120,9 +120,9 @@
 	自动计算contentSize，避免子View位置的繁琐计算。
 
 ### AJBase 超轻量MVVM
-* NSObject+AJViewModel
+* AJViewModel
 	
-	超轻量级MVVM。其实只是一个简单的block刷新机制，将View和ViewModel分离开来。基于NSObject的扩展，易于植入。
+	超轻量级MVVM。其实只是一个简单的block刷新机制，将View和ViewModel分离开来。子类需继承自AJViewModel。
 	
 	用法：
 	
