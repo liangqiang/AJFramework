@@ -15,6 +15,7 @@
 		03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 03125BF61C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m */; };
 		03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 03125BF81C4A8C2000FFCA26 /* UIView+LayoutMethods.m */; };
 		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
+		03398BE11CBF4151000F3AA4 /* AJViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398BE01CBF4151000F3AA4 /* AJViewModel.m */; };
 		03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1A1C844CFF008D943E /* WDHomeViewController.m */; };
 		03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1D1C845CAE008D943E /* WDHomeViewModel.m */; };
 		03479C221C845D33008D943E /* WDButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C211C845D33008D943E /* WDButtonItem.m */; };
@@ -24,7 +25,7 @@
 		035C05F51C85742000D050D1 /* WDDemoListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05F41C85742000D050D1 /* WDDemoListViewModel.m */; };
 		035C05F81C8574F900D050D1 /* WDDemoListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05F71C8574F900D050D1 /* WDDemoListTableView.m */; };
 		035C05FB1C857A2200D050D1 /* WDDemoListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05FA1C857A2200D050D1 /* WDDemoListTableViewCell.m */; };
-		035C05FF1C85859000D050D1 /* NSObject+AJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05FE1C85859000D050D1 /* NSObject+AJProperty.m */; };
+		035C05FF1C85859000D050D1 /* NSObject+AJPropertyCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05FE1C85859000D050D1 /* NSObject+AJPropertyCreator.m */; };
 		035C06111C859C6000D050D1 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 035C06081C859C6000D050D1 /* home.png */; };
 		035C061F1C859FC100D050D1 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06171C859FC100D050D1 /* ALView+PureLayout.m */; };
 		035C06201C859FC100D050D1 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06191C859FC100D050D1 /* NSArray+PureLayout.m */; };
@@ -50,7 +51,6 @@
 		03B761821C93AB2200297AC7 /* UIView+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7615F1C93AB2200297AC7 /* UIView+AJAddition.m */; };
 		03B761831C93AB2200297AC7 /* AJSectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761621C93AB2200297AC7 /* AJSectionItem.m */; };
 		03B761841C93AB2200297AC7 /* AJTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761641C93AB2200297AC7 /* AJTableView.m */; };
-		03B761851C93AB2200297AC7 /* NSObject+AJViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761661C93AB2200297AC7 /* NSObject+AJViewModel.m */; };
 		03B761861C93AB2200297AC7 /* AJColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7616A1C93AB2200297AC7 /* AJColorManager.m */; };
 		03B761871C93AB2200297AC7 /* AJSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7616D1C93AB2200297AC7 /* AJSettings.m */; };
 		03B761881C93AB2200297AC7 /* AJUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761701C93AB2200297AC7 /* AJUtil.m */; };
@@ -115,6 +115,8 @@
 		031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		0316402D1BE23AA400526D8A /* AJUIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJUIDefine.h; sourceTree = "<group>"; };
 		0316402F1BE23E0F00526D8A /* AJSettingsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJSettingsDefine.h; sourceTree = "<group>"; };
+		03398BDF1CBF4151000F3AA4 /* AJViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJViewModel.h; sourceTree = "<group>"; };
+		03398BE01CBF4151000F3AA4 /* AJViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJViewModel.m; sourceTree = "<group>"; };
 		03479C191C844CFF008D943E /* WDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewController.h; sourceTree = "<group>"; };
 		03479C1A1C844CFF008D943E /* WDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHomeViewController.m; sourceTree = "<group>"; };
 		03479C1C1C845CAE008D943E /* WDHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewModel.h; sourceTree = "<group>"; };
@@ -133,8 +135,8 @@
 		035C05F71C8574F900D050D1 /* WDDemoListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDemoListTableView.m; sourceTree = "<group>"; };
 		035C05F91C857A2200D050D1 /* WDDemoListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDemoListTableViewCell.h; sourceTree = "<group>"; };
 		035C05FA1C857A2200D050D1 /* WDDemoListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDemoListTableViewCell.m; sourceTree = "<group>"; };
-		035C05FD1C85859000D050D1 /* NSObject+AJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AJProperty.h"; sourceTree = "<group>"; };
-		035C05FE1C85859000D050D1 /* NSObject+AJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AJProperty.m"; sourceTree = "<group>"; };
+		035C05FD1C85859000D050D1 /* NSObject+AJPropertyCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AJPropertyCreator.h"; sourceTree = "<group>"; };
+		035C05FE1C85859000D050D1 /* NSObject+AJPropertyCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AJPropertyCreator.m"; sourceTree = "<group>"; };
 		035C06031C859C5F00D050D1 /* 布局方法探讨.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "布局方法探讨.md"; sourceTree = "<group>"; };
 		035C06041C859C6000D050D1 /* 家庭医生患者详情页代码整理对比.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "家庭医生患者详情页代码整理对比.md"; sourceTree = "<group>"; };
 		035C06051C859C6000D050D1 /* 开发规范.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "开发规范.md"; sourceTree = "<group>"; };
@@ -189,8 +191,6 @@
 		03B761621C93AB2200297AC7 /* AJSectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSectionItem.m; sourceTree = "<group>"; };
 		03B761631C93AB2200297AC7 /* AJTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTableView.h; sourceTree = "<group>"; };
 		03B761641C93AB2200297AC7 /* AJTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTableView.m; sourceTree = "<group>"; };
-		03B761651C93AB2200297AC7 /* NSObject+AJViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AJViewModel.h"; sourceTree = "<group>"; };
-		03B761661C93AB2200297AC7 /* NSObject+AJViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AJViewModel.m"; sourceTree = "<group>"; };
 		03B761691C93AB2200297AC7 /* AJColorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJColorManager.h; sourceTree = "<group>"; };
 		03B7616A1C93AB2200297AC7 /* AJColorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJColorManager.m; sourceTree = "<group>"; };
 		03B7616C1C93AB2200297AC7 /* AJSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSettings.h; sourceTree = "<group>"; };
@@ -488,8 +488,8 @@
 		035C05FC1C85828D00D050D1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				035C05FD1C85859000D050D1 /* NSObject+AJProperty.h */,
-				035C05FE1C85859000D050D1 /* NSObject+AJProperty.m */,
+				035C05FD1C85859000D050D1 /* NSObject+AJPropertyCreator.h */,
+				035C05FE1C85859000D050D1 /* NSObject+AJPropertyCreator.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -596,12 +596,12 @@
 		03B761601C93AB2200297AC7 /* AJBase */ = {
 			isa = PBXGroup;
 			children = (
-				03B761651C93AB2200297AC7 /* NSObject+AJViewModel.h */,
-				03B761661C93AB2200297AC7 /* NSObject+AJViewModel.m */,
 				03B761611C93AB2200297AC7 /* AJSectionItem.h */,
 				03B761621C93AB2200297AC7 /* AJSectionItem.m */,
 				03B761631C93AB2200297AC7 /* AJTableView.h */,
 				03B761641C93AB2200297AC7 /* AJTableView.m */,
+				03398BDF1CBF4151000F3AA4 /* AJViewModel.h */,
+				03398BE01CBF4151000F3AA4 /* AJViewModel.m */,
 			);
 			path = AJBase;
 			sourceTree = "<group>";
@@ -892,7 +892,6 @@
 				03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */,
 				03479C221C845D33008D943E /* WDButtonItem.m in Sources */,
 				03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */,
-				03B761851C93AB2200297AC7 /* NSObject+AJViewModel.m in Sources */,
 				03B7617F1C93AB2200297AC7 /* UIImage+AJAddition.m in Sources */,
 				03FA196F1BEB2E6300DD1DAC /* NSDate+RFC1123.m in Sources */,
 				03FA19591BEB2D2A00DD1DAC /* MKCache.m in Sources */,
@@ -922,7 +921,8 @@
 				03B7617C1C93AB2200297AC7 /* NSObject+AJAddition.m in Sources */,
 				03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */,
 				035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */,
-				035C05FF1C85859000D050D1 /* NSObject+AJProperty.m in Sources */,
+				03398BE11CBF4151000F3AA4 /* AJViewModel.m in Sources */,
+				035C05FF1C85859000D050D1 /* NSObject+AJPropertyCreator.m in Sources */,
 				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				03B761891C93AB2200297AC7 /* AJIconFont.m in Sources */,

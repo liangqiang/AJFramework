@@ -29,7 +29,7 @@
     [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"弹出ActionSheet" selector:@selector(onActionSheetItemClicked)]];
     [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"复杂列表示例" selector:@selector(onComplexTableDemoClicked)]];
 
-    [self refresh];
+    [self notifyToRefresh];
 }
 
 -(void)onCellClicked:(NSIndexPath*)indexPath{

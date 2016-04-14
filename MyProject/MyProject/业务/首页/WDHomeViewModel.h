@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "WDButtonItem.h"
 
-@interface WDHomeViewModel : NSObject
+@interface WDHomeViewModel : AJViewModel
 
 @property (nonatomic,strong) NSMutableArray *buttonArray;
 

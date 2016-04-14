@@ -1,8 +1,8 @@
 //
-//  NSObject+AJViewModel.h
+//  AJViewModel.h
 //  MyProject
 //
-//  Created by liangqiang on 16/1/14.
+//  Created by liangqiang on 16/4/14.
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
@@ -10,14 +10,13 @@
 
 typedef void(^AJRefreshBlock)();
 
-@interface NSObject (AJViewModel)
+@interface AJViewModel : NSObject
 
+@property (nonatomic,weak) id holder;
 @property (nonatomic,copy) AJRefreshBlock refreshBlock;
 -(void)setRefreshBlock:(AJRefreshBlock)refreshBlock;
 
--(void)refresh;
-
-@property (nonatomic,weak) id holder;
+-(void)notifyToRefresh;
 
 
 @end

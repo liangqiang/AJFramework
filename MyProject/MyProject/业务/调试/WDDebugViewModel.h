@@ -7,7 +7,7 @@
 //
 
 
-@interface WDDebugViewModel : NSObject
+@interface WDDebugViewModel : AJViewModel
 
 @property (nonatomic, assign, readonly) BOOL isPageDebug;
 

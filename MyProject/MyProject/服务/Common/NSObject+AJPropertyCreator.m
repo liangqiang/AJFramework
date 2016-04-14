@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "NSObject+AJProperty.h"
+#import "NSObject+AJPropertyCreator.h"
 
-@implementation NSObject (AJProperty)
+@implementation NSObject (AJPropertyCreator)
 +(void)load{
 }
 
@@ -41,8 +41,8 @@
 
 -(id)createViewModel{
     NSString *className = [self findClassNameOfProperty:@"viewModel"];
-    NSObject *viewModel = [NSClassFromString(className) new];
-    NSAssert(viewModel, @"viewModel not created.");
+    AJViewModel *viewModel = [NSClassFromString(className) new];
+    NSAssert([viewModel isKindOfClass:[AJViewModel class]], @"viewModel not created.");
     viewModel.holder = self;
     return viewModel;
 }

@@ -17,7 +17,7 @@
 
 #import "AJSectionItem.h"
 #import "AJTableView.h"
-#import "NSObject+AJViewModel.h"
+#import "AJViewModel.h"
 
 //AJAddition
 #import "AJViewCreator.h"
@@ -33,7 +33,7 @@
 
 
 //服务
-#import "NSObject+AJProperty.h"
+#import "NSObject+AJPropertyCreator.h"
 #import "AJNavi.h"
 #import "UIViewController+AJNavi.h"
 

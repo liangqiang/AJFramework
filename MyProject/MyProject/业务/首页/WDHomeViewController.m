@@ -78,17 +78,4 @@
     return section;
 }
 
-
-#pragma mark - Getter
-//-(UIScrollView*)scrollView{
-//    if (!_scrollView) {
-//        _scrollView = [UIScrollView new];
-//        _scrollView.backgroundColor = kNormalBgColor;
-//        _scrollView.frame = self.view.bounds;
-//        _scrollView.alwaysBounceVertical = YES;
-//        _scrollView.autoresizingMask =  UIViewAutoresizingFlexibleHeight;
-//    }
-//    return _scrollView;
-//}
-
 @end

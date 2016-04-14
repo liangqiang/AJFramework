@@ -18,7 +18,7 @@
 }
 
 -(void)loadData{
-    [self refresh];
+    [self notifyToRefresh];
 }
 
 

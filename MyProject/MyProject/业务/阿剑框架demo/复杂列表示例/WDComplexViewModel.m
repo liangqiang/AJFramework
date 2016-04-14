@@ -52,7 +52,7 @@
     }
     self.pageIndex = index;
     
-    [self refresh];
+    [self notifyToRefresh];
 }
 
 -(NSString*)randomStringWithLen:(NSInteger)len{

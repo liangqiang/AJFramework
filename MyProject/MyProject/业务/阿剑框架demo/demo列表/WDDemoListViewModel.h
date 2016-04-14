@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WDDemoListViewModel : NSObject
+@interface WDDemoListViewModel : AJViewModel
 @property (nonatomic,strong) NSMutableArray *sectionArray; //AJSectionItem
 
 -(void)loadData;

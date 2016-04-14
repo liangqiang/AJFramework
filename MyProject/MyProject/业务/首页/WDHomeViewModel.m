@@ -17,7 +17,7 @@
     [WDButtonItem newWithTitle:@"iPhone课件Demo" selector:@selector(onIphoneDemoClicked)]
     ]];
     
-    [self refresh];
+    [self notifyToRefresh];
 }
 
 -(void)onFrameworkDemoClicked{
