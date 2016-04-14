@@ -10,9 +10,6 @@
 
 @interface WDComplexViewModel : AJViewModel
 
-@property (nonatomic,assign) NSInteger pageIndex;
-@property (nonatomic,strong) NSMutableArray *sectionArray;
-
 -(void)loadFirstPage;
 -(void)loadNextPage;
 @end

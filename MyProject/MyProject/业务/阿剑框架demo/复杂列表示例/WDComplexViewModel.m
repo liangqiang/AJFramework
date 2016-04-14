@@ -13,7 +13,7 @@
 
 -(instancetype)init{
     if (self=[super init]) {
-        _sectionArray = [NSMutableArray array];
+        self.sectionArray = [NSMutableArray array];
     }
     return self;
 }

@@ -16,7 +16,7 @@
 @implementation WDDemoListViewModel
 -(instancetype)init{
     if (self=[super init]) {
-        _sectionArray = [NSMutableArray arrayWithObject:[AJSectionItem new]];
+        self.sectionArray = [NSMutableArray arrayWithObject:[AJSectionItem new]];
     }
     return self;
 }
