@@ -30,9 +30,6 @@
     
     [self.contentView addSubviews:self.titleLabel, self.contentLabel, nil];
     [self.titleLabel layoutWithInsets:UIEdgeInsetsZero];
-    
-    self.titleLabel.tag = tag(titleLabel);
-    UILabel *label = (UILabel*)[self viewWithTag:tag(titleLabel)];
 }
 
 -(void)layoutSubviews{

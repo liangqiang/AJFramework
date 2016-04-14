@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface WDDemoListViewModel : AJViewModel
-@property (nonatomic,strong) NSMutableArray *sectionArray; //AJSectionItem
 
 -(void)loadData;
 -(void)onCellClicked:(NSIndexPath*)indexPath;
