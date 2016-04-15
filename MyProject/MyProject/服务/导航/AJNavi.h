@@ -10,9 +10,6 @@
 
 @interface AJNavi : NSObject
 
-+(instancetype)sharedInstance;
-@property (nonatomic,assign) BOOL animated;
-
 //使用要求：
 //1、在AppDelegate中，window.rootViewController为UINavigationController
 //2、Navi的首页，如果为UITabBarController，那么要求每个子tab为UINavigationController，使用子tab的navi进行push；否则使用根navi进行push

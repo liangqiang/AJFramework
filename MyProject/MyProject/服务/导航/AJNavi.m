@@ -10,23 +10,6 @@
 
 @implementation AJNavi
 
-+(instancetype)sharedInstance {
-    static AJNavi *object;
-    static dispatch_once_t once;
-    dispatch_once(&once, ^{
-        object = [self new];
-    });
-    return object;
-}
-
--(instancetype)init{
-    self = [super init];
-    if (self) {
-        _animated = YES;  //默认YES
-    }
-    return self;
-}
-
 #pragma mark - 创建vc
 +(UIViewController*)createViewController:(NSString*)className{
     return [self createViewController:className withProp:nil];
@@ -48,7 +31,7 @@
 +(UIViewController*)setRootViewController:(NSString*)className withProp:(NSDictionary*)prop{
     UINavigationController *navi = (UINavigationController*)[mainWindow() rootViewController];
     UIViewController* vc = [self createViewController:className withProp:prop];
-    [navi setViewControllers:@[vc] animated:[AJNavi sharedInstance].animated];
+    [navi setViewControllers:@[vc] animated:YES];
     navi.navigationBarHidden = [vc isKindOfClass:[UITabBarController class]]; //navi
 //    if ([vc isKindOfClass:[UITabBarController class]] || [vc isKindOfClass:[UINavigationController class]]) {
 //        mainWindow().rootViewController = vc;
@@ -86,14 +69,14 @@
     UIViewController* vc = [self createViewController:className withProp:prop];
     if (vc) {
         [vc defaultLeftNaviButton]; //默认左按钮
-        [navi pushViewController:vc animated:[AJNavi sharedInstance].animated];
+        [navi pushViewController:vc animated:YES];
     }
     return vc;
 }
 
 +(UIViewController*)popViewController{
     UINavigationController* navi = [self navigationController];
-    return [navi popViewControllerAnimated:[AJNavi sharedInstance].animated];
+    return [navi popViewControllerAnimated:YES];
 }
 
 #pragma mark - present vc
@@ -110,7 +93,7 @@
 
     UIViewController* vc = [self createViewController:className withProp:prop];
     if (vc) {
-        [navi presentViewController:vc animated:[AJNavi sharedInstance].animated completion:^{
+        [navi presentViewController:vc animated:YES completion:^{
             //null
         }];
     }
@@ -119,7 +102,7 @@
 
 +(void)dismissViewController{
     UINavigationController* navi = [self navigationController];
-    [navi dismissViewControllerAnimated:[AJNavi sharedInstance].animated completion:^{
+    [navi dismissViewControllerAnimated:YES completion:^{
         //null
     }];
 }

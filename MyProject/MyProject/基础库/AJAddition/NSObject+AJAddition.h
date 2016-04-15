@@ -40,6 +40,10 @@
 //保存额外信息
 @property (nonatomic,strong) id extraData;
 
+// swizz方法(无论类方法，对象方法都可以)
++(void)swizzMethod:(NSString*)methodName;
++(void)swizzMethod:(NSString *)methodName toMethod:(NSString*)swizzName;
+
 @end
 
 //------------------------------------------------------------------------------

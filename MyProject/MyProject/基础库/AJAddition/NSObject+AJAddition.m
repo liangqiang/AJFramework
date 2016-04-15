@@ -212,6 +212,27 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
+// 要求：替换的方法一律命名：swizz_原方法名
+// 优先查询类方法，再查询对象方法
++(void)swizzMethod:(NSString*)methodName{
+    NSString *swizzName = [NSString stringWithFormat:@"swizz_%@", methodName];
+    [self swizzMethod:methodName toMethod:swizzName];
+}
+
++(void)swizzMethod:(NSString *)methodName toMethod:(NSString*)swizzName{
+    Class class = object_getClass((id)self); // 类方法的swizzle需如此获取class
+    Method originMethod = class_getInstanceMethod(class, NSSelectorFromString(methodName));
+    Method swizzleMethod = class_getInstanceMethod(class, NSSelectorFromString(swizzName));
+    
+    if (!originMethod || !swizzleMethod) {
+        originMethod = class_getInstanceMethod([self class], NSSelectorFromString(methodName));
+        swizzleMethod = class_getInstanceMethod([self class], NSSelectorFromString(swizzName));
+    }
+    
+    NSAssert(originMethod && swizzleMethod, @"swizz method not found"); // 用来检测方法是否都存在
+    method_exchangeImplementations(originMethod, swizzleMethod);
+}
+
 @end
 
 //------------------------------------------------------------------------------
