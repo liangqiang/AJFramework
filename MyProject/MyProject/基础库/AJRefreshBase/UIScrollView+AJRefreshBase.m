@@ -10,16 +10,13 @@
 
 @implementation UIScrollView (AJRefreshBase)
 
-+ (void)load
-{
-    Method dealloc = class_getInstanceMethod([self class], NSSelectorFromString(@"dealloc"));
-    Method ajRefreshDealloc = class_getInstanceMethod([self class], @selector(ajRefreshDealloc));
-    method_exchangeImplementations(dealloc, ajRefreshDealloc);
++ (void)load{
+    [self swizzMethod:@"dealloc"];
 }
 
--(void)ajRefreshDealloc{
+-(void)swizz_dealloc{
     [self removeObserver]; //劫持dealloc，确保执行removeObserver
-    [self ajRefreshDealloc];
+    [self swizz_dealloc];
 }
 
 #pragma mark- get/set方法

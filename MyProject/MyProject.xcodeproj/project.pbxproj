@@ -16,6 +16,7 @@
 		03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 03125BF81C4A8C2000FFCA26 /* UIView+LayoutMethods.m */; };
 		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
 		03398BE11CBF4151000F3AA4 /* AJViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398BE01CBF4151000F3AA4 /* AJViewModel.m */; };
+		03398BEA1CC0BCDD000F3AA4 /* AJControllerDeallocChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398BE91CC0BCDD000F3AA4 /* AJControllerDeallocChecker.m */; };
 		03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1A1C844CFF008D943E /* WDHomeViewController.m */; };
 		03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1D1C845CAE008D943E /* WDHomeViewModel.m */; };
 		03479C221C845D33008D943E /* WDButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C211C845D33008D943E /* WDButtonItem.m */; };
@@ -117,6 +118,7 @@
 		0316402F1BE23E0F00526D8A /* AJSettingsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJSettingsDefine.h; sourceTree = "<group>"; };
 		03398BDF1CBF4151000F3AA4 /* AJViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJViewModel.h; sourceTree = "<group>"; };
 		03398BE01CBF4151000F3AA4 /* AJViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJViewModel.m; sourceTree = "<group>"; };
+		03398BE91CC0BCDD000F3AA4 /* AJControllerDeallocChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJControllerDeallocChecker.m; sourceTree = "<group>"; };
 		03479C191C844CFF008D943E /* WDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewController.h; sourceTree = "<group>"; };
 		03479C1A1C844CFF008D943E /* WDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHomeViewController.m; sourceTree = "<group>"; };
 		03479C1C1C845CAE008D943E /* WDHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewModel.h; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 				030900C91BDB97B70073DAA7 /* AJNavi.m */,
 				03FA194A1BEB113A00DD1DAC /* UIViewController+AJNavi.h */,
 				03FA194B1BEB113A00DD1DAC /* UIViewController+AJNavi.m */,
+				03398BE91CC0BCDD000F3AA4 /* AJControllerDeallocChecker.m */,
 			);
 			path = "导航";
 			sourceTree = "<group>";
@@ -880,6 +883,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03398BEA1CC0BCDD000F3AA4 /* AJControllerDeallocChecker.m in Sources */,
 				03FA195C1BEB2D2A00DD1DAC /* MKObject.m in Sources */,
 				03FD93D91BDF5FEA00DCC673 /* AJRefreshHeaderView.m in Sources */,
 				03FD93D81BDF5FEA00DCC673 /* UIScrollView+AJRefresh.m in Sources */,

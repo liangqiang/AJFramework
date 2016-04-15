@@ -27,6 +27,7 @@
     
     [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"toast当前时间" selector:@selector(onToastItemClicked)]];
     [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"弹出ActionSheet" selector:@selector(onActionSheetItemClicked)]];
+    [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"弹出AlertView" selector:@selector(onAlertViewItemClicked)]];
     [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"复杂列表示例" selector:@selector(onComplexTableDemoClicked)]];
 
     [self notifyToRefresh];
@@ -47,6 +48,14 @@
     NSArray *buttons = @[@"男", @"女", @"取消"];
     
     [AJUtil actionSheet:@"请选择您的性别" buttons:buttons block:^(NSInteger buttonIndex) {
+        NSString *info = [NSString stringWithFormat:@"您选择了：%@", [buttons safeObjectAtIndex:buttonIndex]];
+        [AJUtil toast:info];
+    }];
+}
+
+-(void)onAlertViewItemClicked{
+    NSArray *buttons = @[@"确定", @"取消"];
+    [AJUtil alert:@"亲，你搞错了吧？" buttons:@[@"确定", @"取消"] block:^(NSInteger buttonIndex) {
         NSString *info = [NSString stringWithFormat:@"您选择了：%@", [buttons safeObjectAtIndex:buttonIndex]];
         [AJUtil toast:info];
     }];
