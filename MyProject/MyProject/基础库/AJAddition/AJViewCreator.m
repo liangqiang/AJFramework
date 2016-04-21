@@ -44,6 +44,7 @@
     if([borderColor isKindOfClass:[UIColor class]]){
         self.layer.borderColor = borderColor.CGColor;
     }
+    self.clipsToBounds = YES;
 }
 
 @end

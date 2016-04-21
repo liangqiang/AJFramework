@@ -7,7 +7,6 @@
 //
 
 #import "WDDemoListTableViewCell.h"
-#import "WDButtonItem.h"
 
 @interface WDDemoListTableViewCell ()
 @property (nonatomic,strong) UILabel *titleLabel;
@@ -33,7 +32,7 @@
     [self.titleLabel layoutWithInsets:UIEdgeInsetsZero];
 }
 
--(void)updateWithItem:(WDButtonItem*)cellItem{
+-(void)updateWithItem:(AJNormalItem*)cellItem{
     self.titleLabel.text = cellItem.title;
 }
 

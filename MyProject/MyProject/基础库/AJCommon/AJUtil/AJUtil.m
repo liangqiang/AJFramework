@@ -130,7 +130,8 @@ static NSMutableDictionary *s_tags = nil;
 
 +(void)performSelector:(SEL)selector onTarget:(id)target{
     if ([target respondsToSelector:selector]){
-//            [target performSelector:callback withObject:nil];
+//        去警告：performSelector may cause a leak because its selector is unknown
+//        [target performSelector:selector];
         IMP imp = [target methodForSelector:selector];
         void (*func)(id, SEL) = (void *)imp;
         func(target, selector);
@@ -155,6 +156,42 @@ static NSMutableDictionary *s_tags = nil;
     return [formatter stringFromDate:date];
 }
 
+
++(void)textField:(UITextField*)textField limitMaxLength:(NSInteger)maxLength{
+    NSString *toBeString = textField.text;
+    
+    NSString *lang = [[textField textInputMode] primaryLanguage]; // 键盘输入模式
+    if ([lang isEqualToString:@"zh-Hans"]) { // 简体中文输入，包括简体拼音，健体五笔，简体手写
+        UITextRange *selectedRange = [textField markedTextRange];
+        //获取高亮部分
+        UITextPosition *position = [textField positionFromPosition:selectedRange.start offset:0];
+        // 有高亮选择的字符串，则暂不对文字进行统计和限制
+        if (position) {
+            return;
+        }
+    }
+    // 中文输入法以外的直接对其统计限制即可，不考虑其他语种情况
+    // 表情的长度可能是2，为避免中间截断，不可直接使用substringToIndex方法
+    textField.text = [toBeString limitToLength:maxLength];
+}
+
++(void)textView:(UITextView*)textView limitMaxLength:(NSInteger)maxLength{
+    NSString *toBeString = textView.text;
+    
+    NSString *lang = [[textView textInputMode] primaryLanguage]; // 键盘输入模式
+    if ([lang isEqualToString:@"zh-Hans"]) { // 简体中文输入，包括简体拼音，健体五笔，简体手写
+        UITextRange *selectedRange = [textView markedTextRange];
+        //获取高亮部分
+        UITextPosition *position = [textView positionFromPosition:selectedRange.start offset:0];
+        // 有高亮选择的字符串，则暂不对文字进行统计和限制
+        if (position) {
+            return;
+        }
+    }
+    // 中文输入法以外的直接对其统计限制即可，不考虑其他语种情况
+    // 表情的长度可能是2，为避免中间截断，不可直接使用substringToIndex方法
+    textView.text = [toBeString limitToLength:maxLength];
+}
 
 @end
 

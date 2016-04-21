@@ -39,13 +39,6 @@
     [self.viewModel setRefreshBlock:^{
         [weakSelf updateViews];
     }];
-
-    [self.scrollView setRefreshHeaderBlock:^{
-        [weakSelf.viewModel loadData];
-    }];
-    [self.scrollView setRefreshFooterBlock:^{
-        [weakSelf.viewModel loadData];
-    }];
     
     [AJUtil runAfterDelay:0 block:^{
         [weakSelf.viewModel loadData];
@@ -55,23 +48,26 @@
 -(void)updateViews{
     [self.scrollView stopRefresh];
     [self.scrollView removeAllSections];
-    for (WDButtonItem *item in self.viewModel.buttonArray) {
+    
+    for (AJNormalItem *item in self.viewModel.itemArray) {
         UIView *section = [self createSectionWithItem:item];
         [self.scrollView addSection:section];
     }
 }
 
--(UIView*)createSectionWithItem:(WDButtonItem*)item{
+-(UIView*)createSectionWithItem:(AJNormalItem*)item{
     UIView *section = [UIView newWith:kWhiteColor, nil];
     section.size = CGSizeMake(self.scrollView.width, 64);
     
     UIButton *button = [UIButton newWith:kFont16, kLightGrayColor, item.title, nil];
     [button setCornerRadiusWith:@(4), nil];
     [button setBgColorWith:kPrimaryNormalColor, kPrimaryDarkColor, nil];
+    
     WEAKSELF
-    [button handleClick:^(UIView *view) {
-        [AJUtil performSelector:item.selector onTarget:weakSelf.viewModel];
+    [button handleEvent:UIControlEventTouchUpInside withBlock:^(UIControl *control) {
+        [weakSelf.viewModel onItemClicked:item];
     }];
+
     [section addSubview:button];
     [button layoutWithInsets:UIEdgeInsetsMake(10, 20, 10, 20)];
     

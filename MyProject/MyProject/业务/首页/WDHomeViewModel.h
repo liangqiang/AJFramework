@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WDButtonItem.h"
 
 @interface WDHomeViewModel : AJViewModel
 
-@property (nonatomic,strong) NSMutableArray *buttonArray;
+@property (nonatomic,strong) NSMutableArray *itemArray; //AJNormalItem
 
 -(void)loadData;
+-(void)onItemClicked:(AJNormalItem*)item;
 
 @end

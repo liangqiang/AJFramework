@@ -19,7 +19,6 @@
 		03398BEA1CC0BCDD000F3AA4 /* AJControllerDeallocChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398BE91CC0BCDD000F3AA4 /* AJControllerDeallocChecker.m */; };
 		03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1A1C844CFF008D943E /* WDHomeViewController.m */; };
 		03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1D1C845CAE008D943E /* WDHomeViewModel.m */; };
-		03479C221C845D33008D943E /* WDButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C211C845D33008D943E /* WDButtonItem.m */; };
 		035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05E91C85444800D050D1 /* WDDebugViewController.m */; };
 		035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05EB1C85444800D050D1 /* WDDebugViewModel.m */; };
 		035C05F21C8573FD00D050D1 /* WDDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05F11C8573FD00D050D1 /* WDDemoListViewController.m */; };
@@ -58,6 +57,7 @@
 		03B761891C93AB2200297AC7 /* AJIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761751C93AB2200297AC7 /* AJIconFont.m */; };
 		03B7618A1C93AB2200297AC7 /* AJRefreshViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761781C93AB2200297AC7 /* AJRefreshViewBase.m */; };
 		03B7618B1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7617A1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m */; };
+		03E43F711CC764AC00E9BF6D /* AJNormalItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E43F701CC764AC00E9BF6D /* AJNormalItem.m */; };
 		03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */; };
 		03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54D1BE869FE00E3C47D /* TBCityCoreTextLabel.m */; };
 		03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54F1BE869FE00E3C47D /* TBCityCoreTextManager.m */; };
@@ -123,8 +123,6 @@
 		03479C1A1C844CFF008D943E /* WDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHomeViewController.m; sourceTree = "<group>"; };
 		03479C1C1C845CAE008D943E /* WDHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewModel.h; sourceTree = "<group>"; };
 		03479C1D1C845CAE008D943E /* WDHomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHomeViewModel.m; sourceTree = "<group>"; };
-		03479C201C845D33008D943E /* WDButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDButtonItem.h; sourceTree = "<group>"; };
-		03479C211C845D33008D943E /* WDButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDButtonItem.m; sourceTree = "<group>"; };
 		035C05E81C85444800D050D1 /* WDDebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDebugViewController.h; sourceTree = "<group>"; };
 		035C05E91C85444800D050D1 /* WDDebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDebugViewController.m; sourceTree = "<group>"; };
 		035C05EA1C85444800D050D1 /* WDDebugViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDebugViewModel.h; sourceTree = "<group>"; };
@@ -206,6 +204,8 @@
 		03B761781C93AB2200297AC7 /* AJRefreshViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJRefreshViewBase.m; sourceTree = "<group>"; };
 		03B761791C93AB2200297AC7 /* UIScrollView+AJRefreshBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+AJRefreshBase.h"; sourceTree = "<group>"; };
 		03B7617A1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AJRefreshBase.m"; sourceTree = "<group>"; };
+		03E43F6F1CC764AC00E9BF6D /* AJNormalItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNormalItem.h; sourceTree = "<group>"; };
+		03E43F701CC764AC00E9BF6D /* AJNormalItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNormalItem.m; sourceTree = "<group>"; };
 		03F6B54A1BE869FE00E3C47D /* TBCityCoreTextAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextAttribute.h; sourceTree = "<group>"; };
 		03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityCoreTextAttribute.m; sourceTree = "<group>"; };
 		03F6B54C1BE869FE00E3C47D /* TBCityCoreTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextLabel.h; sourceTree = "<group>"; };
@@ -451,8 +451,6 @@
 			children = (
 				03479C1C1C845CAE008D943E /* WDHomeViewModel.h */,
 				03479C1D1C845CAE008D943E /* WDHomeViewModel.m */,
-				03479C201C845D33008D943E /* WDButtonItem.h */,
-				03479C211C845D33008D943E /* WDButtonItem.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -491,6 +489,8 @@
 		035C05FC1C85828D00D050D1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				03E43F6F1CC764AC00E9BF6D /* AJNormalItem.h */,
+				03E43F701CC764AC00E9BF6D /* AJNormalItem.m */,
 				035C05FD1C85859000D050D1 /* NSObject+AJPropertyCreator.h */,
 				035C05FE1C85859000D050D1 /* NSObject+AJPropertyCreator.m */,
 			);
@@ -894,7 +894,6 @@
 				030900CA1BDB97B70073DAA7 /* AJNavi.m in Sources */,
 				03B761881C93AB2200297AC7 /* AJUtil.m in Sources */,
 				03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */,
-				03479C221C845D33008D943E /* WDButtonItem.m in Sources */,
 				03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */,
 				03B7617F1C93AB2200297AC7 /* UIImage+AJAddition.m in Sources */,
 				03FA196F1BEB2E6300DD1DAC /* NSDate+RFC1123.m in Sources */,
@@ -935,6 +934,7 @@
 				03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */,
 				035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */,
 				035C06391C86D10300D050D1 /* WDComplexViewController.m in Sources */,
+				03E43F711CC764AC00E9BF6D /* AJNormalItem.m in Sources */,
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
 				03B761871C93AB2200297AC7 /* AJSettings.m in Sources */,
