@@ -13,7 +13,7 @@
 @property (nonatomic,strong) NSString *actionType;  // 操作类型: SEL, PushVC
 @property (nonatomic,strong) NSString *actionContent; // selector, vc name
 
--(void)pushViewController;
+-(UIViewController*)pushViewController;
 -(void)runSelectorWithTarget:(id)target;
 -(void)doActionWithUserInfo:(id)userInfo;
 

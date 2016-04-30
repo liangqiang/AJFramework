@@ -12,8 +12,8 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-#import "AJUtil.h"
 #import "AJDefine.h"
+#import "AJUtil.h"
 
 #import "AJSectionItem.h"
 #import "AJTableView.h"
@@ -28,6 +28,7 @@
 #import "UILabel+AJAddition.h"
 #import "UIImage+AJAddition.h"
 #import "UIScrollView+AJAddition.h"
+#import "NSDate+AJAddition.h"
 
 #import "AJSettings.h"
 

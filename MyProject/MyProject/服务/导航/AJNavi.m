@@ -93,9 +93,7 @@
 
     UIViewController* vc = [self createViewController:className withProp:prop];
     if (vc) {
-        [navi presentViewController:vc animated:YES completion:^{
-            //null
-        }];
+        [navi presentViewController:vc animated:YES completion:nil];
     }
     return vc;
 }

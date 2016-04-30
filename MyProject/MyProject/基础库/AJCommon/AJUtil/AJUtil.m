@@ -36,7 +36,9 @@ static NSMutableDictionary *s_tags = nil;
     label.size = CGSizeMake(vFrame.size.width-30, 99999);
     [label sizeToFit];
     view.size = CGSizeMake(label.size.width + 30, label.size.height + 30);
-    [view layoutWithInsets:UIEdgeInsetsCenter];
+//    [view layoutWithInsets:UIEdgeInsetsCenter];
+    float top = (vFrame.size.height-view.size.height) * 0.75;
+    [view layoutWithInsets:UIEdgeInsetsMake(top, EAuto, EAuto, EAuto)];
     [label layoutWithInsets:UIEdgeInsetsCenter];
     
     [UIView animateWithDuration:.5 delay:2.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
@@ -46,7 +48,7 @@ static NSMutableDictionary *s_tags = nil;
     }];
 }
 
-+(id)actionSheet:(NSString*)title buttons:(NSArray*)buttons block:(AJActionSheetClickBlock)block{
++(id)actionSheet:(NSString*)title buttons:(NSArray*)buttons block:(AJIntegerBlock)block{
     UIActionSheet *actionSheet = [UIActionSheet new];
     actionSheet.title = title;
     for (NSString* button in buttons) {
@@ -58,9 +60,13 @@ static NSMutableDictionary *s_tags = nil;
     return actionSheet;
 }
 
-+(id)alert:(NSString*)message buttons:(NSArray*)buttons block:(AJAlertViewClickBlock)block{
++(id)alertMessage:(NSString*)message buttons:(NSArray*)buttons block:(AJIntegerBlock)block{
+    return [self alertTitle:@"" message:message buttons:buttons block:block];
+}
+
++(id)alertTitle:(NSString*)title message:(NSString*)message buttons:(NSArray*)buttons block:(AJIntegerBlock)block{
     UIAlertView *alert = [UIAlertView new];
-    alert.title = nil;
+    alert.title = title;
     alert.message = message;
     for (NSString* button in buttons) {
         [alert addButtonWithTitle:button];
@@ -70,7 +76,6 @@ static NSMutableDictionary *s_tags = nil;
     [alert show];
     return alert;
 }
-
 
 + (UIImage *)createImageWithColor:(UIColor *)color size:(CGSize)size {
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
@@ -138,6 +143,18 @@ static NSMutableDictionary *s_tags = nil;
     }
 }
 
++(id)performReturnSelector:(SEL)selector onTarget:(id)target{
+    if ([target respondsToSelector:selector]){
+        //        去警告：performSelector may cause a leak because its selector is unknown
+        //        [target performSelector:selector];
+        IMP imp = [target methodForSelector:selector];
+        id (*func)(id, SEL) = (void *)imp;
+        return func(target, selector);
+    }
+    return nil;
+}
+
+
 +(void)runAfterDelay:(NSTimeInterval)delay block:(void(^)())block{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
                    dispatch_get_main_queue(), block);
@@ -200,13 +217,13 @@ static NSMutableDictionary *s_tags = nil;
 
 @implementation  UIActionSheet (AJUtil) 
 
--(void)setClickBlock:(AJActionSheetClickBlock)block{
+-(void)setClickBlock:(AJIntegerBlock)block{
     objc_setAssociatedObject(self, _cmd, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
     self.delegate = self;
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex{
-    AJActionSheetClickBlock block = objc_getAssociatedObject(self, @selector(setClickBlock:));
+    AJIntegerBlock block = objc_getAssociatedObject(self, @selector(setClickBlock:));
     if (block!= nil){
         block(buttonIndex);
     }
@@ -216,13 +233,13 @@ static NSMutableDictionary *s_tags = nil;
 
 @implementation  UIAlertView (AJUtil) 
 
--(void)setClickBlock:(AJAlertViewClickBlock)block{
+-(void)setClickBlock:(AJIntegerBlock)block{
     objc_setAssociatedObject(self, _cmd, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
     self.delegate = self;
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    AJAlertViewClickBlock block = objc_getAssociatedObject(self, @selector(setClickBlock:));
+    AJIntegerBlock block = objc_getAssociatedObject(self, @selector(setClickBlock:));
     if (block!= nil){
         block(buttonIndex);
     }

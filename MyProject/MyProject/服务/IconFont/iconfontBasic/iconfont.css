@@ -1,14 +1,14 @@
 
-@font-face {font-family: "iconfont";
-  src: url('iconfont.eot'); /* IE9*/
-  src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+@font-face {font-family: "iconfontBasic";
+  src: url('iconfont.eot?t=1461309121'); /* IE9*/
+  src: url('iconfont.eot?t=1461309121#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1461309121') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1461309121') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1461309121#iconfontBasic') format('svg'); /* iOS 4.1- */
 }
 
-.iconfont {
-  font-family:"iconfont" !important;
+.iconfontBasic {
+  font-family:"iconfontBasic" !important;
   font-size:16px;
   font-style:normal;
   -webkit-font-smoothing: antialiased;

@@ -59,7 +59,7 @@
 
 -(void)onAlertViewItemClicked{
     NSArray *buttons = @[@"确定", @"取消"];
-    [AJUtil alert:@"亲，你搞错了吧？" buttons:@[@"确定", @"取消"] block:^(NSInteger buttonIndex) {
+    [AJUtil alertMessage:@"亲，你搞错了吧？" buttons:@[@"确定", @"取消"] block:^(NSInteger buttonIndex) {
         NSString *info = [NSString stringWithFormat:@"您选择了：%@", [buttons safeObjectAtIndex:buttonIndex]];
         [AJUtil toast:info];
     }];

@@ -10,10 +10,11 @@
 
 @implementation AJNormalItem
 
--(void)pushViewController{
+-(UIViewController*)pushViewController{
     if([self.actionType isEqualToString:@"PushVC"]){
-        [AJNavi pushViewController:self.actionContent];
+        return [AJNavi pushViewController:self.actionContent];
     }
+    return nil;
 }
 
 -(void)runSelectorWithTarget:(id)target{

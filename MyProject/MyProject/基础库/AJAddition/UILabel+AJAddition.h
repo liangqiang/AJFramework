@@ -10,9 +10,7 @@
 
 @interface UILabel (TDDUILabelAdditions)
 
-//-(void)adjustsHeightToFitText; //根据文本内容调整大小
-
--(void)sizeToFitWidth;
+-(void)sizeToFitWidth:(NSInteger)width;
 
 - (NSArray *)getSeparatedLines;
 

@@ -2,13 +2,13 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Wed Mar  2 11:22:29 2016
- By Ads
+Created by FontForge 20120731 at Fri Apr 22 15:12:01 2016
+ By admin
 </metadata>
 <defs>
-<font id="iconfont" horiz-adv-x="1024" >
+<font id="iconfontBasic" horiz-adv-x="1024" >
   <font-face 
-    font-family="iconfont"
+    font-family="iconfontBasic"
     font-weight="500"
     font-stretch="normal"
     units-per-em="1024"

@@ -7,28 +7,28 @@
 //
 
 
-static NSMutableArray *poppingControllers = nil;
+static NSMutableArray *kPoppingControllers = nil;
 
 @implementation UINavigationController (AJControllerDeallocChecker)
 +(void)load{
-    poppingControllers = [NSMutableArray array];
+    kPoppingControllers = [NSMutableArray array];
     [self swizzMethod:@"popViewControllerAnimated:"];
 }
 
 - (UIViewController *)swizz_popViewControllerAnimated:(BOOL)animated{
     UIViewController *controller = [self swizz_popViewControllerAnimated:animated];
     if (controller) {
-        if ([poppingControllers count] > 0) {
+        if ([kPoppingControllers count] > 0) {
             NSString *message = [NSString stringWithFormat:@"%@(%zd)没有dealloc释放!!",
-                                 [poppingControllers lastObject],
-                                 [poppingControllers count]];
-            [AJUtil alert:message buttons:@[@"清除", @"取消"] block:^(NSInteger buttonIndex) {
+                                 [kPoppingControllers lastObject],
+                                 [kPoppingControllers count]];
+            [AJUtil alertMessage:message buttons:@[@"清除", @"取消"] block:^(NSInteger buttonIndex) {
                 if (buttonIndex == 0) {
-                    [poppingControllers removeAllObjects];
+                    [kPoppingControllers removeAllObjects];
                 }
             }];
         }
-        [poppingControllers addObject:[controller description]];
+        [kPoppingControllers addObject:[controller description]];
     }
     return controller;
 }
@@ -38,11 +38,21 @@ static NSMutableArray *poppingControllers = nil;
 
 +(void)load{
     [self swizzMethod:@"dealloc"];
+    [self swizzMethod:@"viewWillAppear:"];
 }
 
 -(void)swizz_dealloc{
-    [poppingControllers removeObject:[self description]];
+    [kPoppingControllers removeObject:[self description]];
     [self swizz_dealloc];
+}
+
+- (void)swizz_viewWillAppear:(BOOL)animated
+{
+    if ([[kPoppingControllers lastObject] isEqualToString:[self description]]) {
+        [kPoppingControllers removeLastObject];
+    }
+    
+    [self swizz_viewWillAppear:animated];
 }
 
 @end

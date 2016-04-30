@@ -10,10 +10,8 @@
 
 @interface AJIconFont : NSObject
 
-+ (UIFont *)fontWithSize: (CGFloat)size;
-+ (void)setFontName:(NSString *)fontName;
-+ (UIImage *)iconWithText:(NSString*)text size:(CGFloat)size color:(UIColor*)color;
++ (UIImage *)iconWithFontName:(NSString*)fontName text:(NSString*)text size:(CGFloat)size color:(UIColor*)color;
 
 @end
 
-#define AJIconFontMake(text,fontSize,fontColor) [AJIconFont iconWithText:text size:fontSize color:fontColor]
+#define AJIconFontMake(fontName,fontText,fontSize,fontColor) [AJIconFont iconWithFontName:fontName text:fontText size:fontSize color:fontColor]

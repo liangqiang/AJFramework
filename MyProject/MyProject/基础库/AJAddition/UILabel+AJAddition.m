@@ -12,12 +12,10 @@
 
 @implementation UILabel (TDDUILabelAdditions)
 
-//-(void)adjustsHeightToFitText{
-//    CGSize size = [TDDCommon sizeOfText:self.text withFont:self.font inSize:CGSizeMake(self.width, 100000)];
-//    self.height = size.height;
-//}
-
--(void)sizeToFitWidth{
+-(void)sizeToFitWidth:(NSInteger)width{
+    if (width > 0) {
+        self.width = width;
+    }
     self.size = [self.text sizeWithFont:self.font fitWidth:self.width];
 }
 
